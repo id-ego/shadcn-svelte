@@ -12,11 +12,11 @@
 이 저장소는 [huntabyte/shadcn-svelte](https://github.com/huntabyte/shadcn-svelte)를 Fork하여 한글화한 프로젝트입니다.
 
 - 원본 문서: https://shadcn-svelte.com
-- 한글 문서: (배포 예정)
+- 한글 문서: https://shadcn-svelte.docsforall.com
 
 ## 문서
 
-한글 문서 사이트를 방문하세요. (배포 후 URL 업데이트 예정)
+한글 문서 사이트를 방문하세요: https://shadcn-svelte.docsforall.com
 
 ## 기여
 

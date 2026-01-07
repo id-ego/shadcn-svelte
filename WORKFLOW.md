@@ -249,10 +249,13 @@ GitHub 저장소 Settings → Secrets에 추가:
 - [x] package.json 정보 수정
 - [x] README.md 한글화 프로젝트 설명 추가
 
-### Phase 2: 배포 설정
-- [ ] 배포 플랫폼 선택 (Vercel/Cloudflare)
-- [ ] 배포 설정 및 테스트
-- [ ] 도메인 연결 (선택)
+### Phase 2: 배포 설정 ✅ 완료
+
+- [x] 배포 플랫폼 선택 (Cloudflare Pages)
+- [x] GitHub Secrets 설정 (CF_API_TOKEN, CF_ACCOUNT_ID)
+- [x] GitHub Actions 활성화
+- [x] 배포 테스트 성공
+- [x] 도메인 연결: https://shadcn-svelte.docsforall.com
 
 ### Phase 3: 한글화 작업
 - [ ] docs/content/ 문서 번역
