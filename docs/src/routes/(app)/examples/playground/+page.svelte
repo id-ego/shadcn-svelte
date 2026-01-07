@@ -21,8 +21,8 @@
 	import * as HoverCard from "$lib/registry/ui/hover-card/index.js";
 	import Metadata from "$lib/components/metadata.svelte";
 
-	const title = "Playground";
-	const description = "The OpenAI Playground build using the components.";
+	const title = "플레이그라운드";
+	const description = "컴포넌트를 사용하여 구축한 OpenAI 플레이그라운드입니다.";
 </script>
 
 <Metadata
@@ -41,7 +41,7 @@
 	<div
 		class="container flex flex-col items-start justify-between space-y-2 py-4 sm:flex-row sm:items-center sm:space-y-0 md:h-16"
 	>
-		<h2 class="text-lg font-semibold">Playground</h2>
+		<h2 class="text-lg font-semibold">플레이그라운드</h2>
 		<div class="ms-auto flex w-full space-x-2 sm:justify-end">
 			<PresetSelector {presets} />
 			<PresetSave />
@@ -65,19 +65,17 @@
 										class="text-sm leading-none font-medium peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
 										{...props}
 									>
-										Mode
+										모드
 									</span>
 								{/snippet}
 							</HoverCard.Trigger>
 							<HoverCard.Content class="w-[320px] text-sm" side="left">
-								Choose the interface that best suits your task. You can provide: a
-								simple prompt to complete, starting and ending text to insert a
-								completion within, or some text with instructions to edit it.
+								작업에 가장 적합한 인터페이스를 선택하세요. 완성할 간단한 프롬프트, 완성을 삽입할 시작 및 종료 텍스트, 또는 편집할 지시사항이 포함된 텍스트를 제공할 수 있습니다.
 							</HoverCard.Content>
 						</HoverCard.Root>
 						<Tabs.List class="grid grid-cols-3">
 							<Tabs.Trigger value="complete">
-								<span class="sr-only">Complete</span>
+								<span class="sr-only">완성</span>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									viewBox="0 0 20 20"
@@ -143,7 +141,7 @@
 								</svg>
 							</Tabs.Trigger>
 							<Tabs.Trigger value="insert">
-								<span class="sr-only">Insert</span>
+								<span class="sr-only">삽입</span>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									viewBox="0 0 20 20"
@@ -183,7 +181,7 @@
 								</svg>
 							</Tabs.Trigger>
 							<Tabs.Trigger value="edit">
-								<span class="sr-only">Edit</span>
+								<span class="sr-only">편집</span>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									viewBox="0 0 20 20"
@@ -247,13 +245,13 @@
 					<Tabs.Content value="complete" class="mt-0 border-0 p-0">
 						<div class="flex h-full flex-col space-y-4">
 							<Textarea
-								placeholder="Write a tagline for an ice cream shop"
+								placeholder="아이스크림 가게를 위한 태그라인을 작성하세요"
 								class="min-h-[400px] flex-1 p-4 md:min-h-[700px] lg:min-h-[700px]"
 							/>
 							<div class="flex items-center space-x-2">
-								<Button>Submit</Button>
+								<Button>제출</Button>
 								<Button variant="secondary">
-									<span class="sr-only">Show history</span>
+									<span class="sr-only">기록 보기</span>
 									<RotateCCWIcon class="size-4" />
 								</Button>
 							</div>
@@ -265,15 +263,15 @@
 								class="grid h-full grid-rows-2 gap-6 lg:grid-cols-2 lg:grid-rows-1"
 							>
 								<Textarea
-									placeholder="We're writing to [inset]. Congrats from OpenAI!"
+									placeholder="[삽입]에게 편지를 씁니다. OpenAI로부터 축하드립니다!"
 									class="h-full min-h-[300px] lg:min-h-[700px] xl:min-h-[700px]"
 								/>
 								<div class="bg-muted rounded-md border"></div>
 							</div>
 							<div class="flex items-center space-x-2">
-								<Button>Submit</Button>
+								<Button>제출</Button>
 								<Button variant="secondary">
-									<span class="sr-only">Show history</span>
+									<span class="sr-only">기록 보기</span>
 									<RotateCCWIcon class="size-4" />
 								</Button>
 							</div>
@@ -284,18 +282,18 @@
 							<div class="grid h-full gap-6 lg:grid-cols-2">
 								<div class="flex flex-col space-y-4">
 									<div class="flex flex-1 flex-col space-y-2">
-										<Label for="input">Input</Label>
+										<Label for="input">입력</Label>
 										<Textarea
 											id="input"
-											placeholder="We is going to the market."
+											placeholder="우리는 시장에 가고 있어요."
 											class="flex-1 lg:min-h-[580px]"
 										/>
 									</div>
 									<div class="flex flex-col space-y-2">
-										<Label for="instructions">Instructions</Label>
+										<Label for="instructions">지시사항</Label>
 										<Textarea
 											id="instructions"
-											placeholder="Fix the grammar."
+											placeholder="문법을 수정하세요."
 										/>
 									</div>
 								</div>
@@ -304,9 +302,9 @@
 								></div>
 							</div>
 							<div class="flex items-center space-x-2">
-								<Button>Submit</Button>
+								<Button>제출</Button>
 								<Button variant="secondary">
-									<span class="sr-only">Show history</span>
+									<span class="sr-only">기록 보기</span>
 									<RotateCCWIcon class="size-4" />
 								</Button>
 							</div>

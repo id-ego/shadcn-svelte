@@ -8,8 +8,8 @@
 	import SiteHeader from "./components/site-header.svelte";
 	import { data } from "./data.js";
 
-	const title = "Dashboard";
-	const description = "A dashboard built using the components.";
+	const title = "대시보드";
+	const description = "컴포넌트를 사용하여 구축한 대시보드입니다.";
 </script>
 
 <Metadata

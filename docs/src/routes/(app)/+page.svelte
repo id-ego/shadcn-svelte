@@ -14,9 +14,9 @@
 	import Metadata from "$lib/components/metadata.svelte";
 	import { IsMobile } from "$lib/registry/hooks/is-mobile.svelte.js";
 
-	const title = "The Foundation for your Design System";
+	const title = "디자인 시스템의 기초";
 	const description =
-		"A set of beautifully designed components that you can customize, extend, and build on. Start here then make it your own. Open Source. Open Code.";
+		"아름답게 디자인된 컴포넌트를 커스터마이징하고, 확장하고, 빌드할 수 있습니다. 여기서 시작해서 나만의 것으로 만들어보세요. 오픈 소스. 오픈 코드.";
 
 	const mobile = new IsMobile();
 </script>
@@ -29,8 +29,8 @@
 		<PageHeaderHeading class="max-w-4xl">{title}</PageHeaderHeading>
 		<PageHeaderDescription>{description}</PageHeaderDescription>
 		<PageActions>
-			<Button href="/docs/installation" size="sm">Get Started</Button>
-			<Button href="/docs/components" size="sm" variant="ghost">View Components</Button>
+			<Button href="/docs/installation" size="sm">시작하기</Button>
+			<Button href="/docs/components" size="sm" variant="ghost">컴포넌트 보기</Button>
 		</PageActions>
 	</PageHeader>
 	{#if !mobile.current}

@@ -3,8 +3,8 @@
 	import { Button } from "$lib/registry/ui/button/index.js";
 	import Metadata from "$lib/components/metadata.svelte";
 
-	const title = "Authentication";
-	const description = "Authentication forms build using the components.";
+	const title = "인증";
+	const description = "컴포넌트를 사용하여 구축된 인증 폼입니다.";
 </script>
 
 <Metadata
@@ -36,7 +36,7 @@
 		variant="ghost"
 		class="absolute end-4 top-4 md:end-8 md:top-8"
 	>
-		Login
+		로그인
 	</Button>
 	<div class="bg-muted relative hidden h-full flex-col p-10 text-white lg:flex dark:border-e">
 		<div class="absolute inset-0 bg-zinc-900"></div>
@@ -58,8 +58,7 @@
 		<div class="relative z-20 mt-auto">
 			<blockquote class="space-y-2">
 				<p class="text-lg">
-					&ldquo;This library has saved me countless hours of work and helped me deliver
-					stunning designs to my clients faster than ever before.&rdquo;
+					&ldquo;이 라이브러리는 수많은 작업 시간을 절약해 주었고, 그 어느 때보다 빠르게 고객에게 멋진 디자인을 제공할 수 있도록 도와주었습니다.&rdquo;
 				</p>
 				<footer class="text-sm">Sofia Davis</footer>
 			</blockquote>
@@ -68,21 +67,21 @@
 	<div class="lg:p-8">
 		<div class="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
 			<div class="flex flex-col space-y-2 text-center">
-				<h1 class="text-2xl font-semibold tracking-tight">Create an account</h1>
+				<h1 class="text-2xl font-semibold tracking-tight">계정 만들기</h1>
 				<p class="text-muted-foreground text-sm">
-					Enter your email below to create your account
+					계정을 만들려면 아래에 이메일을 입력하세요
 				</p>
 			</div>
 			<UserAuthForm />
 			<p class="text-muted-foreground px-8 text-center text-sm">
-				By clicking continue, you agree to our
+				계속하기를 클릭하면
 				<a href="/terms" class="hover:text-primary underline underline-offset-4">
-					Terms of Service
+					이용 약관
 				</a>
-				and
+				및
 				<a href="/privacy" class="hover:text-primary underline underline-offset-4">
-					Privacy Policy
-				</a>.
+					개인정보 처리방침
+				</a>에 동의하는 것입니다.
 			</p>
 		</div>
 	</div>

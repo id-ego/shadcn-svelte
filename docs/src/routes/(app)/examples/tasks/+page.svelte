@@ -11,8 +11,8 @@
 <div class="hidden h-full flex-1 flex-col gap-8 p-8 md:flex">
 	<div class="flex items-center justify-between gap-2">
 		<div class="flex flex-col gap-1">
-			<h2 class="text-2xl font-semibold tracking-tight">Welcome back!</h2>
-			<p class="text-muted-foreground">Here&apos;s a list of your tasks for this month.</p>
+			<h2 class="text-2xl font-semibold tracking-tight">다시 오신 것을 환영합니다!</h2>
+			<p class="text-muted-foreground">이번 달의 작업 목록입니다.</p>
 		</div>
 		<div class="flex items-center gap-2">
 			<UserNav />

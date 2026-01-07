@@ -20,7 +20,7 @@
 	{/each}
 	<div class="container-wrapper">
 		<div class="container flex justify-center py-6">
-			<Button href="/blocks/sidebar" variant="outline">Browse more blocks</Button>
+			<Button href="/blocks/sidebar" variant="outline">블록 더 보기</Button>
 		</div>
 	</div>
 </div>
