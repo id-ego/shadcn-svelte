@@ -1,5 +1,6 @@
 MIT License
 
+Copyright (c) 2025 id-ego <https://github.com/id-ego>
 Copyright (c) 2023 Hunter Johnston <https://github.com/huntabyte>
 Copyright (c) 2023 CokaKoala <https://github.com/adriangonz97>
 Copyright (c) 2023 shadcn
