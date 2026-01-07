@@ -1,6 +1,6 @@
 ---
 title: Radio Group
-description: A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time.
+description: 라디오 버튼으로 알려진 체크 가능한 버튼 세트로, 한 번에 하나의 버튼만 선택할 수 있습니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/radio-group
@@ -26,7 +26,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -45,7 +45,7 @@ Install `bits-ui`:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 프로젝트에 복사하여 붙여넣으세요.
 
 </Step>
 {#if viewerData}
@@ -56,7 +56,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte showLineNumbers
 <script lang="ts">

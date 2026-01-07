@@ -1,6 +1,6 @@
 ---
 title: Toggle Group
-description: A set of two-state buttons that can be toggled on or off.
+description: 켜거나 끌 수 있는 두 가지 상태 버튼 세트입니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/toggle-group
@@ -26,7 +26,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -45,7 +45,7 @@ Install `bits-ui`:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 복사하여 프로젝트에 붙여넣으세요.
 
 </Step>
 {#if viewerData}
@@ -56,7 +56,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte
 <script lang="ts">
@@ -72,7 +72,7 @@ Copy and paste the following code into your project.
 </ToggleGroup.Root>
 ```
 
-## Examples
+## 예제
 
 ### Outline
 
@@ -114,9 +114,9 @@ Copy and paste the following code into your project.
 
 </ComponentPreview>
 
-### Spacing
+### 간격
 
-Use `spacing={2}` to add spacing between toggle group items.
+토글 그룹 아이템 사이에 간격을 추가하려면 `spacing={2}`를 사용하세요.
 
 <ComponentPreview name="toggle-group-spacing">
 

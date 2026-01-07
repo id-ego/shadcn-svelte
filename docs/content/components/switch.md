@@ -1,6 +1,6 @@
 ---
 title: Switch
-description: A control that allows the user to toggle between checked and not checked.
+description: 사용자가 체크됨과 체크 안 됨 사이를 토글할 수 있는 컨트롤입니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/switch
@@ -26,7 +26,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -37,7 +37,7 @@ links:
 
 <Step>
 
-Install `bits-ui`:
+`bits-ui`를 설치하세요:
 
 </Step>
 
@@ -45,7 +45,7 @@ Install `bits-ui`:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 복사하여 프로젝트에 붙여넣으세요.
 
 </Step>
 {#if viewerData}
@@ -56,7 +56,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte
 <script lang="ts">

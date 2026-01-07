@@ -1,13 +1,13 @@
 ---
 title: JavaScript
-description: How to use shadcn-svelte with JavaScript.
+description: shadcn-svelte를 JavaScript와 함께 사용하는 방법입니다.
 ---
 
-This project and the components are written in TypeScript. We recommend using TypeScript for your project as well.
+이 프로젝트와 컴포넌트들은 TypeScript로 작성되었습니다. 프로젝트에도 TypeScript를 사용하는 것을 권장합니다.
 
-However, we provide a JavaScript version of the components as well. The JavaScript version is _only_ available via the [CLI](/docs/cli).
+하지만 컴포넌트의 JavaScript 버전도 제공하고 있습니다. JavaScript 버전은 [CLI](/docs/cli)를 통해서_만_ 사용할 수 있습니다.
 
-To opt-out of TypeScript, you can use the `typescript` flag in your `components.json` file.
+TypeScript를 사용하지 않으려면 `components.json` 파일의 `typescript` 플래그를 사용할 수 있습니다.
 
 ```json {6} title="components.json" showLineNumbers
 {
@@ -26,7 +26,7 @@ To opt-out of TypeScript, you can use the `typescript` flag in your `components.
 }
 ```
 
-To configure import aliases, create a `jsconfig.json` file:
+import 별칭을 설정하려면 `jsconfig.json` 파일을 생성하세요:
 
 ```json {4} title="jsconfig.json" showLineNumbers
 {

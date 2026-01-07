@@ -1,6 +1,6 @@
 ---
 title: shadcn-svelte
-description: Use the shadcn-svelte CLI to add components to your project.
+description: shadcn-svelte CLI를 사용하여 프로젝트에 컴포넌트를 추가하세요.
 ---
 
 <script>
@@ -9,13 +9,13 @@ description: Use the shadcn-svelte CLI to add components to your project.
 
 ## init
 
-Use the `init` command to initialize dependencies for a new project.
+새 프로젝트의 의존성을 초기화하려면 `init` 명령을 사용하세요.
 
-The `init` command installs dependencies, adds the `cn` util, and creates CSS variables for the project.
+`init` 명령은 의존성을 설치하고, `cn` 유틸리티를 추가하며, 프로젝트에 필요한 CSS 변수를 생성합니다.
 
 <PMExecute command="shadcn-svelte@latest init" />
 
-You will be asked a few questions to configure `components.json`:
+`components.json`을 설정하기 위한 몇 가지 질문이 표시됩니다:
 
 ```txt showLineNumbers
 Which base color would you like to use? › Slate
@@ -27,7 +27,7 @@ Configure the import alias for hooks: › $lib/hooks
 Configure the import alias for ui: › $lib/components/ui
 ```
 
-**Options**
+**옵션**
 
 ```bash
 Usage: shadcn-svelte init [options]
@@ -55,11 +55,11 @@ Options:
 
 ## add
 
-Use the `add` command to add components and dependencies to your project.
+프로젝트에 컴포넌트와 의존성을 추가하려면 `add` 명령을 사용하세요.
 
 <PMExecute command="shadcn-svelte@latest add [component]" />
 
-**Options**
+**옵션**
 
 ```bash
 Usage: shadcn-svelte add [options] [components...]
@@ -84,13 +84,13 @@ Options:
 
 ## registry build
 
-Use the `registry build` command to generate the registry JSON files.
+레지스트리 JSON 파일을 생성하려면 `registry build` 명령을 사용하세요.
 
 <PMExecute command="shadcn-svelte@latest registry build [registry.json]" />
 
-This command reads the `registry.json` file and generates the registry JSON files into the `static/r` directory.
+이 명령은 `registry.json` 파일을 읽어 레지스트리 JSON 파일들을 `static/r` 디렉토리에 생성합니다.
 
-**Options**
+**옵션**
 
 ```bash
 Usage: shadcn-svelte registry build [options] [registry]
@@ -108,11 +108,11 @@ Options:
 
 ---
 
-## Outgoing Requests
+## 외부 요청
 
-### Proxy
+### 프록시
 
-This enables the use of a proxy when sending out requests to fetch from the `shadcn-svelte` registry. If the `HTTP_PROXY` or `http_proxy` environment variables have been set, the request library underneath will respect the proxy settings.
+`shadcn-svelte` 레지스트리에서 가져올 때 프록시를 사용할 수 있습니다. `HTTP_PROXY` 또는 `http_proxy` 환경 변수가 설정되어 있으면, 하위 요청 라이브러리가 프록시 설정을 준수합니다.
 
 ```bash
 HTTP_PROXY="<proxy-url>" npx shadcn-svelte@latest init

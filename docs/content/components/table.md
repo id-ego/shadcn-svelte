@@ -1,6 +1,6 @@
 ---
 title: Table
-description: A responsive table component.
+description: 반응형 테이블 컴포넌트입니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/table
@@ -24,7 +24,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -35,7 +35,7 @@ links:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 복사하여 프로젝트에 붙여넣으세요.
 
 </Step>
 {#if viewerData}
@@ -46,7 +46,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte showLineNumbers
 <script lang="ts">
@@ -76,10 +76,10 @@ Copy and paste the following code into your project.
 </Table.Root>
 ```
 
-## Data Table
+## 데이터 테이블
 
-You can use the `<Table />` component to build more complex data tables. Combine it with [@tanstack/table](https://tanstack.com/table) to create tables with sorting, filtering and pagination.
+`<Table />` 컴포넌트를 사용하여 더 복잡한 데이터 테이블을 만들 수 있습니다. [@tanstack/table](https://tanstack.com/table)과 결합하면 정렬, 필터링, 페이지네이션 기능이 있는 테이블을 만들 수 있습니다.
 
-See the [Data Table](/docs/components/data-table) documentation for more information.
+자세한 내용은 [데이터 테이블](/docs/components/data-table) 문서를 참조하세요.
 
-You can also see an example of a data table in the [Tasks](/examples/tasks) demo.
+[Tasks](/examples/tasks) 데모에서도 데이터 테이블 예제를 볼 수 있습니다.

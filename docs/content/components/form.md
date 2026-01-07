@@ -1,6 +1,6 @@
 ---
 title: Formsnap
-description: Building forms with Formsnap, Superforms, & Zod.
+description: Formsnap, Superforms, Zod를 사용한 폼 구축
 links:
   doc: https://formsnap.dev
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/form
@@ -15,37 +15,37 @@ links:
 	import InfoIcon from "@lucide/svelte/icons/info"
 </script>
 
-<Callout title="We are not actively developing this component anymore." icon={InfoIcon}>
+<Callout title="이 컴포넌트는 더 이상 적극적으로 개발하지 않습니다." icon={InfoIcon}>
 
-The Form component is an abstraction over the `formsnap` & `sveltekit-superforms` libraries. Going forward, we recommend using the [`<Field />`](/docs/components/field) component to build forms.
+Form 컴포넌트는 `formsnap`과 `sveltekit-superforms` 라이브러리의 추상화입니다. 앞으로는 폼을 구축하기 위해 [`<Field />`](/docs/components/field) 컴포넌트를 사용하는 것을 권장합니다.
 
 </Callout>
 
-Forms are tricky. They are one of the most common things you'll build in a web application, but also one of the most complex.
+폼은 까다롭습니다. 웹 애플리케이션에서 가장 흔하게 만들게 되는 것이지만, 동시에 가장 복잡한 것 중 하나입니다.
 
-Well-designed HTML forms are:
+잘 설계된 HTML 폼은:
 
-- Well-structured and semantically correct.
-- Easy to use and navigate (keyboard).
-- Accessible with ARIA attributes and proper labels.
-- Has support for client and server side validation.
-- Well-styled and consistent with the rest of the application.
+- 잘 구조화되어 있고 의미론적으로 올바릅니다.
+- 사용하기 쉽고 탐색이 용이합니다 (키보드).
+- ARIA 속성과 적절한 라벨로 접근성을 갖추고 있습니다.
+- 클라이언트 및 서버 측 유효성 검사를 지원합니다.
+- 애플리케이션의 나머지 부분과 일관성 있게 스타일링되어 있습니다.
 
-In this guide, we will take a look at building forms with [formsnap](https://formsnap.dev), [sveltekit-superforms](https://superforms.rocks) and [zod](https://zod.dev).
+이 가이드에서는 [formsnap](https://formsnap.dev), [sveltekit-superforms](https://superforms.rocks), [zod](https://zod.dev)를 사용하여 폼을 구축하는 방법을 살펴보겠습니다.
 
-## Features
+## 기능
 
-The `Form` components offered by `shadcn-svelte` are wrappers around `formsnap` & `sveltekit-superforms` which provide a few things:
+`shadcn-svelte`에서 제공하는 `Form` 컴포넌트는 `formsnap`과 `sveltekit-superforms`를 감싸고 있으며 다음과 같은 기능을 제공합니다:
 
-- Composable components for building forms.
-- Form field components for scoping form state.
-- Form validation using [Zod](https://zod.dev) or any other validation library supported by [Superforms](https://superforms.rocks).
-- Applies the correct `aria` attributes to form fields based on states.
-- Enables you to easily use various components like [Select](/docs/components/select), [RadioGroup](/docs/components/radio-group), [Switch](/docs/components/switch), [Checkbox](/docs/components/checkbox) and other form components with forms.
+- 폼을 구축하기 위한 조합 가능한 컴포넌트.
+- 폼 상태의 범위를 지정하기 위한 폼 필드 컴포넌트.
+- [Zod](https://zod.dev) 또는 [Superforms](https://superforms.rocks)에서 지원하는 다른 유효성 검사 라이브러리를 사용한 폼 유효성 검사.
+- 상태에 따라 폼 필드에 올바른 `aria` 속성을 적용합니다.
+- [Select](/docs/components/select), [RadioGroup](/docs/components/radio-group), [Switch](/docs/components/switch), [Checkbox](/docs/components/checkbox) 및 기타 폼 컴포넌트를 폼과 함께 쉽게 사용할 수 있습니다.
 
-If you aren't familiar with [Superforms](https://superforms.rocks) & [Formsnap](https://formsnap.dev), you should check out their documentation first, as this guide assumes you have a basic understanding of how they work together.
+[Superforms](https://superforms.rocks)와 [Formsnap](https://formsnap.dev)에 익숙하지 않다면, 먼저 문서를 확인하는 것이 좋습니다. 이 가이드는 이들이 함께 작동하는 방식에 대한 기본적인 이해를 전제로 합니다.
 
-## Anatomy
+## 구조
 
 ```svelte showLineNumbers
 <form>
@@ -60,7 +60,7 @@ If you aren't familiar with [Superforms](https://superforms.rocks) & [Formsnap](
 </form>
 ```
 
-## Example
+## 예제
 
 ```svelte showLineNumbers
 <form method="POST" use:enhance>
@@ -77,17 +77,17 @@ If you aren't familiar with [Superforms](https://superforms.rocks) & [Formsnap](
 </form>
 ```
 
-## Installation
+## 설치
 
 <PMAddComp name="form" />
 
-## Usage
+## 사용법
 
 <Steps>
 
-### Create a form schema
+### 폼 스키마 생성
 
-Define the shape of your form using a Zod schema. You can read more about using Zod in the [Zod documentation](https://zod.dev). We're going to define it in a file called `schema.ts` in the same directory as our page component, but you can put it anywhere you like.
+Zod 스키마를 사용하여 폼의 구조를 정의합니다. Zod 사용에 대한 자세한 내용은 [Zod 문서](https://zod.dev)에서 확인할 수 있습니다. 페이지 컴포넌트와 같은 디렉토리에 `schema.ts`라는 파일로 정의할 것이지만, 원하는 곳 어디에든 둘 수 있습니다.
 
 ```ts title="src/routes/settings/schema.ts" showLineNumbers
 import { z } from "zod";
@@ -99,7 +99,7 @@ export const formSchema = z.object({
 export type FormSchema = typeof formSchema;
 ```
 
-### Setup the load function
+### load 함수 설정
 
 ```ts title="src/routes/settings/+page.server.ts" showLineNumbers
 import type { PageServerLoad } from "./$types.js";
@@ -114,9 +114,9 @@ export const load: PageServerLoad = async () => {
 };
 ```
 
-### Create form component
+### 폼 컴포넌트 생성
 
-For this example, we'll be passing the `form` returned from the load function as a prop to this component. To ensure it's typed properly, we'll use the `SuperValidated` type from `sveltekit-superforms`, and pass in the type of our form schema.
+이 예제에서는 load 함수에서 반환된 `form`을 이 컴포넌트에 prop으로 전달합니다. 올바르게 타입이 지정되도록 `sveltekit-superforms`의 `SuperValidated` 타입을 사용하고 폼 스키마의 타입을 전달합니다.
 
 ```svelte title="src/routes/settings/settings-form.svelte" showLineNumbers
 <script lang="ts">
@@ -155,11 +155,11 @@ For this example, we'll be passing the `form` returned from the load function as
 </form>
 ```
 
-The `name`, `id`, and all accessibility attributes are applied to the input by spreading the `attrs` object from the `Form.Control` component. The `Form.Label` will automatically be associated with the input using the `for` attribute, so you don't have to worry about that.
+`Form.Control` 컴포넌트의 `attrs` 객체를 스프레드하여 입력에 `name`, `id` 및 모든 접근성 속성이 적용됩니다. `Form.Label`은 `for` 속성을 사용하여 자동으로 입력과 연결되므로 걱정할 필요가 없습니다.
 
-### Use the component
+### 컴포넌트 사용
 
-We'll pass the `form` from the data returned from the load function to the form component we created above.
+load 함수에서 반환된 데이터의 `form`을 위에서 만든 폼 컴포넌트에 전달합니다.
 
 ```svelte title="src/routes/settings/+page.svelte" showLineNumbers
 <script lang="ts">
@@ -171,7 +171,7 @@ We'll pass the `form` from the data returned from the load function to the form 
 <SettingsForm {data} />
 ```
 
-### Create an Action
+### Action 생성
 
 ```ts title="src/routes/settings/+page.server.ts" showLineNumbers {1-2,13-25}
 import type { PageServerLoad, Actions } from "./$types.js";
@@ -201,9 +201,9 @@ export const actions: Actions = {
 };
 ```
 
-### Done
+### 완료
 
-That's it. You now have a fully accessible form that is type-safe and has client & server side validation.
+이제 완료되었습니다. 이제 타입 안전하고 클라이언트 및 서버 측 유효성 검사를 갖춘 완전히 접근 가능한 폼이 만들어졌습니다.
 
 <ComponentPreview name="form-demo">
 
@@ -213,13 +213,13 @@ That's it. You now have a fully accessible form that is type-safe and has client
 
 </Steps>
 
-## Next Steps
+## 다음 단계
 
-Be sure to check out the [Formsnap](https://formsnap.dev) and [Superforms](https://superforms.rocks) documentation for more information on how to use them.
+사용 방법에 대한 자세한 내용은 [Formsnap](https://formsnap.dev)과 [Superforms](https://superforms.rocks) 문서를 확인하세요.
 
-## Examples
+## 예제
 
-See the following links for more examples on how to use the other `Form` components:
+다른 `Form` 컴포넌트를 사용하는 방법에 대한 더 많은 예제는 다음 링크를 참조하세요:
 
 - [Checkbox](/docs/components/checkbox#form)
 - [Date Picker](/docs/components/date-picker#form)

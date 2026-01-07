@@ -1,6 +1,6 @@
 ---
 title: Carousel
-description: A carousel with motion and swipe built using Embla.
+description: Embla를 사용하여 제작된 모션과 스와이프 기능이 있는 캐러셀입니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/carousel
@@ -26,11 +26,11 @@ links:
 
 </ComponentPreview>
 
-## About
+## 소개
 
-The carousel component is built using the [Embla Carousel](https://www.embla-carousel.com/get-started/svelte/) library.
+캐러셀 컴포넌트는 [Embla Carousel](https://www.embla-carousel.com/get-started/svelte/) 라이브러리를 사용하여 제작되었습니다.
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -41,7 +41,7 @@ The carousel component is built using the [Embla Carousel](https://www.embla-car
 
 <Step>
 
-Install `embla-carousel-svelte`:
+`embla-carousel-svelte`를 설치합니다:
 
 </Step>
 
@@ -49,7 +49,7 @@ Install `embla-carousel-svelte`:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 복사하여 프로젝트에 붙여넣습니다.
 
 </Step>
 {#if viewerData}
@@ -60,7 +60,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte showLineNumbers
 <script lang="ts">
@@ -80,11 +80,11 @@ Copy and paste the following code into your project.
 </Carousel.Root>
 ```
 
-## Examples
+## 예제
 
-### Sizes
+### 크기
 
-To set the size of the items, you can use the `basis` utility class on the `<Carousel.Item />`.
+항목의 크기를 설정하려면 `<Carousel.Item />`에 `basis` 유틸리티 클래스를 사용할 수 있습니다.
 
 <ComponentPreview name="carousel-size">
 
@@ -114,9 +114,9 @@ To set the size of the items, you can use the `basis` utility class on the `<Car
 </Carousel.Root>
 ```
 
-### Spacing
+### 간격
 
-To set the spacing between the items, we use a `ps-[VALUE]` utility on the `<Carousel.Item />` and a negative `-ms-[VALUE]` on the `<Carousel.Content />`.
+항목 간의 간격을 설정하려면 `<Carousel.Item />`에 `ps-[VALUE]` 유틸리티를 사용하고 `<Carousel.Content />`에 음수 `-ms-[VALUE]`를 사용합니다.
 
 <ComponentPreview name="carousel-spacing">
 
@@ -144,9 +144,9 @@ To set the spacing between the items, we use a `ps-[VALUE]` utility on the `<Car
 </Carousel.Root>
 ```
 
-### Orientation
+### 방향
 
-Use the `orientation` prop to set the orientation of the carousel.
+캐러셀의 방향을 설정하려면 `orientation` prop을 사용합니다.
 
 <ComponentPreview name="carousel-orientation">
 
@@ -164,9 +164,9 @@ Use the `orientation` prop to set the orientation of the carousel.
 </Carousel.Root>
 ```
 
-## Options
+## 옵션
 
-You can pass options to the carousel using the `opts` prop. See the [Embla Carousel docs](https://www.embla-carousel.com/api/options/) for more information.
+`opts` prop을 사용하여 캐러셀에 옵션을 전달할 수 있습니다. 자세한 내용은 [Embla Carousel 문서](https://www.embla-carousel.com/api/options/)를 참고하세요.
 
 ```svelte showLineNumbers {2-5}
 <Carousel.Root
@@ -185,7 +185,7 @@ You can pass options to the carousel using the `opts` prop. See the [Embla Carou
 
 ## API
 
-Use reactive state and the `setApi` callback to get an instance of the carousel API.
+리액티브 상태와 `setApi` 콜백을 사용하여 캐러셀 API의 인스턴스를 가져올 수 있습니다.
 
 <ComponentPreview name="carousel-api">
 
@@ -221,9 +221,9 @@ Use reactive state and the `setApi` callback to get an instance of the carousel 
 </Carousel.Root>
 ```
 
-## Events
+## 이벤트
 
-You can listen to events using the api instance from `bind:api`.
+`bind:api`에서 가져온 api 인스턴스를 사용하여 이벤트를 수신할 수 있습니다.
 
 ```svelte showLineNumbers {2,5,7-13,16}
 <script lang="ts">
@@ -250,9 +250,9 @@ You can listen to events using the api instance from `bind:api`.
 </Carousel.Root>
 ```
 
-## Plugins
+## 플러그인
 
-You can use the `plugins` prop to add plugins to the carousel.
+`plugins` prop을 사용하여 캐러셀에 플러그인을 추가할 수 있습니다.
 
 ```svelte showLineNumbers {2,7-11}
 <script lang="ts">
@@ -277,4 +277,4 @@ You can use the `plugins` prop to add plugins to the carousel.
 
 </ComponentPreview>
 
-See the [Embla Carousel docs](https://www.embla-carousel.com/api/plugins/) for more information on using plugins.
+플러그인 사용에 대한 자세한 내용은 [Embla Carousel 문서](https://www.embla-carousel.com/api/plugins/)를 참고하세요.

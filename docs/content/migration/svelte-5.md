@@ -1,6 +1,6 @@
 ---
 title: Svelte 5
-description: How to migrate from Svelte 4 and Tailwind 3 to Svelte 5.
+description: Svelte 4와 Tailwind 3에서 Svelte 5로 마이그레이션하는 방법입니다.
 ---
 
 <script>
@@ -13,30 +13,30 @@ description: How to migrate from Svelte 4 and Tailwind 3 to Svelte 5.
 
 <Callout>
 
-**Note**: With Svelte 5 comes significant changes to this project, along with the headless UI library used [bits-ui](https://bits-ui.com). This guide is specifically focused on migrating the shadcn-svelte portions and does not cover the migration of `bits-ui`. See [Bits UI's migration guide](https://bits-ui.com/docs/migration-guide) for more information.
+**참고**: Svelte 5와 함께 이 프로젝트와 헤드리스 UI 라이브러리인 [bits-ui](https://bits-ui.com)에 중요한 변경 사항이 있습니다. 이 가이드는 shadcn-svelte 부분의 마이그레이션에만 초점을 맞추고 있으며 `bits-ui`의 마이그레이션은 다루지 않습니다. 자세한 내용은 [Bits UI 마이그레이션 가이드](https://bits-ui.com/docs/migration-guide)를 참조하세요.
 
 </Callout>
 
-## Svelte 4 to Svelte 5
+## Svelte 4에서 Svelte 5로
 
-This first guide will take your project from Svelte 4 with Tailwind 3 to Svelte 5 and Tailwind 3.
+이 가이드는 Svelte 4와 Tailwind 3 프로젝트를 Svelte 5와 Tailwind 3로 마이그레이션합니다.
 
-Once you've completed this guide and you're comfortable everything is working, you can move on to the next guide to migrate to Tailwind 4.
+이 가이드를 완료하고 모든 것이 정상적으로 작동하는 것을 확인하면, 다음 가이드로 넘어가 Tailwind 4로 마이그레이션할 수 있습니다.
 
-## Prerequisites
+## 사전 준비사항
 
-1. Ensure you have read up on the changes from Svelte 4 to Svelte 5. Svelte provides a comprehensive guide for this on their [website](https://svelte.dev/docs/svelte/v5-migration-guide).
-2. Commit any pending changes to your repository.
-3. Determine which of your components have custom behavior/styles so that you can reimplement those after updating.
-4. Use [`sv-migrate`](https://svelte.dev/docs/cli/sv-migrate) to help you migrate your project to Svelte 5.
+1. Svelte 4에서 Svelte 5로의 변경 사항을 읽어보세요. Svelte는 [웹사이트](https://svelte.dev/docs/svelte/v5-migration-guide)에서 포괄적인 가이드를 제공합니다.
+2. 저장소의 보류 중인 변경 사항을 커밋하세요.
+3. 어떤 컴포넌트에 사용자 정의 동작/스타일이 있는지 확인하여 업데이트 후 다시 구현할 수 있도록 하세요.
+4. [`sv-migrate`](https://svelte.dev/docs/cli/sv-migrate)를 사용하여 프로젝트를 Svelte 5로 마이그레이션하세요.
 
-## Update Configs
+## 설정 업데이트
 
-The `components.json`, `utils`, and the global CSS file have changed for Svelte 5.
+Svelte 5에서는 `components.json`, `utils`, 그리고 전역 CSS 파일이 변경되었습니다.
 
-### Update `components.json`
+### `components.json` 업데이트
 
-Add the `registry` to the root object, and add `hooks`, `ui`, and `lib` keys under `aliases`.
+루트 객체에 `registry`를 추가하고, `aliases` 아래에 `hooks`, `ui`, `lib` 키를 추가하세요.
 
 ```diff
 {
@@ -58,13 +58,13 @@ Add the `registry` to the root object, and add `hooks`, `ui`, and `lib` keys und
 }
 ```
 
-### Update `tailwind.config.js`
+### `tailwind.config.js` 업데이트
 
-Add `tailwindcss-animate`.
+`tailwindcss-animate`를 추가하세요.
 
 <PMInstall command="tailwindcss-animate" />
 
-Add the `tailwindcss-animate` plugin, sidebar colors, and animations config.
+`tailwindcss-animate` 플러그인, 사이드바 색상, 애니메이션 설정을 추가하세요.
 
 ```ts title="tailwind.config.js"
 import type { Config } from "tailwindcss";
@@ -125,15 +125,15 @@ const config: Config = {
 export default config;
 ```
 
-### Update `utils.ts`
+### `utils.ts` 업데이트
 
 <Callout>
 
-**Note**: You may not want to do this step until after you've updated your components, as some components may rely on the now removed `flyAndScale` function.
+**참고**: 일부 컴포넌트가 이제 제거된 `flyAndScale` 함수에 의존할 수 있으므로, 컴포넌트를 업데이트한 후에 이 단계를 수행하는 것이 좋습니다.
 
 </Callout>
 
-`utils.ts` now only exports the `cn` function and a few utility types.
+`utils.ts`는 이제 `cn` 함수와 몇 가지 유틸리티 타입만 내보냅니다.
 
 ```ts title="src/lib/utils.ts"
 import { type ClassValue, clsx } from "clsx";
@@ -155,11 +155,11 @@ export type WithElementRef<T, U extends HTMLElement = HTMLElement> = T & {
 };
 ```
 
-## Upgrade Components
+## 컴포넌트 업그레이드
 
-### Alias Dependencies (optional)
+### 의존성 별칭 지정 (선택 사항)
 
-If you plan to slowly migrate components, it's recommended to alias the old versions of the major dependencies, like `bits-ui`, in your `package.json` file so that you can use both versions of the library in your project while you migrate.
+컴포넌트를 천천히 마이그레이션할 계획이라면, `package.json` 파일에서 `bits-ui`와 같은 주요 의존성의 이전 버전에 별칭을 지정하여 마이그레이션하는 동안 프로젝트에서 두 버전의 라이브러리를 모두 사용할 수 있도록 하는 것이 좋습니다.
 
 ```diff title="package.json"
 {
@@ -170,7 +170,7 @@ If you plan to slowly migrate components, it's recommended to alias the old vers
 }
 ```
 
-You'll then want to replace all the imports used in your project to `bits-ui-old`.
+그런 다음 프로젝트에서 사용되는 모든 import를 `bits-ui-old`로 교체해야 합니다.
 
 ```diff title="src/lib/components/ui/dialog-content.svelte"
 <script lang="ts">
@@ -179,11 +179,11 @@ You'll then want to replace all the imports used in your project to `bits-ui-old
 </script>
 ```
 
-You can do the same for any of the other dependencies that you're using in your project.
+프로젝트에서 사용하는 다른 의존성에 대해서도 동일한 작업을 수행할 수 있습니다.
 
-### Update Dependencies
+### 의존성 업데이트
 
-The following dependencies have been updated to support Svelte 5:
+다음 의존성들이 Svelte 5를 지원하도록 업데이트되었습니다:
 
 - `bits-ui` - `^1.0.0`
 - `svelte-sonner` - `^1.0.0`
@@ -196,53 +196,53 @@ The following dependencies have been updated to support Svelte 5:
 - `svelte-radix` - icons deprecated in favor of `@lucide/svelte`
 - `lucide-svelte` - replaced with `@lucide/svelte`
 
-You can update your dependencies by running the following command:
+다음 명령을 실행하여 의존성을 업데이트할 수 있습니다:
 
 <PMInstall command="bits-ui@latest svelte-sonner@latest @lucide/svelte@latest paneforge@next vaul-svelte@next mode-watcher@latest -D" />
 
-### Start Migrating Components
+### 컴포넌트 마이그레이션 시작
 
-Now you're ready to begin updating your components to their new versions. The CLI doesn't actually _update_ your components, it simply replaces them with the new versions, so be sure to commit your changes before running the CLI.
+이제 컴포넌트를 새 버전으로 업데이트할 준비가 되었습니다. CLI는 실제로 컴포넌트를 업데이트하지 않고 새 버전으로 교체하기만 하므로, CLI를 실행하기 전에 변경 사항을 커밋해야 합니다.
 
 ```bash
 git add .
 git commit -m 'before migration'
 ```
 
-Now you can run the `add` command to start migrating your components.
+이제 `add` 명령을 실행하여 컴포넌트 마이그레이션을 시작할 수 있습니다.
 
 <PMExecute command="shadcn-svelte@latest add dialog --overwrite" />
 
-Review the diff to see what was updated and make any necessary adjustments. Rinse and repeat for each component you want to migrate.
+diff를 검토하여 업데이트된 내용을 확인하고 필요한 조정을 수행하세요. 마이그레이션하려는 각 컴포넌트에 대해 이 과정을 반복하세요.
 
-## Remove Unused Dependencies
+## 사용하지 않는 의존성 제거
 
-Once you've updated all your components, you can remove the old dependencies from your `package.json` file.
+모든 컴포넌트를 업데이트한 후에는 `package.json` 파일에서 이전 의존성을 제거할 수 있습니다.
 
 ### cmdk-sv
 
-`cmdk-sv` has been replaced with Bits UI's `Command` component.
+`cmdk-sv`는 Bits UI의 `Command` 컴포넌트로 대체되었습니다.
 
 <PMRemove command="cmdk-sv" />
 
 ### svelte-headless-table
 
-`svelte-headless-table` has been replaced with `@tanstack/table-core`.
+`svelte-headless-table`은 `@tanstack/table-core`로 대체되었습니다.
 
 <PMRemove command="svelte-headless-table" />
 
 ### svelte-radix
 
-`svelte-radix` has been replaced with `@lucide/svelte`.
+`svelte-radix`는 `@lucide/svelte`로 대체되었습니다.
 
 <PMRemove command="svelte-radix" />
 
 ### lucide-svelte
 
-`lucide-svelte` has been replaced with `@lucide/svelte`.
+`lucide-svelte`는 `@lucide/svelte`로 대체되었습니다.
 
 <PMRemove command="lucide-svelte" />
 
-## Next Steps
+## 다음 단계
 
-Once you've completed this guide and you're comfortable everything is working as expected, you can move on to the [Tailwind 4 Guide](/docs/migration/tailwind-v4).
+이 가이드를 완료하고 모든 것이 예상대로 작동하는 것을 확인했다면, [Tailwind 4 가이드](/docs/migration/tailwind-v4)로 넘어갈 수 있습니다.

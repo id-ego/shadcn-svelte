@@ -1,6 +1,6 @@
 ---
 title: Vite
-description: How to setup shadcn-svelte in a Vite project.
+description: Vite 프로젝트에서 shadcn-svelte를 설정하는 방법입니다.
 ---
 
 <script>
@@ -13,17 +13,16 @@ description: How to setup shadcn-svelte in a Vite project.
 
 <Steps>
 
-### Add TailwindCSS
+### TailwindCSS 추가
 
-Use the Svelte CLI to add Tailwind CSS to your project.
+Svelte CLI를 사용하여 프로젝트에 Tailwind CSS를 추가합니다.
 
 <PMExecute command="sv add tailwindcss" />
 
-### Edit tsconfig.json file
+### tsconfig.json 파일 수정
 
-The current version of Vite splits TypeScript configuration into three files, two of which need to be edited.
-Add the `baseUrl` and `paths` properties to the `compilerOptions` section of the `tsconfig.json` and
-`tsconfig.app.json` files:
+현재 버전의 Vite는 TypeScript 설정을 세 개의 파일로 분리하며, 그 중 두 개를 수정해야 합니다.
+`tsconfig.json`과 `tsconfig.app.json` 파일의 `compilerOptions` 섹션에 `baseUrl`과 `paths` 속성을 추가합니다:
 
 ```json title="tsconfig.json" {7-13} showLineNumbers
 {
@@ -42,9 +41,9 @@ Add the `baseUrl` and `paths` properties to the `compilerOptions` section of the
 }
 ```
 
-### Edit tsconfig.app.json file
+### tsconfig.app.json 파일 수정
 
-Add the following code to the `tsconfig.app.json` file to resolve paths, for your IDE:
+IDE에서 경로를 해석할 수 있도록 `tsconfig.app.json` 파일에 다음 코드를 추가합니다:
 
 ```json title="tsconfig.app.json" {4-8} showLineNumbers
 {
@@ -59,9 +58,9 @@ Add the following code to the `tsconfig.app.json` file to resolve paths, for you
 }
 ```
 
-### Update vite.config.ts
+### vite.config.ts 업데이트
 
-Add the following code to the vite.config.ts so your app can resolve paths without error:
+앱이 경로를 오류 없이 해석할 수 있도록 vite.config.ts에 다음 코드를 추가합니다:
 
 ```ts title="vite.config.ts" {1, 5-9} showLineNumbers
 import path from "path";
@@ -76,13 +75,13 @@ export default defineConfig({
 });
 ```
 
-### Run the CLI
+### CLI 실행
 
 <PMExecute command="shadcn-svelte@latest init" />
 
-### Configure components.json
+### components.json 설정
 
-You will be asked a few questions to configure `components.json`:
+`components.json`을 설정하기 위해 몇 가지 질문을 받게 됩니다:
 
 ```txt showLineNumbers
 Which base color would you like to use? › Slate
@@ -94,13 +93,13 @@ Configure the import alias for hooks: › $lib/hooks
 Configure the import alias for ui: › $lib/components/ui
 ```
 
-### That's it
+### 완료
 
-You can now start adding components to your project.
+이제 프로젝트에 컴포넌트를 추가할 수 있습니다.
 
 <PMAddComp name="button" />
 
-The command above will add the `Button` component to your project. You can then import it like this:
+위 명령어는 프로젝트에 `Button` 컴포넌트를 추가합니다. 다음과 같이 import할 수 있습니다:
 
 ```svelte {2,5} showLineNumbers
 <script lang="ts">

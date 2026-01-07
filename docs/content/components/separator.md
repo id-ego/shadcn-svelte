@@ -1,6 +1,6 @@
 ---
 title: Separator
-description: Visually or semantically separates content.
+description: 콘텐츠를 시각적 또는 의미론적으로 구분합니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/separator
@@ -26,7 +26,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -37,7 +37,7 @@ links:
 
 <Step>
 
-Install `bits-ui`:
+`bits-ui` 설치:
 
 </Step>
 
@@ -45,7 +45,7 @@ Install `bits-ui`:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 프로젝트에 복사하여 붙여넣으세요.
 
 </Step>
 {#if viewerData}
@@ -56,7 +56,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte showLineNumbers
 <script lang="ts">

@@ -1,6 +1,6 @@
 ---
 title: Chart
-description: Beautiful charts. Built using LayerChart. Copy and paste into your apps.
+description: 아름다운 차트. LayerChart로 만들어졌습니다. 앱에 복사하여 붙여넣으세요.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/chart
@@ -23,9 +23,9 @@ links:
 
 <Callout class="mt-0 mb-6">
 
-**Important:** LayerChart v2 is still in pre-release and is actively evolving. Only use if you're comfortable with potential breaking changes before stable v2.
+**중요:** LayerChart v2는 아직 프리릴리스 단계이며 활발하게 개발 중입니다. 안정 버전 v2 이전의 잠재적인 변경 사항이 괜찮다면 사용하세요.
 
-Your feedback will be invaluable in shaping the release and features. Current development status can be tracked [here](https://github.com/techniq/layerchart/pull/449).
+여러분의 피드백은 릴리스와 기능을 형성하는 데 매우 중요합니다. 현재 개발 상황은 [여기](https://github.com/techniq/layerchart/pull/449)에서 확인할 수 있습니다.
 
 </Callout>
 
@@ -35,17 +35,17 @@ Your feedback will be invaluable in shaping the release and features. Current de
 
 </ComponentPreview>
 
-Introducing **Charts**. A collection of chart components that you can copy and paste into your apps.
+**차트**를 소개합니다. 앱에 복사하여 붙여넣을 수 있는 차트 컴포넌트 모음입니다.
 
-Charts are designed to look great out of the box. They work well with other components are are fully customizable to fit your project.
+차트는 기본적으로 멋지게 보이도록 설계되었습니다. 다른 컴포넌트와 잘 작동하며 프로젝트에 맞게 완전히 커스터마이징할 수 있습니다.
 
-[Browse the Charts Library](/charts)
+[차트 라이브러리 둘러보기](/charts)
 
-## Component
+## 컴포넌트
 
-We use [LayerChart](https://next.layerchart.com) under the hood.
+내부적으로 [LayerChart](https://next.layerchart.com)를 사용합니다.
 
-We designed the `Chart` component with composition in mind. **You build your charts using LayerChart components and only bring in custom components, such as `ChartTooltip`, when and where you need it**
+`Chart` 컴포넌트는 조합을 염두에 두고 설계되었습니다. **LayerChart 컴포넌트를 사용하여 차트를 구축하고, `ChartTooltip`과 같은 커스텀 컴포넌트는 필요할 때만 가져옵니다**
 
 ```svelte showLineNumbers /Chart.Container/ /Chart.Tooltip/
 <script lang="ts">
@@ -66,11 +66,11 @@ We designed the `Chart` component with composition in mind. **You build your cha
 </Chart.Container>
 ```
 
-We do not wrap LayerChart. This means you're not locked into an abstraction. When a new LayerChart version is released, you can follow the official upgrade path to upgrade your charts.
+LayerChart를 래핑하지 않습니다. 이는 추상화에 갇히지 않는다는 의미입니다. 새로운 LayerChart 버전이 릴리스되면 공식 업그레이드 경로를 따라 차트를 업그레이드할 수 있습니다.
 
-**The components are yours**.
+**컴포넌트는 여러분의 것입니다**.
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -81,7 +81,7 @@ We do not wrap LayerChart. This means you're not locked into an abstraction. Whe
 
 <Step>
 
-Install `layerchart`:
+`layerchart` 설치:
 
 </Step>
 
@@ -89,7 +89,7 @@ Install `layerchart`:
 
 <Step>
 
-Add the following colors to your CSS file
+CSS 파일에 다음 색상을 추가하세요
 
 </Step>
 
@@ -121,7 +121,7 @@ Add the following colors to your CSS file
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 프로젝트에 복사하여 붙여넣으세요.
 
 </Step>
 
@@ -129,19 +129,19 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Your First Chart
+## 첫 번째 차트
 
-Let's build your first chart. We'll build a bar chart with an axis, grid, tooltip, and legend.
+첫 번째 차트를 만들어 봅시다. 축, 그리드, 툴팁, 범례가 있는 막대 차트를 만들 것입니다.
 
 <Steps>
 
-### Start by defining your data
+### 데이터 정의부터 시작하기
 
-The following data represents the number of desktop and mobile users for each month.
+다음 데이터는 각 월의 데스크톱 및 모바일 사용자 수를 나타냅니다.
 
 <Callout class="mt-4">
 
-**Note:** Your data can be in any shape. You are not limited to the shape of the data below. Use the `dataKey` prop to map your data to the chart.
+**참고:** 데이터는 어떤 형태든 가능합니다. 아래 데이터의 형태에 제한되지 않습니다. `dataKey` prop을 사용하여 데이터를 차트에 매핑하세요.
 
 </Callout>
 
@@ -158,9 +158,9 @@ The following data represents the number of desktop and mobile users for each mo
 </script>
 ```
 
-### Define your chart config
+### 차트 설정 정의하기
 
-The chart config holds configuration for the chart. This is where you place human-readable strings, such as labels, icons, and color tokens for theming.
+차트 설정은 차트의 구성을 담고 있습니다. 라벨, 아이콘, 테마용 색상 토큰과 같은 사람이 읽을 수 있는 문자열을 여기에 배치합니다.
 
 ```svelte title="lib/components/example-chart.svelte" showLineNumbers
 <script lang="ts">
@@ -179,11 +179,11 @@ The chart config holds configuration for the chart. This is where you place huma
 </script>
 ```
 
-### Build your chart
+### 차트 구축하기
 
-You can now build your chart using LayerChart components. We're using the `BarChart` component in this example, which is one of LayerChart's "Simplified Charts".
+이제 LayerChart 컴포넌트를 사용하여 차트를 구축할 수 있습니다. 이 예제에서는 LayerChart의 "간소화된 차트" 중 하나인 `BarChart` 컴포넌트를 사용합니다.
 
-These components handle a lot of the common chart scaffolding for you, while allowing you to customize them to your liking.
+이러한 컴포넌트는 많은 공통 차트 구조를 처리하면서도 원하는 대로 커스터마이징할 수 있습니다.
 
 {#if viewerData}
 <ComponentSource item={viewerData} data-llm-ignore/>
@@ -197,17 +197,17 @@ These components handle a lot of the common chart scaffolding for you, while all
 
 </Steps>
 
-We now have a group-stacked bar chart with an x axis and a grid.
+이제 x축과 그리드가 있는 그룹 누적 막대 차트가 완성되었습니다.
 
-### Adjusting the Axis Ticks
+### 축 눈금 조정하기
 
-Our bar chart is currently displaying the full month name for each tick on the x axis. Let's shorten it to just the first three letters.
+현재 막대 차트는 x축의 각 눈금에 전체 월 이름을 표시하고 있습니다. 처음 세 글자로 줄여봅시다.
 
 <Steps>
 
-### Add a custom formatter to the x axis
+### x축에 커스텀 포매터 추가하기
 
-The `props` prop is how you can pass custom props to the various components that make up the chart. Here we're passing a custom formatter to the x axis.
+`props` prop은 차트를 구성하는 다양한 컴포넌트에 커스텀 props를 전달하는 방법입니다. 여기서는 x축에 커스텀 포매터를 전달하고 있습니다.
 
 ```svelte showLineNumbers {21-25}
 <Chart.Container config={chartConfig} class="min-h-[200px] w-full">
@@ -247,17 +247,17 @@ The `props` prop is how you can pass custom props to the various components that
 
 </Steps>
 
-### Add Tooltip
+### 툴팁 추가하기
 
-So far we've only used the `BarChart` component from LayerChart. They look great out of the box thanks to some customizations in the `chart` component.
+지금까지 LayerChart의 `BarChart` 컴포넌트만 사용했습니다. `chart` 컴포넌트의 일부 커스터마이징 덕분에 기본적으로 멋지게 보입니다.
 
-To add a tooltip, we'll use the custom `Chart.Tooltip` component from `chart`.
+툴팁을 추가하기 위해 `chart`의 커스텀 `Chart.Tooltip` 컴포넌트를 사용하겠습니다.
 
 <Steps>
 
-### Add the `Chart.Tooltip` component to the chart
+### 차트에 `Chart.Tooltip` 컴포넌트 추가하기
 
-We'll replace the `tooltip={false}` prop with the `tooltip` snippet where we'll place the `Chart.Tooltip` component.
+`tooltip={false}` prop을 `Chart.Tooltip` 컴포넌트를 배치할 `tooltip` snippet으로 교체하겠습니다.
 
 ```svelte showLineNumbers {26-28}
 <Chart.Container config={chartConfig} class="min-h-[200px] w-full">
@@ -300,13 +300,13 @@ We'll replace the `tooltip={false}` prop with the `tooltip` snippet where we'll 
 
 </Steps>
 
-### Add Legend
+### 범례 추가하기
 
 <Steps>
 
-### Set the `legend` prop to `true`
+### `legend` prop을 `true`로 설정하기
 
-The `legend` prop is used to show a legend for the chart. We are working with LayerChart to add a payload similar to the tooltip so we can more easily create a custom legend.
+`legend` prop은 차트의 범례를 표시하는 데 사용됩니다. 커스텀 범례를 더 쉽게 만들 수 있도록 툴팁과 유사한 페이로드를 추가하기 위해 LayerChart와 협력하고 있습니다.
 
 ```svelte showLineNumbers {8}
 <Chart.Container config={chartConfig} class="min-h-[200px] w-full">
@@ -350,18 +350,18 @@ The `legend` prop is used to show a legend for the chart. We are working with La
 
 </Steps>
 
-Done. You've built your first chart! What's next?
+완료되었습니다. 첫 번째 차트를 만들었습니다! 다음은 무엇일까요?
 
-- [Themes and Colors](/docs/components/chart#theming)
-- [Tooltip](/docs/components/chart#tooltip)
+- [테마와 색상](/docs/components/chart#theming)
+- [툴팁](/docs/components/chart#tooltip)
 
-## Chart Config
+## 차트 설정
 
-The chart config is where you define the labels, icons and colors for a chart.
+차트 설정은 차트의 라벨, 아이콘, 색상을 정의하는 곳입니다.
 
-It is intentionally decoupled from chart data.
+의도적으로 차트 데이터와 분리되어 있습니다.
 
-This allows you to share config and color tokens between charts. It can also works independently for cases where your data or color tokens live remotely or in a different format.
+이를 통해 차트 간에 설정과 색상 토큰을 공유할 수 있습니다. 데이터나 색상 토큰이 원격으로 존재하거나 다른 형식인 경우에도 독립적으로 작동할 수 있습니다.
 
 ```svelte
 <script lang="ts">
@@ -384,15 +384,15 @@ This allows you to share config and color tokens between charts. It can also wor
 </script>
 ```
 
-## Theming
+## 테마 설정
 
-Charts has built-in support for theming. You can use css variables (recommended) or color values in any color format, such as hex, hsl, or oklch.
+차트는 테마 설정을 기본적으로 지원합니다. CSS 변수(권장) 또는 hex, hsl, oklch와 같은 모든 색상 형식의 색상 값을 사용할 수 있습니다.
 
-### CSS Variables
+### CSS 변수
 
 <Steps>
 
-### Define your colors in your css file
+### CSS 파일에 색상 정의하기
 
 ```css {5-6,13-14} title="src/routes/layout.css" showLineNumbers
 :root {
@@ -412,7 +412,7 @@ Charts has built-in support for theming. You can use css variables (recommended)
 }
 ```
 
-### Add the color to your `chartConfig`
+### `chartConfig`에 색상 추가하기
 
 ```svelte {5,9} showLineNumbers
 <script lang="ts">
@@ -431,9 +431,9 @@ Charts has built-in support for theming. You can use css variables (recommended)
 
 </Steps>
 
-### hex, hsl or oklch
+### hex, hsl 또는 oklch
 
-You can also define your colors directly in the chart config. Use the color format you prefer.
+차트 설정에서 직접 색상을 정의할 수도 있습니다. 선호하는 색상 형식을 사용하세요.
 
 ```svelte showLineNumbers
 <script lang="ts">
@@ -446,17 +446,17 @@ You can also define your colors directly in the chart config. Use the color form
 </script>
 ```
 
-### Using Colors
+### 색상 사용하기
 
-To use the theme colors in your chart, reference the colors using the format `var(--color-KEY)`.
+차트에서 테마 색상을 사용하려면 `var(--color-KEY)` 형식으로 색상을 참조하세요.
 
-#### Components
+#### 컴포넌트
 
 ```svelte
 <Bar fill="var(--color-desktop)" />
 ```
 
-#### Chart Data
+#### 차트 데이터
 
 ```ts showLineNumbers
 const chartData = [
@@ -471,9 +471,9 @@ const chartData = [
 <Label class="fill-(--color-desktop)" />
 ```
 
-## Tooltip
+## 툴팁
 
-A chart tooltip contains a label, name, indicator and value. You can use a combination of these to customize your tooltip.
+차트 툴팁은 라벨, 이름, 인디케이터, 값을 포함합니다. 이들을 조합하여 툴팁을 커스터마이징할 수 있습니다.
 
 <ComponentPreview name="chart-tooltip-demo" class="[&_.preview]:p-0" hideCode>
 
@@ -481,34 +481,34 @@ A chart tooltip contains a label, name, indicator and value. You can use a combi
 
 </ComponentPreview>
 
-You can turn on/off any of these using the `hideLabel`, `hideIndicator` props and customize the indicator style using the `indicator` prop.
+`hideLabel`, `hideIndicator` props를 사용하여 이들을 켜거나 끌 수 있으며, `indicator` prop을 사용하여 인디케이터 스타일을 커스터마이징할 수 있습니다.
 
-Use `labelKey` and `nameKey` to use a custom key for the tooltip label and name.
+툴팁 라벨과 이름에 커스텀 키를 사용하려면 `labelKey`와 `nameKey`를 사용하세요.
 
-Chart comes with the `<Chart.Tooltip>` component. You can use this component to add custom tooltips to your chart.
+차트는 `<Chart.Tooltip>` 컴포넌트와 함께 제공됩니다. 이 컴포넌트를 사용하여 차트에 커스텀 툴팁을 추가할 수 있습니다.
 
 ### Props
 
-Use the following props to customize the tooltip.
+다음 props를 사용하여 툴팁을 커스터마이징하세요.
 
-| Prop             | Type                     | Description                                             |
-| :--------------- | :----------------------- | :------------------------------------------------------ |
-| `labelKey`       | string                   | The config or data key to use for the label.            |
-| `nameKey`        | string                   | The config or data key to use for the name.             |
-| `indicator`      | `dot` `line` or `dashed` | The indicator style for the tooltip.                    |
-| `hideLabel`      | boolean                  | Whether to hide the label.                              |
-| `hideIndicator`  | boolean                  | Whether to hide the indicator.                          |
-| `label`          | string                   | A custom label for the tooltip                          |
-| `labelFormatter` | function                 | A function to format the label.                         |
-| `formatter`      | Snippet                  | A snippet to provide flexible rendering of the tooltip. |
+| Prop             | Type                     | Description                                     |
+| :--------------- | :----------------------- | :---------------------------------------------- |
+| `labelKey`       | string                   | 라벨에 사용할 설정 또는 데이터 키.              |
+| `nameKey`        | string                   | 이름에 사용할 설정 또는 데이터 키.              |
+| `indicator`      | `dot` `line` or `dashed` | 툴팁의 인디케이터 스타일.                       |
+| `hideLabel`      | boolean                  | 라벨을 숨길지 여부.                             |
+| `hideIndicator`  | boolean                  | 인디케이터를 숨길지 여부.                       |
+| `label`          | string                   | 툴팁의 커스텀 라벨                              |
+| `labelFormatter` | function                 | 라벨을 포맷하는 함수.                           |
+| `formatter`      | Snippet                  | 툴팁의 유연한 렌더링을 제공하는 snippet. |
 
-### Colors
+### 색상
 
-Colors are automatically referenced from the chart config.
+색상은 차트 설정에서 자동으로 참조됩니다.
 
-### Custom
+### 커스텀
 
-To use a custom key for tooltip label and names, use the `labelKey` and `nameKey` props.
+툴팁 라벨과 이름에 커스텀 키를 사용하려면 `labelKey`와 `nameKey` props를 사용하세요.
 
 ```svelte showLineNumbers /browser/
 <script lang="ts">
@@ -535,4 +535,4 @@ To use a custom key for tooltip label and names, use the `labelKey` and `nameKey
 <Chart.Tooltip labelKey="visitors" nameKey="browser" />
 ```
 
-This will use `Total Visitors` for label and `Chrome` and `Safari` for the tooltip names.
+이렇게 하면 라벨에는 `Total Visitors`를, 툴팁 이름에는 `Chrome`과 `Safari`를 사용합니다.

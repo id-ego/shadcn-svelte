@@ -1,6 +1,6 @@
 ---
-title: Item
-description: A versatile component that you can use to display any content.
+title: 아이템
+description: 모든 콘텐츠를 표시하는 데 사용할 수 있는 다용도 컴포넌트입니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/item
@@ -18,9 +18,9 @@ links:
 	import Step from "$lib/components/step.svelte";
 </script>
 
-The `Item` component is a straightforward flex container that can house nearly any type of content. Use it to display a title, description, and actions. Group it with the `ItemGroup` component to create a list of items.
+`Item` 컴포넌트는 거의 모든 유형의 콘텐츠를 담을 수 있는 간단한 플렉스 컨테이너입니다. 제목, 설명 및 액션을 표시하는 데 사용하세요. `ItemGroup` 컴포넌트와 함께 사용하여 아이템 목록을 만들 수 있습니다.
 
-You can pretty much achieve the same result with the `div` element and some classes, but **I've built this so many times** that I decided to create a component for it. Now I use it all the time.
+`div` 요소와 몇 가지 클래스로 동일한 결과를 얻을 수 있지만, **너무 많이 만들어서** 컴포넌트로 만들기로 했습니다. 이제 항상 사용합니다.
 
 <ComponentPreview name="item-demo">
 
@@ -28,7 +28,7 @@ You can pretty much achieve the same result with the `div` element and some clas
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -39,7 +39,7 @@ You can pretty much achieve the same result with the `div` element and some clas
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 프로젝트에 복사하여 붙여넣으세요.
 
 </Step>
 {#if viewerData}
@@ -50,7 +50,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte showLineNumbers
 <script lang="ts">
@@ -73,13 +73,13 @@ Copy and paste the following code into your project.
 
 ## Item vs Field
 
-Use Field if you need to display a form input such as a checkbox, input, radio, or select.
+체크박스, 입력, 라디오 또는 셀렉트와 같은 폼 입력을 표시해야 하는 경우 Field를 사용하세요.
 
-If you only need to display content such as a title, description, and actions, use `Item`.
+제목, 설명 및 액션과 같은 콘텐츠만 표시하면 되는 경우 `Item`을 사용하세요.
 
-## Examples
+## 예제
 
-### Variants
+### 변형
 
 <ComponentPreview name="item-variants-demo">
 
@@ -87,9 +87,9 @@ If you only need to display content such as a title, description, and actions, u
 
 </ComponentPreview>
 
-### Size
+### 크기
 
-The `Item` component has different sizes for different use cases. For example, you can use the `sm` size for a compact item or the default size for a standard item.
+`Item` 컴포넌트는 다양한 사용 사례에 맞는 여러 크기를 제공합니다. 예를 들어 컴팩트한 아이템에는 `sm` 크기를 사용하고 표준 아이템에는 기본 크기를 사용할 수 있습니다.
 
 <ComponentPreview name="item-size-demo">
 
@@ -97,7 +97,7 @@ The `Item` component has different sizes for different use cases. For example, y
 
 </ComponentPreview>
 
-### Icon
+### 아이콘
 
 <ComponentPreview name="item-icon-demo">
 
@@ -105,7 +105,7 @@ The `Item` component has different sizes for different use cases. For example, y
 
 </ComponentPreview>
 
-### Avatar
+### 아바타
 
 <ComponentPreview name="item-avatar-demo">
 
@@ -113,7 +113,7 @@ The `Item` component has different sizes for different use cases. For example, y
 
 </ComponentPreview>
 
-### Image
+### 이미지
 
 <ComponentPreview name="item-image-demo">
 
@@ -121,7 +121,7 @@ The `Item` component has different sizes for different use cases. For example, y
 
 </ComponentPreview>
 
-### Group
+### 그룹
 
 <ComponentPreview name="item-group-demo">
 
@@ -129,7 +129,7 @@ The `Item` component has different sizes for different use cases. For example, y
 
 </ComponentPreview>
 
-### Header
+### 헤더
 
 <ComponentPreview name="item-header-demo">
 
@@ -137,9 +137,9 @@ The `Item` component has different sizes for different use cases. For example, y
 
 </ComponentPreview>
 
-### Link
+### 링크
 
-To render an item as a link, use the the `child` snippet. The hover and focus states will be applied to the anchor element.
+아이템을 링크로 렌더링하려면 `child` 스니펫을 사용하세요. 호버 및 포커스 상태가 앵커 요소에 적용됩니다.
 
 <ComponentPreview name="item-link-demo">
 
@@ -147,7 +147,7 @@ To render an item as a link, use the the `child` snippet. The hover and focus st
 
 </ComponentPreview>
 
-### Dropdown
+### 드롭다운
 
 <ComponentPreview name="item-dropdown-demo">
 

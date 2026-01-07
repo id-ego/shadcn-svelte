@@ -1,7 +1,7 @@
 {
 	"$schema": "./static/schema/registry.json",
 	"name": "shadcn-svelte",
-	"homepage": "https://shadcn-svelte.docsforall.com",
+	"homepage": "https://shadcn-svelte.com",
 	"overrideDependencies": ["vaul-svelte@next"],
 	"aliases": {
 		"lib": "$lib/registry/lib",

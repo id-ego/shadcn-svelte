@@ -1,6 +1,6 @@
 ---
 title: Resizable
-description: Accessible resizable panel groups and layouts with keyboard support.
+description: 키보드 지원이 포함된 접근 가능한 크기 조절 패널 그룹 및 레이아웃입니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/resizable
@@ -26,11 +26,11 @@ links:
 
 </ComponentPreview>
 
-## About
+## 소개
 
-The `Resizable` component is built on top of [PaneForge](https://github.com/svecosystem/paneforge) by [Huntabyte](https://github.com/huntabyte). Visit the [PaneForge documentation](https://paneforge.com) for all the available props and abilities of the `Resizable` component.
+`Resizable` 컴포넌트는 [Huntabyte](https://github.com/huntabyte)의 [PaneForge](https://github.com/svecosystem/paneforge)를 기반으로 구축되었습니다. `Resizable` 컴포넌트의 사용 가능한 모든 props와 기능은 [PaneForge 문서](https://paneforge.com)를 참조하세요.
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -41,7 +41,7 @@ The `Resizable` component is built on top of [PaneForge](https://github.com/svec
 
 <Step>
 
-Install `paneforge`:
+`paneforge`를 설치합니다:
 
 </Step>
 
@@ -49,7 +49,7 @@ Install `paneforge`:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 복사하여 프로젝트에 붙여넣습니다.
 
 </Step>
 {#if viewerData}
@@ -60,7 +60,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte showLineNumbers
 <script lang="ts">
@@ -76,11 +76,11 @@ Copy and paste the following code into your project.
 </Resizable.PaneGroup>
 ```
 
-## Examples
+## 예제
 
-### Vertical
+### 수직
 
-Use the `direction` prop to set the direction of the resizable panels.
+`direction` prop을 사용하여 크기 조절 패널의 방향을 설정합니다.
 
 <ComponentPreview name="resizable-vertical">
 
@@ -100,9 +100,9 @@ Use the `direction` prop to set the direction of the resizable panels.
 </Resizable.PaneGroup>
 ```
 
-### Handle
+### 핸들
 
-You can set or hide the handle by using the `withHandle` prop on the `ResizableHandle` component.
+`ResizableHandle` 컴포넌트의 `withHandle` prop을 사용하여 핸들을 설정하거나 숨길 수 있습니다.
 
 <ComponentPreview name="resizable-handle">
 

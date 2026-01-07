@@ -1,6 +1,6 @@
 ---
 title: Astro
-description: Adding dark mode to your Astro site.
+description: Astro 사이트에 다크 모드 추가하기.
 ---
 
 <script>
@@ -11,17 +11,17 @@ description: Adding dark mode to your Astro site.
 	import InstallTabs from "$lib/components/install-tabs.svelte";
 </script>
 
-Just like in regular Svelte, we use the `class` strategy from Tailwind CSS to support dark mode toggling. See the [Tailwind CSS documentation](https://tailwindcss.com/docs/dark-mode#toggling-dark-mode-manually) for more information.
+일반 Svelte와 마찬가지로, 다크 모드 전환을 지원하기 위해 Tailwind CSS의 `class` 전략을 사용합니다. 자세한 내용은 [Tailwind CSS 문서](https://tailwindcss.com/docs/dark-mode#toggling-dark-mode-manually)를 참조하세요.
 
-How you add the `dark` class to the `html` element is up to you. In this guide, we'll take a look at enabling dark mode toggling with [mode-watcher](https://github.com/svecosystem/mode-watcher).
+`html` 엘리먼트에 `dark` 클래스를 추가하는 방법은 자유롭게 선택할 수 있습니다. 이 가이드에서는 [mode-watcher](https://github.com/svecosystem/mode-watcher)를 사용하여 다크 모드 전환을 활성화하는 방법을 살펴보겠습니다.
 
-## Usage
+## 사용법
 
 <Steps>
 
-### Create an inline theme script
+### 인라인 테마 스크립트 생성
 
-This script will, in part, keep and track the dark mode value in `localStorage` and prevent [FUOC](https://en.wikipedia.org/wiki/Flash_of_unstyled_content).
+이 스크립트는 `localStorage`에 다크 모드 값을 저장하고 추적하며, [FUOC](https://en.wikipedia.org/wiki/Flash_of_unstyled_content)를 방지하는 역할을 합니다.
 
 ```astro title="src/pages/index.astro" {5-27} showLineNumbers
 ---
@@ -60,13 +60,13 @@ import "../styles/global.css";
 </script>
 ```
 
-### Install mode-watcher
+### mode-watcher 설치
 
 <PMInstall command="mode-watcher@0.5.1" />
 
-### Add the ModeWatcher component
+### ModeWatcher 컴포넌트 추가
 
-Import the `ModeWatcher` component and use it in your page with the `client:load` directive:
+`ModeWatcher` 컴포넌트를 import하고 `client:load` 디렉티브와 함께 페이지에서 사용하세요:
 
 ```astro title="src/pages/index.astro" {3,9} showLineNumbers
 ---
@@ -83,11 +83,11 @@ import { ModeWatcher } from "mode-watcher";
 </html>
 ```
 
-### Create a mode toggle
+### 모드 토글 생성
 
-Create a mode toggle on your site to toggle between light and dark mode:
+사이트에서 라이트 모드와 다크 모드를 전환할 수 있는 모드 토글을 생성하세요:
 
-#### Light switch
+#### 라이트 스위치
 
 <ComponentPreview name="dark-mode-light-switch">
 
@@ -95,7 +95,7 @@ Create a mode toggle on your site to toggle between light and dark mode:
 
 </ComponentPreview>
 
-#### Dropdown menu
+#### 드롭다운 메뉴
 
 <ComponentPreview name="dark-mode-dropdown-menu">
 
@@ -103,9 +103,9 @@ Create a mode toggle on your site to toggle between light and dark mode:
 
 </ComponentPreview>
 
-### Add mode toggle to page
+### 페이지에 모드 토글 추가
 
-Add the mode toggle to the page (also with the `client:load` directive):
+모드 토글을 페이지에 추가하세요 (`client:load` 디렉티브와 함께):
 
 ```astro title="src/pages/index.astro" {4,12} showLineNumbers
 ---

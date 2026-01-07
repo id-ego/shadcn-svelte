@@ -1,6 +1,6 @@
 ---
-title: Getting Started
-description: Learn how to get setup and run your own component registry.
+title: 시작하기
+description: 자신의 컴포넌트 레지스트리를 설정하고 실행하는 방법을 배워보세요.
 ---
 
 <script>
@@ -12,23 +12,23 @@ description: Learn how to get setup and run your own component registry.
 	import Callout from "$lib/components/callout.svelte";
 </script>
 
-This guide will walk you through the process of setting up your own component registry.
+이 가이드는 자신의 컴포넌트 레지스트리를 설정하는 과정을 안내합니다.
 
-It assumes you already have a project with components and would like to turn it into a registry.
+이미 컴포넌트가 있는 프로젝트를 레지스트리로 전환하려는 경우를 전제로 합니다.
 
-If you're starting a new registry project, you can use the [registry template](https://github.com/huntabyte/shadcn-svelte/tree/main/registry-template) as a starting point. It's already configured for you.
+새로운 레지스트리 프로젝트를 시작하는 경우, [레지스트리 템플릿](https://github.com/huntabyte/shadcn-svelte/tree/main/registry-template)을 시작점으로 사용할 수 있습니다. 이미 설정이 완료되어 있습니다.
 
 ## registry.json
 
-The `registry.json` file is only required if you're using the `shadcn-svelte` CLI to build your registry.
+`registry.json` 파일은 `shadcn-svelte` CLI를 사용하여 레지스트리를 빌드하는 경우에만 필요합니다.
 
-If you're using a different build system, you can skip this step as long as your build system produces valid JSON files that conform to the [registry-item schema specification](/docs/registry/registry-item-json).
+다른 빌드 시스템을 사용하는 경우, 빌드 시스템이 [레지스트리 아이템 스키마 명세](/docs/registry/registry-item-json)를 준수하는 유효한 JSON 파일을 생성하는 한 이 단계를 건너뛸 수 있습니다.
 
 <Steps>
 
-### Add a registry.json file
+### registry.json 파일 추가
 
-Create a `registry.json` file in the root of your project.
+프로젝트 루트에 `registry.json` 파일을 생성합니다.
 
 ```json title="registry.json" showLineNumbers
 {
@@ -41,17 +41,17 @@ Create a `registry.json` file in the root of your project.
 }
 ```
 
-This `registry.json` file must conform to the [registry schema specification](/docs/registry/registry-json).
+이 `registry.json` 파일은 [레지스트리 스키마 명세](/docs/registry/registry-json)를 준수해야 합니다.
 
 </Steps>
 
-## Add a registry item
+## 레지스트리 아이템 추가
 
 <Steps>
 
-### Create your component
+### 컴포넌트 생성
 
-Add your first component. Here's an example of a simple `<HelloWorld />` component:
+첫 번째 컴포넌트를 추가합니다. 다음은 간단한 `<HelloWorld />` 컴포넌트의 예제입니다:
 
 ```svelte title="registry/hello-world/hello-world.svelte" showLineNumbers
 <script lang="ts">
@@ -63,10 +63,7 @@ Add your first component. Here's an example of a simple `<HelloWorld />` compone
 
 <Callout class="mt-6">
 
-**Note:** This example places the component in the `registry/`
-directory. You can place it anywhere in your project as long as you set the
-correct path in the `registry.json` file and you follow the `registry/[NAME]`
-directory structure.
+**참고:** 이 예제는 컴포넌트를 `registry/` 디렉토리에 배치합니다. `registry.json` 파일에 올바른 경로를 설정하고 `registry/[NAME]` 디렉토리 구조를 따르는 한 프로젝트의 어디에든 배치할 수 있습니다.
 
 </Callout>
 
@@ -78,7 +75,7 @@ registry
 
 <Callout class="mt-6 [&_[data-rehype-pretty-code-title]]:pt-1 [&_pre]:mb-0">
 
-**Important:** If you're placing your component in a custom directory, make sure it can be detected by Tailwind CSS.
+**주의:** 커스텀 디렉토리에 컴포넌트를 배치하는 경우, Tailwind CSS에서 감지할 수 있는지 확인하세요.
 
 ```css showLineNumbers title="src/routes/layout.css"
 @source "./registry/@acmecorp/ui-lib";
@@ -86,9 +83,9 @@ registry
 
 </Callout>
 
-### Add your component to the registry
+### 레지스트리에 컴포넌트 추가
 
-To add your component to the registry, you need to add your component definition to `registry.json`.
+레지스트리에 컴포넌트를 추가하려면 `registry.json`에 컴포넌트 정의를 추가해야 합니다.
 
 ```json title="registry.json" showLineNumbers {6-17}
 {
@@ -112,25 +109,25 @@ To add your component to the registry, you need to add your component definition
 }
 ```
 
-You define your registry item by adding a `name`, `type`, `title`, `description` and `files`.
+레지스트리 아이템은 `name`, `type`, `title`, `description`, `files`를 추가하여 정의합니다.
 
-For every file you add, you must specify the `path` and `type` of the file. The `path` is the relative path to the file from the root of your project. The `type` is the type of the file.
+추가하는 모든 파일에 대해 `path`와 `type`을 지정해야 합니다. `path`는 프로젝트 루트에서 파일까지의 상대 경로입니다. `type`은 파일의 타입입니다.
 
-You can read more about the registry item schema and file types in the [registry item schema docs](/docs/registry/registry-item-json).
+레지스트리 아이템 스키마와 파일 타입에 대한 자세한 내용은 [레지스트리 아이템 스키마 문서](/docs/registry/registry-item-json)를 참조하세요.
 
 </Steps>
 
-## Build your registry
+## 레지스트리 빌드
 
 <Steps>
 
-### Install the shadcn-svelte CLI
+### shadcn-svelte CLI 설치
 
 <PMInstall command="shadcn-svelte@latest" />
 
-### Add a build script
+### 빌드 스크립트 추가
 
-Add a `registry:build` script to your `package.json` file.
+`package.json` 파일에 `registry:build` 스크립트를 추가합니다.
 
 ```json title="package.json" showLineNumbers
 {
@@ -140,58 +137,58 @@ Add a `registry:build` script to your `package.json` file.
 }
 ```
 
-### Run the build script
+### 빌드 스크립트 실행
 
-Run the build script to generate the registry JSON files.
+빌드 스크립트를 실행하여 레지스트리 JSON 파일을 생성합니다.
 
 <PMRun command="registry:build" />
 
 <Callout class="mt-6">
 
-**Note:** By default, the build script will generate the registry JSON files in `static/r` e.g `static/r/hello-world.json`.
+**참고:** 기본적으로 빌드 스크립트는 `static/r`에 레지스트리 JSON 파일을 생성합니다(예: `static/r/hello-world.json`).
 
-You can change the output directory by passing the `--output` option. See the [shadcn-svelte registry build command](/docs/cli#registry-build) for more information.
+`--output` 옵션을 전달하여 출력 디렉토리를 변경할 수 있습니다. 자세한 내용은 [shadcn-svelte registry build 명령어](/docs/cli#registry-build)를 참조하세요.
 
 </Callout>
 
 </Steps>
 
-## Serve your registry
+## 레지스트리 제공
 
-You can serve your registry by running the dev server.
+개발 서버를 실행하여 레지스트리를 제공할 수 있습니다.
 
 <PMRun command="dev" />
 
-Your files will now be served at `http://localhost:5173/r/[NAME].json` eg. `http://localhost:5173/r/hello-world.json`.
+이제 파일이 `http://localhost:5173/r/[NAME].json`에서 제공됩니다(예: `http://localhost:5173/r/hello-world.json`).
 
-## Publish your registry
+## 레지스트리 배포
 
-To make your registry available to other developers, you can publish it by deploying your project to a public URL.
+다른 개발자가 레지스트리를 사용할 수 있도록 하려면 프로젝트를 공개 URL에 배포하여 게시할 수 있습니다.
 
-## Adding Auth
+## 인증 추가
 
-The `shadcn-svelte` CLI does not offer a built-in way to add auth to your registry. We recommend handling authorization on your registry server.
+`shadcn-svelte` CLI는 레지스트리에 인증을 추가하는 내장 방법을 제공하지 않습니다. 레지스트리 서버에서 인증을 처리하는 것을 권장합니다.
 
-A common simple approach is to use a `token` query parameter to authenticate requests to your registry. e.g. `http://localhost:5173/r/hello-world.json?token=[SECURE_TOKEN_HERE]`.
+일반적인 간단한 접근 방식은 `token` 쿼리 매개변수를 사용하여 레지스트리에 대한 요청을 인증하는 것입니다(예: `http://localhost:5173/r/hello-world.json?token=[SECURE_TOKEN_HERE]`).
 
-Use the secure token to authenticate requests and return a 401 Unauthorized response if the token is invalid. The `shadcn-svelte` CLI will handle the 401 response and display a message to the user.
+보안 토큰을 사용하여 요청을 인증하고 토큰이 유효하지 않은 경우 401 Unauthorized 응답을 반환합니다. `shadcn-svelte` CLI는 401 응답을 처리하고 사용자에게 메시지를 표시합니다.
 
 <Callout class="mt-6">
 
-**Note:** Make sure to encrypt and expire tokens.
+**참고:** 토큰을 암호화하고 만료되도록 설정해야 합니다.
 
 </Callout>
 
-## Guidelines
+## 가이드라인
 
-Here are some guidelines to follow when building components for a registry.
+레지스트리용 컴포넌트를 빌드할 때 따라야 할 가이드라인입니다.
 
-- The following properties are required for the block definition: `name`, `description`, `type` and `files`.
-- Make sure to list all registry dependencies in `registryDependencies`. A registry dependency is the name of the component in the registry eg. `input`, `button`, `card`, etc or a URL to a registry item eg. `http://localhost:5173/r/editor.json`
-- Ideally, place your files within a registry item in `components`, `hooks`, `lib` directories.
+- 블록 정의에는 다음 속성이 필수입니다: `name`, `description`, `type`, `files`.
+- 모든 레지스트리 의존성을 `registryDependencies`에 나열해야 합니다. 레지스트리 의존성은 레지스트리에 있는 컴포넌트의 이름(예: `input`, `button`, `card` 등) 또는 레지스트리 아이템의 URL(예: `http://localhost:5173/r/editor.json`)입니다.
+- 레지스트리 아이템 내의 파일은 `components`, `hooks`, `lib` 디렉토리에 배치하는 것이 이상적입니다.
 
-## Install using the CLI
+## CLI를 사용한 설치
 
-To install a registry item using the `shadcn-svelte` CLI, use the `add` command followed by the URL of the registry item.
+`shadcn-svelte` CLI를 사용하여 레지스트리 아이템을 설치하려면 레지스트리 아이템의 URL 뒤에 `add` 명령어를 사용합니다.
 
 <PMExecute command="shadcn-svelte@latest add http://localhost:5173/r/hello-world.json" />

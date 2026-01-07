@@ -1,6 +1,6 @@
 ---
 title: Label
-description: Renders an accessible label associated with controls.
+description: 컨트롤과 연결된 접근 가능한 라벨을 렌더링합니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/label
@@ -26,7 +26,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -45,7 +45,7 @@ Install `bits-ui`:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 프로젝트에 복사하여 붙여넣으세요.
 
 </Step>
 {#if viewerData}
@@ -56,7 +56,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte
 <script lang="ts">

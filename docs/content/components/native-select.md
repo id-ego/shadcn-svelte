@@ -1,6 +1,6 @@
 ---
-title: Native Select
-description: A styled native HTML select element with consistent design system integration.
+title: 네이티브 셀렉트
+description: 일관된 디자인 시스템과 통합된 스타일이 적용된 네이티브 HTML select 요소입니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/native-select
@@ -21,13 +21,13 @@ links:
 
 <Callout variant="info" icon={InfoIcon} class="!translate-y-[3px]" >
 
-For a styled select component, see the [Select](/docs/components/select) component.
+스타일이 적용된 셀렉트 컴포넌트는 [Select](/docs/components/select) 컴포넌트를 참고하세요.
 
 </Callout>
 
 <ComponentPreview name="native-select-demo" />
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -38,7 +38,7 @@ For a styled select component, see the [Select](/docs/components/select) compone
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 복사하여 프로젝트에 붙여넣으세요.
 
 </Step>
 {#if viewerData}
@@ -49,7 +49,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte showLineNumbers
 <script lang="ts">
@@ -68,11 +68,11 @@ Copy and paste the following code into your project.
 </NativeSelect.Root>
 ```
 
-## Examples
+## 예제
 
-### With Groups
+### 그룹 사용
 
-Organize options using `NativeSelect.OptGroup` for better categorization.
+`NativeSelect.OptGroup`을 사용하여 옵션을 더 나은 분류로 구성합니다.
 
 <ComponentPreview name="native-select-groups" >
 
@@ -96,9 +96,9 @@ Organize options using `NativeSelect.OptGroup` for better categorization.
 </NativeSelect.Root>
 ```
 
-### Disabled State
+### 비활성화 상태
 
-Disable individual options or the entire select component.
+개별 옵션이나 전체 셀렉트 컴포넌트를 비활성화합니다.
 
 <ComponentPreview name="native-select-disabled" >
 
@@ -106,9 +106,9 @@ Disable individual options or the entire select component.
 
 </ComponentPreview>
 
-### Invalid State
+### 유효하지 않은 상태
 
-Show validation errors with the `aria-invalid` attribute and error styling.
+`aria-invalid` 속성과 오류 스타일로 유효성 검사 오류를 표시합니다.
 
 <ComponentPreview name="native-select-invalid" >
 
@@ -125,19 +125,19 @@ Show validation errors with the `aria-invalid` attribute and error styling.
 </NativeSelect.Root>
 ```
 
-## Native Select vs Select
+## 네이티브 셀렉트 vs 셀렉트
 
-- Use `NativeSelect` when you need native browser behavior, better performance, or mobile-optimized dropdowns.
-- Use `Select` when you need custom styling, animations, or complex interactions.
+- 네이티브 브라우저 동작, 더 나은 성능 또는 모바일에 최적화된 드롭다운이 필요한 경우 `NativeSelect`를 사용하세요.
+- 커스텀 스타일링, 애니메이션 또는 복잡한 상호작용이 필요한 경우 `Select`를 사용하세요.
 
-The `NativeSelect` component provides native HTML select functionality with consistent styling that matches your design system.
+`NativeSelect` 컴포넌트는 디자인 시스템과 일치하는 일관된 스타일로 네이티브 HTML select 기능을 제공합니다.
 
-## Accessibility
+## 접근성
 
-- The component maintains all native HTML select accessibility features.
-- Screen readers can navigate through options using arrow keys.
-- The chevron icon is marked as `aria-hidden="true"` to avoid duplication.
-- Use `aria-label` or `aria-labelledby` for additional context when needed.
+- 컴포넌트는 모든 네이티브 HTML select 접근성 기능을 유지합니다.
+- 스크린 리더는 화살표 키를 사용하여 옵션을 탐색할 수 있습니다.
+- 셰브론 아이콘은 중복을 피하기 위해 `aria-hidden="true"`로 표시됩니다.
+- 필요한 경우 추가 컨텍스트를 위해 `aria-label` 또는 `aria-labelledby`를 사용하세요.
 
 ```tsx showLineNumbers
 <NativeSelect.Root aria-label="Choose your preferred language">
@@ -147,17 +147,17 @@ The `NativeSelect` component provides native HTML select functionality with cons
 </NativeSelect.Root>
 ```
 
-## API Reference
+## API 레퍼런스
 
 ### NativeSelect.Root
 
-The main select component that wraps the native HTML select element.
+네이티브 HTML select 요소를 감싸는 메인 셀렉트 컴포넌트입니다.
 
 | Prop    | Type     | Default |
 | ------- | -------- | ------- |
 | `class` | `string` |         |
 
-All other props are passed through to the underlying `<select>` element.
+다른 모든 props는 기본 `<select>` 요소로 전달됩니다.
 
 ```svelte
 <NativeSelect.Root>
@@ -168,7 +168,7 @@ All other props are passed through to the underlying `<select>` element.
 
 ### NativeSelect.Option
 
-Represents an individual option within the select.
+셀렉트 내의 개별 옵션을 나타냅니다.
 
 | Prop       | Type      | Default |
 | ---------- | --------- | ------- |
@@ -176,7 +176,7 @@ Represents an individual option within the select.
 | `disabled` | `boolean` | `false` |
 | `class`    | `string`  |         |
 
-All other props are passed through to the underlying `<option>` element.
+다른 모든 props는 기본 `<option>` 요소로 전달됩니다.
 
 ```svelte
 <NativeSelect.Option value="apple">Apple</NativeSelect.Option>
@@ -185,7 +185,7 @@ All other props are passed through to the underlying `<option>` element.
 
 ### NativeSelect.OptGroup
 
-Groups related options together for better organization.
+더 나은 구성을 위해 관련된 옵션을 그룹화합니다.
 
 | Prop       | Type      | Default |
 | ---------- | --------- | ------- |
@@ -193,7 +193,7 @@ Groups related options together for better organization.
 | `disabled` | `boolean` | `false` |
 | `class`    | `string`  |         |
 
-All other props are passed through to the underlying `<optgroup>` element.
+다른 모든 props는 기본 `<optgroup>` 요소로 전달됩니다.
 
 ```svelte
 <NativeSelect.OptGroup label="Fruits">

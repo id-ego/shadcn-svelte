@@ -1,19 +1,19 @@
 ---
-title: Examples
-description: "Examples of registry items: styles, components, css vars, etc."
+title: 예제
+description: "레지스트리 아이템 예제: 스타일, 컴포넌트, CSS 변수 등"
 ---
 
 ## registry:style
 
-### Custom style that extends shadcn-svelte
+### shadcn-svelte를 확장하는 커스텀 스타일
 
-The following registry item is a custom style that extends shadcn/ui. On `npx shadcn-svelte@latest init`, it will:
+다음 레지스트리 아이템은 shadcn/ui를 확장하는 커스텀 스타일입니다. `npx shadcn-svelte@latest init` 실행 시 다음을 수행합니다:
 
-- Install `phosphor-svelte` icons as a dependency.
-- Add the `login-01` block and `calendar` component to the project.
-- Add the `editor` from a remote registry.
-- Set the `font-sans` variable to `Inter, sans-serif`.
-- Install a `brand` color in light and dark mode.
+- `phosphor-svelte` 아이콘을 의존성으로 설치합니다.
+- `login-01` 블록과 `calendar` 컴포넌트를 프로젝트에 추가합니다.
+- 원격 레지스트리에서 `editor`를 추가합니다.
+- `font-sans` 변수를 `Inter, sans-serif`로 설정합니다.
+- 라이트 모드와 다크 모드에서 `brand` 색상을 설치합니다.
 
 ```json title="example-style.json" showLineNumbers
 {
@@ -40,18 +40,18 @@ The following registry item is a custom style that extends shadcn/ui. On `npx sh
 }
 ```
 
-### Custom style from scratch
+### 처음부터 만드는 커스텀 스타일
 
-The following registry item is a custom style that _doesn't_ extend shadcn-svelte. See the `extends: none` field.
+다음 레지스트리 아이템은 shadcn-svelte를 확장하지 _않는_ 커스텀 스타일입니다. `extends: none` 필드를 확인하세요.
 
-It can be used to create a new style from scratch i.e. custom components, css vars, dependencies, etc.
+이는 처음부터 새로운 스타일을 생성하는 데 사용할 수 있습니다. 즉, 커스텀 컴포넌트, CSS 변수, 의존성 등을 만들 수 있습니다.
 
-On `npx shadcn-svelte@latest add`, the following will:
+`npx shadcn-svelte@latest add` 실행 시 다음을 수행합니다:
 
-- Install `tailwind-merge` and `clsx` as dependencies.
-- Add the `utils` registry item from the shadcn-svelte registry.
-- Add the `button`, `input`, `label`, and `select` components from a remote registry.
-- Install new css vars: `main`, `bg`, `border`, `text`, `ring`.
+- `tailwind-merge`와 `clsx`를 의존성으로 설치합니다.
+- shadcn-svelte 레지스트리에서 `utils` 레지스트리 아이템을 추가합니다.
+- 원격 레지스트리에서 `button`, `input`, `label`, `select` 컴포넌트를 추가합니다.
+- 새로운 CSS 변수를 설치합니다: `main`, `bg`, `border`, `text`, `ring`.
 
 ```json title="example-style.json" showLineNumbers
 {
@@ -91,7 +91,7 @@ On `npx shadcn-svelte@latest add`, the following will:
 
 ## registry:theme
 
-### Custom theme
+### 커스텀 테마
 
 ```json title="example-theme.json" showLineNumbers
 {
@@ -123,9 +123,9 @@ On `npx shadcn-svelte@latest add`, the following will:
 }
 ```
 
-### Custom colors
+### 커스텀 색상
 
-The following style will init using shadcn-svelte defaults and then add a custom `brand` color.
+다음 스타일은 shadcn-svelte 기본값을 사용하여 초기화한 다음 커스텀 `brand` 색상을 추가합니다.
 
 ```json title="example-style.json" showLineNumbers
 {
@@ -145,9 +145,9 @@ The following style will init using shadcn-svelte defaults and then add a custom
 
 ## registry:block
 
-### Custom block
+### 커스텀 블록
 
-This blocks installs the `login-01` block from the shadcn-svelte registry.
+이 블록은 shadcn-svelte 레지스트리에서 `login-01` 블록을 설치합니다.
 
 ```json title="login-01.json" showLineNumbers
 {
@@ -172,14 +172,14 @@ This blocks installs the `login-01` block from the shadcn-svelte registry.
 }
 ```
 
-### Install a block and override primitives
+### 블록 설치 및 프리미티브 오버라이드
 
-You can install a block from the shadcn-svelte registry and override the primitives using your custom ones.
+shadcn-svelte 레지스트리에서 블록을 설치하고 커스텀 프리미티브로 오버라이드할 수 있습니다.
 
-On `npx shadcn-svelte@latest add`, the following will:
+`npx shadcn-svelte@latest add` 실행 시 다음을 수행합니다:
 
-- Add the `login-01` block from the shadcn-svelte registry.
-- Override the `button`, `input`, and `label` primitives with the ones from the remote registry.
+- shadcn-svelte 레지스트리에서 `login-01` 블록을 추가합니다.
+- `button`, `input`, `label` 프리미티브를 원격 레지스트리의 것으로 오버라이드합니다.
 
 ```json title="example-style.json" showLineNumbers
 {
@@ -195,11 +195,11 @@ On `npx shadcn-svelte@latest add`, the following will:
 }
 ```
 
-## CSS Variables
+## CSS 변수
 
-### Custom Theme Variables
+### 커스텀 테마 변수
 
-Add custom theme variables to the `theme` object.
+`theme` 객체에 커스텀 테마 변수를 추가합니다.
 
 ```json title="example-theme.json" showLineNumbers
 {
@@ -215,7 +215,7 @@ Add custom theme variables to the `theme` object.
 }
 ```
 
-### Override Tailwind CSS variables
+### Tailwind CSS 변수 오버라이드
 
 ```json title="example-theme.json" showLineNumbers
 {
@@ -235,9 +235,9 @@ Add custom theme variables to the `theme` object.
 }
 ```
 
-## Add custom CSS
+## 커스텀 CSS 추가
 
-### Base styles
+### 베이스 스타일
 
 ```json title="example-base.json" showLineNumbers
 {
@@ -257,7 +257,7 @@ Add custom theme variables to the `theme` object.
 }
 ```
 
-### Components
+### 컴포넌트
 
 ```json title="example-card.json" showLineNumbers
 {
@@ -277,9 +277,9 @@ Add custom theme variables to the `theme` object.
 }
 ```
 
-## Add custom utilities
+## 커스텀 유틸리티 추가
 
-### Simple utility
+### 단순 유틸리티
 
 ```json title="example-component.json" showLineNumbers
 {
@@ -294,7 +294,7 @@ Add custom theme variables to the `theme` object.
 }
 ```
 
-### Complex utility
+### 복잡한 유틸리티
 
 ```json title="example-utility.json" showLineNumbers
 {
@@ -313,7 +313,7 @@ Add custom theme variables to the `theme` object.
 }
 ```
 
-### Functional utilities
+### 함수형 유틸리티
 
 ```json title="example-functional.json" showLineNumbers
 {
@@ -328,9 +328,9 @@ Add custom theme variables to the `theme` object.
 }
 ```
 
-## Add custom animations
+## 커스텀 애니메이션 추가
 
-Note: you need to define both `@keyframes` in css and `theme` in cssVars to use animations.
+참고: 애니메이션을 사용하려면 CSS에서 `@keyframes`와 cssVars에서 `theme`을 모두 정의해야 합니다.
 
 ```json title="example-component.json" showLineNumbers
 {

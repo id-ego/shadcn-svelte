@@ -1,6 +1,6 @@
 ---
 title: Button
-description: Displays a button or a component that looks like a button.
+description: 버튼 또는 버튼처럼 보이는 컴포넌트를 표시합니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/button
@@ -23,9 +23,9 @@ links:
 
 <Callout variant="info" icon={InfoIcon}>
 
-**Updated:** We have updated the button component to add new sizes: `icon-sm` and `icon-lg`. See the
-[changelog](/docs/components/button#changelog) for more details. Follow the
-instructions to update your project.
+**업데이트:** 버튼 컴포넌트에 새로운 크기인 `icon-sm`과 `icon-lg`를 추가했습니다. 자세한 내용은
+[변경 이력](/docs/components/button#changelog)을 참고하세요. 프로젝트를 업데이트하려면
+안내에 따라 진행하세요.
 
 </Callout>
 
@@ -42,7 +42,7 @@ instructions to update your project.
 </Button>
 ```
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -53,7 +53,7 @@ instructions to update your project.
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 프로젝트에 복사하여 붙여넣으세요.
 
 </Step>
 {#if viewerData}
@@ -64,7 +64,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte
 <script lang="ts">
@@ -74,7 +74,7 @@ Copy and paste the following code into your project.
 <Button variant="outline">Button</Button>
 ```
 
-## Examples
+## 예제
 
 ### Size
 
@@ -190,9 +190,9 @@ Copy and paste the following code into your project.
 </Button>
 ```
 
-### With Icon
+### 아이콘과 함께
 
-The spacing between the icon and the text is automatically adjusted based on the size of the button. You do not need any margin on the icon.
+아이콘과 텍스트 사이의 간격은 버튼 크기에 따라 자동으로 조정됩니다. 아이콘에 별도의 여백을 설정할 필요가 없습니다.
 
 <ComponentPreview name="button-with-icon" description="A button with an icon" class="mb-4">
 
@@ -206,9 +206,9 @@ The spacing between the icon and the text is automatically adjusted based on the
 </Button>
 ```
 
-### Rounded
+### 둥근 버튼
 
-Use the `rounded-full` class to make the button rounded.
+`rounded-full` 클래스를 사용하여 버튼을 둥글게 만들 수 있습니다.
 
 <ComponentPreview name="button-rounded" class="mb-4" >
 
@@ -237,9 +237,9 @@ Use the `rounded-full` class to make the button rounded.
 </Button>
 ```
 
-### Button Group
+### 버튼 그룹
 
-To create a button group, use the `ButtonGroup` component. See the [Button Group](/docs/components/button-group) documentation for more details.
+버튼 그룹을 만들려면 `ButtonGroup` 컴포넌트를 사용하세요. 자세한 내용은 [버튼 그룹](/docs/components/button-group) 문서를 참고하세요.
 
 <ComponentPreview name="button-group-demo" class="mb-4" >
 
@@ -331,9 +331,9 @@ To create a button group, use the `ButtonGroup` component. See the [Button Group
 </ButtonGroup.Root>
 ```
 
-### Link
+### 링크
 
-You can convert the `<button>` into an `<a>` element by simply passing an `href` as a prop.
+`href`를 prop으로 전달하여 `<button>`을 `<a>` 요소로 변환할 수 있습니다.
 
 ```svelte
 <script lang="ts">
@@ -343,7 +343,7 @@ You can convert the `<button>` into an `<a>` element by simply passing an `href`
 <Button href="/dashboard">Dashboard</Button>
 ```
 
-Alternatively, you can use the `buttonVariants` helper to create a link that looks like a button.
+또는 `buttonVariants` 헬퍼를 사용하여 버튼처럼 보이는 링크를 만들 수 있습니다.
 
 ```svelte
 <script lang="ts">
@@ -355,11 +355,11 @@ Alternatively, you can use the `buttonVariants` helper to create a link that loo
 </a>
 ```
 
-## Changelog
+## 변경 이력
 
-### 2025-09-24 New sizes
+### 2025-09-24 새로운 크기
 
-We have added two new sizes to the button component: `icon-sm` and `icon-lg`. These sizes are used to create icon buttons. To add them, edit `button.tsx` and add the following code under `size` in `buttonVariants`:
+버튼 컴포넌트에 `icon-sm`과 `icon-lg` 두 가지 새로운 크기를 추가했습니다. 이 크기들은 아이콘 버튼을 만들 때 사용됩니다. 추가하려면 `button.tsx`를 편집하고 `buttonVariants`의 `size` 아래에 다음 코드를 추가하세요:
 
 ```ts showLineNumbers title="components/ui/button.svelte"
 export const buttonVariants = tv({

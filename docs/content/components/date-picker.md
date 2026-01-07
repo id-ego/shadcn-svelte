@@ -1,6 +1,6 @@
 ---
-title: Date Picker
-description: A date picker component with range and presets.
+title: 날짜 선택기
+description: 범위와 프리셋이 있는 날짜 선택기 컴포넌트입니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/examples/date-picker-demo.svelte
@@ -16,13 +16,13 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
-The Date Picker is built using a composition of the `<Popover />` and either the `<Calendar />` or `<RangeCalendar />` components.
+날짜 선택기는 `<Popover />` 컴포넌트와 `<Calendar />` 또는 `<RangeCalendar />` 컴포넌트의 조합으로 구성됩니다.
 
-See installations instructions for the [Popover](/docs/components/popover#installation), [Calendar](/docs/components/calendar#installation), and [Range Calendar](/docs/components/range-calendar#installation) components.
+[Popover](/docs/components/popover#installation), [Calendar](/docs/components/calendar#installation), [Range Calendar](/docs/components/range-calendar#installation) 컴포넌트의 설치 안내를 참고하세요.
 
-## Usage
+## 사용법
 
 ```svelte showLineNumbers title="lib/components/example-date-picker.svelte"
 <script lang="ts">
@@ -66,9 +66,9 @@ See installations instructions for the [Popover](/docs/components/popover#instal
 </Popover.Root>
 ```
 
-## Examples
+## 예제
 
-### Date of Birth Picker
+### 생년월일 선택기
 
 <ComponentPreview name="calendar-22" description="A calendar with date of birth picker." >
 
@@ -76,7 +76,7 @@ See installations instructions for the [Popover](/docs/components/popover#instal
 
 </ComponentPreview>
 
-### Picker with Input
+### 입력이 있는 선택기
 
 <!--need to fix code not showing due to type-->
 
@@ -86,16 +86,16 @@ See installations instructions for the [Popover](/docs/components/popover#instal
 
 </ComponentPreview>
 
-### Date and Time Picker
+### 날짜 및 시간 선택기
 
 <ComponentPreview name="calendar-24" description="A calendar with date and time picker." >
 <div></div>
 
 </ComponentPreview>
 
-### Natural Language Picker
+### 자연어 선택기
 
-This component uses the `chrono-node` library to parse natural language dates.
+이 컴포넌트는 자연어 날짜를 파싱하기 위해 `chrono-node` 라이브러리를 사용합니다.
 
 <ComponentPreview name="calendar-29" description="A calendar with natural language picker.">
 

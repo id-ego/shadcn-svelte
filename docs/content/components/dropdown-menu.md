@@ -1,6 +1,6 @@
 ---
-title: Dropdown Menu
-description: Displays a menu to the user — such as a set of actions or functions — triggered by a button.
+title: 드롭다운 메뉴
+description: 버튼을 통해 트리거되는 액션 또는 기능 집합과 같은 메뉴를 사용자에게 표시합니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/dropdown-menu
@@ -26,7 +26,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -56,7 +56,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte showLineNumbers
 <script lang="ts">
@@ -80,9 +80,9 @@ Copy and paste the following code into your project.
 </DropdownMenu.Root>
 ```
 
-## Examples
+## 예제
 
-### Checkboxes
+### 체크박스
 
 <ComponentPreview name="dropdown-menu-checkboxes">
 
@@ -90,7 +90,7 @@ Copy and paste the following code into your project.
 
 </ComponentPreview>
 
-### Radio Group
+### 라디오 그룹
 
 <ComponentPreview name="dropdown-menu-radio-group">
 
@@ -98,9 +98,9 @@ Copy and paste the following code into your project.
 
 </ComponentPreview>
 
-### Dialog
+### 대화상자
 
-This example shows how to open a dialog from a dropdown menu.
+드롭다운 메뉴에서 대화상자를 여는 방법을 보여주는 예제입니다.
 
 ```svelte showLineNumbers
 <DropdownMenu.Root>
@@ -116,9 +116,9 @@ This example shows how to open a dialog from a dropdown menu.
 
 </ComponentPreview>
 
-## Changelog
+## 변경 기록
 
-### 2024-10-30 Classes for DropdownMenu.SubTrigger
+### 2024-10-30 DropdownMenu.SubTrigger 클래스
 
-- Added `gap-2 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0` to the `<DropdownMenu.SubTrigger>` to automatically style icon inside the dropdown menu sub trigger.
-- Removed `size-4` from the icon inside the `<DropdownMenu.SubTrigger>` since it is now handled by the parent `<DropdownMenu.SubTrigger>`.
+- `<DropdownMenu.SubTrigger>`에 `gap-2 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0`를 추가하여 드롭다운 메뉴 서브 트리거 내부의 아이콘을 자동으로 스타일링하도록 했습니다.
+- `<DropdownMenu.SubTrigger>` 내부의 아이콘에서 `size-4`를 제거했습니다. 이제 부모 `<DropdownMenu.SubTrigger>`에서 처리합니다.

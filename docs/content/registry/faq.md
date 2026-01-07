@@ -1,13 +1,13 @@
 ---
 title: FAQ
-description: Frequently asked questions about running a registry.
+description: 레지스트리 운영에 관한 자주 묻는 질문입니다.
 ---
 
-## Frequently asked questions
+## 자주 묻는 질문
 
-### What does a complex component look like?
+### 복잡한 컴포넌트는 어떻게 생겼나요?
 
-Here's an example of a complex component that installs a page, two components, a hook, a format-date utils and a config file.
+다음은 페이지, 두 개의 컴포넌트, 훅, format-date 유틸 및 설정 파일을 설치하는 복잡한 컴포넌트의 예입니다.
 
 ```json showLineNumbers
 {
@@ -47,9 +47,9 @@ Here's an example of a complex component that installs a page, two components, a
 }
 ```
 
-### How do I add a new Tailwind color?
+### 새로운 Tailwind 색상을 추가하려면 어떻게 하나요?
 
-To add a new color you need to add it to `cssVars` under `light` and `dark` keys.
+새로운 색상을 추가하려면 `cssVars`의 `light`와 `dark` 키 아래에 추가해야 합니다.
 
 ```json showLineNumbers {10-18}
 {
@@ -74,11 +74,11 @@ To add a new color you need to add it to `cssVars` under `light` and `dark` keys
 }
 ```
 
-The CLI will update the project CSS file. Once updated, the new colors will be available to be used as utility classes: `bg-brand` and `text-brand-accent`.
+CLI가 프로젝트 CSS 파일을 업데이트합니다. 업데이트되면 새로운 색상을 유틸리티 클래스로 사용할 수 있습니다: `bg-brand`, `text-brand-accent`.
 
-### How do I add or override a Tailwind theme variable?
+### Tailwind 테마 변수를 추가하거나 재정의하려면 어떻게 하나요?
 
-To add or override a theme variable you add it to `cssVars.theme` under the key you want to add or override.
+테마 변수를 추가하거나 재정의하려면 `cssVars.theme`에 추가하거나 재정의하려는 키 아래에 추가하면 됩니다.
 
 ```json showLineNumbers {10-15}
 {

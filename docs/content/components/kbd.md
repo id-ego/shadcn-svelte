@@ -1,6 +1,6 @@
 ---
 title: Kbd
-description: Used to display textual user input from keyboard.
+description: 키보드의 텍스트 사용자 입력을 표시하는 데 사용됩니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/kbd
@@ -24,7 +24,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -35,7 +35,7 @@ links:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 복사하여 프로젝트에 붙여넣으세요.
 
 </Step>
 {#if viewerData}
@@ -46,7 +46,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte
 <script lang="ts">
@@ -58,11 +58,11 @@ Copy and paste the following code into your project.
 <Kbd.Root>B</Kbd.Root>
 ```
 
-## Examples
+## 예제
 
 ### Group
 
-Use the `Kbd.Group` component to group keyboard keys together.
+`Kbd.Group` 컴포넌트를 사용하여 키보드 키를 함께 그룹화합니다.
 
 <ComponentPreview name="kbd-group-demo">
 
@@ -72,7 +72,7 @@ Use the `Kbd.Group` component to group keyboard keys together.
 
 ### Button
 
-Use the `Kbd.Root` component inside a `Button` component to display a keyboard key inside a button.
+`Button` 컴포넌트 내부에 `Kbd.Root` 컴포넌트를 사용하여 버튼 안에 키보드 키를 표시합니다.
 
 <ComponentPreview name="kbd-button-demo">
 
@@ -82,7 +82,7 @@ Use the `Kbd.Root` component inside a `Button` component to display a keyboard k
 
 ### Tooltip
 
-You can use the `Kbd.Root` component inside a `Tooltip` component to display a tooltip with a keyboard key.
+`Tooltip` 컴포넌트 내부에 `Kbd.Root` 컴포넌트를 사용하여 키보드 키가 포함된 툴팁을 표시할 수 있습니다.
 
 <ComponentPreview name="kbd-tooltip-demo">
 
@@ -92,7 +92,7 @@ You can use the `Kbd.Root` component inside a `Tooltip` component to display a t
 
 ### Input Group
 
-You can use the `Kbd.Root` component inside a `InputGroup.Addon` component to display a keyboard key inside an input group.
+`InputGroup.Addon` 컴포넌트 내부에 `Kbd.Root` 컴포넌트를 사용하여 입력 그룹 안에 키보드 키를 표시할 수 있습니다.
 
 <ComponentPreview name="kbd-input-group-demo">
 

@@ -1,6 +1,6 @@
 ---
 title: SvelteKit
-description: How to setup shadcn-svelte in a SvelteKit project.
+description: SvelteKit 프로젝트에서 shadcn-svelte를 설정하는 방법.
 ---
 
 <script>
@@ -14,15 +14,15 @@ description: How to setup shadcn-svelte in a SvelteKit project.
 
 <Steps>
 
-### Create project
+### 프로젝트 생성
 
-Use the SvelteKit CLI to create a new project with TailwindCSS
+SvelteKit CLI를 사용하여 TailwindCSS가 포함된 새 프로젝트를 생성합니다
 
 <PMExecute command="sv create my-app --add tailwindcss" />
 
-### Setup path aliases
+### 경로 별칭 설정
 
-If you are not using the default alias `$lib`, you'll need to update your `svelte.config.js` file to include those aliases.
+기본 별칭인 `$lib`를 사용하지 않는 경우, `svelte.config.js` 파일에 해당 별칭을 추가해야 합니다.
 
 ```ts title="svelte.config.js" {6} showLineNumbers
 const config = {
@@ -36,13 +36,13 @@ const config = {
 };
 ```
 
-### Run the CLI
+### CLI 실행
 
 <PMExecute command="shadcn-svelte@latest init" />
 
-### Configure components.json
+### components.json 설정
 
-You will be asked a few questions to configure `components.json`:
+`components.json`을 설정하기 위한 몇 가지 질문이 표시됩니다:
 
 ```txt showLineNumbers
 Which base color would you like to use? › Slate
@@ -54,13 +54,13 @@ Configure the import alias for hooks: › $lib/hooks
 Configure the import alias for ui: › $lib/components/ui
 ```
 
-### That's it
+### 완료
 
-You can now start adding components to your project.
+이제 프로젝트에 컴포넌트를 추가할 수 있습니다.
 
 <PMAddComp name="button" />
 
-The command above will add the `Button` component to your project. You can then import it like this:
+위 명령어는 프로젝트에 `Button` 컴포넌트를 추가합니다. 다음과 같이 가져올 수 있습니다:
 
 ```svelte {2,5} showLineNumbers
 <script lang="ts">

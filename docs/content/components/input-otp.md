@@ -1,6 +1,6 @@
 ---
 title: Input OTP
-description: Accessible one-time password component with copy paste functionality.
+description: 복사 붙여넣기 기능을 갖춘 접근 가능한 일회용 비밀번호 컴포넌트입니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/input-otp
@@ -26,11 +26,11 @@ links:
 
 </ComponentPreview>
 
-## About
+## 소개
 
-Input OTP is built on top of Bits UI's [PinInput](https://bits-ui.com/docs/components/pin-input) which is inspired by [@guilherme_rodz](https://twitter.com/guilherme_rodz)'s Input OTP component.
+Input OTP는 [@guilherme_rodz](https://twitter.com/guilherme_rodz)의 Input OTP 컴포넌트에서 영감을 받은 Bits UI의 [PinInput](https://bits-ui.com/docs/components/pin-input)을 기반으로 구축되었습니다.
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -41,7 +41,7 @@ Input OTP is built on top of Bits UI's [PinInput](https://bits-ui.com/docs/compo
 
 <Step>
 
-Install `bits-ui`:
+`bits-ui`를 설치합니다:
 
 </Step>
 
@@ -49,7 +49,7 @@ Install `bits-ui`:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 프로젝트에 복사하여 붙여넣습니다.
 
 </Step>
 {#if viewerData}
@@ -60,7 +60,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte showLineNumbers
 <script lang="ts">
@@ -86,11 +86,11 @@ Copy and paste the following code into your project.
 </InputOTP.Root>
 ```
 
-## Examples
+## 예제
 
-### Pattern
+### 패턴
 
-Use the `pattern` prop to define a custom pattern for the OTP input.
+`pattern` prop을 사용하여 OTP 입력의 사용자 정의 패턴을 정의할 수 있습니다.
 
 <ComponentPreview name="input-otp-pattern">
 
@@ -109,9 +109,9 @@ Use the `pattern` prop to define a custom pattern for the OTP input.
 </InputOTP.Root>
 ```
 
-### Separator
+### 구분자
 
-You can use the `InputOTP.Separator` component to add a separator between the groups of cells.
+`InputOTP.Separator` 컴포넌트를 사용하여 셀 그룹 사이에 구분자를 추가할 수 있습니다.
 
 <ComponentPreview name="input-otp-separator">
 
@@ -141,7 +141,7 @@ You can use the `InputOTP.Separator` component to add a separator between the gr
 </InputOTP.Root>
 ```
 
-### Controlled
+### 제어 컴포넌트
 
 <ComponentPreview name="input-otp-controlled">
 
@@ -149,7 +149,7 @@ You can use the `InputOTP.Separator` component to add a separator between the gr
 
 </ComponentPreview>
 
-### Form
+### 폼
 
 <ComponentPreview name="input-otp-form">
 

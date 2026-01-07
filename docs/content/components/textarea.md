@@ -1,6 +1,6 @@
 ---
 title: Textarea
-description: Displays a form textarea or a component that looks like a textarea.
+description: 폼 텍스트영역 또는 텍스트영역처럼 보이는 컴포넌트를 표시합니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/textarea
@@ -24,7 +24,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -35,7 +35,7 @@ links:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 프로젝트에 복사하여 붙여넣으세요.
 
 </Step>
 {#if viewerData}
@@ -46,7 +46,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte
 <script lang="ts">
@@ -58,9 +58,9 @@ Copy and paste the following code into your project.
 <Textarea />
 ```
 
-## Examples
+## 예제
 
-### Default
+### 기본
 
 <ComponentPreview name="textarea-demo">
 
@@ -68,7 +68,7 @@ Copy and paste the following code into your project.
 
 </ComponentPreview>
 
-### Disabled
+### 비활성화
 
 <ComponentPreview name="textarea-disabled">
 
@@ -76,7 +76,7 @@ Copy and paste the following code into your project.
 
 </ComponentPreview>
 
-### With Label
+### 라벨 포함
 
 <ComponentPreview name="textarea-with-label">
 
@@ -84,7 +84,7 @@ Copy and paste the following code into your project.
 
 </ComponentPreview>
 
-### With Text
+### 텍스트 포함
 
 <ComponentPreview name="textarea-with-text">
 
@@ -92,7 +92,7 @@ Copy and paste the following code into your project.
 
 </ComponentPreview>
 
-### With Button
+### 버튼 포함
 
 <ComponentPreview name="textarea-with-button">
 

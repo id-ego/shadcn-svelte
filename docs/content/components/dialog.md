@@ -1,6 +1,6 @@
 ---
 title: Dialog
-description: A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.
+description: 기본 창이나 다른 대화상자 위에 오버레이되는 창으로, 아래 콘텐츠를 비활성화합니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/dialog
@@ -26,7 +26,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -37,7 +37,7 @@ links:
 
 <Step>
 
-Install `bits-ui`:
+`bits-ui` 설치:
 
 </Step>
 
@@ -45,7 +45,7 @@ Install `bits-ui`:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 프로젝트에 복사하여 붙여넣으세요.
 
 </Step>
 {#if viewerData}
@@ -56,7 +56,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte showLineNumbers
 <script lang="ts">
@@ -79,9 +79,9 @@ Copy and paste the following code into your project.
 </Dialog.Root>
 ```
 
-## Examples
+## 예제
 
-### Custom close button
+### 커스텀 닫기 버튼
 
 <ComponentPreview name="dialog-close-button" >
 

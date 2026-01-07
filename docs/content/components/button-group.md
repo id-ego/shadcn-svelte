@@ -1,6 +1,6 @@
 ---
-title: Button Group
-description: A container that groups related buttons together with consistent styling.
+title: 버튼 그룹
+description: 일관된 스타일로 관련 버튼들을 그룹화하는 컨테이너입니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/button-group
@@ -24,7 +24,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -35,7 +35,7 @@ links:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 프로젝트에 복사하여 붙여넣으세요.
 
 </Step>
 {#if viewerData}
@@ -46,7 +46,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte
 <script lang="ts">
@@ -61,11 +61,11 @@ Copy and paste the following code into your project.
 </ButtonGroup.Root>
 ```
 
-## Accessibility
+## 접근성
 
-- The `ButtonGroup` component has the `role` attribute set to `group`.
-- Use `tabindex` to navigate between the buttons in the group.
-- Use `aria-label` or `aria-labelledby` to label the button group.
+- `ButtonGroup` 컴포넌트는 `role` 속성이 `group`으로 설정되어 있습니다.
+- `tabindex`를 사용하여 그룹 내 버튼 간 탐색할 수 있습니다.
+- `aria-label` 또는 `aria-labelledby`를 사용하여 버튼 그룹에 레이블을 지정하세요.
 
 ```svelte showLineNumbers
 <ButtonGroup aria-label="Button group">
@@ -76,14 +76,14 @@ Copy and paste the following code into your project.
 
 ## ButtonGroup vs ToggleGroup
 
-- Use the `ButtonGroup` component when you want to group buttons that perform an action.
-- Use the `ToggleGroup` component when you want to group buttons that toggle a state.
+- 동작을 수행하는 버튼을 그룹화할 때는 `ButtonGroup` 컴포넌트를 사용하세요.
+- 상태를 토글하는 버튼을 그룹화할 때는 `ToggleGroup` 컴포넌트를 사용하세요.
 
-## Examples
+## 예제
 
-### Orientation
+### 방향
 
-Set the `orientation` prop to change the button group layout.
+`orientation` prop을 설정하여 버튼 그룹 레이아웃을 변경할 수 있습니다.
 
 <ComponentPreview name="button-group-orientation-demo">
 
@@ -91,9 +91,9 @@ Set the `orientation` prop to change the button group layout.
 
 </ComponentPreview>
 
-### Size
+### 크기
 
-Control the size of buttons using the `size` prop on individual buttons.
+개별 버튼의 `size` prop을 사용하여 버튼 크기를 제어할 수 있습니다.
 
 <ComponentPreview name="button-group-size-demo">
 
@@ -101,9 +101,9 @@ Control the size of buttons using the `size` prop on individual buttons.
 
 </ComponentPreview>
 
-### Nested
+### 중첩
 
-Nest `ButtonGroup` components to create button groups with spacing.
+`ButtonGroup` 컴포넌트를 중첩하여 간격이 있는 버튼 그룹을 만들 수 있습니다.
 
 <ComponentPreview name="button-group-nested-demo">
 
@@ -111,11 +111,11 @@ Nest `ButtonGroup` components to create button groups with spacing.
 
 </ComponentPreview>
 
-### Separator
+### 구분선
 
-The `ButtonGroupSeparator` component visually divides buttons within a group.
+`ButtonGroupSeparator` 컴포넌트는 그룹 내 버튼을 시각적으로 구분합니다.
 
-Buttons with variant `outline` do not need a separator since they have a border. For other variants, a separator is recommended to improve the visual hierarchy.
+`outline` variant를 가진 버튼은 테두리가 있어 구분선이 필요하지 않습니다. 다른 variant의 경우 시각적 계층을 개선하기 위해 구분선을 사용하는 것이 좋습니다.
 
 <ComponentPreview name="button-group-separator-demo">
 
@@ -123,9 +123,9 @@ Buttons with variant `outline` do not need a separator since they have a border.
 
 </ComponentPreview>
 
-### Split
+### 분할
 
-Create a split button group by adding two buttons separated by a `ButtonGroupSeparator`.
+`ButtonGroupSeparator`로 구분된 두 개의 버튼을 추가하여 분할 버튼 그룹을 만들 수 있습니다.
 
 <ComponentPreview name="button-group-split-demo">
 
@@ -133,9 +133,9 @@ Create a split button group by adding two buttons separated by a `ButtonGroupSep
 
 </ComponentPreview>
 
-### Input
+### 입력
 
-Wrap an `Input` component with buttons.
+`Input` 컴포넌트를 버튼으로 감쌀 수 있습니다.
 
 <ComponentPreview name="button-group-input-demo">
 
@@ -143,9 +143,9 @@ Wrap an `Input` component with buttons.
 
 </ComponentPreview>
 
-### Input Group
+### 입력 그룹
 
-Wrap an `InputGroup` component to create complex input layouts.
+`InputGroup` 컴포넌트를 감싸서 복잡한 입력 레이아웃을 만들 수 있습니다.
 
 <ComponentPreview name="button-group-input-group-demo">
 
@@ -153,9 +153,9 @@ Wrap an `InputGroup` component to create complex input layouts.
 
 </ComponentPreview>
 
-### Dropdown Menu
+### 드롭다운 메뉴
 
-Create a split button group with a `DropdownMenu` component.
+`DropdownMenu` 컴포넌트와 함께 분할 버튼 그룹을 만들 수 있습니다.
 
 <ComponentPreview name="button-group-dropdown-menu-demo">
 
@@ -163,9 +163,9 @@ Create a split button group with a `DropdownMenu` component.
 
 </ComponentPreview>
 
-### Select
+### 셀렉트
 
-Pair with a `Select` component.
+`Select` 컴포넌트와 함께 사용할 수 있습니다.
 
 <ComponentPreview name="button-group-select-demo">
 
@@ -173,9 +173,9 @@ Pair with a `Select` component.
 
 </ComponentPreview>
 
-### Popover
+### 팝오버
 
-Use with a `Popover` component.
+`Popover` 컴포넌트와 함께 사용할 수 있습니다.
 
 <ComponentPreview name="button-group-popover-demo">
 

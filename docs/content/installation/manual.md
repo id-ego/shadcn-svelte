@@ -1,6 +1,6 @@
 ---
-title: Manual Installation
-description: How to setup shadcn-svelte manually.
+title: 수동 설치
+description: shadcn-svelte를 수동으로 설정하는 방법
 ---
 
 <script>
@@ -13,27 +13,27 @@ description: How to setup shadcn-svelte manually.
 
 <Steps>
 
-### Add Tailwind
+### Tailwind 추가
 
-Use the `sv` CLI to add Tailwind CSS to your project.
+`sv` CLI를 사용하여 프로젝트에 Tailwind CSS를 추가합니다.
 
 <PMExecute command="sv add tailwindcss" />
 
-### Add dependencies
+### 의존성 추가
 
-Add the following dependencies to your project:
+다음 의존성을 프로젝트에 추가합니다:
 
 <PMInstall command="tailwind-variants clsx tailwind-merge tw-animate-css" />
 
-### Add icon library
+### 아이콘 라이브러리 추가
 
-Install `@lucide/svelte`:
+`@lucide/svelte`를 설치합니다:
 
 <PMInstall command="@lucide/svelte" />
 
-### Configure path aliases
+### 경로 별칭 설정
 
-If you are using SvelteKit and are not using the default alias `$lib`, you'll need to update your `svelte.config.js` file to include those aliases.
+SvelteKit을 사용하면서 기본 별칭 `$lib`을 사용하지 않는 경우, `svelte.config.js` 파일을 업데이트하여 해당 별칭을 포함해야 합니다.
 
 ```ts title="svelte.config.js" {6} showLineNumbers
 const config = {
@@ -47,7 +47,7 @@ const config = {
 };
 ```
 
-If you are _not_ using SvelteKit, then you'll need to update your path aliases in your `tsconfig.json` and `vite.config.ts`.
+SvelteKit을 사용하지 _않는_ 경우, `tsconfig.json`과 `vite.config.ts`에서 경로 별칭을 업데이트해야 합니다.
 
 ```json title="tsconfig.json" {4-7} showLineNumbers
 {
@@ -74,9 +74,9 @@ export default defineConfig({
 });
 ```
 
-### Configure styles
+### 스타일 설정
 
-Add the following to your global CSS file. You can learn more about using CSS variables for theming in the [theming section](/docs/theming).
+전역 CSS 파일에 다음 내용을 추가합니다. CSS 변수를 사용한 테마 설정에 대한 자세한 내용은 [테마 설정 섹션](/docs/theming)을 참고하세요.
 
 ```css title="src/routes/layout.css" showLineNumbers
 @import "tailwindcss";
@@ -201,11 +201,11 @@ Add the following to your global CSS file. You can learn more about using CSS va
 }
 ```
 
-Feel free to add or modify as needed to suit your project.
+프로젝트에 맞게 필요에 따라 추가하거나 수정하세요.
 
-### Configure utils
+### 유틸리티 설정
 
-You'll want to create a `cn` helper to make it easier to conditionally add and merge Tailwind CSS classes.
+Tailwind CSS 클래스를 조건부로 추가하고 병합하기 쉽게 만들기 위해 `cn` 헬퍼를 만들어야 합니다.
 
 ```ts title="src/lib/utils.ts" showLineNumbers
 import { type ClassValue, clsx } from "clsx";
@@ -216,9 +216,9 @@ export function cn(...inputs: ClassValue[]) {
 }
 ```
 
-### Import styles to your app
+### 앱에 스타일 가져오기
 
-Create `src/routes/+layout.svelte` and import the styles:
+`src/routes/+layout.svelte`를 생성하고 스타일을 가져옵니다:
 
 ```svelte title="src/routes/+layout.svelte" showLineNumbers
 <script lang="ts">
@@ -229,9 +229,9 @@ Create `src/routes/+layout.svelte` and import the styles:
 {@render children?.()}
 ```
 
-### That's it
+### 완료
 
-You can now start adding components to your project.
+이제 프로젝트에 컴포넌트를 추가할 수 있습니다.
 
 <PMAddComp name="button" />
 

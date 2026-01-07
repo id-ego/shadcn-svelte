@@ -1,6 +1,6 @@
 ---
 title: Sonner
-description: An opinionated toast component for Svelte.
+description: Svelte를 위한 토스트 컴포넌트입니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/sonner
@@ -25,28 +25,28 @@ links:
 
 </ComponentPreview>
 
-## About
+## 소개
 
-The Sonner component is provided by [svelte-sonner](https://svelte-sonner.vercel.app/), which is a Svelte port of [Sonner](https://sonner.emilkowal.ski/), originally created by [Emil Kowalski](https://twitter.com/emilkowalski_) for React.
+Sonner 컴포넌트는 [svelte-sonner](https://svelte-sonner.vercel.app/)에서 제공하며, [Emil Kowalski](https://twitter.com/emilkowalski_)가 React용으로 만든 [Sonner](https://sonner.emilkowal.ski/)를 Svelte로 포팅한 것입니다.
 
-## Installation
+## 설치
 
-<Step>Setup theme support</Step>
+<Step>테마 지원 설정</Step>
 
-By default, Sonner will use the user's system preferences to determine whether to show the light or dark theme. To get around this, you can either pass in a custom `theme` prop to the component, or simply use [mode-watcher](https://github.com/svecosystem/mode-watcher) which you can hardcode to `dark` or `light` mode should you wish.
+기본적으로 Sonner는 사용자의 시스템 환경설정을 사용하여 라이트 또는 다크 테마를 표시합니다. 이를 우회하려면 컴포넌트에 커스텀 `theme` prop을 전달하거나, [mode-watcher](https://github.com/svecosystem/mode-watcher)를 사용하면 원하는 경우 `dark` 또는 `light` 모드로 하드코딩할 수 있습니다.
 
-You can learn more about setting up Dark Mode support [here](/docs/dark-mode).
+다크 모드 지원 설정에 대한 자세한 내용은 [여기](/docs/dark-mode)를 참조하세요.
 
-If you wish to opt out of Dark Mode support, you can uninstall `mode-watcher` and remove the `theme` prop from the component after installing via CLI, or manually install the component and don't include `mode-watcher`
+다크 모드 지원을 원하지 않는 경우 CLI로 설치한 후 `mode-watcher`를 제거하고 컴포넌트에서 `theme` prop을 제거하거나, 컴포넌트를 수동으로 설치하고 `mode-watcher`를 포함하지 않으면 됩니다.
 
 <InstallTabs>
 {#snippet cli()}
 <Steps>
 
-<Step>Run the following command:</Step>
+<Step>다음 명령어를 실행하세요:</Step>
 <PMAddComp name="sonner" />
 
-<Step>Add the Toaster component</Step>
+<Step>Toaster 컴포넌트 추가</Step>
 
 ```svelte showLineNumbers title="+layout.svelte" {2,6}
 <script lang="ts">
@@ -66,7 +66,7 @@ If you wish to opt out of Dark Mode support, you can uninstall `mode-watcher` an
 <Steps>
 <Step>
 
-Install `svelte-sonner`:
+`svelte-sonner` 설치:
 
 </Step>
 
@@ -74,14 +74,14 @@ Install `svelte-sonner`:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 프로젝트에 복사하여 붙여넣으세요.
 
 </Step>
 {#if viewerData}
 	<ComponentSource item={viewerData} data-llm-ignore/>
 {/if}
 
-<Step>Add the Toaster component</Step>
+<Step>Toaster 컴포넌트 추가</Step>
 
 ```svelte showLineNumbers title="+layout.svelte" {2,6}
 <script lang="ts">
@@ -98,7 +98,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte
 <script lang="ts">
@@ -111,7 +111,7 @@ Copy and paste the following code into your project.
 <Button onclick={() => toast("Hello world")}>Show toast</Button>
 ```
 
-## Examples
+## 예제
 
 <ComponentPreview name="sonner-types">
 
@@ -119,11 +119,11 @@ Copy and paste the following code into your project.
 
 </ComponentPreview>
 
-## Changelog
+## 변경 이력
 
-### 2025-12 Icons
+### 2025-12 아이콘
 
-We've updated the Sonner component to use icons from `lucide`. Update your `sonner.svelte` file to use the new icons.
+Sonner 컴포넌트를 `lucide`의 아이콘을 사용하도록 업데이트했습니다. `sonner.svelte` 파일을 업데이트하여 새 아이콘을 사용하세요.
 
 ```svelte showLineNumbers title="components/ui/sonner.svelte" {2-6,22-36}
 <script lang="ts">

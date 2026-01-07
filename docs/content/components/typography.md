@@ -1,6 +1,6 @@
 ---
-title: Typography
-description: Styles for headings, paragraphs, lists...etc
+title: 타이포그래피
+description: 제목, 단락, 목록 등을 위한 스타일
 component: true
 ---
 
@@ -8,7 +8,7 @@ component: true
 	import ComponentPreview from "$lib/components/component-preview.svelte";
 </script>
 
-We do not ship any typography styles by default. This page is an example of how you can use utility classes to style your text.
+기본적으로 타이포그래피 스타일은 제공하지 않습니다. 이 페이지는 유틸리티 클래스를 사용하여 텍스트 스타일을 지정하는 방법의 예제입니다.
 
 <ComponentPreview name="typography-demo" class="[&_.preview]:!h-auto">
 
@@ -80,7 +80,7 @@ We do not ship any typography styles by default. This page is an example of how 
 
 </ComponentPreview>
 
-## Inline code
+## 인라인 코드
 
 <ComponentPreview name="typography-inline-code">
 
@@ -88,7 +88,7 @@ We do not ship any typography styles by default. This page is an example of how 
 
 </ComponentPreview>
 
-## Lead
+## 리드 텍스트
 
 <ComponentPreview name="typography-lead">
 
@@ -96,7 +96,7 @@ We do not ship any typography styles by default. This page is an example of how 
 
 </ComponentPreview>
 
-## Large
+## 큰 텍스트
 
 <ComponentPreview name="typography-large">
 
@@ -104,7 +104,7 @@ We do not ship any typography styles by default. This page is an example of how 
 
 </ComponentPreview>
 
-## Small
+## 작은 텍스트
 
 <ComponentPreview name="typography-small">
 
@@ -112,7 +112,7 @@ We do not ship any typography styles by default. This page is an example of how 
 
 </ComponentPreview>
 
-## Muted
+## 흐린 텍스트
 
 <ComponentPreview name="typography-muted">
 

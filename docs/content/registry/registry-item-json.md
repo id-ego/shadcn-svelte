@@ -1,9 +1,9 @@
 ---
 title: registry-item.json
-description: Specification for registry items.
+description: 레지스트리 아이템 명세
 ---
 
-The `registry-item.json` schema is used to define your custom registry items.
+`registry-item.json` 스키마는 커스텀 레지스트리 아이템을 정의하는 데 사용됩니다.
 
 ```json title="registry-item.json" showLineNumbers
 {
@@ -38,17 +38,17 @@ The `registry-item.json` schema is used to define your custom registry items.
 
 <div class="flex gap-2 items-center mt-6">
 
-[See more examples](/docs/registry/examples)
+[더 많은 예제 보기](/docs/registry/examples)
 
 </div>
 
-## Definitions
+## 정의
 
-You can see the JSON Schema for `registry-item.json` [here](/schema/registry-item.json).
+`registry-item.json`의 JSON 스키마는 [여기](/schema/registry-item.json)에서 확인할 수 있습니다.
 
 ### $schema
 
-The `$schema` property is used to specify the schema for the `registry-item.json` file.
+`$schema` 속성은 `registry-item.json` 파일의 스키마를 지정하는 데 사용됩니다.
 
 ```json title="registry-item.json" showLineNumbers
 {
@@ -58,7 +58,7 @@ The `$schema` property is used to specify the schema for the `registry-item.json
 
 ### name
 
-The name of the item. This is used to identify the item in the registry. It should be unique for your registry.
+아이템의 이름입니다. 레지스트리에서 아이템을 식별하는 데 사용됩니다. 레지스트리 내에서 고유해야 합니다.
 
 ```json title="registry-item.json" showLineNumbers
 {
@@ -68,7 +68,7 @@ The name of the item. This is used to identify the item in the registry. It shou
 
 ### title
 
-A human-readable title for your registry item. Keep it short and descriptive.
+레지스트리 아이템의 사람이 읽을 수 있는 제목입니다. 짧고 설명적으로 작성하세요.
 
 ```json title="registry-item.json" showLineNumbers
 {
@@ -78,7 +78,7 @@ A human-readable title for your registry item. Keep it short and descriptive.
 
 ### description
 
-A description of your registry item. This can be longer and more detailed than the `title`.
+레지스트리 아이템의 설명입니다. `title`보다 더 길고 상세하게 작성할 수 있습니다.
 
 ```json title="registry-item.json" showLineNumbers
 {
@@ -88,7 +88,7 @@ A description of your registry item. This can be longer and more detailed than t
 
 ### type
 
-The `type` property is used to specify the type of your registry item. This is used to determine the type and target path of the item when resolved for a project.
+`type` 속성은 레지스트리 아이템의 타입을 지정하는 데 사용됩니다. 프로젝트에 대해 해석될 때 아이템의 타입과 대상 경로를 결정하는 데 사용됩니다.
 
 ```json title="registry-item.json" showLineNumbers
 {
@@ -96,25 +96,25 @@ The `type` property is used to specify the type of your registry item. This is u
 }
 ```
 
-The following types are supported:
+다음 타입이 지원됩니다:
 
-| Type                 | Description                                      |
+| 타입                 | 설명                                      |
 | -------------------- | ------------------------------------------------ |
-| `registry:block`     | Use for complex components with multiple files.  |
-| `registry:component` | Use for simple components.                       |
-| `registry:lib`       | Use for lib and utils.                           |
-| `registry:hook`      | Use for hooks.                                   |
-| `registry:ui`        | Use for UI components and single-file primitives |
-| `registry:page`      | Use for page or file-based routes.               |
-| `registry:file`      | Use for miscellaneous files.                     |
-| `registry:style`     | Use for registry styles. eg. `new-york`          |
-| `registry:theme`     | Use for themes.                                  |
+| `registry:block`     | 여러 파일이 있는 복잡한 컴포넌트에 사용합니다.  |
+| `registry:component` | 단순한 컴포넌트에 사용합니다.                       |
+| `registry:lib`       | 라이브러리와 유틸리티에 사용합니다.                           |
+| `registry:hook`      | 훅에 사용합니다.                                   |
+| `registry:ui`        | UI 컴포넌트와 단일 파일 프리미티브에 사용합니다. |
+| `registry:page`      | 페이지 또는 파일 기반 라우트에 사용합니다.               |
+| `registry:file`      | 기타 파일에 사용합니다.                     |
+| `registry:style`     | 레지스트리 스타일에 사용합니다. 예: `new-york`          |
+| `registry:theme`     | 테마에 사용합니다.                                  |
 
 ### author
 
-The `author` property is used to specify the author of the registry item.
+`author` 속성은 레지스트리 아이템의 작성자를 지정하는 데 사용됩니다.
 
-It can be unique to the registry item or the same as the author of the registry.
+레지스트리 아이템마다 고유할 수도 있고 레지스트리 작성자와 동일할 수도 있습니다.
 
 ```json title="registry-item.json" showLineNumbers
 {
@@ -124,9 +124,9 @@ It can be unique to the registry item or the same as the author of the registry.
 
 ### dependencies
 
-The `dependencies` property is used to specify the dependencies of your registry item. This is for `npm` packages.
+`dependencies` 속성은 레지스트리 아이템의 의존성을 지정하는 데 사용됩니다. 이것은 `npm` 패키지를 위한 것입니다.
 
-Use `@version` to specify the version of your registry item.
+`@version`을 사용하여 레지스트리 아이템의 버전을 지정하세요.
 
 ```json title="registry-item.json" showLineNumbers
 {
@@ -136,13 +136,13 @@ Use `@version` to specify the version of your registry item.
 
 ### registryDependencies
 
-Defines other registry items that this item depends on.
+이 아이템이 의존하는 다른 레지스트리 아이템을 정의합니다.
 
-Each entry may be one of the following:
+각 항목은 다음 중 하나일 수 있습니다:
 
-#### shadcn-svelte Registry Item
+#### shadcn-svelte 레지스트리 아이템
 
-The name of a shadcn-svelte registry item (e.g., `'button'`, `'input'`, `'select'`), which will resolve to that item in the shadcn-svelte registry.
+shadcn-svelte 레지스트리 아이템의 이름(예: `'button'`, `'input'`, `'select'`)으로, shadcn-svelte 레지스트리에서 해당 아이템으로 해석됩니다.
 
 ```json title="registry-item.json" showLineNumbers
 {
@@ -150,9 +150,9 @@ The name of a shadcn-svelte registry item (e.g., `'button'`, `'input'`, `'select
 }
 ```
 
-#### Remote URL
+#### 원격 URL
 
-A full URL to a custom registry item (e.g. `https://example.com/r/hello-world.json`)
+커스텀 레지스트리 아이템의 전체 URL(예: `https://example.com/r/hello-world.json`)
 
 ```json title="registry-item.json" showLineNumbers
 {
@@ -160,9 +160,9 @@ A full URL to a custom registry item (e.g. `https://example.com/r/hello-world.js
 }
 ```
 
-#### Local alias (when building with the CLI)
+#### 로컬 별칭 (CLI로 빌드할 때)
 
-If you're defining the item in `registry.json` and using the CLI to build the registry, you can use a name prefixed with `local:` (e.g. `local:stepper`) to reference an item in the current registry. The CLI will convert this to a relative path (e.g. `./stepper.json`) in the output `registry-item.json` file.
+`registry.json`에서 아이템을 정의하고 CLI를 사용하여 레지스트리를 빌드하는 경우, `local:` 접두사가 있는 이름(예: `local:stepper`)을 사용하여 현재 레지스트리의 아이템을 참조할 수 있습니다. CLI는 이를 출력 `registry-item.json` 파일에서 상대 경로(예: `./stepper.json`)로 변환합니다.
 
 ```json title="registry.json" showLineNumbers
 {
@@ -175,7 +175,7 @@ If you're defining the item in `registry.json` and using the CLI to build the re
 }
 ```
 
-Which the CLI will convert to the following in the output `registry-item.json` file:
+CLI는 이를 출력 `registry-item.json` 파일에서 다음과 같이 변환합니다:
 
 ```json title="registry-item.json" showLineNumbers
 {
@@ -183,9 +183,9 @@ Which the CLI will convert to the following in the output `registry-item.json` f
 }
 ```
 
-#### Relative Path
+#### 상대 경로
 
-If you're not using the CLI and defining the item directly in its `registry-item.json` file, you can specify a relative path, which is relative to the current item, to reference another item in the registry (e.g. `./stepper.json`).
+CLI를 사용하지 않고 `registry-item.json` 파일에서 직접 아이템을 정의하는 경우, 현재 아이템에 대한 상대 경로를 지정하여 레지스트리의 다른 아이템을 참조할 수 있습니다(예: `./stepper.json`).
 
 ```json title="registry-item.json" showLineNumbers
 {
@@ -195,9 +195,9 @@ If you're not using the CLI and defining the item directly in its `registry-item
 
 ### files
 
-The `files` property is used to specify the files of your registry item. Each file has a `path`, `type` and `target` (optional) property.
+`files` 속성은 레지스트리 아이템의 파일을 지정하는 데 사용됩니다. 각 파일에는 `path`, `type` 및 `target`(선택사항) 속성이 있습니다.
 
-**The `target` property is required for `registry:page` and `registry:file` types.**
+**`target` 속성은 `registry:page`와 `registry:file` 타입에 필수입니다.**
 
 ```json title="registry-item.json" showLineNumbers
 {
@@ -226,23 +226,23 @@ The `files` property is used to specify the files of your registry item. Each fi
 
 #### path
 
-The `path` property is used to specify the path to the file in your registry. This path is used by the build script to parse, transform and build the registry JSON payload.
+`path` 속성은 레지스트리에서 파일의 경로를 지정하는 데 사용됩니다. 이 경로는 빌드 스크립트가 레지스트리 JSON 페이로드를 파싱, 변환 및 빌드하는 데 사용됩니다.
 
 #### type
 
-The `type` property is used to specify the type of the file. See the [type](#type) section for more information.
+`type` 속성은 파일의 타입을 지정하는 데 사용됩니다. 자세한 내용은 [type](#type) 섹션을 참조하세요.
 
 #### target
 
-The `target` property is used to indicate where the file should be placed in a project. This is optional and only required for `registry:page` and `registry:file` types.
+`target` 속성은 파일이 프로젝트에 배치되어야 하는 위치를 나타내는 데 사용됩니다. 이것은 선택사항이며 `registry:page`와 `registry:file` 타입에만 필요합니다.
 
-By default, the `shadcn-svelte` cli will read a project's `components.json` file to determine the target path. For some files, such as routes or config you can specify the target path manually.
+기본적으로 `shadcn-svelte` CLI는 프로젝트의 `components.json` 파일을 읽어 대상 경로를 결정합니다. 라우트나 설정과 같은 일부 파일의 경우 대상 경로를 수동으로 지정할 수 있습니다.
 
-Use `~` to refer to the root of the project e.g `~/foo.config.js`.
+프로젝트의 루트를 참조하려면 `~`를 사용하세요(예: `~/foo.config.js`).
 
 ### cssVars
 
-Use to define CSS variables for your registry item.
+레지스트리 아이템에 대한 CSS 변수를 정의하는 데 사용합니다.
 
 ```json title="registry-item.json" showLineNumbers
 {
@@ -263,7 +263,7 @@ Use to define CSS variables for your registry item.
 
 ### css
 
-Use `css` to add new rules to the project's CSS file eg. `@layer base`, `@layer components`, `@utility`, `@keyframes`, etc.
+프로젝트의 CSS 파일에 새 규칙을 추가하려면 `css`를 사용하세요(예: `@layer base`, `@layer components`, `@utility`, `@keyframes` 등).
 
 ```json title="registry-item.json" showLineNumbers
 {
@@ -298,7 +298,7 @@ Use `css` to add new rules to the project's CSS file eg. `@layer base`, `@layer 
 
 ### docs
 
-Use `docs` to show custom documentation or message when installing your registry item via the CLI.
+CLI를 통해 레지스트리 아이템을 설치할 때 커스텀 문서나 메시지를 표시하려면 `docs`를 사용하세요.
 
 ```json title="registry-item.json" showLineNumbers
 {
@@ -308,7 +308,7 @@ Use `docs` to show custom documentation or message when installing your registry
 
 ### categories
 
-Use `categories` to organize your registry item.
+레지스트리 아이템을 구성하려면 `categories`를 사용하세요.
 
 ```json title="registry-item.json" showLineNumbers
 {
@@ -318,7 +318,7 @@ Use `categories` to organize your registry item.
 
 ### meta
 
-Use `meta` to add additional metadata to your registry item. You can add any key/value pair that you want to be available to the registry item.
+레지스트리 아이템에 추가 메타데이터를 추가하려면 `meta`를 사용하세요. 레지스트리 아이템에서 사용할 수 있도록 하고 싶은 키/값 쌍을 추가할 수 있습니다.
 
 ```json title="registry-item.json" showLineNumbers
 {

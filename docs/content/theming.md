@@ -1,6 +1,6 @@
 ---
-title: Theming
-description: Use CSS Variables to customize the look and feel of your application.
+title: 테마 설정
+description: CSS 변수를 사용하여 애플리케이션의 모양과 느낌을 커스터마이즈하세요.
 ---
 
 <script>
@@ -9,34 +9,34 @@ description: Use CSS Variables to customize the look and feel of your applicatio
 	import CodeCollapsibleWrapper from "$lib/components/code-collapsible-wrapper.svelte";
 </script>
 
-We use CSS variables for styling. This allows you to easily change the colors of components without having to update class names.
+스타일링에 CSS 변수를 사용합니다. 이를 통해 클래스 이름을 업데이트하지 않고도 컴포넌트의 색상을 쉽게 변경할 수 있습니다.
 
-## Convention
+## 규칙
 
-We use a simple `background` and `foreground` convention for colors. The `background` variable is used for the background color of the component and the `foreground` variable is used for the text color.
+색상에 대해 간단한 `background`와 `foreground` 규칙을 사용합니다. `background` 변수는 컴포넌트의 배경색에 사용되고, `foreground` 변수는 텍스트 색상에 사용됩니다.
 
 <Callout class="mt-4">
 
-The `background` suffix is omitted when the variable is used for the background color of the component.
+변수가 컴포넌트의 배경색에 사용될 때 `background` 접미사는 생략됩니다.
 
 </Callout>
 
-Given the following CSS variables:
+다음 CSS 변수가 주어졌을 때:
 
 ```css
 --primary: oklch(0.205 0 0);
 --primary-foreground: oklch(0.985 0 0);
 ```
 
-The `background` color of the following component will be `var(--primary)` and the `foreground` color will be `var(--primary-foreground)`.
+다음 컴포넌트의 `background` 색상은 `var(--primary)`가 되고, `foreground` 색상은 `var(--primary-foreground)`가 됩니다.
 
 ```svelte
 <div class="bg-primary text-primary-foreground">Hello</div>
 ```
 
-## List of variables
+## 변수 목록
 
-Here's the list of variables available for customization:
+커스터마이징에 사용할 수 있는 변수 목록입니다:
 
 ```css title="src/routes/layout.css" showLineNumbers
 :root {
@@ -109,9 +109,9 @@ Here's the list of variables available for customization:
 }
 ```
 
-## Adding new colors
+## 새로운 색상 추가하기
 
-To add new colors, you need to add them to your CSS file.
+새로운 색상을 추가하려면 CSS 파일에 추가해야 합니다.
 
 ```css title="src/routes/layout.css" showLineNumbers
 :root {
@@ -130,19 +130,19 @@ To add new colors, you need to add them to your CSS file.
 }
 ```
 
-You can now use the `warning` utility class in your components.
+이제 컴포넌트에서 `warning` 유틸리티 클래스를 사용할 수 있습니다.
 
 ```svelte /bg-warning/ /text-warning-foreground/
 <div class="bg-warning text-warning-foreground"></div>
 ```
 
-## Other color formats
+## 다른 색상 포맷
 
-See the [Tailwind CSS documentation](https://tailwindcss.com/docs/colors) for more information on using colors in Tailwind CSS.
+Tailwind CSS에서 색상을 사용하는 방법에 대한 자세한 내용은 [Tailwind CSS 문서](https://tailwindcss.com/docs/colors)를 참조하세요.
 
-## Base Colors
+## 기본 색상
 
-For reference, here's a list of the base colors that are available.
+참고로, 사용 가능한 기본 색상 목록입니다.
 
 ### Neutral
 

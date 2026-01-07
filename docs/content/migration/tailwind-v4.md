@@ -1,6 +1,6 @@
 ---
 title: Tailwind v4
-description: How to use shadcn-svelte with Tailwind v4 and Svelte 5.
+description: Tailwind v4와 Svelte 5로 shadcn-svelte를 사용하는 방법.
 ---
 
 <script>
@@ -15,66 +15,63 @@ description: How to use shadcn-svelte with Tailwind v4 and Svelte 5.
 	import PMRun from "$lib/components/pm-run.svelte";
 </script>
 
-This documentation site is now running Tailwind v4. If you're looking for the old Tailwind v3 docs, you can find them here: [https://tw3.shadcn-svelte.com](https://tw3.shadcn-svelte.com).
+이 문서 사이트는 이제 Tailwind v4로 운영되고 있습니다. 이전 Tailwind v3 문서를 찾고 계시다면 여기에서 확인할 수 있습니다: [https://tw3.shadcn-svelte.com](https://tw3.shadcn-svelte.com).
 
-## What's New
+## 새로운 기능
 
-- The `@latest` CLI can now initialize projects with Tailwind v4 and Svelte 5.
-- Full support for the new `@theme` directive and `@theme inline` option.
-- All components are updated for Tailwind v4 and Svelte 5.
-- Every primitive that renders an element now has a `data-slot` attribute for styling.
-- We've fixed and cleaned up the style of the components.
-- Buttons now use the default cursor.
-- We're deprecating the `default` style. New projects will use `new-york`.
-- HSL colors are now converted to OKLCH.
+- `@latest` CLI로 이제 Tailwind v4와 Svelte 5로 프로젝트를 초기화할 수 있습니다.
+- 새로운 `@theme` 지시어와 `@theme inline` 옵션을 완전 지원합니다.
+- 모든 컴포넌트가 Tailwind v4와 Svelte 5로 업데이트되었습니다.
+- 요소를 렌더링하는 모든 프리미티브에 이제 스타일링을 위한 `data-slot` 속성이 있습니다.
+- 컴포넌트의 스타일을 수정하고 정리했습니다.
+- 버튼은 이제 기본 커서를 사용합니다.
+- `default` 스타일은 더 이상 사용되지 않습니다. 새 프로젝트는 `new-york`을 사용합니다.
+- HSL 색상이 이제 OKLCH로 변환됩니다.
 
-**Note: this is non-breaking. Your existing apps with Tailwind v3 will continue to work. When you add new components, they'll still be in Tailwind v3 with the style configured in `components.json` until you upgrade. Only new projects start with Tailwind v4.**
+**참고: 이는 호환성을 깨뜨리지 않습니다. Tailwind v3를 사용하는 기존 앱은 계속 작동합니다. 새 컴포넌트를 추가하면 업그레이드할 때까지 `components.json`에 구성된 스타일로 Tailwind v3에 그대로 유지됩니다. 새 프로젝트만 Tailwind v4로 시작합니다.**
 
-## See it Live
+## 실제 적용 사례
 
-This documentation site is now using Tailwind v4 and Svelte 5, but for a more complete example, checkout the demo site here: [https://v4.shadcn-svelte.com](https://v4.shadcn-svelte.com).
+이 문서 사이트는 이제 Tailwind v4와 Svelte 5를 사용하고 있습니다. 더 완전한 예제를 보려면 여기의 데모 사이트를 확인하세요: [https://v4.shadcn-svelte.com](https://v4.shadcn-svelte.com).
 
-If you find any bugs, please us know on [GitHub](https://github.com/huntabyte/shadcn-svelte/issues).
+버그를 발견하시면 [GitHub](https://github.com/huntabyte/shadcn-svelte/issues)에서 알려주세요.
 
-## Try It Out
+## 사용해보기
 
-You can start using Tailwind v4 and Svelte 5 today using the `@latest` CLI. See the specific install docs
+`@latest` CLI를 사용하여 오늘부터 Tailwind v4와 Svelte 5를 사용할 수 있습니다. 자세한 설치 문서를 참조하세요
 
 <InstallCards />
 
-## Upgrade Your Project
+## 프로젝트 업그레이드
 
 <Callout>
 
-**Note**: This guide assumes you are coming from a Svelte 5 and Tailwind 3 project. If you are coming from a Svelte 4 project, you should first follow the [Svelte 4 and Tailwind 3 to Svelte 5](./svelte-5) guide.
+**참고**: 이 가이드는 Svelte 5와 Tailwind 3 프로젝트에서 업그레이드한다고 가정합니다. Svelte 4 프로젝트에서 업그레이드하는 경우, 먼저 [Svelte 4와 Tailwind 3에서 Svelte 5로](./svelte-5) 가이드를 따라야 합니다.
 
 </Callout>
 
 <Callout class="bg-blue-50 mt-6 border-blue-600 dark:border-blue-900 dark:bg-blue-950 mb-6 [&_code]:bg-blue-100 dark:[&_code]:bg-blue-900 text-foreground">
 
-**Important:** Before upgrading, please read the [Tailwind v4 Compatibility
-Docs](https://tailwindcss.com/docs/compatibility) and make sure your project
-is ready for the upgrade. Tailwind v4 uses bleeding-edge browser features and
-is designed for modern browsers.
+**중요:** 업그레이드하기 전에 [Tailwind v4 호환성 문서](https://tailwindcss.com/docs/compatibility)를 읽고 프로젝트가 업그레이드 준비가 되었는지 확인하세요. Tailwind v4는 최신 브라우저 기능을 사용하며 모던 브라우저를 위해 설계되었습니다.
 
 </Callout>
 
-One of the major advantages of using `shadcn-svelte` is that the code you end up with is exactly what you'd write yourself. There are no hidden abstractions.
+`shadcn-svelte`를 사용하는 주요 장점 중 하나는 여러분이 직접 작성할 코드와 정확히 동일한 코드를 얻을 수 있다는 것입니다. 숨겨진 추상화가 없습니다.
 
-This means when a dependency has a new release, you can just follow the official upgrade paths.
+즉, 의존성에 새 릴리스가 나오면 공식 업그레이드 경로만 따르면 됩니다.
 
-Here's how to upgrade your existing projects:
+기존 프로젝트를 업그레이드하는 방법은 다음과 같습니다:
 
-### 1. Follow the Tailwind v4 Upgrade Guide
+### 1. Tailwind v4 업그레이드 가이드 따르기
 
-- Upgrade to Tailwind v4 by following the official upgrade guide: https://tailwindcss.com/docs/upgrade-guide
-- Use the `@tailwindcss/upgrade` codemod to remove deprecated utility classes and update the tailwind config.
+- 공식 업그레이드 가이드를 따라 Tailwind v4로 업그레이드하세요: https://tailwindcss.com/docs/upgrade-guide
+- `@tailwindcss/upgrade` 코드모드를 사용하여 더 이상 사용되지 않는 유틸리티 클래스를 제거하고 tailwind 설정을 업데이트하세요.
 
-### 2. Replace PostCSS with Vite
+### 2. PostCSS를 Vite로 교체
 
-The upgrade script will automatically migrate your project to the latest PostCSS configuration of Tailwind v4, but the Tailwind team recommends using Vite instead, so we'll use that instead.
+업그레이드 스크립트는 자동으로 프로젝트를 Tailwind v4의 최신 PostCSS 구성으로 마이그레이션하지만, Tailwind 팀은 대신 Vite 사용을 권장하므로 우리도 Vite를 사용하겠습니다.
 
-#### Delete `postcss.config.js`
+#### `postcss.config.js` 삭제
 
 ```diff title="postcss.config.js"
 - export default {
@@ -84,15 +81,15 @@ The upgrade script will automatically migrate your project to the latest PostCSS
 - };
 ```
 
-#### Uninstall `@tailwindcss/postcss`
+#### `@tailwindcss/postcss` 제거
 
 <PMRemove command="@tailwindcss/postcss" />
 
-#### Install `@tailwindcss/vite`
+#### `@tailwindcss/vite` 설치
 
 <PMInstall command="@tailwindcss/vite -D" />
 
-#### Update `vite.config.ts`
+#### `vite.config.ts` 업데이트
 
 ```diff title="vite.config.ts"
 import { sveltekit } from '@sveltejs/kit/vite';
@@ -105,15 +102,15 @@ export default defineConfig({
 });
 ```
 
-#### Verify the upgrade
+#### 업그레이드 확인
 
-Start your dev server and verify that all your styles are working as expected.
+개발 서버를 시작하고 모든 스타일이 예상대로 작동하는지 확인하세요.
 
 <PMRun command="dev" />
 
-### 2. Update your `app.css` file
+### 2. `app.css` 파일 업데이트
 
-The codemod will update your `app.css` file to look something like this, where it's defining the colors as CSS variables and importing your existing `tailwind.config.ts` file:
+코드모드는 `app.css` 파일을 다음과 같이 업데이트합니다. 여기서는 색상을 CSS 변수로 정의하고 기존 `tailwind.config.ts` 파일을 가져옵니다:
 
 ```css showLineNumbers
 @import "tailwindcss";
@@ -212,17 +209,17 @@ The codemod will update your `app.css` file to look something like this, where i
 }
 ```
 
-In the following steps, we'll update this to completely remove the `tailwind.config.ts` and adopt the CSS-based config.
+다음 단계에서는 `tailwind.config.ts`를 완전히 제거하고 CSS 기반 구성을 채택하도록 업데이트하겠습니다.
 
-#### Replace `tailwind-css-animate` with `tw-animate-css`
+#### `tailwind-css-animate`를 `tw-animate-css`로 교체
 
-We've deprecated `tailwindcss-animate` in favor of `tw-animate-css`, which has support for Tailwind v4.
+Tailwind v4를 지원하는 `tw-animate-css`를 위해 `tailwindcss-animate`는 더 이상 사용되지 않습니다.
 
 <PMRemove command="tailwindcss-animate" />
 
 <PMInstall command="tw-animate-css -D" />
 
-#### Import `tw-animate-css`
+#### `tw-animate-css` 가져오기
 
 ```diff title="app.css"
   @import "tailwindcss";
@@ -230,7 +227,7 @@ We've deprecated `tailwindcss-animate` in favor of `tw-animate-css`, which has s
 /* ... */
 ```
 
-#### Add the custom variant for dark mode
+#### 다크 모드를 위한 커스텀 variant 추가
 
 ```diff title="app.css"
 @import "tailwindcss";
@@ -240,9 +237,9 @@ We've deprecated `tailwindcss-animate` in favor of `tw-animate-css`, which has s
 /* ... */
 ```
 
-#### Remove the compatibility styles
+#### 호환성 스타일 제거
 
-We override the styles applied here so this is just dead code.
+여기에 적용된 스타일을 재정의하므로 이것은 불필요한 코드입니다.
 
 ```diff title="app.css"
 @import "tailwindcss";
@@ -269,11 +266,11 @@ We override the styles applied here so this is just dead code.
 - }
 ```
 
-#### CSS Variables and Theme Config
+#### CSS 변수와 테마 설정
 
-We'll move the CSS variables to the `:root` and `.dark` selectors, wrap the colors values in `hsl()`, and set up an `@theme inline` directive to replace our Tailwind v3 config.
+CSS 변수를 `:root`와 `.dark` 선택자로 이동하고, 색상 값을 `hsl()`로 감싸고, Tailwind v3 설정을 대체할 `@theme inline` 지시어를 설정하겠습니다.
 
-Once complete, your `app.css` file should look something like this (the color values will differ depending on your theme):
+완료되면 `app.css` 파일은 다음과 같아야 합니다 (색상 값은 테마에 따라 다릅니다):
 
 ```css title="app.css"
 @import "tailwindcss";
@@ -392,36 +389,36 @@ Once complete, your `app.css` file should look something like this (the color va
 }
 ```
 
-#### Verify the update
+#### 업데이트 확인
 
-Restart your dev server and verify that all your styles are working as expected.
+개발 서버를 재시작하고 모든 스타일이 예상대로 작동하는지 확인하세요.
 
 <PMRun command="dev" />
 
-#### Remove the `tailwind.config` file
+#### `tailwind.config` 파일 제거
 
-Once you've verified that your styles are working as expected, you can remove the `tailwind.config.ts` file.
+스타일이 예상대로 작동하는지 확인한 후 `tailwind.config.ts` 파일을 제거할 수 있습니다.
 
-### 3. Use new `size-*` utility
+### 3. 새로운 `size-*` 유틸리티 사용
 
-The new `size-*` utility (added in Tailwind v3.4), is now fully supported by `tailwind-merge`. You can replace `w-* h-*` with the new `size-*` utility:
+새로운 `size-*` 유틸리티(Tailwind v3.4에 추가됨)는 이제 `tailwind-merge`에서 완전히 지원됩니다. `w-* h-*`를 새로운 `size-*` 유틸리티로 교체할 수 있습니다:
 
 ```diff
 - w-4 h-4
 + size-4
 ```
 
-### 4. Update your dependencies
+### 4. 의존성 업데이트
 
 <PMInstall command="bits-ui@latest @lucide/svelte@latest tailwind-variants@latest tailwind-merge@latest clsx@latest svelte-sonner@latest paneforge@next vaul-svelte@next formsnap@latest" />
 
-### 5. Update your utils (optional)
+### 5. utils 업데이트 (선택 사항)
 
-If you're planning on adding additional components in the future or plan to update your existing components to the latest versions, you'll need to update your `utils.ts` file.
+향후 추가 컴포넌트를 추가하거나 기존 컴포넌트를 최신 버전으로 업데이트할 계획이라면 `utils.ts` 파일을 업데이트해야 합니다.
 
-Previously, we were depending on `bits-ui` for some simple type helpers that required you to have `bits-ui` installed, regardless if you were using components that depend on it.
+이전에는 일부 간단한 타입 헬퍼를 위해 `bits-ui`에 의존했기 때문에 이를 사용하는 컴포넌트를 사용하지 않더라도 `bits-ui`를 설치해야 했습니다.
 
-These helpers have been moved into the `utils.ts` file:
+이러한 헬퍼는 `utils.ts` 파일로 이동되었습니다:
 
 ```diff title="utils.ts"
  import { clsx, type ClassValue } from "clsx";
@@ -439,7 +436,7 @@ These helpers have been moved into the `utils.ts` file:
 + export type WithElementRef<T, U extends HTMLElement = HTMLElement> = T & { ref?: U | null };
 ```
 
-And then you can incrementally replace these imports in your existing components:
+그런 다음 기존 컴포넌트에서 이러한 import를 점진적으로 교체할 수 있습니다:
 
 ```diff title="card.svelte"
 <script lang="ts">
@@ -448,35 +445,35 @@ And then you can incrementally replace these imports in your existing components
 </script>
 ```
 
-### 6. Update Your Colors (optional)
+### 6. 색상 업데이트 (선택 사항)
 
-The dark mode colors have been revisited and updated to be more accessible, as you can see in these docs as well as the [v4.shadcn-svelte.com](https://v4.shadcn-svelte.com) demo site.
+다크 모드 색상이 검토되고 더 접근 가능하도록 업데이트되었습니다. 이 문서와 [v4.shadcn-svelte.com](https://v4.shadcn-svelte.com) 데모 사이트에서 확인할 수 있습니다.
 
-You can update your components to use the new dark mode colors by re-adding your components using the CLI[^1].
+CLI를 사용하여 컴포넌트를 다시 추가하여 새로운 다크 모드 색상을 사용하도록 컴포넌트를 업데이트할 수 있습니다[^1].
 
 <Steps>
 
-<Step>Commit any changes</Step>
+<Step>변경 사항 커밋</Step>
 
-**The CLI will overwrite your existing components.** It's recommended to commit the changes you've made to your components before running the CLI.
+**CLI는 기존 컴포넌트를 덮어씁니다.** CLI를 실행하기 전에 컴포넌트에 대한 변경 사항을 커밋하는 것이 좋습니다.
 
 ```bash
 git add .
 git commit -m '..."
 ```
 
-<Step>Update components</Step>
+<Step>컴포넌트 업데이트</Step>
 
 <PMExecute command="shadcn-svelte@latest add --all --overwrite" />
 
-<Step> Update colors</Step>
+<Step>색상 업데이트</Step>
 
-Update the dark mode colors in your `app.css` file to the new OKLCH values. See the [Base Colors](/docs/theming#base-colors) reference for a list of colors.
+`app.css` 파일의 다크 모드 색상을 새로운 OKLCH 값으로 업데이트하세요. 색상 목록은 [기본 색상](/docs/theming#base-colors) 레퍼런스를 참조하세요.
 
-<Step>Review Changes</Step>
+<Step>변경 사항 검토</Step>
 
-Review and re-apply any changes you've made to your components using the git diffs.
+git diff를 사용하여 컴포넌트에 대한 변경 사항을 검토하고 다시 적용하세요.
 
 </Steps>
 
-[^1]: Updating your components will overwrite your existing components.
+[^1]: 컴포넌트를 업데이트하면 기존 컴포넌트가 덮어쓰여집니다.

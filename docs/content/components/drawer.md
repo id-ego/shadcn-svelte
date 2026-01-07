@@ -1,6 +1,6 @@
 ---
 title: Drawer
-description: A drawer component for Svelte.
+description: Svelte용 드로어 컴포넌트입니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/drawer
@@ -25,11 +25,11 @@ links:
 
 </ComponentPreview>
 
-## About
+## 소개
 
-Drawer is built on top of [Vaul Svelte](https://vaul-svelte.com), which is a Svelte port of [Vaul](https://vaul.emilkowal.ski) by [Emil Kowalski](https://twitter.com/emilkowalski_).
+Drawer는 [Emil Kowalski](https://twitter.com/emilkowalski_)의 [Vaul](https://vaul.emilkowal.ski)을 Svelte로 포팅한 [Vaul Svelte](https://vaul-svelte.com) 기반으로 만들어졌습니다.
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -40,7 +40,7 @@ Drawer is built on top of [Vaul Svelte](https://vaul-svelte.com), which is a Sve
 
 <Step>
 
-Install `vaul-svelte`:
+`vaul-svelte`를 설치합니다:
 
 </Step>
 
@@ -48,7 +48,7 @@ Install `vaul-svelte`:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 프로젝트에 복사하여 붙여넣습니다.
 
 </Step>
 {#if viewerData}
@@ -59,7 +59,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte showLineNumbers
 <script lang="ts">
@@ -83,11 +83,11 @@ Copy and paste the following code into your project.
 </Drawer.Root>
 ```
 
-## Examples
+## 예제
 
-### Responsive Dialog
+### 반응형 대화상자
 
-You can combine the `Dialog` and `Drawer` components to create a responsive dialog. This renders a `Dialog` on desktop and a `Drawer` on mobile.
+`Dialog`와 `Drawer` 컴포넌트를 결합하여 반응형 대화상자를 만들 수 있습니다. 데스크톱에서는 `Dialog`로, 모바일에서는 `Drawer`로 렌더링됩니다.
 
 <ComponentPreview name="drawer-dialog">
 

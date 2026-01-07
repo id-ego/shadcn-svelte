@@ -1,6 +1,6 @@
 ---
 title: Svelte
-description: Adding dark mode to your Svelte site.
+description: Svelte 사이트에 다크 모드 추가하기
 ---
 
 <script>
@@ -13,15 +13,15 @@ description: Adding dark mode to your Svelte site.
 
 <Steps>
 
-## Install mode-watcher
+## mode-watcher 설치
 
-Start by installing `mode-watcher`:
+먼저 `mode-watcher`를 설치합니다:
 
 <PMInstall command="mode-watcher" />
 
-## Add the ModeWatcher component
+## ModeWatcher 컴포넌트 추가
 
-Import the `ModeWatcher` component and use it in your root layout:
+`ModeWatcher` 컴포넌트를 import하고 루트 레이아웃에서 사용합니다:
 
 ```svelte title="src/routes/+layout.svelte" showLineNumbers {3,7}
 <script lang="ts">
@@ -34,9 +34,9 @@ Import the `ModeWatcher` component and use it in your root layout:
 {@render children?.()}
 ```
 
-## Add a mode toggle
+## 모드 토글 추가
 
-Place a mode toggle on your site to toggle between light and dark mode.
+라이트 모드와 다크 모드를 전환할 수 있는 모드 토글을 사이트에 배치합니다.
 
 <ComponentPreview name="dark-mode-light-switch">
 

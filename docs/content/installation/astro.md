@@ -1,6 +1,6 @@
 ---
 title: Astro
-description: How to setup shadcn-svelte in an Astro project.
+description: Astro 프로젝트에서 shadcn-svelte를 설정하는 방법입니다.
 ---
 
 <script>
@@ -15,15 +15,15 @@ description: How to setup shadcn-svelte in an Astro project.
 
 <Steps>
 
-### Create project
+### 프로젝트 생성
 
-Start by creating a new Astro project:
+새로운 Astro 프로젝트를 생성하는 것부터 시작합니다:
 
 <PMCreate command="astro@latest" />
 
-### Configure your Astro project
+### Astro 프로젝트 구성
 
-You will be asked a few questions to configure your project:
+프로젝트를 구성하기 위한 몇 가지 질문이 표시됩니다:
 
 ```bash showLineNumbers
 - Where should we create your new project?
@@ -36,33 +36,33 @@ Yes
 Yes/No
 ```
 
-### Add Svelte to your project
+### 프로젝트에 Svelte 추가
 
-Install Svelte using the Astro CLI:
+Astro CLI를 사용하여 Svelte를 설치합니다:
 
 <PMExecute command="astro add svelte" />
 
 <Callout className="mt-4">
 
-Answer `Yes` to all the question prompted by the CLI when installing Svelte.
+Svelte 설치 시 CLI에서 표시되는 모든 질문에 `Yes`로 답변하세요.
 
 </Callout>
 
-### Add TailwindCSS to your project
+### 프로젝트에 TailwindCSS 추가
 
-Add Tailwind CSS using the Astro CLI:
+Astro CLI를 사용하여 Tailwind CSS를 추가합니다:
 
 <PMExecute command="astro add tailwind" />
 
 <Callout className="mt-4">
 
-Answer `Yes` to all the question prompted by the CLI when installing TailwindCSS.
+TailwindCSS 설치 시 CLI에서 표시되는 모든 질문에 `Yes`로 답변하세요.
 
 </Callout>
 
-### Import the global CSS file
+### 전역 CSS 파일 불러오기
 
-Import the `global.css` file in the `src/pages/index.astro` file:
+`src/pages/index.astro` 파일에 `global.css` 파일을 불러옵니다:
 
 ```astro title="src/pages/index.astro" {2} showLineNumbers
 ---
@@ -70,9 +70,9 @@ import "../styles/global.css";
 ---
 ```
 
-### Setup path aliases
+### 경로 별칭 설정
 
-Add the following code to the `tsconfig.json` file to resolve paths:
+경로를 해석하기 위해 `tsconfig.json` 파일에 다음 코드를 추가합니다:
 
 ```json title="tsconfig.json" {2-10} showLineNumbers
 {
@@ -90,19 +90,19 @@ Add the following code to the `tsconfig.json` file to resolve paths:
 
 <Callout className="mt-4">
 
-If needed, adapt the path aliases to your specific needs ([learn more about it](https://docs.astro.build/en/guides/aliases/)).
+필요한 경우, 특정 요구사항에 맞게 경로 별칭을 조정하세요 ([자세히 알아보기](https://docs.astro.build/en/guides/aliases/)).
 
 </Callout>
 
-### Run the CLI
+### CLI 실행
 
-Run the `shadcn-svelte` init command to setup your project:
+프로젝트를 설정하기 위해 `shadcn-svelte` init 명령어를 실행합니다:
 
 <PMExecute command="shadcn-svelte@latest init" />
 
-### Configure components.json
+### components.json 구성
 
-You will be asked a few questions to configure `components.json`:
+`components.json`을 구성하기 위한 몇 가지 질문이 표시됩니다:
 
 ```txt showLineNumbers
 Which base color would you like to use? › Slate
@@ -114,13 +114,13 @@ Configure the import alias for hooks: › $lib/hooks
 Configure the import alias for ui: › $lib/components/ui
 ```
 
-### That's it
+### 완료
 
-You can now start adding components to your project.
+이제 프로젝트에 컴포넌트를 추가할 수 있습니다.
 
 <PMAddComp name="button" />
 
-The command above will add the `Button` component to your project. You can then import it like this:
+위 명령어는 프로젝트에 `Button` 컴포넌트를 추가합니다. 다음과 같이 불러올 수 있습니다:
 
 ```astro title="index.astro" {2,10} showLineNumbers
 ---
@@ -139,7 +139,7 @@ import { Button } from "$lib/components/ui/button/index.js";
 
 <Callout className="mt-4">
 
-Remember to use the `client` directives inside `.astro` files when dealing with interactive components ([learn more about it](https://docs.astro.build/en/reference/directives-reference/#client-directives)).
+인터랙티브 컴포넌트를 다룰 때는 `.astro` 파일 내에서 `client` 디렉티브를 사용해야 합니다 ([자세히 알아보기](https://docs.astro.build/en/reference/directives-reference/#client-directives)).
 
 </Callout>
 

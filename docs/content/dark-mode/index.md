@@ -1,6 +1,6 @@
 ---
-title: Dark Mode
-description: Adding dark mode to your site.
+title: 다크 모드
+description: 사이트에 다크 모드를 추가합니다.
 ---
 
 <script>

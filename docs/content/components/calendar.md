@@ -1,6 +1,6 @@
 ---
 title: Calendar
-description: A calendar component that allows users to select dates.
+description: 사용자가 날짜를 선택할 수 있는 캘린더 컴포넌트입니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/calendar
@@ -27,13 +27,13 @@ links:
 
 </ComponentPreview>
 
-## Blocks
+## 블록
 
-We have built a collection of 30+ calendar blocks that you can use to build your own calendar components.
+캘린더 컴포넌트를 구축하는 데 사용할 수 있는 30개 이상의 캘린더 블록 컬렉션을 제공합니다.
 
-See call calendar blocks in the [Blocks Library](/blocks/calendar) page.
+모든 캘린더 블록은 [블록 라이브러리](/blocks/calendar) 페이지에서 확인하세요.
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -44,7 +44,7 @@ See call calendar blocks in the [Blocks Library](/blocks/calendar) page.
 
 <Step>
 
-Install `bits-ui` and `@internationalized/date`:
+`bits-ui`와 `@internationalized/date`를 설치하세요:
 
 </Step>
 
@@ -52,7 +52,7 @@ Install `bits-ui` and `@internationalized/date`:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 프로젝트에 복사하여 붙여넣으세요.
 
 </Step>
 {#if viewerData}
@@ -63,19 +63,19 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## About
+## 소개
 
-The `<Calendar />` component is built on top of the [Bits UI Calendar](https://www.bits-ui.com/docs/components/calendar) component, which uses the [@internationalized/date](https://react-spectrum.adobe.com/internationalized/date/index.html) package to handle dates.
+`<Calendar />` 컴포넌트는 [Bits UI Calendar](https://www.bits-ui.com/docs/components/calendar) 컴포넌트를 기반으로 구축되었으며, [@internationalized/date](https://react-spectrum.adobe.com/internationalized/date/index.html) 패키지를 사용하여 날짜를 처리합니다.
 
-If you're looking for a range calendar, check out the [Range Calendar](/docs/components/range-calendar) component.
+범위 캘린더를 찾고 있다면 [Range Calendar](/docs/components/range-calendar) 컴포넌트를 확인하세요.
 
-## Date Picker
+## 날짜 선택기
 
-You can use the `<Calendar />` component to build a date picker. See the [Date Picker](/docs/components/date-picker) page for more information.
+`<Calendar />` 컴포넌트를 사용하여 날짜 선택기를 만들 수 있습니다. 자세한 내용은 [Date Picker](/docs/components/date-picker) 페이지를 참조하세요.
 
-## Examples
+## 예제
 
-### Range Calendar
+### 범위 캘린더
 
 <ComponentPreview name="calendar-02" class="**:[.preview]:h-auto lg:**:[.preview]:h-[450px]">
 
@@ -83,7 +83,7 @@ You can use the `<Calendar />` component to build a date picker. See the [Date P
 
 </ComponentPreview>
 
-### Month and Year Selector
+### 월 및 연도 선택기
 
 <ComponentPreview name="calendar-13">
 
@@ -91,7 +91,7 @@ You can use the `<Calendar />` component to build a date picker. See the [Date P
 
 </ComponentPreview>
 
-### Date of Birth Picker
+### 생년월일 선택기
 
 <ComponentPreview name="calendar-22">
 
@@ -99,7 +99,7 @@ You can use the `<Calendar />` component to build a date picker. See the [Date P
 
 </ComponentPreview>
 
-### Date and Time Picker
+### 날짜 및 시간 선택기
 
 <ComponentPreview name="calendar-24">
 
@@ -107,9 +107,9 @@ You can use the `<Calendar />` component to build a date picker. See the [Date P
 
 </ComponentPreview>
 
-### Natural Language Picker
+### 자연어 선택기
 
-This component uses the `chrono-node` library to parse natural language dates.
+이 컴포넌트는 `chrono-node` 라이브러리를 사용하여 자연어 날짜를 파싱합니다.
 
 <ComponentPreview name="calendar-29">
 
@@ -117,18 +117,18 @@ This component uses the `chrono-node` library to parse natural language dates.
 
 </ComponentPreview>
 
-## Upgrade Guide
+## 업그레이드 가이드
 
-You can upgrade to the latest version of the `<Calendar />` component by running the following command:
+다음 명령을 실행하여 최신 버전의 `<Calendar />` 컴포넌트로 업그레이드할 수 있습니다:
 
 <PMAddComp name="calendar" />
 
-When you're prompted to overwrite the existing files, select `Yes`. **If you have made any changes to the `Calendar` component, you will need to merge your changes with the new version.**
+기존 파일을 덮어쓸 것인지 묻는 메시지가 표시되면 `Yes`를 선택하세요. **`Calendar` 컴포넌트를 변경한 경우 새 버전과 변경 사항을 병합해야 합니다.**
 
-#### Installing Blocks
+#### 블록 설치
 
-After upgrading the `Calendar` component, you can add the new blocks with the following:
+`Calendar` 컴포넌트를 업그레이드한 후 다음과 같이 새 블록을 추가할 수 있습니다:
 
 <PMAddComp name="calendar-02" />
 
-This will add the latest version of the calendar blocks.
+이렇게 하면 최신 버전의 캘린더 블록이 추가됩니다.

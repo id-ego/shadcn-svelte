@@ -1,6 +1,6 @@
 ---
 title: Empty
-description: Use the Empty component to display a empty state.
+description: 빈 상태를 표시하는 Empty 컴포넌트입니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/empty
@@ -24,7 +24,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -35,7 +35,7 @@ links:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 복사하여 프로젝트에 붙여넣으세요.
 
 </Step>
 {#if viewerData}
@@ -46,7 +46,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte
 <script lang="ts">
@@ -70,11 +70,11 @@ Copy and paste the following code into your project.
 </Empty.Root>
 ```
 
-## Examples
+## 예제
 
-### Outline
+### 외곽선
 
-Use the `border` utility class to create a outline empty state.
+`border` 유틸리티 클래스를 사용하여 외곽선이 있는 빈 상태를 만들 수 있습니다.
 
 <ComponentPreview name="empty-outline-demo">
 
@@ -82,9 +82,9 @@ Use the `border` utility class to create a outline empty state.
 
 </ComponentPreview>
 
-### Background
+### 배경
 
-Use the `bg-*` and `bg-gradient-*` utilities to add a background to the empty state.
+`bg-*` 및 `bg-gradient-*` 유틸리티를 사용하여 빈 상태에 배경을 추가할 수 있습니다.
 
 <ComponentPreview name="empty-background-demo">
 
@@ -92,9 +92,9 @@ Use the `bg-*` and `bg-gradient-*` utilities to add a background to the empty st
 
 </ComponentPreview>
 
-### Avatar
+### 아바타
 
-Use the `EmptyMedia` component to display an avatar in the empty state.
+`EmptyMedia` 컴포넌트를 사용하여 빈 상태에 아바타를 표시할 수 있습니다.
 
 <ComponentPreview name="empty-avatar-demo">
 
@@ -102,9 +102,9 @@ Use the `EmptyMedia` component to display an avatar in the empty state.
 
 </ComponentPreview>
 
-### Avatar Group
+### 아바타 그룹
 
-Use the `EmptyMedia` component to display an avatar group in the empty state.
+`EmptyMedia` 컴포넌트를 사용하여 빈 상태에 아바타 그룹을 표시할 수 있습니다.
 
 <ComponentPreview name="empty-avatar-group-demo">
 
@@ -114,7 +114,7 @@ Use the `EmptyMedia` component to display an avatar group in the empty state.
 
 ### InputGroup
 
-You can add an `InputGroup` component to the `EmptyContent` component.
+`EmptyContent` 컴포넌트에 `InputGroup` 컴포넌트를 추가할 수 있습니다.
 
 <ComponentPreview name="empty-input-group-demo">
 

@@ -1,6 +1,6 @@
 ---
-title: Introduction
-description: Re-usable components built with Bits UI and Tailwind CSS.
+title: 소개
+description: Bits UI와 Tailwind CSS로 만든 재사용 가능한 컴포넌트.
 ---
 
 <script>
@@ -8,78 +8,76 @@ description: Re-usable components built with Bits UI and Tailwind CSS.
   import Callout from '$lib/components/callout.svelte';
 </script>
 
-An unofficial, community-led [Svelte](https://svelte.dev) port of [shadcn/ui](https://ui.shadcn.com). We are not affiliated with [shadcn](https://x.com/shadcn), but we did get his blessing before creating a Svelte version of his work. This project was born out of the need for a similar project for the Svelte ecosystem.
+비공식적인 커뮤니티 주도의 [Svelte](https://svelte.dev) 버전 [shadcn/ui](https://ui.shadcn.com) 포트입니다. [shadcn](https://x.com/shadcn)과 제휴 관계는 아니지만, Svelte 버전을 만들기 전에 그의 허락을 받았습니다. 이 프로젝트는 Svelte 생태계에 비슷한 프로젝트가 필요해서 탄생했습니다.
 
-**This is not a component library. It is how you build your component library.**
+**이것은 컴포넌트 라이브러리가 아닙니다. 컴포넌트 라이브러리를 만드는 방법입니다.**
 
-You know how most traditional component libraries work: you install a package from NPM, import the components, and use them in your app.
+대부분의 전통적인 컴포넌트 라이브러리가 어떻게 작동하는지 알고 계실 겁니다: NPM에서 패키지를 설치하고, 컴포넌트를 import한 다음, 앱에서 사용합니다.
 
-This approach works well until you need to customize a component to fit your design system or require one that isn’t included in the library. **Often, you end up wrapping library components, writing workarounds to override styles, or mixing components from different libraries with incompatible APIs.**
+이 접근 방식은 디자인 시스템에 맞게 컴포넌트를 커스터마이징하거나 라이브러리에 포함되지 않은 컴포넌트가 필요할 때까지는 잘 작동합니다. **종종 라이브러리 컴포넌트를 래핑하거나, 스타일을 오버라이드하기 위한 우회 방법을 작성하거나, 호환되지 않는 API를 가진 다른 라이브러리의 컴포넌트를 섞어 사용하게 됩니다.**
 
-This is what shadcn-svelte aims to solve. It is built around the following principles:
+이것이 바로 shadcn-svelte가 해결하려는 문제입니다. 다음 원칙들을 기반으로 만들어졌습니다:
 
-- **Open Code:** The top layer of your component code is open for modification.
-- **Composition:** Every component uses a common, composable interface, making them predictable.
-- **Distribution:** A flat-file schema and command-line tool make it easy to distribute components.
-- **Beautiful Defaults:** Carefully chosen default styles, so you get great design out-of-the-box.
-- **AI-Ready:** Open code for LLMs to read, understand, and improve.
+- **오픈 코드:** 컴포넌트 코드의 최상위 레이어가 수정 가능하도록 열려 있습니다.
+- **컴포지션:** 모든 컴포넌트가 공통의 조합 가능한 인터페이스를 사용하여 예측 가능합니다.
+- **배포:** 플랫 파일 스키마와 커맨드라인 도구로 컴포넌트를 쉽게 배포할 수 있습니다.
+- **아름다운 기본값:** 신중하게 선택된 기본 스타일로 즉시 훌륭한 디자인을 얻을 수 있습니다.
+- **AI 지원:** LLM이 읽고, 이해하고, 개선할 수 있는 오픈 코드입니다.
 
-## Open Code
+## 오픈 코드
 
-shadcn-svelte hands you the actual component code. You have full control to customize and extend the components to your needs. This means:
+shadcn-svelte는 실제 컴포넌트 코드를 제공합니다. 필요에 맞게 컴포넌트를 커스터마이징하고 확장할 수 있는 완전한 제어권을 갖습니다. 이는 다음을 의미합니다:
 
-- **Full Transparency:** You see exactly how each component is built.
-- **Easy Customization:** Modify any part of a component to fit your design and functionality requirements.
-- **AI Integration:** Access to the code makes it straightforward for LLMs to read, understand, and even improve your components.
+- **완전한 투명성:** 각 컴포넌트가 어떻게 만들어졌는지 정확히 볼 수 있습니다.
+- **쉬운 커스터마이징:** 디자인과 기능 요구사항에 맞게 컴포넌트의 어떤 부분이든 수정할 수 있습니다.
+- **AI 통합:** 코드에 접근할 수 있어 LLM이 컴포넌트를 읽고, 이해하고, 개선하기가 쉽습니다.
 
-_In a typical library, if you need to change a button’s behavior, you have to override styles or wrap the component. With shadcn-svelte, you simply edit the button code directly._
+_일반적인 라이브러리에서 버튼의 동작을 변경해야 한다면 스타일을 오버라이드하거나 컴포넌트를 래핑해야 합니다. shadcn-svelte에서는 버튼 코드를 직접 편집하면 됩니다._
 
 <Accordion.Root type="single">
 
 <Accordion.Item value="faq-1" class="border-none">
 
 <Accordion.Trigger>
-How do I pull upstream updates in an Open Code approach?
+오픈 코드 방식에서 업스트림 업데이트를 어떻게 가져오나요?
 </Accordion.Trigger>
 
 <Accordion.Content>
 
-shadcn-svelte follows a headless component architecture. This means the core of your app can receive fixes by updating your dependencies, for instance, bits-ui or paneforge.
+shadcn-svelte는 헤드리스 컴포넌트 아키텍처를 따릅니다. 이는 앱의 핵심이 bits-ui나 paneforge 같은 의존성을 업데이트하여 수정 사항을 받을 수 있다는 것을 의미합니다.
 
 <p class="mt-4">
-The topmost layer, i.e., the one closest to your design system, is not
-        coupled with the implementation of the library. It stays open for
-        modification.
+디자인 시스템에 가장 가까운 최상위 레이어는 라이브러리 구현과 결합되어 있지 않습니다. 수정을 위해 열려 있습니다.
 </p>
 </Accordion.Content>
 </Accordion.Item>
 </Accordion.Root>
 
-## Composition
+## 컴포지션
 
-Every component in shadcn-svelte shares a common, composable interface. **If a component does not exist, we bring it in, make it composable, and adjust its style to match and work with the rest of the design system.**
+shadcn-svelte의 모든 컴포넌트는 공통의 조합 가능한 인터페이스를 공유합니다. **컴포넌트가 존재하지 않으면 가져와서 조합 가능하게 만들고, 나머지 디자인 시스템과 일치하도록 스타일을 조정합니다.**
 
-_A shared, composable interface means it's predictable for both your team and LLMs. You are not learning different APIs for every new component. Even for third-party ones._
+_공유되는 조합 가능한 인터페이스는 팀과 LLM 모두에게 예측 가능하다는 것을 의미합니다. 새 컴포넌트마다 다른 API를 배울 필요가 없습니다. 서드파티 컴포넌트도 마찬가지입니다._
 
-## Distribution
+## 배포
 
-shadcn-svelte is also a code distribution system. It defines a schema for components and a CLI to distribute them.
+shadcn-svelte는 코드 배포 시스템이기도 합니다. 컴포넌트를 위한 스키마와 배포를 위한 CLI를 정의합니다.
 
-- **Schema:** A flat-file structure that defines the components, their dependencies, and properties.
-- **CLI:** A command-line tool to distribute and install components across projects with cross-framework support.
+- **스키마:** 컴포넌트, 의존성, 속성을 정의하는 플랫 파일 구조입니다.
+- **CLI:** 크로스 프레임워크 지원으로 프로젝트 간에 컴포넌트를 배포하고 설치하는 커맨드라인 도구입니다.
 
-_You can use the schema to distribute your components to other projects or have AI generate completely new components based on existing schema._
+_스키마를 사용하여 다른 프로젝트에 컴포넌트를 배포하거나, AI가 기존 스키마를 기반으로 완전히 새로운 컴포넌트를 생성하도록 할 수 있습니다._
 
-## Beautiful Defaults
+## 아름다운 기본값
 
-shadcn-svelte comes with a large collection of components that have carefully chosen default styles. They are designed to look good on their own and to work well together as a consistent system:
+shadcn-svelte는 신중하게 선택된 기본 스타일을 가진 대규모 컴포넌트 컬렉션을 제공합니다. 컴포넌트들은 자체적으로 보기 좋고 일관된 시스템으로 함께 잘 작동하도록 설계되었습니다:
 
-- **Good Out-of-the-Box:** Your UI has a clean and minimal look without extra work.
-- **Unified Design:** Components naturally fit with one another. Each component is built to match the others, keeping your UI consistent.
-- **Easily Customizable:** If you want to change something, it's simple to override and extend the defaults.
+- **즉시 사용 가능:** 추가 작업 없이 UI가 깔끔하고 미니멀한 모습을 갖습니다.
+- **통일된 디자인:** 컴포넌트들이 자연스럽게 어울립니다. 각 컴포넌트는 다른 것들과 일치하도록 만들어져 UI의 일관성을 유지합니다.
+- **쉬운 커스터마이징:** 변경하고 싶다면 기본값을 오버라이드하고 확장하기 쉽습니다.
 
-## AI-Ready
+## AI 지원
 
-The design of shadcn-svelte makes it easy for AI tools to work with your code. Its open code and consistent API allow AI models to read, understand, and even generate new components.
+shadcn-svelte의 설계는 AI 도구가 코드와 함께 작업하기 쉽게 만듭니다. 오픈 코드와 일관된 API를 통해 AI 모델이 읽고, 이해하고, 새 컴포넌트를 생성할 수 있습니다.
 
-_An AI model can learn how your components work and suggest improvements or even create new components that integrate with your existing design._
+_AI 모델은 컴포넌트가 어떻게 작동하는지 학습하고 개선 사항을 제안하거나 기존 디자인과 통합되는 새 컴포넌트를 만들 수도 있습니다._

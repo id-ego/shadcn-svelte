@@ -1,6 +1,6 @@
 ---
 title: Accordion
-description: A vertically stacked set of interactive headings that each reveal a section of content.
+description: 각각 콘텐츠 섹션을 표시하는 상호작용 가능한 제목들의 수직 스택입니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/accordion
@@ -21,13 +21,13 @@ links:
 
 </script>
 
-<ComponentPreview name="accordion-demo" class="[&_.preview>[data-orientation=vertical]]:sm:max-w-[80%] **:[.preview]:min-h-[400px]" description="An accordion with three items" align="start">
+<ComponentPreview name="accordion-demo" class="[&_.preview>[data-orientation=vertical]]:sm:max-w-[80%] **:[.preview]:min-h-[400px]" description="세 개의 아이템을 가진 아코디언" align="start">
 
 <div></div>
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 
@@ -43,7 +43,7 @@ links:
 
 <Step>
 
-Install `bits-ui`
+`bits-ui` 설치
 
 </Step>
 
@@ -51,7 +51,7 @@ Install `bits-ui`
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 프로젝트에 복사하여 붙여넣으세요.
 
 </Step>
 
@@ -65,7 +65,7 @@ Copy and paste the following code into your project.
 
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte showLineNumbers
 <script lang="ts">

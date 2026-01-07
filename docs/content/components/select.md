@@ -1,6 +1,6 @@
 ---
 title: Select
-description: Displays a list of options for the user to pick from—triggered by a button.
+description: 버튼으로 트리거되는 옵션 목록을 표시합니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/select
@@ -26,7 +26,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -37,7 +37,7 @@ links:
 
 <Step>
 
-Install `bits-ui`:
+`bits-ui`를 설치합니다:
 
 </Step>
 
@@ -45,7 +45,7 @@ Install `bits-ui`:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 복사하여 프로젝트에 붙여넣습니다.
 
 </Step>
 {#if viewerData}
@@ -56,7 +56,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte showLineNumbers
 <script lang="ts">
@@ -75,9 +75,9 @@ Copy and paste the following code into your project.
 </Select.Root>
 ```
 
-## Examples
+## 예제
 
-### Scrollable
+### 스크롤 가능
 
 <ComponentPreview name="select-scrollable">
 

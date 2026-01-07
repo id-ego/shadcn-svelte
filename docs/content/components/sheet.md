@@ -1,6 +1,6 @@
 ---
 title: Sheet
-description: Extends the Dialog component to display content that complements the main content of the screen.
+description: 화면의 주요 콘텐츠를 보완하는 콘텐츠를 표시하기 위해 Dialog 컴포넌트를 확장합니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/sheet
@@ -26,7 +26,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -37,7 +37,7 @@ links:
 
 <Step>
 
-Install `bits-ui`:
+`bits-ui` 설치:
 
 </Step>
 
@@ -45,7 +45,7 @@ Install `bits-ui`:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 프로젝트에 복사하여 붙여넣으세요.
 
 </Step>
 {#if viewerData}
@@ -56,7 +56,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte showLineNumbers
 <script lang="ts">
@@ -79,15 +79,15 @@ Copy and paste the following code into your project.
 </Sheet.Root>
 ```
 
-## Examples
+## 예제
 
 ### Side
 
-Pass the `side` property to `<Sheet.Content />` to indicate the edge of the screen where the component will appear. The values can be `top`, `right`, `bottom` or `left`.
+`<Sheet.Content />`에 `side` 속성을 전달하여 컴포넌트가 나타날 화면의 가장자리를 지정합니다. 값은 `top`, `right`, `bottom` 또는 `left`가 될 수 있습니다.
 
 ### Size
 
-You can adjust the size of the sheet using CSS classes:
+CSS 클래스를 사용하여 시트의 크기를 조정할 수 있습니다:
 
 ```svelte showLineNumbers {3}
 <Sheet.Root>

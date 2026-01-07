@@ -1,6 +1,6 @@
 ---
-title: Data Table
-description: Powerful table and datagrids built using TanStack Table.
+title: 데이터 테이블
+description: TanStack Table을 사용하여 구축된 강력한 테이블 및 데이터그리드입니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/data-table
@@ -22,46 +22,46 @@ links:
 
 </ComponentPreview>
 
-## Introduction
+## 소개
 
-Data tables are difficult to componentize because of the wide variety of features they support, and the uniqueness of every data set.
+데이터 테이블은 지원하는 기능의 다양성과 모든 데이터셋의 고유성 때문에 컴포넌트화하기 어렵습니다.
 
-So instead of trying to create a one-size-fits-all solution, we've created a guide to help you build your own data tables.
+따라서 모든 경우에 맞는 단일 솔루션을 만드는 대신, 자체 데이터 테이블을 구축할 수 있도록 가이드를 제공합니다.
 
-We'll start with the basic `<Table />` component, and work our way up to a fully-featured data table.
+기본 `<Table />` 컴포넌트부터 시작하여 모든 기능을 갖춘 데이터 테이블까지 단계별로 진행하겠습니다.
 
 <Callout>
 
-Tip: If you find yourself using the same table in multiple places, you can always extract it into a reusable component.
+팁: 여러 곳에서 동일한 테이블을 사용하는 경우, 언제든지 재사용 가능한 컴포넌트로 추출할 수 있습니다.
 
 </Callout>
 
-## Table of Contents
+## 목차
 
-This guide will show you how to use [TanStack Table](https://tanstack.com/table) and the `<Table />` component to build your own custom data table. We'll cover the following topics:
+이 가이드는 [TanStack Table](https://tanstack.com/table)과 `<Table />` 컴포넌트를 사용하여 자체 커스텀 데이터 테이블을 구축하는 방법을 보여줍니다. 다음 주제를 다룹니다:
 
-- [Basic Table](#basic-table)
-- [Row Actions](#row-actions)
-- [Pagination](#pagination)
-- [Sorting](#sorting)
-- [Filtering](#filtering)
-- [Visibility](#visibility)
-- [Row Selection](#row-selection)
-- [Reusable Components](#reusable-components)
+- [기본 테이블](#basic-table)
+- [행 액션](#row-actions)
+- [페이지네이션](#pagination)
+- [정렬](#sorting)
+- [필터링](#filtering)
+- [표시 여부](#visibility)
+- [행 선택](#row-selection)
+- [재사용 가능한 컴포넌트](#reusable-components)
 
-## Installation
+## 설치
 
-1. Add the `<Table />` component to your project along with the `data-table` helpers. These helpers enable TanStack Table v8 to work with Svelte 5 Snippets, Components, etc.
+1. `<Table />` 컴포넌트와 `data-table` 헬퍼를 프로젝트에 추가합니다. 이 헬퍼들은 TanStack Table v8이 Svelte 5 스니펫, 컴포넌트 등과 함께 작동할 수 있도록 합니다.
 
 <PMAddComp name="table data-table" />
 
-2. Add `@tanstack/table-core` as a dependency:
+2. `@tanstack/table-core`를 의존성으로 추가합니다:
 
 <PMInstall command="@tanstack/table-core" />
 
-## Prerequisites
+## 전제 조건
 
-We're going to build a table to show recent payments. Here's what our data looks like:
+최근 결제 내역을 보여주는 테이블을 만들 것입니다. 데이터는 다음과 같습니다:
 
 ```ts showLineNumbers
 type Payment = {
@@ -88,9 +88,9 @@ export const data: Payment[] = [
 ];
 ```
 
-## Project Structure
+## 프로젝트 구조
 
-Start by creating a route where your data table will live (we'll call ours payments), along with the following files:
+데이터 테이블을 위한 라우트를 생성합니다(여기서는 payments라고 부릅니다). 다음 파일들도 함께 생성합니다:
 
 ```txt
 routes
@@ -103,22 +103,22 @@ routes
     └── +page.svelte
 ```
 
-- `columns.ts` will contain our column definitions.
-- `data-table.svelte` will contain the `<Table />` component and the complete `<DataTable />` component.
-- `data-table-actions.svelte` will contain the actions menu for each row.
-- `data-table-checkbox.svelte` will contain the checkbox for each row.
-- `data-table-email-button.svelte` will contain the sortable email header button.
-- `+page.svelte` is where we'll render and access `<DataTable />` component.
+- `columns.ts`는 컬럼 정의를 포함합니다.
+- `data-table.svelte`는 `<Table />` 컴포넌트와 완전한 `<DataTable />` 컴포넌트를 포함합니다.
+- `data-table-actions.svelte`는 각 행의 액션 메뉴를 포함합니다.
+- `data-table-checkbox.svelte`는 각 행의 체크박스를 포함합니다.
+- `data-table-email-button.svelte`는 정렬 가능한 이메일 헤더 버튼을 포함합니다.
+- `+page.svelte`는 `<DataTable />` 컴포넌트를 렌더링하고 접근하는 곳입니다.
 
-## Basic Table
+## 기본 테이블
 
-Let's start by building a basic table.
+기본 테이블을 만드는 것부터 시작하겠습니다.
 
 <Steps>
 
-### Column Definitions
+### 컬럼 정의
 
-First, we'll define our columns.
+먼저 컬럼을 정의합니다.
 
 ```ts showLineNumbers {1,12-25} title="routes/payments/columns.ts"
 import type { ColumnDef } from "@tanstack/table-core";
@@ -150,13 +150,13 @@ export const columns: ColumnDef<Payment>[] = [
 
 <Callout class="mt-4">
 
-**Note:** Columns are where you define the core of what your table will look like. They define the data that will be displayed, how it will be formatted, sorted and filtered.
+**참고:** 컬럼은 테이블의 모습을 정의하는 핵심입니다. 표시될 데이터와 형식화, 정렬 및 필터링 방식을 정의합니다.
 
 </Callout>
 
-### `<DataTable />` Component
+### `<DataTable />` 컴포넌트
 
-Next, we'll create a `<DataTable />` component to render our table.
+다음으로 테이블을 렌더링하기 위한 `<DataTable />` 컴포넌트를 만듭니다.
 
 ```svelte showLineNumbers title="routes/payments/data-table.svelte"
 <script lang="ts" generics="TData, TValue">
@@ -227,15 +227,15 @@ Next, we'll create a `<DataTable />` component to render our table.
 
 <Callout>
 
-**Tip**: If you find yourself using `<DataTable />` in multiple places, this is the component you could make reusable by extracting it to `components/ui/data-table.svelte`.
+**팁**: 여러 곳에서 `<DataTable />`을 사용하는 경우, `components/ui/data-table.svelte`로 추출하여 재사용 가능한 컴포넌트로 만들 수 있습니다.
 
 `<DataTable columns={columns} data={data} />`
 
 </Callout>
 
-### Render the table
+### 테이블 렌더링
 
-Finally, we'll render our table in our page component.
+마지막으로 페이지 컴포넌트에서 테이블을 렌더링합니다.
 
 ```ts showLineNumbers title="routes/payments/+page.server.ts"
 export async function load() {
@@ -260,15 +260,15 @@ export async function load() {
 
 </Steps>
 
-## Cell Formatting
+## 셀 서식 지정
 
-Let's format the amount cell to display the dollar amount. We'll also align the cell to the right.
+금액 셀을 달러 금액으로 표시하도록 서식을 지정하겠습니다. 또한 셀을 오른쪽으로 정렬합니다.
 
 <Steps>
 
-### Update columns definition
+### 컬럼 정의 업데이트
 
-Update the `header` and `cell` definitions for amount as follows:
+금액에 대한 `header`와 `cell` 정의를 다음과 같이 업데이트합니다:
 
 ```ts showLineNumbers title="routes/payments/columns.ts"
 import type { ColumnDef } from "@tanstack/table-core";
@@ -309,23 +309,23 @@ export const columns: ColumnDef<Payment>[] = [
 ];
 ```
 
-We're using the `createRawSnippet` function to create a Svelte Snippet for rendering simple HTML elements that don't require full lifecycle and state capabilities like a component. We then use the `renderSnippet` helper function to render the snippet.
+`createRawSnippet` 함수를 사용하여 컴포넌트처럼 전체 라이프사이클 및 상태 기능이 필요하지 않은 간단한 HTML 요소를 렌더링하기 위한 Svelte 스니펫을 생성합니다. 그런 다음 `renderSnippet` 헬퍼 함수를 사용하여 스니펫을 렌더링합니다.
 
-You can use the same approach to format other cells and headers.
+동일한 방법으로 다른 셀과 헤더의 서식을 지정할 수 있습니다.
 
 </Steps>
 
-## Row Actions
+## 행 액션
 
-Let's add row actions to our table. We'll use the `<DropdownMenu />` and the `<Button />` components for this, so you have install them if not done already:
+테이블에 행 액션을 추가하겠습니다. 이를 위해 `<DropdownMenu />`와 `<Button />` 컴포넌트를 사용하므로, 아직 설치하지 않았다면 설치해야 합니다:
 
 <PMAddComp name="button dropdown-menu" />
 
 <Steps>
 
-### Create actions component
+### 액션 컴포넌트 생성
 
-We'll start by defining the actions menu in our `data-table-actions.svelte` component.
+`data-table-actions.svelte` 컴포넌트에서 액션 메뉴를 정의하는 것부터 시작합니다.
 
 ```svelte showLineNumbers title="routes/payments/data-table-actions.svelte"
 <script lang="ts">
@@ -364,9 +364,9 @@ We'll start by defining the actions menu in our `data-table-actions.svelte` comp
 </DropdownMenu.Root>
 ```
 
-### Update columns definition
+### 컬럼 정의 업데이트
 
-Now that we've defined the `<DataTableActions />` component, let's update our `actions` column definition to use it.
+이제 `<DataTableActions />` 컴포넌트를 정의했으니, `actions` 컬럼 정의를 업데이트하여 사용합니다.
 
 ```ts showLineNumbers title="routes/payments/columns.ts"
 import type { ColumnDef } from "@tanstack/table-core";
@@ -385,17 +385,17 @@ export const columns: ColumnDef<Payment>[] = [
 ];
 ```
 
-You can access the row data using `row.original` in the `cell` function. Use this to handle actions for your row eg. use the `id` to make a DELETE call to your API.
+`cell` 함수에서 `row.original`을 사용하여 행 데이터에 접근할 수 있습니다. 이를 사용하여 행에 대한 액션을 처리할 수 있습니다. 예를 들어 `id`를 사용하여 API에 DELETE 요청을 보낼 수 있습니다.
 
 </Steps>
 
-## Pagination
+## 페이지네이션
 
-Next, we'll add pagination to our table.
+다음으로 테이블에 페이지네이션을 추가하겠습니다.
 
 <Steps>
 
-### Update `<DataTable />`
+### `<DataTable />` 업데이트
 
 ```svelte showLineNumbers title="routes/payments/data-table.svelte"
 <script lang="ts" generics="TData, TValue">
@@ -438,11 +438,11 @@ Next, we'll add pagination to our table.
 </script>
 ```
 
-This will automatically paginate your rows into pages of 10. See the [pagination docs](https://tanstack.com/table/v8/docs/api/features/pagination) for more information on customizing page size and implementing manual pagination.
+이렇게 하면 행이 자동으로 10개씩 페이지로 나뉩니다. 페이지 크기 사용자 정의 및 수동 페이지네이션 구현에 대한 자세한 내용은 [페이지네이션 문서](https://tanstack.com/table/v8/docs/api/features/pagination)를 참조하세요.
 
-### Adding pagination controls
+### 페이지네이션 컨트롤 추가
 
-We can add pagination controls to our table using the `<Button />` component and the `table.previousPage()`, `table.nextPage()` API methods.
+`<Button />` 컴포넌트와 `table.previousPage()`, `table.nextPage()` API 메서드를 사용하여 테이블에 페이지네이션 컨트롤을 추가할 수 있습니다.
 
 ```svelte showLineNumbers title="routes/payments/data-table.svelte"
 <script lang="ts" generics="TData, TValue">
@@ -501,19 +501,19 @@ We can add pagination controls to our table using the `<Button />` component and
 </div>
 ```
 
-See [Reusable Components](#reusable-components) section for a more advanced pagination component.
+더 고급 페이지네이션 컴포넌트는 [재사용 가능한 컴포넌트](#reusable-components) 섹션을 참조하세요.
 
 </Steps>
 
-## Sorting
+## 정렬
 
-Let's make the email column sortable.
+이메일 컬럼을 정렬 가능하게 만들어 보겠습니다.
 
 <Steps>
 
-### Define `<DataTableEmailButton />` component
+### `<DataTableEmailButton />` 컴포넌트 정의
 
-We'll start by creating a component to render a sortable email header button.
+정렬 가능한 이메일 헤더 버튼을 렌더링하는 컴포넌트를 만드는 것부터 시작합니다.
 
 ```svelte showLineNumbers title="routes/payments/data-table-email-button.svelte"
 <script lang="ts">
@@ -531,7 +531,7 @@ We'll start by creating a component to render a sortable email header button.
 </Button>
 ```
 
-### Update `<DataTable />`
+### `<DataTable />` 업데이트
 
 ```svelte showLineNumbers title="routes/payments/data-table.svelte"
 <script lang="ts" generics="TData, TValue">
@@ -583,9 +583,9 @@ We'll start by creating a component to render a sortable email header button.
 </script>
 ```
 
-### Make header cell sortable
+### 헤더 셀을 정렬 가능하게 만들기
 
-We can now update the `email` header cell to add sorting controls.
+이제 `email` 헤더 셀을 업데이트하여 정렬 컨트롤을 추가할 수 있습니다.
 
 ```ts showLineNumbers title="src/routes/payments/columns.ts"
 import type { ColumnDef } from "@tanstack/table-core";
@@ -604,17 +604,17 @@ export const columns: ColumnDef<Payment>[] = [
 ];
 ```
 
-This will automatically sort the table (asc and desc) when the user toggles on the header cell.
+이렇게 하면 사용자가 헤더 셀을 토글할 때 테이블이 자동으로 정렬됩니다(오름차순 및 내림차순).
 
 </Steps>
 
-## Filtering
+## 필터링
 
-Let's add a search input to filter emails in our table.
+테이블의 이메일을 필터링하기 위한 검색 입력을 추가하겠습니다.
 
 <Steps>
 
-### Update `<DataTable />`
+### `<DataTable />` 업데이트
 
 ```svelte showLineNumbers title="routes/payments/data-table.svelte"
 <script lang="ts" generics="TData, TValue">
@@ -700,17 +700,17 @@ Let's add a search input to filter emails in our table.
 </div>
 ```
 
-Filtering is now enabled for the `email` column. You can add filters to other columns as well. See the [filtering docs](https://tanstack.com/table/v8/docs/guide/filters) for more information on customizing filters.
+이제 `email` 컬럼에 필터링이 활성화되었습니다. 다른 컬럼에도 필터를 추가할 수 있습니다. 필터 사용자 정의에 대한 자세한 내용은 [필터링 문서](https://tanstack.com/table/v8/docs/guide/filters)를 참조하세요.
 
 </Steps>
 
-## Visibility
+## 표시 여부
 
-Adding column visibility is fairly simple using `@tanstack/table-core` visibility API.
+`@tanstack/table-core` 표시 여부 API를 사용하면 컬럼 표시 여부를 추가하는 것이 매우 간단합니다.
 
 <Steps>
 
-### Update `<DataTable />`
+### `<DataTable />` 업데이트
 
 ```svelte showLineNumbers title="routes/payments/data-table.svelte"
 <script lang="ts" generics="TData, TValue">
@@ -827,19 +827,19 @@ Adding column visibility is fairly simple using `@tanstack/table-core` visibilit
 </div>
 ```
 
-This adds a dropdown menu that you can use to toggle column visibility.
+이렇게 하면 컬럼 표시 여부를 토글하는 데 사용할 수 있는 드롭다운 메뉴가 추가됩니다.
 
 </Steps>
 
-## Row Selection
+## 행 선택
 
-Next, we're going to add row selection to our table.
+다음으로 테이블에 행 선택 기능을 추가하겠습니다.
 
 <Steps>
 
-### Define `<DataTableCheckbox />` component
+### `<DataTableCheckbox />` 컴포넌트 정의
 
-We'll start by defining the checkbox component in our `data-table-checkbox.svelte` component.
+`data-table-checkbox.svelte` 컴포넌트에서 체크박스 컴포넌트를 정의하는 것부터 시작합니다.
 
 ```svelte showLineNumbers title="routes/payments/data-table-checkbox.svelte"
 <script lang="ts">
@@ -856,9 +856,9 @@ We'll start by defining the checkbox component in our `data-table-checkbox.svelt
 <Checkbox bind:checked={() => checked, onCheckedChange} {...restProps} />
 ```
 
-### Update columns definition
+### 컬럼 정의 업데이트
 
-Now that we have a new component, we can add a `select` column definition to render a checkbox.
+이제 새 컴포넌트가 있으므로 체크박스를 렌더링하기 위한 `select` 컬럼 정의를 추가할 수 있습니다.
 
 ```ts showLineNumbers title="routes/payments/columns.ts"
 import type { ColumnDef } from "@tanstack/table-core";
@@ -890,7 +890,7 @@ export const columns: ColumnDef<Payment>[] = [
 ];
 ```
 
-### Update `<DataTable />`
+### `<DataTable />` 업데이트
 
 ```svelte showLineNumbers title="routes/payments/data-table.svelte"
 <script lang="ts" generics="TData, TValue">
@@ -981,11 +981,11 @@ export const columns: ColumnDef<Payment>[] = [
 </script>
 ```
 
-This adds a checkbox to each row and a checkbox in the header to select all rows.
+이렇게 하면 각 행에 체크박스가 추가되고 헤더에 모든 행을 선택하는 체크박스가 추가됩니다.
 
-### Show selected rows
+### 선택된 행 표시
 
-You can show the number of selected rows using the `table.getFilteredSelectedRowModel()` API.
+`table.getFilteredSelectedRowModel()` API를 사용하여 선택된 행 수를 표시할 수 있습니다.
 
 ```svelte
 <div class="text-muted-foreground flex-1 text-sm">
@@ -996,6 +996,6 @@ You can show the number of selected rows using the `table.getFilteredSelectedRow
 
 </Steps>
 
-## Reusable Components
+## 재사용 가능한 컴포넌트
 
-Check out the [Tasks](/examples/tasks) example to learn about creating reusable components for your data tables.
+데이터 테이블을 위한 재사용 가능한 컴포넌트 생성에 대해 알아보려면 [Tasks](/examples/tasks) 예제를 확인하세요.

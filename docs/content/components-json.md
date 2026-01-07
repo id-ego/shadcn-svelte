@@ -1,6 +1,6 @@
 ---
 title: components.json
-description: Configuration for your project.
+description: 프로젝트 설정 파일입니다.
 ---
 
 <script>
@@ -9,25 +9,25 @@ description: Configuration for your project.
 	import PMExecute from "$lib/components/pm-execute.svelte";
 </script>
 
-The `components.json` file holds configuration for your project.
+`components.json` 파일은 프로젝트의 설정을 담고 있습니다.
 
-We use it to understand how your project is set up and how to generate components customized for your project.
+이 파일을 통해 프로젝트가 어떻게 구성되어 있는지 이해하고, 프로젝트에 맞춤화된 컴포넌트를 생성합니다.
 
 <Callout class="mt-6">
 
-Note: The `components.json` file is optional and **only required if you're using the CLI** to add components to your project. If you're using the copy and paste method, you don't need this file.
+참고: `components.json` 파일은 선택 사항이며 **CLI를 사용하여 컴포넌트를 추가할 때만 필요**합니다. 복사 및 붙여넣기 방식을 사용한다면 이 파일이 필요하지 않습니다.
 
 </Callout>
 
-You can create a `components.json` file in your project by running the following command:
+다음 명령어를 실행하여 프로젝트에 `components.json` 파일을 생성할 수 있습니다:
 
 <PMExecute command="shadcn-svelte@latest init" />
 
-See the [CLI section](/docs/cli) for more information.
+자세한 내용은 [CLI 섹션](/docs/cli)을 참고하세요.
 
 ## $schema
 
-You can see the JSON Schema for `components.json` [here](https://shadcn-svelte.com/schema.json).
+`components.json`의 JSON 스키마는 [여기](https://shadcn-svelte.com/schema.json)에서 확인할 수 있습니다.
 
 ```json title="components.json"
 {
@@ -37,13 +37,13 @@ You can see the JSON Schema for `components.json` [here](https://shadcn-svelte.c
 
 ## tailwind
 
-Configuration to help the CLI understand how Tailwind CSS is set up in your project.
+CLI가 프로젝트의 Tailwind CSS 설정을 이해할 수 있도록 도와주는 설정입니다.
 
-See the [installation section](/docs/installation) for how to set up Tailwind CSS.
+Tailwind CSS 설정 방법은 [설치 섹션](/docs/installation)을 참고하세요.
 
 ### tailwind.css
 
-Path to the CSS file that imports Tailwind CSS into your project.
+프로젝트에 Tailwind CSS를 가져오는 CSS 파일의 경로입니다.
 
 ```json title="components.json"
 {
@@ -55,7 +55,7 @@ Path to the CSS file that imports Tailwind CSS into your project.
 
 ### tailwind.baseColor
 
-This is used to generate the default color palette for your components. **This cannot be changed after initialization.**
+컴포넌트의 기본 색상 팔레트를 생성하는 데 사용됩니다. **초기화 후에는 변경할 수 없습니다.**
 
 ```json title="components.json"
 {
@@ -67,13 +67,13 @@ This is used to generate the default color palette for your components. **This c
 
 ## aliases
 
-The CLI uses these values and the `alias` config from your `svelte.config.js` file to place generated components in the correct location.
+CLI는 이 값들과 `svelte.config.js` 파일의 `alias` 설정을 사용하여 생성된 컴포넌트를 올바른 위치에 배치합니다.
 
-Path aliases have to be set up in your `svelte.config.js` file.
+경로 별칭은 `svelte.config.js` 파일에 설정되어 있어야 합니다.
 
 ### aliases.lib
 
-Import alias for your library, which is _typically_ where you store your components, utils, hooks, etc.
+라이브러리의 import 별칭으로, _일반적으로_ 컴포넌트, 유틸리티, hooks 등을 저장하는 위치입니다.
 
 ```json title="components.json"
 {
@@ -85,7 +85,7 @@ Import alias for your library, which is _typically_ where you store your compone
 
 ### aliases.utils
 
-Import alias for your utility functions.
+유틸리티 함수의 import 별칭입니다.
 
 ```json title="components.json"
 {
@@ -97,7 +97,7 @@ Import alias for your utility functions.
 
 ### aliases.components
 
-Import alias for your components.
+컴포넌트의 import 별칭입니다.
 
 ```json title="components.json"
 {
@@ -109,7 +109,7 @@ Import alias for your components.
 
 ### aliases.ui
 
-Import alias for your UI components.
+UI 컴포넌트의 import 별칭입니다.
 
 ```json title="components.json"
 {
@@ -121,7 +121,7 @@ Import alias for your UI components.
 
 ### aliases.hooks
 
-Import alias for your hooks, which in Svelte 5 are reactive functions/classes whose files typically end in `.svelte.ts` or `.svelte.js`.
+hooks의 import 별칭입니다. Svelte 5에서 hooks는 일반적으로 `.svelte.ts` 또는 `.svelte.js`로 끝나는 파일에 있는 반응형 함수/클래스입니다.
 
 ```json title="components.json"
 {
@@ -133,7 +133,7 @@ Import alias for your hooks, which in Svelte 5 are reactive functions/classes wh
 
 ## Typescript
 
-Typescript can be enabled or disabled.
+Typescript를 활성화하거나 비활성화할 수 있습니다.
 
 ```json title="components.json"
 {
@@ -141,7 +141,7 @@ Typescript can be enabled or disabled.
 }
 ```
 
-You can also specify a path to your own custom Typescript config file if it has a different name from `tsconfig.json` or `jsconfig.json`, or if it is located in a different directory:
+`tsconfig.json` 또는 `jsconfig.json`과 다른 이름을 가지고 있거나 다른 디렉터리에 위치한 경우, 사용자 정의 Typescript 설정 파일의 경로를 지정할 수도 있습니다:
 
 ```json title="components.json"
 {
@@ -153,7 +153,7 @@ You can also specify a path to your own custom Typescript config file if it has 
 
 ## Registry
 
-The registry URL tells the CLI where to fetch the shadcn-svelte components/registry from. You can pin this to a specific preview release or your own fork of the registry.
+레지스트리 URL은 CLI가 shadcn-svelte 컴포넌트/레지스트리를 가져올 위치를 지정합니다. 특정 프리뷰 릴리스 또는 레지스트리의 자체 포크로 고정할 수 있습니다.
 
 ```json title="components.json"
 {

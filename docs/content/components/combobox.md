@@ -1,6 +1,6 @@
 ---
-title: Combobox
-description: Autocomplete input and command palette with a list of suggestions.
+title: 콤보박스
+description: 자동 완성 입력과 제안 목록이 있는 커맨드 팔레트입니다.
 component: true
 ---
 
@@ -15,13 +15,13 @@ component: true
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
-The Combobox is built using a composition of the `<Popover />` and the `<Command />` components.
+콤보박스는 `<Popover />`와 `<Command />` 컴포넌트의 조합으로 구성됩니다.
 
-See installation instructions for the [Popover](/docs/components/popover#installation) and the [Command](/docs/components/command#installation) components.
+[Popover](/docs/components/popover#installation) 및 [Command](/docs/components/command#installation) 컴포넌트의 설치 방법을 참고하세요.
 
-## Usage
+## 사용법
 
 <CodeCollapsibleWrapper >
 
@@ -124,9 +124,9 @@ See installation instructions for the [Popover](/docs/components/popover#install
 
 </CodeCollapsibleWrapper>
 
-## Examples
+## 예제
 
-### Combobox
+### 콤보박스
 
 <ComponentPreview name="combobox-demo">
 
@@ -134,7 +134,7 @@ See installation instructions for the [Popover](/docs/components/popover#install
 
 </ComponentPreview>
 
-### Popover
+### 팝오버
 
 <ComponentPreview name="combobox-popover">
 
@@ -142,7 +142,7 @@ See installation instructions for the [Popover](/docs/components/popover#install
 
 </ComponentPreview>
 
-### Dropdown menu
+### 드롭다운 메뉴
 
 <ComponentPreview name="combobox-dropdown-menu">
 
@@ -150,9 +150,9 @@ See installation instructions for the [Popover](/docs/components/popover#install
 
 </ComponentPreview>
 
-### Responsive
+### 반응형
 
-You can create a responsive combobox by using the `<Popover />` on desktop and the `<Drawer />` components on mobile.
+데스크톱에서는 `<Popover />` 컴포넌트를, 모바일에서는 `<Drawer />` 컴포넌트를 사용하여 반응형 콤보박스를 만들 수 있습니다.
 
 <ComponentPreview name="combobox-responsive" >
 

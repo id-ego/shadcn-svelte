@@ -1,6 +1,6 @@
 ---
 title: Skeleton
-description: Use to show a placeholder while content is loading.
+description: 콘텐츠가 로딩되는 동안 표시할 플레이스홀더입니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/skeleton
@@ -24,7 +24,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -35,7 +35,7 @@ links:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 프로젝트에 복사하여 붙여넣으세요.
 
 </Step>
 {#if viewerData}
@@ -46,7 +46,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte
 <script lang="ts">
@@ -58,9 +58,9 @@ Copy and paste the following code into your project.
 <Skeleton class="h-[20px] w-[100px] rounded-full" />
 ```
 
-## Examples
+## 예제
 
-## Card
+## 카드
 
 <ComponentPreview name="skeleton-card">
 

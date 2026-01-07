@@ -1,6 +1,6 @@
 ---
-title: Breadcrumb
-description: Displays the path to the current resource using a hierarchy of links.
+title: 브레드크럼
+description: 링크의 계층 구조를 사용하여 현재 리소스로의 경로를 표시합니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/breadcrumb
@@ -24,7 +24,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -35,7 +35,7 @@ links:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 복사하여 프로젝트에 붙여넣으세요.
 
 </Step>
 {#if viewerData}
@@ -46,7 +46,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte showLineNumbers
 <script lang="ts">
@@ -72,11 +72,11 @@ Copy and paste the following code into your project.
 </Breadcrumb.Root>
 ```
 
-## Examples
+## 예제
 
-### Custom separator
+### 커스텀 구분자
 
-Use a custom component in the `<slot>` of `<Breadcrumb.Separator />` to create a custom separator.
+`<Breadcrumb.Separator />`의 `<slot>`에 커스텀 컴포넌트를 사용하여 커스텀 구분자를 만들 수 있습니다.
 
 <ComponentPreview name="breadcrumb-separator">
 
@@ -107,9 +107,9 @@ Use a custom component in the `<slot>` of `<Breadcrumb.Separator />` to create a
 
 ---
 
-### Dropdown
+### 드롭다운
 
-You can compose `<Breadcrumb.Item />` with a `<DropdownMenu />` to create a dropdown in the breadcrumb.
+`<Breadcrumb.Item />`을 `<DropdownMenu />`와 결합하여 브레드크럼에 드롭다운을 만들 수 있습니다.
 
 <ComponentPreview name="breadcrumb-dropdown">
 
@@ -144,9 +144,9 @@ You can compose `<Breadcrumb.Item />` with a `<DropdownMenu />` to create a drop
 
 ---
 
-### Collapsed
+### 축약
 
-We provide a `<Breadcrumb.Ellipsis />` component to show a collapsed state when the breadcrumb is too long.
+브레드크럼이 너무 길 때 축약된 상태를 표시하기 위한 `<Breadcrumb.Ellipsis />` 컴포넌트를 제공합니다.
 
 <ComponentPreview name="breadcrumb-ellipsis">
 
@@ -172,9 +172,9 @@ We provide a `<Breadcrumb.Ellipsis />` component to show a collapsed state when 
 
 ---
 
-### Link component
+### 링크 컴포넌트
 
-To use a custom link component from your routing library, you can use the `asChild` prop on `<Breadcrumb.Link />`.
+라우팅 라이브러리의 커스텀 링크 컴포넌트를 사용하려면 `<Breadcrumb.Link />`에 `asChild` prop을 사용할 수 있습니다.
 
 <ComponentPreview name="breadcrumb-link">
 
@@ -199,11 +199,11 @@ To use a custom link component from your routing library, you can use the `asChi
 
 ---
 
-### Responsive
+### 반응형
 
-Here's an example of a responsive breadcrumb that composes `<Breadcrumb.Item />` with `<Breadcrumb.Ellipsis />`, `<DropdownMenu />`, and `<Drawer />`.
+`<Breadcrumb.Item />`을 `<Breadcrumb.Ellipsis />`, `<DropdownMenu />`, `<Drawer />`와 결합한 반응형 브레드크럼의 예제입니다.
 
-It displays a dropdown on desktop and a drawer on mobile.
+데스크톱에서는 드롭다운을 표시하고 모바일에서는 드로어를 표시합니다.
 
 <ComponentPreview name="breadcrumb-responsive">
 

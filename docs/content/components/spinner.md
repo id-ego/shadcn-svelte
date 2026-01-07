@@ -1,6 +1,6 @@
 ---
-title: Spinner
-description: An indicator that can be used to show a loading state.
+title: 스피너
+description: 로딩 상태를 표시하는 데 사용할 수 있는 인디케이터입니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/spinner
@@ -24,7 +24,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -54,7 +54,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte
 <script lang="ts">
@@ -66,9 +66,9 @@ Copy and paste the following code into your project.
 <Spinner />
 ```
 
-## Customization
+## 커스터마이징
 
-You can replace the default spinner icon with any other icon by editing the `Spinner` component.
+`Spinner` 컴포넌트를 편집하여 기본 스피너 아이콘을 다른 아이콘으로 교체할 수 있습니다.
 
 <ComponentPreview name="spinner-custom-demo">
 
@@ -76,11 +76,11 @@ You can replace the default spinner icon with any other icon by editing the `Spi
 
 </ComponentPreview>
 
-## Examples
+## 예제
 
-### Size
+### 크기
 
-Use the `size-*` utility class to change the size of the spinner.
+`size-*` 유틸리티 클래스를 사용하여 스피너의 크기를 변경할 수 있습니다.
 
 <ComponentPreview name="spinner-size-demo">
 
@@ -88,9 +88,9 @@ Use the `size-*` utility class to change the size of the spinner.
 
 </ComponentPreview>
 
-### Color
+### 색상
 
-Use the `text-*` utility class to change the color of the spinner.
+`text-*` 유틸리티 클래스를 사용하여 스피너의 색상을 변경할 수 있습니다.
 
 <ComponentPreview name="spinner-color-demo">
 
@@ -98,9 +98,9 @@ Use the `text-*` utility class to change the color of the spinner.
 
 </ComponentPreview>
 
-### Button
+### 버튼
 
-Add a spinner to a button to indicate a loading state. The `<Button />` will handle the spacing between the spinner and the text.
+버튼에 스피너를 추가하여 로딩 상태를 표시할 수 있습니다. `<Button />` 컴포넌트가 스피너와 텍스트 사이의 간격을 처리합니다.
 
 <ComponentPreview name="spinner-button-demo">
 
@@ -108,9 +108,9 @@ Add a spinner to a button to indicate a loading state. The `<Button />` will han
 
 </ComponentPreview>
 
-### Badge
+### 배지
 
-You can also use a spinner inside a badge.
+배지 안에도 스피너를 사용할 수 있습니다.
 
 <ComponentPreview name="spinner-badge-demo">
 
@@ -118,9 +118,9 @@ You can also use a spinner inside a badge.
 
 </ComponentPreview>
 
-### Input Group
+### 입력 그룹
 
-Input Group can have spinners inside `<InputGroup.Addon>`.
+입력 그룹의 `<InputGroup.Addon>` 안에 스피너를 넣을 수 있습니다.
 
 <ComponentPreview name="spinner-input-group-demo">
 
@@ -128,7 +128,7 @@ Input Group can have spinners inside `<InputGroup.Addon>`.
 
 </ComponentPreview>
 
-### Empty
+### 비어있음
 
 <ComponentPreview name="spinner-empty-demo">
 
@@ -136,9 +136,9 @@ Input Group can have spinners inside `<InputGroup.Addon>`.
 
 </ComponentPreview>
 
-### Item
+### 아이템
 
-Use the spinner inside `<Item.Media>` to indicate a loading state.
+`<Item.Media>` 안에 스피너를 사용하여 로딩 상태를 표시할 수 있습니다.
 
 <ComponentPreview name="spinner-item-demo">
 

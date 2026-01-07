@@ -1,6 +1,6 @@
 ---
 title: Navigation Menu
-description: A collection of links for navigating websites.
+description: 웹사이트를 탐색하기 위한 링크 모음입니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/navigation-menu
@@ -24,7 +24,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -35,13 +35,13 @@ links:
 <Steps>
 <Step>
 
-Install `bits-ui`:
+`bits-ui`를 설치하세요:
 
 </Step>
 <PMInstall command="bits-ui -D" />
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 복사하여 프로젝트에 붙여넣으세요.
 
 </Step>
 {#if viewerData}
@@ -51,7 +51,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte showLineNumbers
 <script lang="ts">

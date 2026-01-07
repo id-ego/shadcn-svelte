@@ -1,6 +1,6 @@
 ---
 title: Command
-description: Fast, composable, unstyled command menu for Svelte.
+description: 빠르고 조합 가능한 비스타일 커맨드 메뉴 컴포넌트입니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/command
@@ -27,7 +27,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -46,7 +46,7 @@ Install `bits-ui`:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 복사하여 프로젝트에 붙여넣으세요.
 
 </Step>
 {#if viewerData}
@@ -57,7 +57,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte showLineNumbers
 <script lang="ts">
@@ -85,7 +85,7 @@ Copy and paste the following code into your project.
 </Command.Root>
 ```
 
-## Examples
+## 예제
 
 ### Dialog
 
@@ -95,7 +95,7 @@ Copy and paste the following code into your project.
 
 </ComponentPreview>
 
-To show the command menu in a dialog, use the `<Command.Dialog />` component instead of `<Command.Root />`. It accepts props for both the `<Dialog.Root />` and `<Command.Root />` components.
+대화상자에 커맨드 메뉴를 표시하려면 `<Command.Root />` 대신 `<Command.Dialog />` 컴포넌트를 사용하세요. `<Dialog.Root />`와 `<Command.Root />` 컴포넌트의 props를 모두 받습니다.
 
 ```svelte title="lib/components/example-command-menu.svelte" showLineNumbers
 <script lang="ts">
@@ -129,10 +129,10 @@ To show the command menu in a dialog, use the `<Command.Dialog />` component ins
 
 ### Combobox
 
-You can use the `<Command />` component as a combobox. See the [Combobox](/docs/components/combobox) page for more information.
+`<Command />` 컴포넌트를 콤보박스로 사용할 수 있습니다. 자세한 내용은 [콤보박스](/docs/components/combobox) 페이지를 참고하세요.
 
-## Changelog
+## 변경 이력
 
-### 2024-10-30 Classes for icons
+### 2024-10-30 아이콘 클래스
 
-- Added `gap-2 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0` to the `<Command.Item>` component to automatically style the icons inside.
+- `<Command.Item>` 컴포넌트에 `gap-2 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0`를 추가하여 내부 아이콘이 자동으로 스타일링되도록 했습니다.

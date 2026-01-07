@@ -1,6 +1,6 @@
 ---
 title: Tooltip
-description: A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.
+description: 요소가 키보드 포커스를 받거나 마우스를 올렸을 때 관련 정보를 표시하는 팝업입니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/tooltip
@@ -26,7 +26,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -45,7 +45,7 @@ Install `bits-ui`:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 프로젝트에 복사하여 붙여넣으세요.
 
 </Step>
 {#if viewerData}
@@ -56,9 +56,9 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
-The `Tooltip.Provider` component should be placed once in your root layout, wrapping all content that will contain tooltips. This ensures that only one tooltip within the provider can be open at a time.
+`Tooltip.Provider` 컴포넌트는 루트 레이아웃에 한 번 배치하여 툴팁을 포함할 모든 콘텐츠를 감싸야 합니다. 이렇게 하면 프로바이더 내에서 한 번에 하나의 툴팁만 열리도록 보장합니다.
 
 ```svelte title="src/routes/+layout.svelte" showLineNumbers
 <script lang="ts">
@@ -74,7 +74,7 @@ The `Tooltip.Provider` component should be placed once in your root layout, wrap
 </Tooltip.Provider>
 ```
 
-Then use tooltips anywhere in your app:
+그런 다음 앱의 어디에서나 툴팁을 사용할 수 있습니다:
 
 ```svelte
 <script lang="ts">
@@ -89,9 +89,9 @@ Then use tooltips anywhere in your app:
 </Tooltip.Root>
 ```
 
-### Nested Providers
+### 중첩된 프로바이더
 
-You can nest providers to create groups with different settings. Tooltips use the closest ancestor provider. This is useful when you want instant tooltips in specific areas:
+프로바이더를 중첩하여 서로 다른 설정을 가진 그룹을 만들 수 있습니다. 툴팁은 가장 가까운 조상 프로바이더를 사용합니다. 특정 영역에서 즉시 표시되는 툴팁을 원할 때 유용합니다:
 
 ```svelte
 <Tooltip.Provider delayDuration={0}>
@@ -101,10 +101,10 @@ You can nest providers to create groups with different settings. Tooltips use th
 
 ---
 
-## Changelog
+## 변경 이력
 
-### 2025-12 Update tooltip colors
+### 2025-12 툴팁 색상 업데이트
 
-We've updated the tooltip colors to use the foreground color for the background and the background color for the foreground.
+툴팁 색상을 업데이트하여 배경에는 전경색을, 전경에는 배경색을 사용하도록 했습니다.
 
-Replace `bg-primary text-primary-foreground` with `bg-foreground text-background` for `<Tooltip.Content />`.
+`<Tooltip.Content />`에서 `bg-primary text-primary-foreground`를 `bg-foreground text-background`로 교체하세요.

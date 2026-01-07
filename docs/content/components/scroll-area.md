@@ -1,6 +1,6 @@
 ---
-title: Scroll Area
-description: Augments native scroll functionality for custom, cross-browser styling.
+title: 스크롤 영역
+description: 커스텀 크로스 브라우저 스타일링을 위해 기본 스크롤 기능을 강화합니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/scroll-area
@@ -26,7 +26,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -45,7 +45,7 @@ Install `bits-ui`:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 프로젝트에 복사하여 붙여넣으세요.
 
 </Step>
 {#if viewerData}
@@ -56,7 +56,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte showLineNumbers
 <script lang="ts">
@@ -75,11 +75,11 @@ Copy and paste the following code into your project.
 </ScrollArea>
 ```
 
-## Examples
+## 예제
 
-### Horizontal Scrolling
+### 가로 스크롤
 
-Set the `orientation` prop to `"horizontal"` to enable horizontal scrolling.
+가로 스크롤을 활성화하려면 `orientation` prop을 `"horizontal"`로 설정하세요.
 
 <ComponentPreview name="scroll-area-horizontal">
 

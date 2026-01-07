@@ -1,6 +1,6 @@
 ---
 title: Menubar
-description: A visually persistent menu common in desktop applications that provides quick access to a consistent set of commands.
+description: 데스크톱 애플리케이션에서 흔히 볼 수 있는 시각적으로 지속되는 메뉴로, 일관된 명령 세트에 빠르게 접근할 수 있습니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/menubar
@@ -24,7 +24,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -54,7 +54,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte showLineNumbers
 <script lang="ts">

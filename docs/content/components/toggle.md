@@ -1,6 +1,6 @@
 ---
 title: Toggle
-description: A two-state button that can be either on or off.
+description: 켜짐 또는 꺼짐 상태를 가질 수 있는 두 가지 상태 버튼입니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/toggle
@@ -26,7 +26,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -56,7 +56,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte
 <script lang="ts">
@@ -68,9 +68,9 @@ Copy and paste the following code into your project.
 <Toggle>Toggle</Toggle>
 ```
 
-## Examples
+## 예제
 
-### Default
+### 기본
 
 <ComponentPreview name="toggle-demo">
 
@@ -78,7 +78,7 @@ Copy and paste the following code into your project.
 
 </ComponentPreview>
 
-### Outline
+### 아웃라인
 
 <ComponentPreview name="toggle-outline">
 
@@ -86,7 +86,7 @@ Copy and paste the following code into your project.
 
 </ComponentPreview>
 
-### With Text
+### 텍스트 포함
 
 <ComponentPreview name="toggle-with-text">
 
@@ -94,7 +94,7 @@ Copy and paste the following code into your project.
 
 </ComponentPreview>
 
-### Small
+### 작은 크기
 
 <ComponentPreview name="toggle-sm">
 
@@ -102,7 +102,7 @@ Copy and paste the following code into your project.
 
 </ComponentPreview>
 
-### Large
+### 큰 크기
 
 <ComponentPreview name="toggle-lg">
 
@@ -110,7 +110,7 @@ Copy and paste the following code into your project.
 
 </ComponentPreview>
 
-### Disabled
+### 비활성화
 
 <ComponentPreview name="toggle-disabled">
 

@@ -1,6 +1,6 @@
 ---
-title: Sidebar
-description: A composable, themeable and customizable sidebar component.
+title: 사이드바
+description: 조합 가능하고 테마를 적용할 수 있으며 커스터마이징 가능한 사이드바 컴포넌트입니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/sidebar
@@ -19,7 +19,7 @@ links:
 	import Callout from "$lib/components/callout.svelte";
 </script>
 
-<DocsFigure caption="A sidebar that collapses to icons.">
+<DocsFigure caption="아이콘으로 축소되는 사이드바입니다.">
 <ComponentPreview type="block" name="sidebar-07" title="Sidebar" class="w-full">
 
 <div></div>
@@ -27,28 +27,28 @@ links:
 </ComponentPreview>
 </DocsFigure>
 
-Sidebars are one of the most complex components to build. They are central to any application and often contain a lot of moving parts.
+사이드바는 구축하기 가장 복잡한 컴포넌트 중 하나입니다. 애플리케이션의 중심이 되며 많은 움직이는 부분을 포함합니다.
 
-Shad doesn't like building sidebars, so he built 30+ of them with all kinds of configurations. The core components have been extracted into `sidebar-*.svelte` files, and you can use them in your own projects.
+Shad는 사이드바 구축을 좋아하지 않기 때문에, 다양한 구성으로 30개 이상을 만들었습니다. 핵심 컴포넌트들은 `sidebar-*.svelte` 파일로 추출되었으며, 여러분의 프로젝트에서 사용할 수 있습니다.
 
-We now have a solid foundation to build on top of. Composable. Themeable. Customizable.
+이제 탄탄한 기반을 구축했습니다. 조합 가능하고, 테마를 적용할 수 있으며, 커스터마이징 가능합니다.
 
-[Browse the Blocks Library](/blocks).
+[블록 라이브러리 둘러보기](/blocks).
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
 
 <Steps>
 
-<Step>Run the following command to install the `sidebar` components:</Step>
+<Step>`sidebar` 컴포넌트를 설치하려면 다음 명령을 실행하세요:</Step>
 
 <PMAddComp name="sidebar" />
 
-<Step>Add the following colors to your CSS file</Step>
+<Step>다음 색상을 CSS 파일에 추가하세요</Step>
 
-We'll go over the colors later in the [theming section](/docs/components/sidebar#theming).
+색상에 대해서는 나중에 [테마 설정 섹션](/docs/components/sidebar#theming)에서 다루겠습니다.
 
 ```css title="src/routes/layout.css"
 :root {
@@ -83,16 +83,16 @@ We'll go over the colors later in the [theming section](/docs/components/sidebar
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 복사하여 프로젝트에 붙여넣으세요.
 
 </Step>
 {#if viewerData}
 	<ComponentSource item={viewerData} data-llm-ignore/>
 {/if}
 
-<Step>Add the following colors to your CSS file</Step>
+<Step>다음 색상을 CSS 파일에 추가하세요</Step>
 
-We'll go over the colors later in the [theming section](/docs/components/sidebar#theming).
+색상에 대해서는 나중에 [테마 설정 섹션](/docs/components/sidebar#theming)에서 다루겠습니다.
 
 ```css title="src/routes/layout.css"
 :root {
@@ -123,22 +123,22 @@ We'll go over the colors later in the [theming section](/docs/components/sidebar
 
 </InstallTabs>
 
-## Structure
+## 구조
 
-A `Sidebar` component is composed of the following parts:
+`Sidebar` 컴포넌트는 다음 부분들로 구성됩니다:
 
-- `Sidebar.Provider` - Handles collapsible state.
-- `Sidebar.Root` - The sidebar container.
-- `Sidebar.Header` and `Sidebar.Footer` - Sticky at the top and bottom of the sidebar.
-- `Sidebar.Content` - Scrollable content.
-- `Sidebar.Group` - Section within the `Sidebar.Content`.
-- `Sidebar.Trigger` - Trigger for the `Sidebar`.
+- `Sidebar.Provider` - 접을 수 있는 상태를 처리합니다.
+- `Sidebar.Root` - 사이드바 컨테이너입니다.
+- `Sidebar.Header`와 `Sidebar.Footer` - 사이드바 상단과 하단에 고정됩니다.
+- `Sidebar.Content` - 스크롤 가능한 콘텐츠입니다.
+- `Sidebar.Group` - `Sidebar.Content` 내의 섹션입니다.
+- `Sidebar.Trigger` - `Sidebar`를 위한 트리거입니다.
 
 <img src="/img/sidebar/sidebar-structure.png" width="716" height="420" alt="Sidebar structure" class="border dark:hidden rounded-lg overflow-hidden mt-6 w-full" />
 
 <img src="/img/sidebar/sidebar-structure-dark.png" width="716" height="420" alt="Sidebar structure" class="border hidden dark:block rounded-lg overflow-hidden mt-6 w-full" />
 
-## Usage
+## 사용법
 
 ```svelte showLineNumbers title="src/routes/+layout.svelte"
 <script lang="ts">
@@ -172,15 +172,15 @@ A `Sidebar` component is composed of the following parts:
 </Sidebar.Root>
 ```
 
-## Your First Sidebar
+## 첫 번째 사이드바
 
-Let's start with the most basic sidebar. A collapsible sidebar with a menu.
+가장 기본적인 사이드바부터 시작해봅시다. 메뉴가 있는 접을 수 있는 사이드바입니다.
 
 <Steps>
 
 <Step>
 
-Add a `Sidebar.Provider` and `Sidebar.Trigger` at the root of your application.
+애플리케이션의 루트에 `Sidebar.Provider`와 `Sidebar.Trigger`를 추가하세요.
 
 </Step>
 
@@ -203,7 +203,7 @@ Add a `Sidebar.Provider` and `Sidebar.Trigger` at the root of your application.
 
 <Step>
 
-Create a new sidebar component at `src/lib/components/app-sidebar.svelte`.
+`src/lib/components/app-sidebar.svelte`에 새로운 사이드바 컴포넌트를 생성하세요.
 
 </Step>
 
@@ -219,11 +219,11 @@ Create a new sidebar component at `src/lib/components/app-sidebar.svelte`.
 
 <Step>
 
-Now, let's add a `Sidebar.Menu` to the sidebar.
+이제 사이드바에 `Sidebar.Menu`를 추가해봅시다.
 
 </Step>
 
-We'll use the `Sidebar.Menu` component in a `Sidebar.Group`.
+`Sidebar.Group` 안에 `Sidebar.Menu` 컴포넌트를 사용하겠습니다.
 
 ```svelte showLineNumbers title="src/lib/components/app-sidebar.svelte"
 <script lang="ts">
@@ -289,9 +289,9 @@ We'll use the `Sidebar.Menu` component in a `Sidebar.Group`.
 </Sidebar.Root>
 ```
 
-<Step>You've created your first sidebar.</Step>
+<Step>첫 번째 사이드바를 만들었습니다.</Step>
 
-<DocsFigure caption="Your first sidebar.">
+<DocsFigure caption="첫 번째 사이드바입니다.">
 <ComponentPreview type="block" name="demo-sidebar" title="Sidebar" description="Your first sidebar." class="w-full">
 
 <div></div>
@@ -301,37 +301,37 @@ We'll use the `Sidebar.Menu` component in a `Sidebar.Group`.
 
 </Steps>
 
-## Components
+## 컴포넌트
 
-The components in the `sidebar-*.svelte` files are built to be composable i.e you build your sidebar by putting the provided components together. They also compose well with other shadcn-svelte components such as `DropdownMenu`, `Collapsible`, `Dialog`, etc.
+`sidebar-*.svelte` 파일의 컴포넌트들은 조합 가능하도록 구축되었습니다. 즉, 제공된 컴포넌트들을 조합하여 사이드바를 구축합니다. `DropdownMenu`, `Collapsible`, `Dialog` 등과 같은 다른 shadcn-svelte 컴포넌트들과도 잘 조합됩니다.
 
-**If you need to change the code in the `sidebar-*.svelte` files, you are encouraged to do so. The code is yours. Use the provided components as a starting point to build your own**
+**`sidebar-*.svelte` 파일의 코드를 변경해야 한다면, 그렇게 하는 것이 권장됩니다. 코드는 여러분의 것입니다. 제공된 컴포넌트들을 시작점으로 사용하여 여러분만의 것을 구축하세요**
 
-In the next sections, we'll go over each component and how to use them.
+다음 섹션에서는 각 컴포넌트와 사용 방법을 살펴보겠습니다.
 
 ## Sidebar.Provider
 
-The `Sidebar.Provider` component is used to provide the sidebar context to the `Sidebar` component. You should always wrap your application in a `Sidebar.Provider` component.
+`Sidebar.Provider` 컴포넌트는 `Sidebar` 컴포넌트에 사이드바 컨텍스트를 제공하는 데 사용됩니다. 항상 애플리케이션을 `Sidebar.Provider` 컴포넌트로 감싸야 합니다.
 
 ### Props
 
-| Name           | Type                      | Description                                                                                                                             |
-| -------------- | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| `open`         | `boolean`                 | Open state of the sidebar (bindable).                                                                                                   |
-| `onOpenChange` | `(open: boolean) => void` | A callback fired _after_ the open state of the sidebar changes if uncontrolled, and _before_ the sidebar opens or closes if controlled. |
+| Name           | Type                      | Description                                                                                              |
+| -------------- | ------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `open`         | `boolean`                 | 사이드바의 열림 상태입니다 (바인딩 가능).                                                                |
+| `onOpenChange` | `(open: boolean) => void` | 비제어 상태일 때 사이드바의 열림 상태가 변경된 _후_에, 제어 상태일 때 사이드바가 열리거나 닫히기 _전_에 실행되는 콜백입니다. |
 
-### Width
+### 너비
 
-If you have a single sidebar in your application, you can use the `SIDEBAR_WIDTH` and `SIDEBAR_WIDTH_MOBILE` constants in `src/lib/components/ui/sidebar/constants.ts` to set the width of the sidebar.
+애플리케이션에 단일 사이드바가 있는 경우, `src/lib/components/ui/sidebar/constants.ts`의 `SIDEBAR_WIDTH`와 `SIDEBAR_WIDTH_MOBILE` 상수를 사용하여 사이드바의 너비를 설정할 수 있습니다.
 
 ```ts showLineNumbers title="src/lib/components/ui/sidebar/constants.ts"
 export const SIDEBAR_WIDTH = "16rem";
 export const SIDEBAR_WIDTH_MOBILE = "18rem";
 ```
 
-For multiple sidebars in your application, you can use the `style` prop to set the width of the sidebar.
+애플리케이션에 여러 사이드바가 있는 경우, `style` prop을 사용하여 사이드바의 너비를 설정할 수 있습니다.
 
-To set the width of the sidebar, you can use the `--sidebar-width` and `--sidebar-width-mobile` CSS variables in the `style` prop.
+사이드바의 너비를 설정하려면 `style` prop에서 `--sidebar-width`와 `--sidebar-width-mobile` CSS 변수를 사용할 수 있습니다.
 
 ```svelte showLineNumbers
 <Sidebar.Provider
@@ -341,15 +341,15 @@ To set the width of the sidebar, you can use the `--sidebar-width` and `--sideba
 </Sidebar.Provider>
 ```
 
-This will not only handle the width of the sidebar but also the layout spacing.
+이것은 사이드바의 너비뿐만 아니라 레이아웃 간격도 처리합니다.
 
-### Keyboard Shortcut
+### 키보드 단축키
 
-The `SIDEBAR_KEYBOARD_SHORTCUT` variable in `src/lib/components/ui/sidebar/constants.ts` is used to set the keyboard shortcut used to open and close the sidebar.
+`src/lib/components/ui/sidebar/constants.ts`의 `SIDEBAR_KEYBOARD_SHORTCUT` 변수는 사이드바를 열고 닫는 데 사용되는 키보드 단축키를 설정하는 데 사용됩니다.
 
-To trigger the sidebar, you use the `cmd+b` keyboard shortcut on Mac and `ctrl+b` on Windows.
+사이드바를 트리거하려면 Mac에서는 `cmd+b`, Windows에서는 `ctrl+b` 키보드 단축키를 사용합니다.
 
-You can change the keyboard shortcut by changing the value of the `SIDEBAR_KEYBOARD_SHORTCUT` variable.
+`SIDEBAR_KEYBOARD_SHORTCUT` 변수의 값을 변경하여 키보드 단축키를 변경할 수 있습니다.
 
 ```ts showLineNumbers title="src/lib/components/ui/sidebar/constants.ts"
 export const SIDEBAR_KEYBOARD_SHORTCUT = "b";
@@ -357,7 +357,7 @@ export const SIDEBAR_KEYBOARD_SHORTCUT = "b";
 
 ## Sidebar.Root
 
-The main `Sidebar` component used to render a collapsible sidebar.
+접을 수 있는 사이드바를 렌더링하는 데 사용되는 메인 `Sidebar` 컴포넌트입니다.
 
 ```svelte showLineNumbers
 <script lang="ts">
@@ -369,17 +369,17 @@ The main `Sidebar` component used to render a collapsible sidebar.
 
 ### Props
 
-| Property      | Type                              | Description                       |
-| ------------- | --------------------------------- | --------------------------------- |
-| `side`        | `left` or `right`                 | The side of the sidebar.          |
-| `variant`     | `sidebar`, `floating`, or `inset` | The variant of the sidebar.       |
-| `collapsible` | `offcanvas`, `icon`, or `none`    | Collapsible state of the sidebar. |
+| Property      | Type                              | Description                  |
+| ------------- | --------------------------------- | ---------------------------- |
+| `side`        | `left` or `right`                 | 사이드바의 위치입니다.       |
+| `variant`     | `sidebar`, `floating`, or `inset` | 사이드바의 변형입니다.       |
+| `collapsible` | `offcanvas`, `icon`, or `none`    | 사이드바의 접기 상태입니다.  |
 
 ### side
 
-Use the `side` prop to change the side of the sidebar.
+`side` prop을 사용하여 사이드바의 위치를 변경합니다.
 
-Available options are `left` and `right`.
+사용 가능한 옵션은 `left`와 `right`입니다.
 
 ```svelte showLineNumbers
 <Sidebar.Root side="left | right" />
@@ -387,9 +387,9 @@ Available options are `left` and `right`.
 
 ### variant
 
-Use the `variant` prop to change the variant of the sidebar.
+`variant` prop을 사용하여 사이드바의 변형을 변경합니다.
 
-Available options are `sidebar`, `floating` and `inset`.
+사용 가능한 옵션은 `sidebar`, `floating`, `inset`입니다.
 
 ```svelte showLineNumbers
 <Sidebar.Root variant="sidebar | floating | inset" />
@@ -397,8 +397,7 @@ Available options are `sidebar`, `floating` and `inset`.
 
 <Callout>
 
-**Note:** If you use the `inset` variant, remember to wrap your main content
-in a `SidebarInset` component.
+**참고:** `inset` 변형을 사용하는 경우, 메인 콘텐츠를 `SidebarInset` 컴포넌트로 감싸는 것을 잊지 마세요.
 
 </Callout>
 
@@ -416,23 +415,23 @@ in a `SidebarInset` component.
 
 ### collapsible
 
-Use the `collapsible` prop to make the sidebar collapsible.
+`collapsible` prop을 사용하여 사이드바를 접을 수 있게 만듭니다.
 
-Available options are `offcanvas`, `icon` and `none`.
+사용 가능한 옵션은 `offcanvas`, `icon`, `none`입니다.
 
 ```svelte showLineNumbers
 <Sidebar.Root collapsible="offcanvas | icon | none" />
 ```
 
-| Prop        | Description                                                  |
-| ----------- | ------------------------------------------------------------ |
-| `offcanvas` | A collapsible sidebar that slides in from the left or right. |
-| `icon`      | A sidebar that collapses to icons.                           |
-| `none`      | A non-collapsible sidebar.                                   |
+| Prop        | Description                                    |
+| ----------- | ---------------------------------------------- |
+| `offcanvas` | 왼쪽 또는 오른쪽에서 슬라이드되는 접을 수 있는 사이드바입니다. |
+| `icon`      | 아이콘으로 축소되는 사이드바입니다.             |
+| `none`      | 접을 수 없는 사이드바입니다.                   |
 
 ## useSidebar
 
-The `useSidebar` function is used to hook into the sidebar context. It returns a reactive class instance, so it _cannot_ be destructured. Additionally, it must be called during the lifecycle of the component.
+`useSidebar` 함수는 사이드바 컨텍스트에 연결하는 데 사용됩니다. 반응형 클래스 인스턴스를 반환하므로 _구조 분해할 수 없습니다_. 또한 컴포넌트의 라이프사이클 동안 호출되어야 합니다.
 
 ```svelte showLineNumbers
 <script lang="ts">
@@ -444,23 +443,23 @@ The `useSidebar` function is used to hook into the sidebar context. It returns a
 </script>
 ```
 
-| Property        | Type                      | Description                                   |
-| --------------- | ------------------------- | --------------------------------------------- |
-| `state`         | `expanded` or `collapsed` | The current state of the sidebar.             |
-| `open`          | `boolean`                 | Whether the sidebar is open.                  |
-| `setOpen`       | `(open: boolean) => void` | Sets the open state of the sidebar.           |
-| `openMobile`    | `boolean`                 | Whether the sidebar is open on mobile.        |
-| `setOpenMobile` | `(open: boolean) => void` | Sets the open state of the sidebar on mobile. |
-| `isMobile`      | `boolean`                 | Whether the sidebar is on mobile.             |
-| `toggle`        | `() => void`              | Toggles the sidebar. Desktop and mobile.      |
+| Property        | Type                      | Description                                |
+| --------------- | ------------------------- | ------------------------------------------ |
+| `state`         | `expanded` or `collapsed` | 사이드바의 현재 상태입니다.                |
+| `open`          | `boolean`                 | 사이드바가 열려 있는지 여부입니다.         |
+| `setOpen`       | `(open: boolean) => void` | 사이드바의 열림 상태를 설정합니다.         |
+| `openMobile`    | `boolean`                 | 모바일에서 사이드바가 열려 있는지 여부입니다. |
+| `setOpenMobile` | `(open: boolean) => void` | 모바일에서 사이드바의 열림 상태를 설정합니다. |
+| `isMobile`      | `boolean`                 | 사이드바가 모바일에 있는지 여부입니다.     |
+| `toggle`        | `() => void`              | 사이드바를 토글합니다. 데스크톱과 모바일.  |
 
 ## Sidebar.Header
 
-Use the `Sidebar.Header` component to add a sticky header to the sidebar.
+`Sidebar.Header` 컴포넌트를 사용하여 사이드바에 고정 헤더를 추가합니다.
 
-The following example adds a `<DropdownMenu>` to the `Sidebar.Header`.
+다음 예제는 `Sidebar.Header`에 `<DropdownMenu>`를 추가합니다.
 
-<DocsFigure caption="A sidebar header with a dropdown menu.">
+<DocsFigure caption="드롭다운 메뉴가 있는 사이드바 헤더입니다.">
 <ComponentPreview name="demo-sidebar-header" title="Sidebar" type="block" class="w-full">
 
 <div></div>
@@ -499,11 +498,11 @@ The following example adds a `<DropdownMenu>` to the `Sidebar.Header`.
 
 ## Sidebar.Footer
 
-Use the `Sidebar.Footer` component to add a sticky footer to the sidebar.
+`Sidebar.Footer` 컴포넌트를 사용하여 사이드바에 고정 푸터를 추가합니다.
 
-The following example adds a `<DropdownMenu>` to the `Sidebar.Footer`.
+다음 예제는 `Sidebar.Footer`에 `<DropdownMenu>`를 추가합니다.
 
-<DocsFigure caption="A sidebar footer with a dropdown menu.">
+<DocsFigure caption="드롭다운 메뉴가 있는 사이드바 푸터입니다.">
 <ComponentPreview name="demo-sidebar-footer" title="Sidebar" type="block" class="w-full">
 
 <div></div>
@@ -560,7 +559,7 @@ The following example adds a `<DropdownMenu>` to the `Sidebar.Footer`.
 
 ## Sidebar.Content
 
-The `Sidebar.Content` component is used to wrap the content of the sidebar. This is where you add your `Sidebar.Group` components. It is scrollable.
+`Sidebar.Content` 컴포넌트는 사이드바의 콘텐츠를 감싸는 데 사용됩니다. 여기에 `Sidebar.Group` 컴포넌트를 추가합니다. 스크롤 가능합니다.
 
 ```svelte showLineNumbers
 <Sidebar.Root>
@@ -573,11 +572,11 @@ The `Sidebar.Content` component is used to wrap the content of the sidebar. This
 
 ## Sidebar.Group
 
-Use the `Sidebar.Group` component to create a section within the sidebar.
+`Sidebar.Group` 컴포넌트를 사용하여 사이드바 내에 섹션을 생성합니다.
 
-A `Sidebar.Group` has a `Sidebar.GroupLabel`, a `Sidebar.GroupContent` and an optional `Sidebar.GroupAction`.
+`Sidebar.Group`에는 `Sidebar.GroupLabel`, `Sidebar.GroupContent`, 그리고 선택적으로 `Sidebar.GroupAction`이 있습니다.
 
-<DocsFigure caption="A sidebar group.">
+<DocsFigure caption="사이드바 그룹입니다.">
 <ComponentPreview name="demo-sidebar-group" title="Sidebar" type="block" class="w-full">
 
 <div></div>
@@ -599,11 +598,11 @@ A `Sidebar.Group` has a `Sidebar.GroupLabel`, a `Sidebar.GroupContent` and an op
 </Sidebar.Root>
 ```
 
-## Collapsible Sidebar.Group
+## 접을 수 있는 Sidebar.Group
 
-To make a `Sidebar.Group` collapsible, wrap it in a `Collapsible`.
+`Sidebar.Group`을 접을 수 있게 만들려면 `Collapsible`로 감쌉니다.
 
-<DocsFigure caption="A collapsible sidebar group.">
+<DocsFigure caption="접을 수 있는 사이드바 그룹입니다.">
 <ComponentPreview name="demo-sidebar-group-collapsible" title="Sidebar" type="block" class="w-full">
 
 <div></div>
@@ -633,14 +632,13 @@ To make a `Sidebar.Group` collapsible, wrap it in a `Collapsible`.
 
 <Callout>
 
-**Note:** We wrap the `Collapsible.Trigger` in a `Sidebar.GroupLabel` to render
-a button.
+**참고:** 버튼을 렌더링하기 위해 `Collapsible.Trigger`를 `Sidebar.GroupLabel`로 감쌉니다.
 
 </Callout>
 
 ## Sidebar.GroupAction
 
-Use the `Sidebar.GroupAction` component to add an action to a `Sidebar.Group`.
+`Sidebar.GroupAction` 컴포넌트를 사용하여 `Sidebar.Group`에 액션을 추가합니다.
 
 ```svelte showLineNumbers {3-5}
 <Sidebar.Group>
@@ -652,7 +650,7 @@ Use the `Sidebar.GroupAction` component to add an action to a `Sidebar.Group`.
 </Sidebar.Group>
 ```
 
-<DocsFigure caption="A sidebar group with an action button.">
+<DocsFigure caption="액션 버튼이 있는 사이드바 그룹입니다.">
 <ComponentPreview name="demo-sidebar-group-action" title="Sidebar" type="block" class="w-full">
 
 <div></div>
@@ -662,17 +660,17 @@ Use the `Sidebar.GroupAction` component to add an action to a `Sidebar.Group`.
 
 ## Sidebar.Menu
 
-The `Sidebar.Menu` component is used for building a menu within a `Sidebar.Group`.
+`Sidebar.Menu` 컴포넌트는 `Sidebar.Group` 내에 메뉴를 구축하는 데 사용됩니다.
 
-A `Sidebar.Menu` is composed of `Sidebar.MenuItem`, `Sidebar.MenuButton`, `Sidebar.MenuAction`, and `Sidebar.MenuSub` components.
+`Sidebar.Menu`는 `Sidebar.MenuItem`, `Sidebar.MenuButton`, `Sidebar.MenuAction`, `Sidebar.MenuSub` 컴포넌트로 구성됩니다.
 
 <img src="/img/sidebar/sidebar-menu.png" width="716" height="420" alt="Sidebar menu" class="border dark:hidden rounded-lg overflow-hidden mt-6 w-full" />
 
 <img src="/img/sidebar/sidebar-menu-dark.png" width="716" height="420" alt="Sidebar menu" class="border hidden dark:block rounded-lg overflow-hidden mt-6 w-full" />
 
-Here's an example of a `Sidebar.Menu` component rendering a list of projects.
+다음은 프로젝트 목록을 렌더링하는 `Sidebar.Menu` 컴포넌트의 예입니다.
 
-<DocsFigure caption="A sidebar menu with a list of projects.">
+<DocsFigure caption="프로젝트 목록이 있는 사이드바 메뉴입니다.">
 <ComponentPreview name="demo-sidebar-menu" title="Sidebar" type="block" class="w-full">
 
 <div></div>
@@ -708,11 +706,11 @@ Here's an example of a `Sidebar.Menu` component rendering a list of projects.
 
 ## Sidebar.MenuButton
 
-The `Sidebar.MenuButton` component is used to render a menu button within a `Sidebar.Menu`.
+`Sidebar.MenuButton` 컴포넌트는 `Sidebar.Menu` 내에 메뉴 버튼을 렌더링하는 데 사용됩니다.
 
-### Link or Anchor
+### 링크 또는 앵커
 
-By default, the `Sidebar.MenuButton` renders a button, but you can use the `child` snippet to render a different component such as an `<a>` tag.
+기본적으로 `Sidebar.MenuButton`은 버튼을 렌더링하지만, `child` 스니펫을 사용하여 `<a>` 태그와 같은 다른 컴포넌트를 렌더링할 수 있습니다.
 
 ```svelte showLineNumbers
 <Sidebar.MenuButton>
@@ -722,9 +720,9 @@ By default, the `Sidebar.MenuButton` renders a button, but you can use the `chil
 </Sidebar.MenuButton>
 ```
 
-### Icon and Label
+### 아이콘과 라벨
 
-You can render an icon and a truncated label inside the button. Remember to wrap the label in a `<span>` tag.
+버튼 내부에 아이콘과 잘린 라벨을 렌더링할 수 있습니다. 라벨을 `<span>` 태그로 감싸는 것을 잊지 마세요.
 
 ```svelte showLineNumbers
 <Sidebar.MenuButton>
@@ -739,7 +737,7 @@ You can render an icon and a truncated label inside the button. Remember to wrap
 
 ### isActive
 
-Use the `isActive` prop to mark a menu item as active.
+`isActive` prop을 사용하여 메뉴 항목을 활성 상태로 표시합니다.
 
 ```svelte showLineNumbers
 <Sidebar.MenuButton isActive>
@@ -754,9 +752,9 @@ Use the `isActive` prop to mark a menu item as active.
 
 ## Sidebar.MenuAction
 
-The `Sidebar.MenuAction` component is used to render a menu action within a `Sidebar.Menu`.
+`Sidebar.MenuAction` 컴포넌트는 `Sidebar.Menu` 내에 메뉴 액션을 렌더링하는 데 사용됩니다.
 
-This button works independently of the `Sidebar.MenuButton`, i.e. you can have the `Sidebar.MenuButton` as a clickable link and the `Sidebar.MenuAction` as a button.
+이 버튼은 `Sidebar.MenuButton`과 독립적으로 작동합니다. 즉, `Sidebar.MenuButton`을 클릭 가능한 링크로, `Sidebar.MenuAction`을 버튼으로 가질 수 있습니다.
 
 ```svelte showLineNumbers
 <Sidebar.MenuItem>
@@ -776,9 +774,9 @@ This button works independently of the `Sidebar.MenuButton`, i.e. you can have t
 
 ### DropdownMenu
 
-Here's an example of a `Sidebar.MenuAction` that renders a `DropdownMenu`.
+다음은 `DropdownMenu`를 렌더링하는 `Sidebar.MenuAction`의 예입니다.
 
-<DocsFigure caption="A sidebar menu action with a dropdown menu.">
+<DocsFigure caption="드롭다운 메뉴가 있는 사이드바 메뉴 액션입니다.">
 <ComponentPreview name="demo-sidebar-menu-action" title="Sidebar" type="block" class="w-full">
 
 <div></div>
@@ -818,11 +816,11 @@ Here's an example of a `Sidebar.MenuAction` that renders a `DropdownMenu`.
 
 ## Sidebar.MenuSub
 
-The `Sidebar.MenuSub` component is used to render a submenu within a `Sidebar.Menu`.
+`Sidebar.MenuSub` 컴포넌트는 `Sidebar.Menu` 내에 서브메뉴를 렌더링하는 데 사용됩니다.
 
-Use `Sidebar.MenuSubItem` and `Sidebar.MenuSubButton` to render a submenu item.
+서브메뉴 항목을 렌더링하려면 `Sidebar.MenuSubItem`과 `Sidebar.MenuSubButton`을 사용합니다.
 
-<DocsFigure caption="A sidebar menu sub.">
+<DocsFigure caption="사이드바 메뉴 서브입니다.">
 <ComponentPreview name="demo-sidebar-menu-sub" title="Sidebar" type="block" class="w-full">
 
 <div></div>
@@ -844,11 +842,11 @@ Use `Sidebar.MenuSubItem` and `Sidebar.MenuSubButton` to render a submenu item.
 </Sidebar.MenuItem>
 ```
 
-## Collapsible Sidebar.Menu
+## 접을 수 있는 Sidebar.Menu
 
-To make a `Sidebar.Menu` collapsible, wrap it and the `Sidebar.MenuSub` components in a `Collapsible`.
+`Sidebar.Menu`를 접을 수 있게 만들려면 `Sidebar.Menu`와 `Sidebar.MenuSub` 컴포넌트를 `Collapsible`로 감쌉니다.
 
-<DocsFigure caption="A collapsible sidebar menu.">
+<DocsFigure caption="접을 수 있는 사이드바 메뉴입니다.">
 <ComponentPreview name="demo-sidebar-menu-collapsible" title="Sidebar" type="block" class="w-full">
 
 <div></div>
@@ -877,9 +875,9 @@ To make a `Sidebar.Menu` collapsible, wrap it and the `Sidebar.MenuSub` componen
 
 ## Sidebar.MenuBadge
 
-The `Sidebar.MenuBadge` component is used to render a badge within a `Sidebar.MenuItem`.
+`Sidebar.MenuBadge` 컴포넌트는 `Sidebar.MenuItem` 내에 배지를 렌더링하는 데 사용됩니다.
 
-<DocsFigure caption="A sidebar menu badge.">
+<DocsFigure caption="사이드바 메뉴 배지입니다.">
 <ComponentPreview name="demo-sidebar-menu-badge" title="Sidebar" type="block" class="w-full">
 
 <div></div>
@@ -896,7 +894,7 @@ The `Sidebar.MenuBadge` component is used to render a badge within a `Sidebar.Me
 
 ## Sidebar.MenuSkeleton
 
-The `Sidebar.MenuSkeleton` component is used to render a skeleton within a `Sidebar.MenuItem`. You can use this to show a loading state while waiting for data to load.
+`Sidebar.MenuSkeleton` 컴포넌트는 `Sidebar.MenuItem` 내에 스켈레톤을 렌더링하는 데 사용됩니다. 데이터가 로드되는 동안 로딩 상태를 표시하는 데 사용할 수 있습니다.
 
 ```svelte showLineNumbers
 <Sidebar.Menu>
@@ -910,7 +908,7 @@ The `Sidebar.MenuSkeleton` component is used to render a skeleton within a `Side
 
 ## Sidebar.Separator
 
-The `Sidebar.Separator` component is used to render a separator within a `Sidebar`.
+`Sidebar.Separator` 컴포넌트는 `Sidebar` 내에 구분선을 렌더링하는 데 사용됩니다.
 
 ```svelte showLineNumbers
 <Sidebar.Root>
@@ -926,9 +924,9 @@ The `Sidebar.Separator` component is used to render a separator within a `Sideba
 
 ## Sidebar.Trigger
 
-Use the `Sidebar.Trigger` component to render a button that toggles the sidebar.
+`Sidebar.Trigger` 컴포넌트를 사용하여 사이드바를 토글하는 버튼을 렌더링합니다.
 
-The `Sidebar.Trigger` component must be used within a `Sidebar.Provider`.
+`Sidebar.Trigger` 컴포넌트는 `Sidebar.Provider` 내에서 사용되어야 합니다.
 
 ```svelte showLineNumbers
 <Sidebar.Provider>
@@ -939,9 +937,9 @@ The `Sidebar.Trigger` component must be used within a `Sidebar.Provider`.
 </Sidebar.Provider>
 ```
 
-## Custom Trigger
+## 커스텀 트리거
 
-To create a custom trigger, you can use the `useSidebar` hook.
+커스텀 트리거를 만들려면 `useSidebar` 훅을 사용할 수 있습니다.
 
 ```svelte showLineNumbers
 <script lang="ts">
@@ -954,7 +952,7 @@ To create a custom trigger, you can use the `useSidebar` hook.
 
 ## Sidebar.Rail
 
-The `Sidebar.Rail` component is used to render a rail within a `Sidebar.Root`. This rail can be used to toggle the sidebar.
+`Sidebar.Rail` 컴포넌트는 `Sidebar.Root` 내에 레일을 렌더링하는 데 사용됩니다. 이 레일은 사이드바를 토글하는 데 사용할 수 있습니다.
 
 ```svelte showLineNumbers
 <Sidebar.Root>
@@ -967,11 +965,11 @@ The `Sidebar.Rail` component is used to render a rail within a `Sidebar.Root`. T
 </Sidebar.Root>
 ```
 
-## Controlled Sidebar
+## 제어되는 사이드바
 
-Use Svelte's [Function Binding](https://svelte.dev/docs/svelte/bind#Function-bindings) to control the sidebar state.
+Svelte의 [Function Binding](https://svelte.dev/docs/svelte/bind#Function-bindings)을 사용하여 사이드바 상태를 제어합니다.
 
-<DocsFigure caption="A controlled sidebar.">
+<DocsFigure caption="제어되는 사이드바입니다.">
 <ComponentPreview name="demo-sidebar-controlled" title="Sidebar" type="block" class="w-full">
 
 <div></div>
@@ -997,9 +995,9 @@ Use Svelte's [Function Binding](https://svelte.dev/docs/svelte/bind#Function-bin
 </Sidebar.Provider>
 ```
 
-## Theming
+## 테마 설정
 
-We use the following CSS variables to theme the sidebar.
+사이드바의 테마를 설정하기 위해 다음 CSS 변수를 사용합니다.
 
 ```css
 :root {
@@ -1025,13 +1023,13 @@ We use the following CSS variables to theme the sidebar.
 }
 ```
 
-**We intentionally use different variables for the sidebar and the rest of the application** to make it easy to have a sidebar that is styled differently from the rest of the application. Think a sidebar with a darker shade from the main application.
+**사이드바와 애플리케이션의 나머지 부분에 의도적으로 다른 변수를 사용합니다** 애플리케이션의 나머지 부분과 다르게 스타일링된 사이드바를 쉽게 만들기 위해서입니다. 메인 애플리케이션보다 어두운 음영의 사이드바를 생각해보세요.
 
-## Styling
+## 스타일링
 
-Here are some tips for styling the sidebar based on different states.
+다양한 상태에 따라 사이드바를 스타일링하는 몇 가지 팁입니다.
 
-- **Styling an element based on the sidebar collapsible state.** The following will hide the `Sidebar.Group` when the sidebar is in `icon` mode.
+- **사이드바 접기 상태에 따른 요소 스타일링.** 다음은 사이드바가 `icon` 모드일 때 `Sidebar.Group`을 숨깁니다.
 
 ```svelte
 <Sidebar.Root collapsible="icon">
@@ -1041,7 +1039,7 @@ Here are some tips for styling the sidebar based on different states.
 </Sidebar.Root>
 ```
 
-- **Styling a menu action based on the menu button active state.** The following will force the menu action to be visible when the menu button is active.
+- **메뉴 버튼 활성 상태에 따른 메뉴 액션 스타일링.** 다음은 메뉴 버튼이 활성 상태일 때 메뉴 액션을 강제로 표시합니다.
 
 ```svelte
 <Sidebar.MenuItem>
@@ -1052,4 +1050,4 @@ Here are some tips for styling the sidebar based on different states.
 </Sidebar.MenuItem>
 ```
 
-You can find more tips on using states for styling in this [Twitter thread](https://x.com/shadcn/status/1842329158879420864).
+스타일링을 위한 상태 사용에 대한 더 많은 팁은 이 [Twitter thread](https://x.com/shadcn/status/1842329158879420864)에서 찾을 수 있습니다.

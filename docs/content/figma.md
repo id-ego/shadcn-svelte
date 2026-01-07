@@ -1,13 +1,13 @@
 ---
 title: Figma
-description: Every component recreated in Figma. With customizable props, typography and icons.
+description: 모든 컴포넌트를 Figma에서 재현했습니다. 커스터마이징 가능한 props, 타이포그래피, 아이콘을 제공합니다.
 ---
 
 <script>
   import { AspectRatio } from '$lib/registry/ui/aspect-ratio/index.js';
 </script>
 
-The Figma UI Kit is open sourced by [Pietro Schirano](https://twitter.com/skirano).
+Figma UI Kit은 [Pietro Schirano](https://twitter.com/skirano)가 오픈소스로 공개했습니다.
 
 <AspectRatio ratio={16 / 9} class="w-full mt-4">
 
@@ -18,6 +18,6 @@ The Figma UI Kit is open sourced by [Pietro Schirano](https://twitter.com/skiran
   ></iframe>
 </AspectRatio>
 
-## Grab a copy
+## 사본 가져오기
 
 https://www.figma.com/community/file/1203061493325953101

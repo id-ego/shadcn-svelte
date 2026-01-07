@@ -1,6 +1,6 @@
 ---
 title: Input
-description: Displays a form input field or a component that looks like an input field.
+description: 폼 입력 필드 또는 입력 필드처럼 보이는 컴포넌트를 표시합니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/input
@@ -24,7 +24,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -35,7 +35,7 @@ links:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 프로젝트에 복사하여 붙여넣으세요.
 
 </Step>
 {#if viewerData}
@@ -46,7 +46,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte
 <script lang="ts">
@@ -58,9 +58,9 @@ Copy and paste the following code into your project.
 <Input />
 ```
 
-## Examples
+## 예제
 
-### Default
+### 기본
 
 <ComponentPreview name="input-demo">
 
@@ -68,7 +68,7 @@ Copy and paste the following code into your project.
 
 </ComponentPreview>
 
-### File
+### 파일
 
 <ComponentPreview name="input-file">
 
@@ -76,7 +76,7 @@ Copy and paste the following code into your project.
 
 </ComponentPreview>
 
-### Disabled
+### 비활성화
 
 <ComponentPreview name="input-disabled">
 
@@ -84,7 +84,7 @@ Copy and paste the following code into your project.
 
 </ComponentPreview>
 
-### With Label
+### 라벨과 함께
 
 <ComponentPreview name="input-with-label">
 
@@ -92,7 +92,7 @@ Copy and paste the following code into your project.
 
 </ComponentPreview>
 
-### With Button
+### 버튼과 함께
 
 <ComponentPreview name="input-with-button">
 

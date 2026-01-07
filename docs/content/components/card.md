@@ -1,6 +1,6 @@
 ---
 title: Card
-description: Displays a card with header, content, and footer.
+description: 헤더, 콘텐츠, 푸터가 있는 카드를 표시합니다.
 component: true
 links:
   source: https://github.com/huntabyte/shadcn-svelte/tree/next/sites/docs/src/lib/registry/ui/card
@@ -24,7 +24,7 @@ links:
 
 </ComponentPreview>
 
-## Installation
+## 설치
 
 <InstallTabs>
 {#snippet cli()}
@@ -35,7 +35,7 @@ links:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 복사하여 프로젝트에 붙여넣으세요.
 
 </Step>
 {#if viewerData}
@@ -46,7 +46,7 @@ Copy and paste the following code into your project.
 {/snippet}
 </InstallTabs>
 
-## Usage
+## 사용법
 
 ```svelte showLineNumbers
 <script lang="ts">
@@ -69,7 +69,7 @@ Copy and paste the following code into your project.
 </Card.Root>
 ```
 
-## Examples
+## 예제
 
 <ComponentPreview name="card-demo">
 
