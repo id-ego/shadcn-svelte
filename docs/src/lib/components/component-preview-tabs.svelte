@@ -26,11 +26,10 @@
 		<Component />
 	{:else}
 		<p class="text-muted-foreground text-sm">
-			Component
 			<code class="bg-muted relative rounded px-[0.3rem] py-[0.2rem] font-mono text-sm">
 				{name}
 			</code>
-			not found in registry.
+			컴포넌트를 레지스트리에서 찾을 수 없습니다.
 		</p>
 	{/if}
 {/snippet}

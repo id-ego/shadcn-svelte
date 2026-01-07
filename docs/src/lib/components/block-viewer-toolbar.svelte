@@ -36,8 +36,8 @@
 		<Tabs.List
 			class="grid h-8 grid-cols-2 items-center rounded-md p-1 *:data-[slot=tabs-trigger]:h-6 *:data-[slot=tabs-trigger]:rounded-sm *:data-[slot=tabs-trigger]:px-2 *:data-[slot=tabs-trigger]:text-xs"
 		>
-			<Tabs.Trigger value="preview">Preview</Tabs.Trigger>
-			<Tabs.Trigger value="code">Code</Tabs.Trigger>
+			<Tabs.Trigger value="preview">미리보기</Tabs.Trigger>
+			<Tabs.Trigger value="code">코드</Tabs.Trigger>
 		</Tabs.List>
 	</Tabs.Root>
 	<Separator orientation="vertical" class="mx-2 !h-4" />
@@ -59,13 +59,13 @@
 				}}
 				class="gap-1 *:data-[slot=toggle-group-item]:!size-6 *:data-[slot=toggle-group-item]:!rounded-sm"
 			>
-				<ToggleGroup.Item value="100" title="Desktop">
+				<ToggleGroup.Item value="100" title="데스크톱">
 					<MonitorIcon />
 				</ToggleGroup.Item>
-				<ToggleGroup.Item value="60" title="Tablet">
+				<ToggleGroup.Item value="60" title="태블릿">
 					<TabletIcon />
 				</ToggleGroup.Item>
-				<ToggleGroup.Item value="30" title="Mobile">
+				<ToggleGroup.Item value="30" title="모바일">
 					<SmartphoneIcon />
 				</ToggleGroup.Item>
 				<Separator orientation="vertical" class="!h-4" />
@@ -73,11 +73,11 @@
 					size="icon"
 					variant="ghost"
 					class="size-6 rounded-sm p-0"
-					title="Open in New Tab"
+					title="새 탭에서 열기"
 					href="/view/{ctx.item.name}"
 					target="_blank"
 				>
-					<span class="sr-only">Open in New Tab</span>
+					<span class="sr-only">새 탭에서 열기</span>
 					<FullscreenIcon />
 				</Button>
 				<Separator orientation="vertical" class="!h-4" />
@@ -85,13 +85,13 @@
 					size="icon"
 					variant="ghost"
 					class="size-6 rounded-sm p-0"
-					title="Refresh Preview"
+					title="미리보기 새로고침"
 					onclick={() => {
 						ctx.iframeKey = ctx.iframeKey + 1;
 					}}
 				>
 					<RotateCcwIcon />
-					<span class="sr-only">Refresh Preview</span>
+					<span class="sr-only">미리보기 새로고침</span>
 				</Button>
 			</ToggleGroup.Root>
 		</div>

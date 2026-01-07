@@ -27,6 +27,14 @@
 				>
 					CokaKoala
 				</a>가 Svelte로 포팅.
+				<a
+					href="https://github.com/id-ego"
+					target="_blank"
+					rel="noreferrer"
+					class="font-medium underline underline-offset-4"
+				>
+					id-ego
+				</a>가 한글화.
 			</div>
 		</div>
 	</div>

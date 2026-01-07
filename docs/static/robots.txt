@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shadcn-svelte.docsforall.com/sitemap.xml

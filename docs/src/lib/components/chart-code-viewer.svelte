@@ -59,7 +59,7 @@
 		{...props}
 		class="text-foreground hover:bg-muted dark:text-foreground h-6 rounded-[6px] border bg-transparent px-2 text-xs shadow-none"
 	>
-		View Code
+		코드 보기
 	</Button>
 {/snippet}
 
@@ -73,8 +73,8 @@
 			)}
 		>
 			<Drawer.Header class="sr-only">
-				<Drawer.Title>Code</Drawer.Title>
-				<Drawer.Description>View the code for the chart.</Drawer.Description>
+				<Drawer.Title>코드</Drawer.Title>
+				<Drawer.Description>차트의 코드를 확인합니다.</Drawer.Description>
 			</Drawer.Header>
 
 			<div class="flex h-full flex-col overflow-auto">
@@ -93,8 +93,8 @@
 			)}
 		>
 			<Sheet.Header class="sr-only">
-				<Sheet.Title>Code</Sheet.Title>
-				<Sheet.Description>View the code for the chart.</Sheet.Description>
+				<Sheet.Title>코드</Sheet.Title>
+				<Sheet.Description>차트의 코드를 확인합니다.</Sheet.Description>
 			</Sheet.Header>
 			{@render Content()}
 		</Sheet.Content>
