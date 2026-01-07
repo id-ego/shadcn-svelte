@@ -38,19 +38,19 @@
 
 {#snippet ChartTitle(chart: HighlightedBlock)}
 	{#if chart.name.includes("chart-line")}
-		<LineChartIcon /> Line Chart
+		<LineChartIcon /> 선 차트
 	{:else if chart.name.includes("chart-bar")}
-		<BarChartBigIcon /> Bar Chart
+		<BarChartBigIcon /> 막대 차트
 	{:else if chart.name.includes("chart-pie")}
-		<PieChartIcon /> Pie Chart
+		<PieChartIcon /> 파이 차트
 	{:else if chart.name.includes("chart-area")}
-		<AreaChartIcon /> Area Chart
+		<AreaChartIcon /> 영역 차트
 	{:else if chart.name.includes("chart-radar")}
-		<HexagonIcon /> Radar Chart
+		<HexagonIcon /> 레이더 차트
 	{:else if chart.name.includes("chart-radial")}
-		<RadarIcon /> Radial Chart
+		<RadarIcon /> 방사형 차트
 	{:else if chart.name.includes("chart-tooltip")}
-		<MousePointer2Icon /> Tooltip
+		<MousePointer2Icon /> 툴팁
 	{:else}
 		{chart.name}
 	{/if}

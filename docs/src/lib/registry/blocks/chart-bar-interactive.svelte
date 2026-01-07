@@ -100,9 +100,9 @@
 	];
 
 	const chartConfig = {
-		views: { label: "Page Views", color: "" },
-		desktop: { label: "Desktop", color: "var(--chart-2)" },
-		mobile: { label: "Mobile", color: "var(--chart-1)" },
+		views: { label: "페이지 조회", color: "" },
+		desktop: { label: "데스크톱", color: "var(--chart-2)" },
+		mobile: { label: "모바일", color: "var(--chart-1)" },
 	} satisfies Chart.ChartConfig;
 	let context = $state<ChartContextValue>();
 
@@ -125,8 +125,8 @@
 <Card.Root>
 	<Card.Header class="flex flex-col items-stretch space-y-0 border-b p-0 sm:flex-row">
 		<div class="flex flex-1 flex-col justify-center gap-1 px-6 py-5 sm:py-6">
-			<Card.Title>Bar Chart - Interactive</Card.Title>
-			<Card.Description>Showing total visitors for the last 3 months</Card.Description>
+			<Card.Title>막대 차트 - Interactive</Card.Title>
+			<Card.Description>최근 3개월간 총 방문자 수</Card.Description>
 		</div>
 		<div class="flex">
 			{#each ["desktop", "mobile"] as key (key)}
@@ -169,7 +169,7 @@
 					highlight: { area: { fill: "none" } },
 					xAxis: {
 						format: (d: Date) => {
-							return d.toLocaleDateString("en-US", {
+							return d.toLocaleDateString("ko-KR", {
 								month: "short",
 								day: "2-digit",
 							});
@@ -185,7 +185,7 @@
 					<Chart.Tooltip
 						nameKey="views"
 						labelFormatter={(v: Date) => {
-							return v.toLocaleDateString("en-US", {
+							return v.toLocaleDateString("ko-KR", {
 								month: "short",
 								day: "numeric",
 								year: "numeric",

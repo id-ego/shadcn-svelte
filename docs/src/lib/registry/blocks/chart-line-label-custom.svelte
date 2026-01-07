@@ -15,19 +15,19 @@
 	];
 
 	const chartConfig = {
-		visitors: { label: "Visitors", color: "var(--chart-2)" },
+		visitors: { label: "방문자", color: "var(--chart-2)" },
 		chrome: { label: "Chrome", color: "var(--chart-1)" },
 		safari: { label: "Safari", color: "var(--chart-2)" },
 		firefox: { label: "Firefox", color: "var(--chart-3)" },
 		edge: { label: "Edge", color: "var(--chart-4)" },
-		other: { label: "Other", color: "var(--chart-5)" },
+		other: { label: "기타", color: "var(--chart-5)" },
 	} satisfies Chart.ChartConfig;
 </script>
 
 <Card.Root>
 	<Card.Header>
-		<Card.Title>Line Chart - Custom Label</Card.Title>
-		<Card.Description>Showing total visitors for the last 6 months</Card.Description>
+		<Card.Title>선 차트 - 커스텀 라벨</Card.Title>
+		<Card.Description>최근 6개월간 총 방문자 수</Card.Description>
 	</Card.Header>
 	<Card.Content>
 		<Chart.Container config={chartConfig}>
@@ -57,10 +57,10 @@
 		<div class="flex w-full items-start gap-2 text-sm">
 			<div class="grid gap-2">
 				<div class="flex items-center gap-2 leading-none font-medium">
-					Trending up by 5.2% this month <TrendingUpIcon class="size-4" />
+					이번 달 5.2% 상승 <TrendingUpIcon class="size-4" />
 				</div>
 				<div class="text-muted-foreground flex items-center gap-2 leading-none">
-					January - June 2024
+					2024년 1월 - 6월
 				</div>
 			</div>
 		</div>

@@ -14,8 +14,8 @@
 
 <Card.Root class="flex flex-col">
 	<Card.Header class="items-center">
-		<Card.Title>Radial Chart - Stacked</Card.Title>
-		<Card.Description>January - June 2024</Card.Description>
+		<Card.Title>방사형 차트 - 스택</Card.Title>
+		<Card.Description>2024년 1월 - 6월</Card.Description>
 	</Card.Header>
 	<Card.Content class="flex-1">
 		<Chart.Container config={chartConfig} class="mx-auto aspect-square max-h-[250px]">
@@ -42,7 +42,7 @@
 						dy={-24}
 					/>
 					<Text
-						value="Visitors"
+						value="방문자"
 						textAnchor="middle"
 						verticalAnchor="middle"
 						class="fill-muted-foreground! text-muted-foreground"
@@ -57,10 +57,10 @@
 	</Card.Content>
 	<Card.Footer class="flex-col gap-2 text-sm">
 		<div class="flex items-center gap-2 leading-none font-medium">
-			Trending up by 5.2% this month <TrendingUpIcon class="size-4" />
+			이번 달 5.2% 상승 <TrendingUpIcon class="size-4" />
 		</div>
 		<div class="text-muted-foreground leading-none">
-			Showing total visitors for the last 6 months
+			최근 6개월간 총 방문자 수 표시
 		</div>
 	</Card.Footer>
 </Card.Root>

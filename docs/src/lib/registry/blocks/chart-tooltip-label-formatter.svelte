@@ -15,8 +15,8 @@
 	];
 
 	const chartConfig = {
-		running: { label: "Running", color: "var(--chart-1)" },
-		swimming: { label: "Swimming", color: "var(--chart-2)" },
+		running: { label: "러닝", color: "var(--chart-1)" },
+		swimming: { label: "수영", color: "var(--chart-2)" },
 	} satisfies Chart.ChartConfig;
 
 	let context = $state<ChartContextValue>();
@@ -24,8 +24,8 @@
 
 <Card.Root>
 	<Card.Header>
-		<Card.Title>Tooltip - Label Formatter</Card.Title>
-		<Card.Description>Tooltip with label formatter.</Card.Description>
+		<Card.Title>툴팁 - 라벨 포매터</Card.Title>
+		<Card.Description>라벨 포매터를 사용한 툴팁입니다.</Card.Description>
 	</Card.Header>
 	<Card.Content>
 		<Chart.Container config={chartConfig}>
@@ -39,13 +39,13 @@
 				series={[
 					{
 						key: "running",
-						label: "Running",
+						label: "러닝",
 						color: chartConfig.running.color,
 						props: { rounded: "bottom" },
 					},
 					{
 						key: "swimming",
-						label: "Swimming",
+						label: "수영",
 						color: chartConfig.swimming.color,
 					},
 				]}
@@ -64,7 +64,7 @@
 					},
 					xAxis: {
 						format: (d) =>
-							new Date(d).toLocaleDateString("en-US", {
+							new Date(d).toLocaleDateString("ko-KR", {
 								weekday: "short",
 							}),
 						tickLabelProps: {
@@ -78,7 +78,7 @@
 				{#snippet tooltip()}
 					<Chart.Tooltip
 						labelFormatter={(d) =>
-							new Date(d).toLocaleDateString("en-US", {
+							new Date(d).toLocaleDateString("ko-KR", {
 								day: "numeric",
 								month: "long",
 								year: "numeric",

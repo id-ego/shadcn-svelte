@@ -16,16 +16,16 @@
 	];
 
 	const chartConfig = {
-		desktop: { label: "Desktop", color: "var(--chart-1)" },
-		mobile: { label: "Mobile", color: "var(--chart-2)" },
-		other: { label: "Other", color: "var(--chart-3)" },
+		desktop: { label: "데스크톱", color: "var(--chart-1)" },
+		mobile: { label: "모바일", color: "var(--chart-2)" },
+		other: { label: "기타", color: "var(--chart-3)" },
 	} satisfies Chart.ChartConfig;
 </script>
 
 <Card.Root>
 	<Card.Header>
-		<Card.Title>Area Chart - Stacked Expanded</Card.Title>
-		<Card.Description>Showing total visitors for the last 6 months</Card.Description>
+		<Card.Title>영역 차트 - 확장 스택</Card.Title>
+		<Card.Description>최근 6개월간 총 방문자 수</Card.Description>
 	</Card.Header>
 	<Card.Content>
 		<Chart.Container config={chartConfig}>
@@ -38,18 +38,18 @@
 				series={[
 					{
 						key: "other",
-						label: "Other",
+						label: "기타",
 						color: chartConfig.other.color,
 						props: { opacity: 0.1 },
 					},
 					{
 						key: "mobile",
-						label: "Mobile",
+						label: "모바일",
 						color: chartConfig.mobile.color,
 					},
 					{
 						key: "desktop",
-						label: "Desktop",
+						label: "데스크톱",
 						color: chartConfig.desktop.color,
 					},
 				]}
@@ -61,14 +61,14 @@
 						motion: "tween",
 					},
 					xAxis: {
-						format: (v: Date) => v.toLocaleDateString("en-US", { month: "short" }),
+						format: (v: Date) => v.toLocaleDateString("ko-KR", { month: "short" }),
 					},
 				}}
 			>
 				{#snippet tooltip()}
 					<Chart.Tooltip
 						labelFormatter={(v: Date) => {
-							return v.toLocaleDateString("en-US", {
+							return v.toLocaleDateString("ko-KR", {
 								month: "long",
 							});
 						}}
@@ -82,10 +82,10 @@
 		<div class="flex w-full items-start gap-2 text-sm">
 			<div class="grid gap-2">
 				<div class="flex items-center gap-2 leading-none font-medium">
-					Trending up by 5.2% this month <TrendingUpIcon class="size-4" />
+					이번 달 5.2% 상승 <TrendingUpIcon class="size-4" />
 				</div>
 				<div class="text-muted-foreground flex items-center gap-2 leading-none">
-					January - June 2024
+					2024년 1월 - 6월
 				</div>
 			</div>
 		</div>

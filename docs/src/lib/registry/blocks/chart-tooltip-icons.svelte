@@ -17,8 +17,8 @@
 	];
 
 	const chartConfig = {
-		running: { label: "Running", color: "var(--chart-1)", icon: FootprintsIcon },
-		swimming: { label: "Swimming", color: "var(--chart-2)", icon: WavesIcon },
+		running: { label: "러닝", color: "var(--chart-1)", icon: FootprintsIcon },
+		swimming: { label: "수영", color: "var(--chart-2)", icon: WavesIcon },
 	} satisfies Chart.ChartConfig;
 
 	let context = $state<ChartContextValue>();
@@ -26,8 +26,8 @@
 
 <Card.Root>
 	<Card.Header>
-		<Card.Title>Tooltip - Icons</Card.Title>
-		<Card.Description>Tooltip with icons.</Card.Description>
+		<Card.Title>툴팁 - 아이콘</Card.Title>
+		<Card.Description>아이콘이 있는 툴팁입니다.</Card.Description>
 	</Card.Header>
 	<Card.Content>
 		<Chart.Container config={chartConfig}>
@@ -41,13 +41,13 @@
 				series={[
 					{
 						key: "running",
-						label: "Running",
+						label: "러닝",
 						color: chartConfig.running.color,
 						props: { rounded: "bottom" },
 					},
 					{
 						key: "swimming",
-						label: "Swimming",
+						label: "수영",
 						color: chartConfig.swimming.color,
 					},
 				]}
@@ -66,7 +66,7 @@
 					},
 					xAxis: {
 						format: (d) =>
-							new Date(d).toLocaleDateString("en-US", {
+							new Date(d).toLocaleDateString("ko-KR", {
 								weekday: "short",
 							}),
 						tickLabelProps: {

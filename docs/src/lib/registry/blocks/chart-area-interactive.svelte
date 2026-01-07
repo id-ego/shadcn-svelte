@@ -107,13 +107,13 @@
 	const selectedLabel = $derived.by(() => {
 		switch (timeRange) {
 			case "90d":
-				return "Last 3 months";
+				return "최근 3개월";
 			case "30d":
-				return "Last 30 days";
+				return "최근 30일";
 			case "7d":
-				return "Last 7 days";
+				return "최근 7일";
 			default:
-				return "Last 3 months";
+				return "최근 3개월";
 		}
 	});
 
@@ -134,25 +134,25 @@
 	);
 
 	const chartConfig = {
-		desktop: { label: "Desktop", color: "var(--chart-1)" },
-		mobile: { label: "Mobile", color: "var(--chart-2)" },
+		desktop: { label: "데스크톱", color: "var(--chart-1)" },
+		mobile: { label: "모바일", color: "var(--chart-2)" },
 	} satisfies Chart.ChartConfig;
 </script>
 
 <Card.Root>
 	<Card.Header class="flex items-center gap-2 space-y-0 border-b py-5 sm:flex-row">
 		<div class="grid flex-1 gap-1 text-center sm:text-start">
-			<Card.Title>Area Chart - Interactive</Card.Title>
-			<Card.Description>Showing total visitors for the last 3 months</Card.Description>
+			<Card.Title>영역 차트 - 인터랙티브</Card.Title>
+			<Card.Description>최근 3개월간 총 방문자 수</Card.Description>
 		</div>
 		<Select.Root type="single" bind:value={timeRange}>
-			<Select.Trigger class="w-40 rounded-lg sm:ms-auto" aria-label="Select a value">
+			<Select.Trigger class="w-40 rounded-lg sm:ms-auto" aria-label="값 선택">
 				{selectedLabel}
 			</Select.Trigger>
 			<Select.Content class="rounded-xl">
-				<Select.Item value="90d" class="rounded-lg">Last 3 months</Select.Item>
-				<Select.Item value="30d" class="rounded-lg">Last 30 days</Select.Item>
-				<Select.Item value="7d" class="rounded-lg">Last 7 days</Select.Item>
+				<Select.Item value="90d" class="rounded-lg">최근 3개월</Select.Item>
+				<Select.Item value="30d" class="rounded-lg">최근 30일</Select.Item>
+				<Select.Item value="7d" class="rounded-lg">최근 7일</Select.Item>
 			</Select.Content>
 		</Select.Root>
 	</Card.Header>
@@ -166,12 +166,12 @@
 				series={[
 					{
 						key: "mobile",
-						label: "Mobile",
+						label: "모바일",
 						color: chartConfig.mobile.color,
 					},
 					{
 						key: "desktop",
-						label: "Desktop",
+						label: "데스크톱",
 						color: chartConfig.desktop.color,
 					},
 				]}
@@ -186,7 +186,7 @@
 					xAxis: {
 						ticks: timeRange === "7d" ? 7 : undefined,
 						format: (v) => {
-							return v.toLocaleDateString("en-US", {
+							return v.toLocaleDateString("ko-KR", {
 								month: "short",
 								day: "numeric",
 							});
@@ -238,7 +238,7 @@
 				{#snippet tooltip()}
 					<Chart.Tooltip
 						labelFormatter={(v: Date) => {
-							return v.toLocaleDateString("en-US", {
+							return v.toLocaleDateString("ko-KR", {
 								month: "long",
 							});
 						}}

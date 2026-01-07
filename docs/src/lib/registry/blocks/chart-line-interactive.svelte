@@ -100,9 +100,9 @@
 	];
 
 	const chartConfig = {
-		views: { label: "Page Views", color: "" },
-		desktop: { label: "Desktop", color: "var(--chart-1)" },
-		mobile: { label: "Mobile", color: "var(--chart-2)" },
+		views: { label: "페이지 뷰", color: "" },
+		desktop: { label: "데스크톱", color: "var(--chart-1)" },
+		mobile: { label: "모바일", color: "var(--chart-2)" },
 	} satisfies Chart.ChartConfig;
 
 	let activeChart = $state<keyof typeof chartConfig>("desktop");
@@ -124,8 +124,8 @@
 <Card.Root>
 	<Card.Header class="flex flex-col items-stretch space-y-0 border-b p-0 sm:flex-row">
 		<div class="flex flex-1 flex-col justify-center gap-1 px-6 py-5 sm:py-6">
-			<Card.Title>Line Chart - Interactive</Card.Title>
-			<Card.Description>Showing total visitors for the last 3 months</Card.Description>
+			<Card.Title>선 차트 - 인터랙티브</Card.Title>
+			<Card.Description>최근 3개월간 총 방문자 수</Card.Description>
 		</div>
 		<div class="flex">
 			{#each ["desktop", "mobile"] as key (key)}
@@ -157,7 +157,7 @@
 					spline: { curve: curveNatural, motion: "tween", strokeWidth: 2 },
 					xAxis: {
 						format: (v: Date) => {
-							return v.toLocaleDateString("en-US", {
+							return v.toLocaleDateString("ko-KR", {
 								month: "short",
 								day: "numeric",
 							});

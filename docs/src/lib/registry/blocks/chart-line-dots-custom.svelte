@@ -17,14 +17,14 @@
 	];
 
 	const chartConfig = {
-		desktop: { label: "Desktop", color: "var(--chart-1)" },
+		desktop: { label: "데스크톱", color: "var(--chart-1)" },
 	} satisfies Chart.ChartConfig;
 </script>
 
 <Card.Root>
 	<Card.Header>
-		<Card.Title>Line Chart - Dots Custom</Card.Title>
-		<Card.Description>Showing total visitors for the last 6 months</Card.Description>
+		<Card.Title>선 차트 - 커스텀 점</Card.Title>
+		<Card.Description>최근 6개월간 총 방문자 수</Card.Description>
 	</Card.Header>
 	<Card.Content>
 		<Chart.Container config={chartConfig}>
@@ -36,7 +36,7 @@
 				series={[
 					{
 						key: "desktop",
-						label: "Desktop",
+						label: "데스크톱",
 						color: chartConfig.desktop.color,
 					},
 				]}
@@ -49,7 +49,7 @@
 						},
 					},
 					xAxis: {
-						format: (v: Date) => v.toLocaleDateString("en-US", { month: "short" }),
+						format: (v: Date) => v.toLocaleDateString("ko-KR", { month: "short" }),
 					},
 				}}
 			>
@@ -82,10 +82,10 @@
 		<div class="flex w-full items-start gap-2 text-sm">
 			<div class="grid gap-2">
 				<div class="flex items-center gap-2 leading-none font-medium">
-					Trending up by 5.2% this month <TrendingUpIcon class="size-4" />
+					이번 달 5.2% 상승 <TrendingUpIcon class="size-4" />
 				</div>
 				<div class="text-muted-foreground flex items-center gap-2 leading-none">
-					January - June 2024
+					2024년 1월 - 6월
 				</div>
 			</div>
 		</div>

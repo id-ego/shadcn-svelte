@@ -8,31 +8,31 @@
 
 	const links = [
 		{
-			name: "Area Charts",
+			name: "영역 차트",
 			href: "/charts/area#charts",
 		},
 		{
-			name: "Bar Charts",
+			name: "막대 차트",
 			href: "/charts/bar#charts",
 		},
 		{
-			name: "Line Charts",
+			name: "선 차트",
 			href: "/charts/line#charts",
 		},
 		{
-			name: "Pie Charts",
+			name: "파이 차트",
 			href: "/charts/pie#charts",
 		},
 		{
-			name: "Radar Charts",
+			name: "레이더 차트",
 			href: "/charts/radar#charts",
 		},
 		{
-			name: "Radial Charts",
+			name: "방사형 차트",
 			href: "/charts/radial#charts",
 		},
 		{
-			name: "Tooltips",
+			name: "툴팁",
 			href: "/charts/tooltip#charts",
 		},
 	];

@@ -15,9 +15,9 @@
 	];
 
 	const chartConfig = {
-		activities: { label: "Activities" },
-		running: { label: "Running", color: "var(--chart-1)" },
-		swimming: { label: "Swimming", color: "var(--chart-2)" },
+		activities: { label: "활동" },
+		running: { label: "러닝", color: "var(--chart-1)" },
+		swimming: { label: "수영", color: "var(--chart-2)" },
 	} satisfies Chart.ChartConfig;
 
 	let context = $state<ChartContextValue>();
@@ -25,8 +25,8 @@
 
 <Card.Root>
 	<Card.Header>
-		<Card.Title>Tooltip - Custom Label</Card.Title>
-		<Card.Description>Tooltip with custom label from chartConfig.</Card.Description>
+		<Card.Title>툴팁 - 커스텀 라벨</Card.Title>
+		<Card.Description>chartConfig의 커스텀 라벨을 사용한 툴팁입니다.</Card.Description>
 	</Card.Header>
 	<Card.Content>
 		<Chart.Container config={chartConfig}>
@@ -40,13 +40,13 @@
 				series={[
 					{
 						key: "running",
-						label: "Running",
+						label: "러닝",
 						color: chartConfig.running.color,
 						props: { rounded: "bottom" },
 					},
 					{
 						key: "swimming",
-						label: "Swimming",
+						label: "수영",
 						color: chartConfig.swimming.color,
 					},
 				]}
@@ -65,7 +65,7 @@
 					},
 					xAxis: {
 						format: (d) =>
-							new Date(d).toLocaleDateString("en-US", {
+							new Date(d).toLocaleDateString("ko-KR", {
 								weekday: "short",
 							}),
 						tickLabelProps: {

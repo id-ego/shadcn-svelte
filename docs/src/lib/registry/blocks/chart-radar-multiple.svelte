@@ -16,15 +16,15 @@
 	];
 
 	const chartConfig = {
-		desktop: { label: "Desktop", color: "var(--chart-1)" },
-		mobile: { label: "Mobile", color: "var(--chart-2)" },
+		desktop: { label: "데스크톱", color: "var(--chart-1)" },
+		mobile: { label: "모바일", color: "var(--chart-2)" },
 	} satisfies Chart.ChartConfig;
 </script>
 
 <Card.Root>
 	<Card.Header class="items-center">
-		<Card.Title>Radar Chart - Multiple</Card.Title>
-		<Card.Description>Showing total visitors for the last 6 months</Card.Description>
+		<Card.Title>레이더 차트 - 다중</Card.Title>
+		<Card.Description>최근 6개월간 총 방문자 수</Card.Description>
 	</Card.Header>
 	<Card.Content class="flex-1">
 		<Chart.Container config={chartConfig} class="mx-auto aspect-square max-h-[250px]">
@@ -33,7 +33,7 @@
 				series={[
 					{
 						key: "desktop",
-						label: "Desktop",
+						label: "데스크톱",
 						color: chartConfig.desktop.color,
 						props: {
 							fill: chartConfig.desktop.color,
@@ -42,7 +42,7 @@
 					},
 					{
 						key: "mobile",
-						label: "Mobile",
+						label: "모바일",
 						color: chartConfig.mobile.color,
 						props: {
 							fill: chartConfig.mobile.color,
@@ -87,10 +87,10 @@
 	</Card.Content>
 	<Card.Footer class="flex-col gap-2 text-sm">
 		<div class="flex items-center gap-2 leading-none font-medium">
-			Trending up by 5.2% this month <TrendingUpIcon class="size-4" />
+			이번 달 5.2% 상승 <TrendingUpIcon class="size-4" />
 		</div>
 		<div class="text-muted-foreground flex items-center gap-2 leading-none">
-			January - June 2024
+			2024년 1월 - 6월
 		</div>
 	</Card.Footer>
 </Card.Root>

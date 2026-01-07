@@ -16,11 +16,11 @@
 
 	const chartConfig = {
 		desktop: { label: "Desktop" },
-		january: { label: "January", color: "var(--chart-1)" },
-		february: { label: "February", color: "var(--chart-2)" },
-		march: { label: "March", color: "var(--chart-3)" },
-		april: { label: "April", color: "var(--chart-4)" },
-		may: { label: "May", color: "var(--chart-5)" },
+		january: { label: "1월", color: "var(--chart-1)" },
+		february: { label: "2월", color: "var(--chart-2)" },
+		march: { label: "3월", color: "var(--chart-3)" },
+		april: { label: "4월", color: "var(--chart-4)" },
+		may: { label: "5월", color: "var(--chart-5)" },
 	} satisfies Chart.ChartConfig;
 
 	let activeMonth = $state(desktopData[0].month);
@@ -36,8 +36,8 @@
 	<ChartStyle {id} config={chartConfig} />
 	<Card.Header class="flex flex-row items-start space-y-0 pb-0">
 		<div class="grid gap-1">
-			<Card.Title>Pie Chart - Interactive</Card.Title>
-			<Card.Description>January - June 2024</Card.Description>
+			<Card.Title>파이 차트 - Interactive</Card.Title>
+			<Card.Description>2024년 1월 - 6월</Card.Description>
 		</div>
 		<Select.Root type="single" bind:value={activeMonth}>
 			<Select.Trigger
@@ -50,7 +50,7 @@
 				></span>
 				{activeMonth
 					? chartConfig[activeMonth as keyof typeof chartConfig].label
-					: "Select month"}
+					: "월 선택"}
 			</Select.Trigger>
 			<Select.Content align="end" class="rounded-xl">
 				{#each months as month (month)}
@@ -100,7 +100,7 @@
 						dy={3}
 					/>
 					<Text
-						value="Visitors"
+						value="방문자"
 						textAnchor="middle"
 						verticalAnchor="middle"
 						class="!fill-muted-foreground text-muted-foreground"
@@ -137,10 +137,10 @@
 	</Card.Content>
 	<Card.Footer class="flex-col gap-2 text-sm">
 		<div class="flex items-center gap-2 leading-none font-medium">
-			Trending up by 5.2% this month <TrendingUpIcon class="size-4" />
+			이번 달 5.2% 상승 <TrendingUpIcon class="size-4" />
 		</div>
 		<div class="text-muted-foreground leading-none">
-			Showing total visitors for the last 6 months
+			지난 6개월간 총 방문자 수 표시
 		</div>
 	</Card.Footer>
 </Card.Root>
