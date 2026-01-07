@@ -10,11 +10,11 @@
 
 	const permissions = [
 		{
-			label: "Can edit",
+			label: "편집 가능",
 			value: "edit",
 		},
 		{
-			label: "Can view",
+			label: "보기 가능",
 			value: "view",
 		},
 	];
@@ -49,18 +49,18 @@
 
 <Card.Root>
 	<Card.Header>
-		<Card.Title>Share this document</Card.Title>
-		<Card.Description>Anyone with the link can view this document.</Card.Description>
+		<Card.Title>이 문서 공유하기</Card.Title>
+		<Card.Description>링크가 있는 사람은 누구나 이 문서를 볼 수 있습니다.</Card.Description>
 	</Card.Header>
 	<Card.Content>
 		<div class="flex items-center gap-2">
-			<Label for="link" class="sr-only">Link</Label>
+			<Label for="link" class="sr-only">링크</Label>
 			<Input id="link" value="http://example.com/link/to/document" readonly class="h-8" />
-			<Button size="sm" variant="outline" class="shadow-none">Copy Link</Button>
+			<Button size="sm" variant="outline" class="shadow-none">링크 복사</Button>
 		</div>
 		<Separator class="my-4" />
 		<div class="flex flex-col gap-4">
-			<div class="text-sm font-medium">People with access</div>
+			<div class="text-sm font-medium">액세스 권한이 있는 사용자</div>
 			<Item.Group>
 				{#each people as person (person.email)}
 					<Item.Item class="px-0 py-2">
@@ -78,9 +78,9 @@
 						</Item.Content>
 						<Item.Actions>
 							<Select.Root type="single" bind:value={person.permission}>
-								<Select.Trigger class="ms-auto pe-2" size="sm" aria-label="Edit">
+								<Select.Trigger class="ms-auto pe-2" size="sm" aria-label="편집">
 									{permissions.find((p) => p.value === person.permission)
-										?.label ?? "Select"}
+										?.label ?? "선택"}
 								</Select.Trigger>
 								<Select.Content align="end">
 									{#each permissions as permission (permission.value)}

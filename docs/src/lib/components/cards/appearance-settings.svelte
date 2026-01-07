@@ -55,15 +55,15 @@
 <Field.Set>
 	<Field.Group>
 		<Field.Set>
-			<Field.Legend>Compute Environment</Field.Legend>
-			<Field.Description>Select the compute environment for your cluster.</Field.Description>
+			<Field.Legend>컴퓨팅 환경</Field.Legend>
+			<Field.Description>클러스터의 컴퓨팅 환경을 선택하세요.</Field.Description>
 			<RadioGroup.Root value="kubernetes">
 				<Field.Label for="kubernetes-r2h">
 					<Field.Field orientation="horizontal">
 						<Field.Content>
 							<Field.Title>Kubernetes</Field.Title>
 							<Field.Description>
-								Run GPU workloads on a K8s configured cluster. This is the default.
+								K8s로 구성된 클러스터에서 GPU 워크로드를 실행합니다. 기본값입니다.
 							</Field.Description>
 						</Field.Content>
 						<RadioGroup.Item
@@ -76,12 +76,12 @@
 				<Field.Label for="vm-z4k">
 					<Field.Field orientation="horizontal">
 						<Field.Content>
-							<Field.Title>Virtual Machine</Field.Title>
+							<Field.Title>가상 머신</Field.Title>
 							<Field.Description>
-								Access a VM configured cluster to run workloads. (Coming soon)
+								VM으로 구성된 클러스터에 액세스하여 워크로드를 실행합니다. (곧 출시)
 							</Field.Description>
 						</Field.Content>
-						<RadioGroup.Item value="vm" id="vm-z4k" aria-label="Virtual Machine" />
+						<RadioGroup.Item value="vm" id="vm-z4k" aria-label="가상 머신" />
 					</Field.Field>
 				</Field.Label>
 			</RadioGroup.Root>
@@ -89,8 +89,8 @@
 		<Field.Separator />
 		<Field.Field orientation="horizontal">
 			<Field.Content>
-				<Field.Label for="number-of-gpus-f6l">Number of GPUs</Field.Label>
-				<Field.Description>You can add more later.</Field.Description>
+				<Field.Label for="number-of-gpus-f6l">GPU 수</Field.Label>
+				<Field.Description>나중에 더 추가할 수 있습니다.</Field.Description>
 			</Field.Content>
 			<ButtonGroup.Root>
 				<Input
@@ -109,7 +109,7 @@
 					variant="outline"
 					size="icon-sm"
 					type="button"
-					aria-label="Decrement"
+					aria-label="감소"
 					disabled={gpuCount <= 1}
 				>
 					<MinusIcon />
@@ -119,7 +119,7 @@
 					variant="outline"
 					size="icon-sm"
 					type="button"
-					aria-label="Increment"
+					aria-label="증가"
 					disabled={gpuCount >= 99}
 				>
 					<PlusIcon />
@@ -129,8 +129,8 @@
 		<Field.Separator />
 		<Field.Field orientation="horizontal">
 			<Field.Content>
-				<Field.Label for="tinting">Wallpaper Tinting</Field.Label>
-				<Field.Description>Allow the wallpaper to be tinted.</Field.Description>
+				<Field.Label for="tinting">배경화면 색조</Field.Label>
+				<Field.Description>배경화면의 색조 변경을 허용합니다.</Field.Description>
 			</Field.Content>
 			<Switch id="tinting" checked />
 		</Field.Field>

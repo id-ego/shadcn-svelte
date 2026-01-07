@@ -10,7 +10,7 @@
 >
 	<Card.Root class="@container/card">
 		<Card.Header>
-			<Card.Description>Total Revenue</Card.Description>
+			<Card.Description>총 수익</Card.Description>
 			<Card.Title class="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
 				$1,250.00
 			</Card.Title>
@@ -23,14 +23,14 @@
 		</Card.Header>
 		<Card.Footer class="flex-col items-start gap-1.5 text-sm">
 			<div class="line-clamp-1 flex gap-2 font-medium">
-				Trending up this month <TrendingUpIcon class="size-4" />
+				이번 달 증가 추세 <TrendingUpIcon class="size-4" />
 			</div>
-			<div class="text-muted-foreground">Visitors for the last 6 months</div>
+			<div class="text-muted-foreground">최근 6개월간 방문자 수</div>
 		</Card.Footer>
 	</Card.Root>
 	<Card.Root class="@container/card">
 		<Card.Header>
-			<Card.Description>New Customers</Card.Description>
+			<Card.Description>신규 고객</Card.Description>
 			<Card.Title class="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
 				1,234
 			</Card.Title>
@@ -43,14 +43,14 @@
 		</Card.Header>
 		<Card.Footer class="flex-col items-start gap-1.5 text-sm">
 			<div class="line-clamp-1 flex gap-2 font-medium">
-				Down 20% this period <TrendingDownIcon class="size-4" />
+				이번 기간 20% 감소 <TrendingDownIcon class="size-4" />
 			</div>
-			<div class="text-muted-foreground">Acquisition needs attention</div>
+			<div class="text-muted-foreground">획득 전략 재검토 필요</div>
 		</Card.Footer>
 	</Card.Root>
 	<Card.Root class="@container/card">
 		<Card.Header>
-			<Card.Description>Active Accounts</Card.Description>
+			<Card.Description>활성 계정</Card.Description>
 			<Card.Title class="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
 				45,678
 			</Card.Title>
@@ -63,14 +63,14 @@
 		</Card.Header>
 		<Card.Footer class="flex-col items-start gap-1.5 text-sm">
 			<div class="line-clamp-1 flex gap-2 font-medium">
-				Strong user retention <TrendingUpIcon class="size-4" />
+				높은 사용자 유지율 <TrendingUpIcon class="size-4" />
 			</div>
-			<div class="text-muted-foreground">Engagement exceed targets</div>
+			<div class="text-muted-foreground">참여도가 목표 초과</div>
 		</Card.Footer>
 	</Card.Root>
 	<Card.Root class="@container/card">
 		<Card.Header>
-			<Card.Description>Growth Rate</Card.Description>
+			<Card.Description>성장률</Card.Description>
 			<Card.Title class="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
 				4.5%
 			</Card.Title>
@@ -83,9 +83,9 @@
 		</Card.Header>
 		<Card.Footer class="flex-col items-start gap-1.5 text-sm">
 			<div class="line-clamp-1 flex gap-2 font-medium">
-				Steady performance increase <TrendingUpIcon class="size-4" />
+				꾸준한 성과 증가 <TrendingUpIcon class="size-4" />
 			</div>
-			<div class="text-muted-foreground">Meets growth projections</div>
+			<div class="text-muted-foreground">성장 예측치 달성</div>
 		</Card.Footer>
 	</Card.Root>
 </div>

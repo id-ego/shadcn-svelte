@@ -12,10 +12,10 @@
 		<Button variant="outline" size="sm">3</Button>
 	</ButtonGroup.Root>
 	<ButtonGroup.Root>
-		<Button variant="outline" size="icon-sm" aria-label="Previous">
+		<Button variant="outline" size="icon-sm" aria-label="이전">
 			<ArrowLeft />
 		</Button>
-		<Button variant="outline" size="icon-sm" aria-label="Next">
+		<Button variant="outline" size="icon-sm" aria-label="다음">
 			<ArrowRight />
 		</Button>
 	</ButtonGroup.Root>

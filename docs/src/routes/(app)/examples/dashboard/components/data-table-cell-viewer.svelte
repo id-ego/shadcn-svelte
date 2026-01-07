@@ -25,11 +25,11 @@
 
 	const chartConfig = {
 		desktop: {
-			label: "Desktop",
+			label: "데스크톱",
 			color: "var(--primary)",
 		},
 		mobile: {
-			label: "Mobile",
+			label: "모바일",
 			color: "var(--primary)",
 		},
 	} satisfies Chart.ChartConfig;
@@ -54,7 +54,7 @@
 	<Drawer.Content>
 		<Drawer.Header class="gap-1">
 			<Drawer.Title>{item.header}</Drawer.Title>
-			<Drawer.Description>Showing total visitors for the last 6 months</Drawer.Description>
+			<Drawer.Description>최근 6개월간 총 방문자 수</Drawer.Description>
 		</Drawer.Header>
 		<div class="flex flex-col gap-4 overflow-y-auto px-4 text-sm">
 			{#if !isMobile.current}
@@ -67,12 +67,12 @@
 						series={[
 							{
 								key: "mobile",
-								label: "Mobile",
+								label: "모바일",
 								color: chartConfig.mobile.color,
 							},
 							{
 								key: "desktop",
-								label: "Desktop",
+								label: "데스크톱",
 								color: chartConfig.desktop.color,
 							},
 						]}
@@ -85,7 +85,7 @@
 								motion: "tween",
 							},
 							xAxis: {
-								format: (v) => v.toLocaleDateString("en-US", { month: "short" }),
+								format: (v) => v.toLocaleDateString("ko-KR", { month: "short" }),
 							},
 							yAxis: { ticks: [0, 300, 600] },
 						}}
@@ -93,7 +93,7 @@
 						{#snippet tooltip()}
 							<Chart.Tooltip
 								labelFormatter={(v: Date) => {
-									return v.toLocaleDateString("en-US", {
+									return v.toLocaleDateString("ko-KR", {
 										month: "long",
 									});
 								}}
@@ -105,75 +105,75 @@
 				<Separator />
 				<div class="grid gap-2">
 					<div class="flex gap-2 leading-none font-medium">
-						Trending up by 5.2% this month
+						이번 달 5.2% 증가
 						<TrendingUpIcon class="size-4" />
 					</div>
 					<div class="text-muted-foreground">
-						Showing total visitors for the last 6 months. This is just some random text
-						to test the layout. It spans multiple lines and should wrap around.
+						최근 6개월간 총 방문자 수를 표시합니다. 이것은 레이아웃 테스트를 위한 임의의 텍스트입니다.
+						여러 줄에 걸쳐 표시되며 자동으로 줄바꿈됩니다.
 					</div>
 				</div>
 				<Separator />
 			{/if}
 			<form class="flex flex-col gap-4">
 				<div class="flex flex-col gap-3">
-					<Label for="header">Header</Label>
+					<Label for="header">제목</Label>
 					<Input id="header" value={item.header} />
 				</div>
 				<div class="grid grid-cols-2 gap-4">
 					<div class="flex flex-col gap-3">
-						<Label for="type">Type</Label>
+						<Label for="type">유형</Label>
 						<Select.Root type="single" bind:value={type}>
 							<Select.Trigger id="type" class="w-full">
-								{type ?? "Select a type"}
+								{type ?? "유형 선택"}
 							</Select.Trigger>
 							<Select.Content>
-								<Select.Item value="Table of Contents"
-									>Table of Contents</Select.Item
+								<Select.Item value="목차"
+									>목차</Select.Item
 								>
-								<Select.Item value="Executive Summary"
-									>Executive Summary</Select.Item
+								<Select.Item value="요약"
+									>요약</Select.Item
 								>
-								<Select.Item value="Technical Approach">
-									Technical Approach
+								<Select.Item value="기술적 접근">
+									기술적 접근
 								</Select.Item>
-								<Select.Item value="Design">Design</Select.Item>
-								<Select.Item value="Capabilities">Capabilities</Select.Item>
-								<Select.Item value="Focus Documents">Focus Documents</Select.Item>
-								<Select.Item value="Narrative">Narrative</Select.Item>
-								<Select.Item value="Cover Page">Cover Page</Select.Item>
+								<Select.Item value="디자인">디자인</Select.Item>
+								<Select.Item value="기능">기능</Select.Item>
+								<Select.Item value="집중 문서">집중 문서</Select.Item>
+								<Select.Item value="서술형">서술형</Select.Item>
+								<Select.Item value="표지">표지</Select.Item>
 							</Select.Content>
 						</Select.Root>
 					</div>
 					<div class="flex flex-col gap-3">
-						<Label for="status">Status</Label>
+						<Label for="status">상태</Label>
 						<Select.Root type="single" bind:value={status}>
 							<Select.Trigger id="status" class="w-full">
-								{status ?? "Select a status"}
+								{status ?? "상태 선택"}
 							</Select.Trigger>
 							<Select.Content>
-								<Select.Item value="Done">Done</Select.Item>
-								<Select.Item value="In Progress">In Progress</Select.Item>
-								<Select.Item value="Not Started">Not Started</Select.Item>
+								<Select.Item value="완료">완료</Select.Item>
+								<Select.Item value="진행 중">진행 중</Select.Item>
+								<Select.Item value="시작 안 함">시작 안 함</Select.Item>
 							</Select.Content>
 						</Select.Root>
 					</div>
 				</div>
 				<div class="grid grid-cols-2 gap-4">
 					<div class="flex flex-col gap-3">
-						<Label for="target">Target</Label>
+						<Label for="target">목표</Label>
 						<Input id="target" value={item.target} />
 					</div>
 					<div class="flex flex-col gap-3">
-						<Label for="limit">Limit</Label>
+						<Label for="limit">제한</Label>
 						<Input id="limit" value={item.limit} />
 					</div>
 				</div>
 				<div class="flex flex-col gap-3">
-					<Label for="reviewer">Reviewer</Label>
+					<Label for="reviewer">검토자</Label>
 					<Select.Root type="single" bind:value={reviewer}>
 						<Select.Trigger id="reviewer" class="w-full">
-							{reviewer ?? "Select a reviewer"}
+							{reviewer ?? "검토자 선택"}
 						</Select.Trigger>
 						<Select.Content>
 							<Select.Item value="Eddie Lake">Eddie Lake</Select.Item>
@@ -185,10 +185,10 @@
 			</form>
 		</div>
 		<Drawer.Footer>
-			<Button>Submit</Button>
+			<Button>제출</Button>
 			<Drawer.Close>
 				{#snippet child({ props })}
-					<Button variant="outline" {...props}>Done</Button>
+					<Button variant="outline" {...props}>완료</Button>
 				{/snippet}
 			</Drawer.Close>
 		</Drawer.Footer>

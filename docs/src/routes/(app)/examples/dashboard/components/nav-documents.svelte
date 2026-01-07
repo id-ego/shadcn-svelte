@@ -14,7 +14,7 @@
 </script>
 
 <Sidebar.Group class="group-data-[collapsible=icon]:hidden">
-	<Sidebar.GroupLabel>Documents</Sidebar.GroupLabel>
+	<Sidebar.GroupLabel>문서</Sidebar.GroupLabel>
 	<Sidebar.Menu>
 		{#each items as item (item.name)}
 			<Sidebar.MenuItem>
@@ -33,7 +33,7 @@
 							class="data-[state=open]:bg-accent rounded-sm"
 						>
 							<DotsIcon />
-							<span class="sr-only">More</span>
+							<span class="sr-only">더보기</span>
 						</Sidebar.MenuAction>
 					</DropdownMenu.Trigger>
 					<DropdownMenu.Content
@@ -43,16 +43,16 @@
 					>
 						<DropdownMenu.Item>
 							<FolderIcon />
-							<span>Open</span>
+							<span>열기</span>
 						</DropdownMenu.Item>
 						<DropdownMenu.Item>
 							<Share3Icon />
-							<span>Share</span>
+							<span>공유</span>
 						</DropdownMenu.Item>
 						<DropdownMenu.Separator />
 						<DropdownMenu.Item variant="destructive">
 							<TrashIcon />
-							<span>Delete</span>
+							<span>삭제</span>
 						</DropdownMenu.Item>
 					</DropdownMenu.Content>
 				</DropdownMenu.Root>
@@ -61,7 +61,7 @@
 		<Sidebar.MenuItem>
 			<Sidebar.MenuButton class="text-sidebar-foreground/70">
 				<DotsIcon class="text-sidebar-foreground/70" />
-				<span>More</span>
+				<span>더보기</span>
 			</Sidebar.MenuButton>
 		</Sidebar.MenuItem>
 	</Sidebar.Menu>

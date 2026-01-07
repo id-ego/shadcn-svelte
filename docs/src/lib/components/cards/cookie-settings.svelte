@@ -7,21 +7,21 @@
 
 <Card.Root>
 	<Card.Header>
-		<Card.Title>Cookie Settings</Card.Title>
-		<Card.Description>Manage your cookie settings here.</Card.Description>
+		<Card.Title>쿠키 설정</Card.Title>
+		<Card.Description>쿠키 설정을 관리하세요.</Card.Description>
 	</Card.Header>
 	<Card.Content class="grid gap-6">
 		<Field.Field orientation="horizontal">
 			<Field.Content>
-				<Field.Label for="necessary">Strictly Necessary</Field.Label>
+				<Field.Label for="necessary">필수</Field.Label>
 				<Field.Description>
-					These cookies are essential in order to use the website and use its features.
+					이 쿠키들은 웹사이트 사용과 기능 이용에 필수적입니다.
 				</Field.Description>
 			</Field.Content>
 			<Switch id="necessary" checked aria-label="Necessary" />
 		</Field.Field>
 		<Field.Field>
-			<Button variant="outline">Save preferences</Button>
+			<Button variant="outline">설정 저장</Button>
 		</Field.Field>
 	</Card.Content>
 </Card.Root>

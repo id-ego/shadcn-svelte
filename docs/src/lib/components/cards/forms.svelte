@@ -10,14 +10,14 @@
 	const plans = [
 		{
 			id: "starter",
-			name: "Starter Plan",
-			description: "For small businesses.",
+			name: "스타터 플랜",
+			description: "소규모 비즈니스용",
 			price: "$10",
 		},
 		{
 			id: "pro",
-			name: "Pro Plan",
-			description: "More features and storage.",
+			name: "프로 플랜",
+			description: "더 많은 기능과 저장공간",
 			price: "$20",
 		},
 	] as const;
@@ -27,10 +27,9 @@
 
 <Card.Root>
 	<Card.Header>
-		<Card.Title class="text-lg">Upgrade your subscription</Card.Title>
+		<Card.Title class="text-lg">구독 업그레이드</Card.Title>
 		<Card.Description class="text-balance">
-			You are currently on the free plan. Upgrade to the pro plan to get access to all
-			features.
+			현재 무료 플랜을 사용 중입니다. 프로 플랜으로 업그레이드하여 모든 기능을 이용하세요.
 		</Card.Description>
 	</Card.Header>
 	<Card.Content>
@@ -38,17 +37,17 @@
 			<Field.Group>
 				<Field.Group class="grid grid-cols-2">
 					<Field.Field>
-						<Field.Label for="name-{id}">Name</Field.Label>
+						<Field.Label for="name-{id}">이름</Field.Label>
 						<Input id="name-{id}" placeholder="Max Leiter" />
 					</Field.Field>
 					<Field.Field>
-						<Field.Label for="email-{id}">Email</Field.Label>
+						<Field.Label for="email-{id}">이메일</Field.Label>
 						<Input id="email-{id}" placeholder="mail@acme.com" />
 					</Field.Field>
 				</Field.Group>
 				<Field.Group class="grid grid-cols-2 gap-3 md:grid-cols-[1fr_80px_60px]">
 					<Field.Field>
-						<Field.Label for="card-number-{id}">Card Number</Field.Label>
+						<Field.Label for="card-number-{id}">카드 번호</Field.Label>
 						<Input
 							id="card-number-{id}"
 							placeholder="1234 1234 1234 1234"
@@ -56,7 +55,7 @@
 						/>
 					</Field.Field>
 					<Field.Field>
-						<Field.Label for="card-number-expiry-{id}">Expiry Date</Field.Label>
+						<Field.Label for="card-number-expiry-{id}">만료일</Field.Label>
 						<Input id="card-number-expiry-{id}" placeholder="MM/YY" />
 					</Field.Field>
 					<Field.Field>
@@ -65,8 +64,8 @@
 					</Field.Field>
 				</Field.Group>
 				<Field.Set>
-					<Field.Legend>Plan</Field.Legend>
-					<Field.Description>Select the plan that best fits your needs.</Field.Description
+					<Field.Legend>플랜</Field.Legend>
+					<Field.Description>필요에 가장 적합한 플랜을 선택하세요.</Field.Description
 					>
 					<RadioGroup.Root value="starter" class="grid grid-cols-2 gap-2">
 						{#each plans as plan (plan.id)}
@@ -85,26 +84,26 @@
 					</RadioGroup.Root>
 				</Field.Set>
 				<Field.Field>
-					<Field.Label for="notes">Notes</Field.Label>
-					<Textarea id="notes" placeholder="Enter notes" />
+					<Field.Label for="notes">메모</Field.Label>
+					<Textarea id="notes" placeholder="메모를 입력하세요" />
 				</Field.Field>
 				<Field.Field>
 					<Field.Field orientation="horizontal">
 						<Checkbox id="terms" />
 						<Field.Label for="terms" class="font-normal">
-							I agree to the terms and conditions
+							이용약관에 동의합니다
 						</Field.Label>
 					</Field.Field>
 					<Field.Field orientation="horizontal">
 						<Checkbox id="newsletter" checked />
 						<Field.Label for="newsletter" class="font-normal">
-							Allow us to send you emails
+							이메일 수신을 허용합니다
 						</Field.Label>
 					</Field.Field>
 				</Field.Field>
 				<Field.Field orientation="horizontal">
-					<Button variant="outline" size="sm">Cancel</Button>
-					<Button size="sm">Upgrade Plan</Button>
+					<Button variant="outline" size="sm">취소</Button>
+					<Button size="sm">플랜 업그레이드</Button>
 				</Field.Field>
 			</Field.Group>
 		</form>

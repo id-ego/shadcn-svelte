@@ -40,7 +40,7 @@
 	<div class="flex flex-col gap-6 *:[div]:w-full *:[div]:max-w-full">
 		<InputGroupButtonDemo />
 		<ItemDemo />
-		<FieldSeparator>Appearance Settings</FieldSeparator>
+		<FieldSeparator>외관 설정</FieldSeparator>
 		<AppearanceSettings />
 	</div>
 	<div

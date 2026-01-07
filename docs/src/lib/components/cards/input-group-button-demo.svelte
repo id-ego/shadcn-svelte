@@ -9,7 +9,7 @@
 </script>
 
 <div class="grid w-full max-w-sm gap-6">
-	<Label for="input-secure-19" class="sr-only">Input Secure</Label>
+	<Label for="input-secure-19" class="sr-only">보안 입력</Label>
 	<InputGroup.Root class="[--radius:9999px]">
 		<InputGroup.Input id="input-secure-19" class="!ps-0.5" />
 		<Popover.Root>
@@ -20,7 +20,7 @@
 							{...props}
 							variant="secondary"
 							size="icon-xs"
-							aria-label="Info"
+							aria-label="정보"
 						>
 							<InfoIcon />
 						</InputGroup.Button>
@@ -32,8 +32,8 @@
 				alignOffset={10}
 				class="flex flex-col gap-1 rounded-xl text-sm"
 			>
-				<p class="font-medium">Your connection is not secure.</p>
-				<p>You should not enter any sensitive information on this site.</p>
+				<p class="font-medium">연결이 안전하지 않습니다.</p>
+				<p>이 사이트에 민감한 정보를 입력하지 마세요.</p>
 			</Popover.Content>
 		</Popover.Root>
 		<InputGroup.Addon class="text-muted-foreground !ps-1">https://</InputGroup.Addon>
@@ -41,7 +41,7 @@
 			<InputGroup.Button
 				onclick={() => (isFavorite = !isFavorite)}
 				size="icon-xs"
-				aria-label="Favorite"
+				aria-label="즐겨찾기"
 			>
 				<IconStar
 					data-favorite={isFavorite}

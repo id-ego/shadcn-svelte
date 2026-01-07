@@ -229,7 +229,7 @@
 						setTheme(theme.name);
 					}}
 				>
-					{theme.name === "neutral" ? "Default" : theme.name}
+					{theme.name === "neutral" ? "기본" : theme.name}
 				</Button>
 			{/each}
 		</div>
@@ -237,7 +237,7 @@
 
 	<!-- Theme selector for mobile -->
 	<div class="flex items-center gap-2 lg:hidden">
-		<Label for="theme-selector" class="sr-only">Theme</Label>
+		<Label for="theme-selector" class="sr-only">테마</Label>
 		<Select.Root
 			type="single"
 			allowDeselect={false}
@@ -254,8 +254,8 @@
 				size="sm"
 				class="justify-start capitalize shadow-none *:data-[slot=select-value]:w-12 *:data-[slot=select-value]:capitalize"
 			>
-				<span class="font-medium">Theme:</span>
-				<span data-slot="select-value">{coercedActiveTheme ?? "Select a theme"}</span>
+				<span class="font-medium">테마:</span>
+				<span data-slot="select-value">{coercedActiveTheme ?? "테마 선택"}</span>
 			</Select.Trigger>
 			<Select.Content align="end">
 				<Select.Group>
@@ -273,7 +273,7 @@
 	<Drawer.Root>
 		<Drawer.Trigger class={cn("sm:hidden!", "ms-auto")}>
 			{#snippet child({ props })}
-				<Button size="sm" variant="secondary" {...props}>Copy Code</Button>
+				<Button size="sm" variant="secondary" {...props}>코드 복사</Button>
 			{/snippet}
 		</Drawer.Trigger>
 		<Drawer.Content class="h-auto">
@@ -282,7 +282,7 @@
 					{coercedActiveTheme === "neutral" ? "Neutral" : coercedActiveTheme}
 				</Drawer.Title>
 				<Drawer.Description>
-					Copy and paste the following code into your CSS file.
+					다음 코드를 CSS 파일에 복사하여 붙여넣으세요.
 				</Drawer.Description>
 			</Drawer.Header>
 			<ThemeCustomizerCode
@@ -301,7 +301,7 @@
 			{#snippet child({ props })}
 				<Button size="sm" class="ms-auto" variant="secondary" {...props}>
 					<IconCopy />
-					<span class="group-data-[size=icon-sm]/button:sr-only">Copy Code</span>
+					<span class="group-data-[size=icon-sm]/button:sr-only">코드 복사</span>
 				</Button>
 			{/snippet}
 		</Dialog.Trigger>
@@ -313,7 +313,7 @@
 					{coercedActiveTheme === "neutral" ? "Neutral" : coercedActiveTheme}
 				</Dialog.Title>
 				<Dialog.Description>
-					Copy and paste the following code into your CSS file.
+					다음 코드를 CSS 파일에 복사하여 붙여넣으세요.
 				</Dialog.Description>
 			</Dialog.Header>
 			<ThemeCustomizerCode

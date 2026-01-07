@@ -7,7 +7,7 @@
 
 <Sidebar.Group>
 	<Sidebar.GroupContent>
-		<Sidebar.GroupLabel>Home</Sidebar.GroupLabel>
+		<Sidebar.GroupLabel>홈</Sidebar.GroupLabel>
 		<Sidebar.Menu>
 			{#each items as item (item.title)}
 				<Sidebar.MenuItem>

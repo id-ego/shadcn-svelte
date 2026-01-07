@@ -107,13 +107,13 @@
 	const selectedLabel = $derived.by(() => {
 		switch (timeRange) {
 			case "90d":
-				return "Last 3 months";
+				return "최근 3개월";
 			case "30d":
-				return "Last 30 days";
+				return "최근 30일";
 			case "7d":
-				return "Last 7 days";
+				return "최근 7일";
 			default:
-				return "Last 3 months";
+				return "최근 3개월";
 		}
 	});
 
@@ -134,17 +134,17 @@
 	);
 
 	const chartConfig = {
-		desktop: { label: "Desktop", color: "var(--primary)" },
-		mobile: { label: "Mobile", color: "var(--primary)" },
+		desktop: { label: "데스크톱", color: "var(--primary)" },
+		mobile: { label: "모바일", color: "var(--primary)" },
 	} satisfies Chart.ChartConfig;
 </script>
 
 <Card.Root class="@container/card">
 	<Card.Header>
-		<Card.Title>Total Visitors</Card.Title>
+		<Card.Title>총 방문자</Card.Title>
 		<Card.Description>
-			<span class="hidden @[540px]/card:block"> Total for the last 3 months </span>
-			<span class="@[540px]/card:hidden">Last 3 months</span>
+			<span class="hidden @[540px]/card:block"> 최근 3개월 총계 </span>
+			<span class="@[540px]/card:hidden">최근 3개월</span>
 		</Card.Description>
 		<Card.Action>
 			<ToggleGroup.Root
@@ -153,9 +153,9 @@
 				variant="outline"
 				class="hidden *:data-[slot=toggle-group-item]:!px-4 @[767px]/card:flex"
 			>
-				<ToggleGroup.Item value="90d">Last 3 months</ToggleGroup.Item>
-				<ToggleGroup.Item value="30d">Last 30 days</ToggleGroup.Item>
-				<ToggleGroup.Item value="7d">Last 7 days</ToggleGroup.Item>
+				<ToggleGroup.Item value="90d">최근 3개월</ToggleGroup.Item>
+				<ToggleGroup.Item value="30d">최근 30일</ToggleGroup.Item>
+				<ToggleGroup.Item value="7d">최근 7일</ToggleGroup.Item>
 			</ToggleGroup.Root>
 			<Select.Root type="single" bind:value={timeRange}>
 				<Select.Trigger
@@ -168,9 +168,9 @@
 					</span>
 				</Select.Trigger>
 				<Select.Content class="rounded-xl">
-					<Select.Item value="90d" class="rounded-lg">Last 3 months</Select.Item>
-					<Select.Item value="30d" class="rounded-lg">Last 30 days</Select.Item>
-					<Select.Item value="7d" class="rounded-lg">Last 7 days</Select.Item>
+					<Select.Item value="90d" class="rounded-lg">최근 3개월</Select.Item>
+					<Select.Item value="30d" class="rounded-lg">최근 30일</Select.Item>
+					<Select.Item value="7d" class="rounded-lg">최근 7일</Select.Item>
 				</Select.Content>
 			</Select.Root>
 		</Card.Action>
@@ -184,12 +184,12 @@
 				series={[
 					{
 						key: "mobile",
-						label: "Mobile",
+						label: "모바일",
 						color: chartConfig.mobile.color,
 					},
 					{
 						key: "desktop",
-						label: "Desktop",
+						label: "데스크톱",
 						color: chartConfig.desktop.color,
 					},
 				]}
@@ -204,7 +204,7 @@
 					xAxis: {
 						ticks: timeRange === "7d" ? 7 : undefined,
 						format: (v) => {
-							return v.toLocaleDateString("en-US", {
+							return v.toLocaleDateString("ko-KR", {
 								month: "short",
 								day: "numeric",
 							});
@@ -256,7 +256,7 @@
 				{#snippet tooltip()}
 					<Chart.Tooltip
 						labelFormatter={(v: Date) => {
-							return v.toLocaleDateString("en-US", {
+							return v.toLocaleDateString("ko-KR", {
 								month: "short",
 								day: "numeric",
 							});

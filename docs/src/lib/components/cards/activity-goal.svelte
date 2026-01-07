@@ -52,7 +52,7 @@
 
 	const chartConfig = {
 		goal: {
-			label: "Goal",
+			label: "목표",
 			color: "var(--primary)",
 		},
 	} satisfies Chart.ChartConfig;
@@ -68,8 +68,8 @@
 
 <Card.Root class="w-full gap-5">
 	<Card.Header>
-		<Card.Title>Move Goal</Card.Title>
-		<Card.Description>Set your daily activity goal.</Card.Description>
+		<Card.Title>활동 목표</Card.Title>
+		<Card.Description>일일 활동 목표를 설정하세요.</Card.Description>
 	</Card.Header>
 	<Card.Content class="flex flex-1 flex-col">
 		<div class="flex items-center justify-center gap-4">
@@ -81,13 +81,13 @@
 				disabled={goal <= 200}
 			>
 				<MinusIcon />
-				<span class="sr-only">Decrease</span>
+				<span class="sr-only">감소</span>
 			</Button>
 			<div class="text-center">
 				<div class="text-4xl font-bold tracking-tighter tabular-nums">
 					{goal}
 				</div>
-				<div class="text-muted-foreground text-xs uppercase">Calories/day</div>
+				<div class="text-muted-foreground text-xs uppercase">칼로리/일</div>
 			</div>
 			<Button
 				variant="outline"
@@ -97,7 +97,7 @@
 				disabled={goal >= 400}
 			>
 				<PlusIcon />
-				<span class="sr-only">Increase</span>
+				<span class="sr-only">증가</span>
 			</Button>
 		</div>
 		<div class="flex-1">
@@ -133,6 +133,6 @@
 		</div>
 	</Card.Content>
 	<Card.Footer>
-		<Button class="w-full" variant="secondary">Set Goal</Button>
+		<Button class="w-full" variant="secondary">목표 설정</Button>
 	</Card.Footer>
 </Card.Root>

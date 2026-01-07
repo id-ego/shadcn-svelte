@@ -81,7 +81,7 @@
 					checked: table.getIsAllPageRowsSelected(),
 					indeterminate: table.getIsSomeRowsSelected() && !table.getIsAllRowsSelected(),
 					onCheckedChange: (v) => table.toggleAllPageRowsSelected(!!v),
-					"aria-label": "Select all",
+					"aria-label": "모두 선택",
 				}),
 			cell: ({ row }) =>
 				renderComponent(Checkbox, {
@@ -93,7 +93,7 @@
 		},
 		{
 			accessorKey: "status",
-			header: "Status",
+			header: "상태",
 			cell: ({ row }) => {
 				const statusSnippet = createRawSnippet<[{ status: string }]>((getStatus) => {
 					const { status } = getStatus();
@@ -122,7 +122,7 @@
 			header: () =>
 				renderSnippet(
 					createRawSnippet(() => ({
-						render: () => `<div class="text-end">Amount</div>`,
+						render: () => `<div class="text-end">금액</div>`,
 					}))
 				),
 			cell: ({ row }) => {
@@ -223,19 +223,19 @@
 		<DropdownMenu.Trigger>
 			{#snippet child({ props })}
 				<Button variant="ghost" class="size-8 p-0" {...props}>
-					<span class="sr-only">Open menu</span>
+					<span class="sr-only">메뉴 열기</span>
 					<EllipsisIcon />
 				</Button>
 			{/snippet}
 		</DropdownMenu.Trigger>
 		<DropdownMenu.Content align="end">
-			<DropdownMenu.Label>Actions</DropdownMenu.Label>
+			<DropdownMenu.Label>동작</DropdownMenu.Label>
 			<DropdownMenu.Item onclick={() => navigator.clipboard.writeText(payment.id)}>
-				Copy payment ID
+				결제 ID 복사
 			</DropdownMenu.Item>
 			<DropdownMenu.Separator />
-			<DropdownMenu.Item>View customer</DropdownMenu.Item>
-			<DropdownMenu.Item>View payment details</DropdownMenu.Item>
+			<DropdownMenu.Item>고객 보기</DropdownMenu.Item>
+			<DropdownMenu.Item>결제 상세 보기</DropdownMenu.Item>
 		</DropdownMenu.Content>
 	</DropdownMenu.Root>
 {/snippet}
@@ -249,10 +249,10 @@
 
 <Card.Root>
 	<Card.Header>
-		<Card.Title class="text-xl">Payments</Card.Title>
-		<Card.Description>Manage your payments.</Card.Description>
+		<Card.Title class="text-xl">결제</Card.Title>
+		<Card.Description>결제를 관리하세요.</Card.Description>
 		<Card.Action>
-			<Button variant="secondary" size="sm" class="shadow-none">Add Payment</Button>
+			<Button variant="secondary" size="sm" class="shadow-none">결제 추가</Button>
 		</Card.Action>
 	</Card.Header>
 	<Card.Content class="flex flex-col gap-4">
@@ -297,7 +297,7 @@
 					{:else}
 						<Table.Row>
 							<Table.Cell colspan={columns.length} class="h-24 text-center">
-								No results.
+								결과가 없습니다.
 							</Table.Cell>
 						</Table.Row>
 					{/if}
@@ -306,8 +306,8 @@
 		</div>
 		<div class="flex items-center justify-end gap-2">
 			<div class="text-muted-foreground flex-1 text-sm">
-				{table.getFilteredSelectedRowModel().rows.length} of
-				{table.getFilteredRowModel().rows.length} row(s) selected.
+				{table.getFilteredSelectedRowModel().rows.length} /
+				{table.getFilteredRowModel().rows.length}개 행 선택됨
 			</div>
 			<div class="flex gap-2">
 				<Button
@@ -316,7 +316,7 @@
 					onclick={() => table.previousPage()}
 					disabled={!table.getCanPreviousPage()}
 				>
-					Previous
+					이전
 				</Button>
 				<Button
 					variant="outline"
@@ -324,7 +324,7 @@
 					onclick={() => table.nextPage()}
 					disabled={!table.getCanNextPage()}
 				>
-					Next
+					다음
 				</Button>
 			</div>
 		</div>

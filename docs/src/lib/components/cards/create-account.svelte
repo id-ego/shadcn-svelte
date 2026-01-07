@@ -9,8 +9,8 @@
 
 <Card.Root>
 	<Card.Header>
-		<Card.Title class="text-2xl">Create an account</Card.Title>
-		<Card.Description>Enter your email below to create your account</Card.Description>
+		<Card.Title class="text-2xl">계정 만들기</Card.Title>
+		<Card.Description>계정을 만들려면 아래에 이메일을 입력하세요</Card.Description>
 	</Card.Header>
 	<Card.Content>
 		<Field.Group>
@@ -35,18 +35,18 @@
 				</Button>
 			</Field.Field>
 			<Field.Separator class="*:data-[slot=field-separator-content]:bg-card">
-				Or continue with
+				또는 계속하기
 			</Field.Separator>
 			<Field.Field>
-				<Field.Label for="email-create-account-{id}">Email</Field.Label>
+				<Field.Label for="email-create-account-{id}">이메일</Field.Label>
 				<Input id="email-create-account-{id}" type="email" placeholder="m@example.com" />
 			</Field.Field>
 			<Field.Field>
-				<Field.Label for="password-create-account-{id}">Password</Field.Label>
+				<Field.Label for="password-create-account-{id}">비밀번호</Field.Label>
 				<Input id="password-create-account-{id}" type="password" />
 			</Field.Field>
 			<Field.Field>
-				<Button>Create Account</Button>
+				<Button>계정 만들기</Button>
 			</Field.Field>
 		</Field.Group>
 	</Card.Content>

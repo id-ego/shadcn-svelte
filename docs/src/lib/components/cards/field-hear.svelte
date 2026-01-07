@@ -5,19 +5,19 @@
 
 	const options = [
 		{
-			label: "Social Media",
+			label: "소셜 미디어",
 			value: "social-media",
 		},
 		{
-			label: "Search Engine",
+			label: "검색 엔진",
 			value: "search-engine",
 		},
 		{
-			label: "Referral",
+			label: "추천",
 			value: "referral",
 		},
 		{
-			label: "Other",
+			label: "기타",
 			value: "other",
 		},
 	];
@@ -28,9 +28,9 @@
 		<form>
 			<Field.Group>
 				<Field.Set class="gap-4">
-					<Field.Legend>How did you hear about us?</Field.Legend>
+					<Field.Legend>저희를 어떻게 알게 되셨나요?</Field.Legend>
 					<Field.Description class="line-clamp-1">
-						Select the option that best describes how you heard about us.
+						저희를 알게 된 경로를 선택해 주세요.
 					</Field.Description>
 					<Field.Group class="flex flex-row flex-wrap gap-2 [--radius:9999rem]">
 						{#each options as option (option.value)}

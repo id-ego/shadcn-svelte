@@ -42,11 +42,11 @@
 
 	const chartConfig = {
 		revenue: {
-			label: "Revenue",
+			label: "수익",
 			color: "var(--primary)",
 		},
 		subscription: {
-			label: "Subscriptions",
+			label: "구독",
 			color: "var(--primary)",
 		},
 	} satisfies Chart.ChartConfig;
@@ -55,9 +55,9 @@
 <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
 	<Card.Root>
 		<Card.Header>
-			<Card.Description>Total Revenue</Card.Description>
+			<Card.Description>총 수익</Card.Description>
 			<Card.Title class="text-3xl">$15,231.89</Card.Title>
-			<Card.Description>+20.1% from last month</Card.Description>
+			<Card.Description>지난달 대비 +20.1%</Card.Description>
 		</Card.Header>
 		<Card.Content class="pb-0">
 			<Chart.Container config={chartConfig} class="h-[80px] w-full">
@@ -89,11 +89,11 @@
 	</Card.Root>
 	<Card.Root class="pb-0 lg:hidden xl:flex">
 		<Card.Header>
-			<Card.Description>Subscriptions</Card.Description>
+			<Card.Description>구독</Card.Description>
 			<Card.Title class="text-3xl">+2,350</Card.Title>
-			<Card.Description>+180.1% from last month</Card.Description>
+			<Card.Description>지난달 대비 +180.1%</Card.Description>
 			<Card.Action>
-				<Button variant="ghost" size="sm">View More</Button>
+				<Button variant="ghost" size="sm">더보기</Button>
 			</Card.Action>
 		</Card.Header>
 		<Card.Content class="mt-auto max-h-[124px] flex-1 overflow-hidden p-0">

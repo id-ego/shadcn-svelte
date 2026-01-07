@@ -69,21 +69,21 @@
 				<DropdownMenu.Group>
 					<DropdownMenu.Item>
 						<UserCircleIcon />
-						Account
+						계정
 					</DropdownMenu.Item>
 					<DropdownMenu.Item>
 						<CreditCardIcon />
-						Billing
+						결제
 					</DropdownMenu.Item>
 					<DropdownMenu.Item>
 						<NotificationIcon />
-						Notifications
+						알림
 					</DropdownMenu.Item>
 				</DropdownMenu.Group>
 				<DropdownMenu.Separator />
 				<DropdownMenu.Item>
 					<LogoutIcon />
-					Log out
+					로그아웃
 				</DropdownMenu.Item>
 			</DropdownMenu.Content>
 		</DropdownMenu.Root>

@@ -10,42 +10,42 @@
 
 	const areas = [
 		{
-			label: "Team",
+			label: "팀",
 			value: "team",
 		},
 		{
-			label: "Billing",
+			label: "결제",
 			value: "billing",
 		},
 		{
-			label: "Account",
+			label: "계정",
 			value: "account",
 		},
 		{
-			label: "Deployments",
+			label: "배포",
 			value: "deployments",
 		},
 		{
-			label: "Support",
+			label: "지원",
 			value: "support",
 		},
 	];
 
 	const levels = [
 		{
-			label: "Severity 1 (Highest)",
+			label: "심각도 1 (최고)",
 			value: "1",
 		},
 		{
-			label: "Severity 2",
+			label: "심각도 2",
 			value: "2",
 		},
 		{
-			label: "Severity 3",
+			label: "심각도 3",
 			value: "3",
 		},
 		{
-			label: "Severity 4 (Lowest)",
+			label: "심각도 4 (최저)",
 			value: "4",
 		},
 	];
@@ -53,22 +53,22 @@
 	let area = $state("billing");
 	let level = $state("2");
 
-	const areaLabel = $derived(areas.find((a) => a.value === area)?.label ?? "Select");
-	const levelLabel = $derived(levels.find((l) => l.value === level)?.label ?? "Select Level");
+	const areaLabel = $derived(areas.find((a) => a.value === area)?.label ?? "선택");
+	const levelLabel = $derived(levels.find((l) => l.value === level)?.label ?? "수준 선택");
 </script>
 
 <Card.Root>
 	<Card.Header>
-		<Card.Title>Report an issue</Card.Title>
-		<Card.Description>What area are you having problems with?</Card.Description>
+		<Card.Title>문제 신고</Card.Title>
+		<Card.Description>어떤 영역에서 문제가 있으신가요?</Card.Description>
 	</Card.Header>
 	<Card.Content>
 		<Field.Group>
 			<Field.Group class="grid gap-4 sm:grid-cols-2">
 				<Field.Field>
-					<Field.Label for="area-{id}">Area</Field.Label>
+					<Field.Label for="area-{id}">영역</Field.Label>
 					<Select.Root type="single" bind:value={area}>
-						<Select.Trigger id="area-{id}" aria-label="Area" class="w-full">
+						<Select.Trigger id="area-{id}" aria-label="영역" class="w-full">
 							{areaLabel}
 						</Select.Trigger>
 						<Select.Content>
@@ -79,12 +79,12 @@
 					</Select.Root>
 				</Field.Field>
 				<Field.Field>
-					<Field.Label for="level-{id}">Security Level</Field.Label>
+					<Field.Label for="level-{id}">심각도</Field.Label>
 					<Select.Root type="single" bind:value={level}>
 						<Select.Trigger
 							id="level-{id}"
 							class="w-full [&_span]:!block [&_span]:truncate"
-							aria-label="Security Level"
+							aria-label="심각도"
 						>
 							<span>
 								{levelLabel}
@@ -99,20 +99,20 @@
 				</Field.Field>
 			</Field.Group>
 			<Field.Field>
-				<Field.Label for="subject-{id}">Subject</Field.Label>
-				<Input id="subject-{id}" placeholder="I need help with..." />
+				<Field.Label for="subject-{id}">제목</Field.Label>
+				<Input id="subject-{id}" placeholder="도움이 필요합니다..." />
 			</Field.Field>
 			<Field.Field>
-				<Field.Label for="description-{id}">Description</Field.Label>
+				<Field.Label for="description-{id}">설명</Field.Label>
 				<Textarea
 					id="description-{id}"
-					placeholder="Please include all information relevant to your issue."
+					placeholder="문제와 관련된 모든 정보를 포함해 주세요."
 					class="min-h-24"
 				/>
 			</Field.Field>
 			<Field.Field orientation="horizontal" class="justify-end">
-				<Button variant="ghost" size="sm">Cancel</Button>
-				<Button size="sm">Submit</Button>
+				<Button variant="ghost" size="sm">취소</Button>
+				<Button size="sm">제출</Button>
 			</Field.Field>
 		</Field.Group>
 	</Card.Content>

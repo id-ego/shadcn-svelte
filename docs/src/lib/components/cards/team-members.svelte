@@ -11,47 +11,47 @@
 		{
 			name: "Sofia Davis",
 			email: "m@example.com",
-			role: "Owner",
+			role: "소유자",
 			avatar: "/avatars/01.png",
 		},
 		{
 			name: "Jackson Lee",
 			email: "p@example.com",
-			role: "Developer",
+			role: "개발자",
 			avatar: "/avatars/02.png",
 		},
 		{
 			name: "Isabella Nguyen",
 			email: "i@example.com",
-			role: "Billing",
+			role: "결제",
 			avatar: "/avatars/03.png",
 		},
 	]);
 
 	const roles = [
 		{
-			name: "Viewer",
-			description: "Can view and comment.",
+			name: "뷰어",
+			description: "보기 및 댓글 작성 가능",
 		},
 		{
-			name: "Developer",
-			description: "Can view, comment and edit.",
+			name: "개발자",
+			description: "보기, 댓글 및 편집 가능",
 		},
 		{
-			name: "Billing",
-			description: "Can view, comment and manage billing.",
+			name: "결제",
+			description: "보기, 댓글 및 결제 관리 가능",
 		},
 		{
-			name: "Owner",
-			description: "Admin-level access to all resources.",
+			name: "소유자",
+			description: "모든 리소스에 대한 관리자 수준 액세스",
 		},
 	];
 </script>
 
 <Card.Root class="gap-4">
 	<Card.Header>
-		<Card.Title>Team Members</Card.Title>
-		<Card.Description>Invite your team members to collaborate.</Card.Description>
+		<Card.Title>팀 멤버</Card.Title>
+		<Card.Description>팀 멤버를 초대하여 협업하세요.</Card.Description>
 	</Card.Header>
 	<Card.Content>
 		{#each members as member (member.name)}
@@ -83,9 +83,9 @@
 						</Popover.Trigger>
 						<Popover.Content class="p-0" align="end">
 							<Command.Root>
-								<Command.Input placeholder="Select role..." />
+								<Command.Input placeholder="역할 선택..." />
 								<Command.List>
-									<Command.Empty>No roles found.</Command.Empty>
+									<Command.Empty>역할을 찾을 수 없습니다.</Command.Empty>
 									<Command.Group>
 										{#each roles as role (role.name)}
 											<Command.Item

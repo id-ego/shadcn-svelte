@@ -6,25 +6,25 @@
 
 	const examples = [
 		{
-			name: "Dashboard",
+			name: "대시보드",
 			href: "/examples/dashboard",
 			code: "https://github.com/shadcn/ui/tree/main/apps/v4/app/(app)/examples/dashboard",
 			hidden: false,
 		},
 		{
-			name: "Tasks",
+			name: "작업",
 			href: "/examples/tasks",
 			code: "https://github.com/shadcn/ui/tree/main/apps/v4/app/(app)/examples/tasks",
 			hidden: false,
 		},
 		{
-			name: "Playground",
+			name: "플레이그라운드",
 			href: "/examples/playground",
 			code: "https://github.com/shadcn/ui/tree/main/apps/v4/app/(app)/examples/playground",
 			hidden: false,
 		},
 		{
-			name: "Authentication",
+			name: "인증",
 			href: "/examples/authentication",
 			code: "https://github.com/shadcn/ui/tree/main/apps/v4/app/(app)/examples/authentication",
 			hidden: false,
@@ -38,7 +38,7 @@
 	<ScrollArea class="max-w-[96%] md:max-w-[600px] lg:max-w-none" orientation="both">
 		<div class="flex items-center">
 			{@render ExampleLink({
-				example: { name: "Examples", href: "/", code: "", hidden: false },
+				example: { name: "예제", href: "/", code: "", hidden: false },
 				isActive: page.url.pathname === "/",
 			})}
 			{#each examples as example (example.href)}

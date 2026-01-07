@@ -44,11 +44,11 @@
 
 	const chartConfig = {
 		today: {
-			label: "Today",
+			label: "오늘",
 			color: "var(--primary)",
 		},
 		average: {
-			label: "Average",
+			label: "평균",
 			color: "var(--primary)",
 		},
 	} satisfies Chart.ChartConfig;
@@ -56,9 +56,9 @@
 
 <Card.Root>
 	<Card.Header>
-		<Card.Title>Exercise Minutes</Card.Title>
+		<Card.Title>운동 시간</Card.Title>
 		<Card.Description>
-			Your exercise minutes are ahead of where you normally are.
+			운동 시간이 평소보다 앞서고 있습니다.
 		</Card.Description>
 	</Card.Header>
 	<Card.Content class="pb-4">
@@ -74,7 +74,7 @@
 					{
 						key: "average",
 						color: "var(--color-average)",
-						label: "Average",
+						label: "평균",
 						props: {
 							"stroke-opacity": 0.5,
 						},
@@ -82,7 +82,7 @@
 					{
 						key: "today",
 						color: "var(--color-today)",
-						label: "Today",
+						label: "오늘",
 					},
 				]}
 				seriesLayout="stack"
@@ -107,7 +107,7 @@
 				}}
 			>
 				{#snippet tooltip()}
-					<Chart.Tooltip label="Minutes" />
+					<Chart.Tooltip label="분" />
 				{/snippet}
 			</LineChart>
 		</Chart.Container>

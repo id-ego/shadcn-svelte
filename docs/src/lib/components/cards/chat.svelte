@@ -47,19 +47,19 @@
 	let messages = $state([
 		{
 			role: "agent",
-			content: "Hi, how can I help you today?",
+			content: "안녕하세요, 무엇을 도와드릴까요?",
 		},
 		{
 			role: "user",
-			content: "Hey, I'm having trouble with my account.",
+			content: "안녕하세요, 계정에 문제가 있어요.",
 		},
 		{
 			role: "agent",
-			content: "What seems to be the problem?",
+			content: "어떤 문제가 있으신가요?",
 		},
 		{
 			role: "user",
-			content: "I can't log in.",
+			content: "로그인을 할 수 없어요.",
 		},
 	]);
 
@@ -91,11 +91,11 @@
 							onclick={() => (open = true)}
 						>
 							<PlusIcon />
-							<span class="sr-only">New message</span>
+							<span class="sr-only">새 메시지</span>
 						</Button>
 					{/snippet}
 				</Tooltip.Trigger>
-				<Tooltip.Content sideOffset={10}>New message</Tooltip.Content>
+				<Tooltip.Content sideOffset={10}>새 메시지</Tooltip.Content>
 			</Tooltip.Root>
 		</Tooltip.Provider>
 	</Card.Header>
@@ -131,14 +131,14 @@
 			<InputGroup.Root>
 				<InputGroup.Input
 					id="message"
-					placeholder="Type your message..."
+					placeholder="메시지를 입력하세요..."
 					autocomplete="off"
 					bind:value={input}
 				/>
 				<InputGroup.Addon align="inline-end">
 					<InputGroup.Button type="submit" size="icon-xs" class="rounded-full">
 						<ArrowUpIcon />
-						<span class="sr-only">Send</span>
+						<span class="sr-only">보내기</span>
 					</InputGroup.Button>
 				</InputGroup.Addon>
 			</InputGroup.Root>
@@ -148,15 +148,15 @@
 <Dialog.Root bind:open>
 	<Dialog.Content class="gap-0 p-0 outline-none">
 		<Dialog.Header class="px-4 pt-5 pb-4">
-			<Dialog.Title>New message</Dialog.Title>
+			<Dialog.Title>새 메시지</Dialog.Title>
 			<Dialog.Description>
-				Invite a user to this thread. This will create a new group message.
+				이 스레드에 사용자를 초대하세요. 새로운 그룹 메시지가 생성됩니다.
 			</Dialog.Description>
 		</Dialog.Header>
 		<Command.Root class="overflow-hidden rounded-t-none border-t bg-transparent">
-			<Command.Input placeholder="Search user..." />
+			<Command.Input placeholder="사용자 검색..." />
 			<Command.List>
-				<Command.Empty>No users found.</Command.Empty>
+				<Command.Empty>사용자를 찾을 수 없습니다.</Command.Empty>
 				<Command.Group class="p-2">
 					{#each users as user (user.email)}
 						<Command.Item
@@ -204,10 +204,10 @@
 					{/each}
 				</div>
 			{:else}
-				<p class="text-muted-foreground text-sm">Select users to add to this thread.</p>
+				<p class="text-muted-foreground text-sm">이 스레드에 추가할 사용자를 선택하세요.</p>
 			{/if}
 			<Button disabled={selectedUsers.length < 2} onclick={() => (open = false)}>
-				Continue
+				계속
 			</Button>
 		</Dialog.Footer>
 	</Dialog.Content>

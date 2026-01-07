@@ -52,7 +52,7 @@
 </script>
 
 <div class={cn("flex items-center gap-2", className)} {...restProps}>
-	<Label for="theme-selector" class="sr-only">Theme</Label>
+	<Label for="theme-selector" class="sr-only">테마</Label>
 
 	<Select.Root
 		type="single"
@@ -69,7 +69,7 @@
 			class="bg-secondary text-secondary-foreground border-secondary justify-start shadow-none"
 			id="theme-selector"
 		>
-			<span class="font-medium"> Theme: </span>
+			<span class="font-medium"> 테마: </span>
 			<span class="w-12">
 				{label}
 			</span>

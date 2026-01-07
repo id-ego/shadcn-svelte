@@ -144,11 +144,11 @@
 
 <form class="[--radius:1.2rem]">
 	<Field.Group>
-		<Field.Label for="notion-prompt" class="sr-only">Prompt</Field.Label>
+		<Field.Label for="notion-prompt" class="sr-only">프롬프트</Field.Label>
 		<InputGroup.Root>
 			<InputGroup.Textarea
 				id="notion-prompt"
-				placeholder="Ask, search, or make anything..."
+				placeholder="질문하거나 검색하거나 무엇이든 만드세요..."
 			/>
 			<InputGroup.Addon align="block-start">
 				<Popover.Root bind:open={mentionPopoverOpen}>
@@ -164,21 +164,21 @@
 											class="rounded-full transition-transform"
 										>
 											<AtIcon />
-											{!hasMentions && "Add context"}
+											{!hasMentions && "컨텍스트 추가"}
 										</InputGroup.Button>
 									{/snippet}
 								</Popover.Trigger>
 							{/snippet}
 						</Tooltip.Trigger>
-						<Tooltip.Content>Mention a person, page, or date</Tooltip.Content>
+						<Tooltip.Content>사람, 페이지 또는 날짜 언급</Tooltip.Content>
 					</Tooltip.Root>
 					<Popover.Content class="p-0 [--radius:1.2rem]" align="start">
 						<Command.Root>
-							<Command.Input placeholder="Search pages..." />
+							<Command.Input placeholder="페이지 검색..." />
 							<Command.List>
-								<Command.Empty>No pages found</Command.Empty>
+								<Command.Empty>페이지를 찾을 수 없습니다</Command.Empty>
 								{#each Object.entries(grouped) as [type, items] (type)}
-									<Command.Group heading={type === "page" ? "Pages" : "Users"}>
+									<Command.Group heading={type === "page" ? "페이지" : "사용자"}>
 										{#each items as item (item.title)}
 											<Command.Item
 												value={item.title}
@@ -227,13 +227,13 @@
 								{...props}
 								size="icon-sm"
 								class="rounded-full"
-								aria-label="Attach file"
+								aria-label="파일 첨부"
 							>
 								<PaperclipIcon />
 							</InputGroup.Button>
 						{/snippet}
 					</Tooltip.Trigger>
-					<Tooltip.Content>Attach file</Tooltip.Content>
+					<Tooltip.Content>파일 첨부</Tooltip.Content>
 				</Tooltip.Root>
 				<DropdownMenu.Root bind:open={modelPopoverOpen}>
 					<Tooltip.Root>
@@ -252,12 +252,12 @@
 								</DropdownMenu.Trigger>
 							{/snippet}
 						</Tooltip.Trigger>
-						<Tooltip.Content>Select AI model</Tooltip.Content>
+						<Tooltip.Content>AI 모델 선택</Tooltip.Content>
 					</Tooltip.Root>
 					<DropdownMenu.Content side="top" align="start" class="[--radius:1rem]">
 						<DropdownMenu.Group class="w-42">
 							<DropdownMenu.Label class="text-muted-foreground text-xs">
-								Select Agent Mode
+								에이전트 모드 선택
 							</DropdownMenu.Label>
 							{#each SAMPLE_DATA.models as model (model.name)}
 								<DropdownMenu.CheckboxItem
@@ -287,7 +287,7 @@
 					<DropdownMenu.Trigger>
 						{#snippet child({ props })}
 							<InputGroup.Button {...props} size="sm" class="rounded-full">
-								<GlobeIcon /> All Sources
+								<GlobeIcon /> 모든 소스
 							</InputGroup.Button>
 						{/snippet}
 					</DropdownMenu.Trigger>
@@ -296,7 +296,7 @@
 							<DropdownMenu.Item onSelect={(e) => e.preventDefault()}>
 								{#snippet child({ props })}
 									<label for="web-search" {...props}>
-										<GlobeIcon /> Web Search
+										<GlobeIcon /> 웹 검색
 										<Switch id="web-search" class="ms-auto" checked />
 									</label>
 								{/snippet}
@@ -307,13 +307,13 @@
 							<DropdownMenu.Item onSelect={(e) => e.preventDefault()}>
 								{#snippet child({ props })}
 									<label for="apps" {...props}>
-										<AppsIcon /> Apps and Integrations
+										<AppsIcon /> 앱 및 통합
 										<Switch id="apps" class="ms-auto" checked />
 									</label>
 								{/snippet}
 							</DropdownMenu.Item>
 							<DropdownMenu.Item>
-								<CirclePlusIcon /> All Sources I can access
+								<CirclePlusIcon /> 액세스 가능한 모든 소스
 							</DropdownMenu.Item>
 							<DropdownMenu.Sub>
 								<DropdownMenu.SubTrigger>
@@ -326,11 +326,11 @@
 								<DropdownMenu.SubContent class="w-72 p-0 [--radius:1rem]">
 									<Command.Root>
 										<Command.Input
-											placeholder="Find or use knowledge in..."
+											placeholder="지식 찾기 또는 사용..."
 											autofocus
 										/>
 										<Command.List>
-											<Command.Empty>No knowledge found</Command.Empty>
+											<Command.Empty>지식을 찾을 수 없습니다</Command.Empty>
 											<Command.Group>
 												{#each SAMPLE_DATA.mentionable.filter((item) => item.type === "user") as user (user.title)}
 													<Command.Item
@@ -361,22 +361,22 @@
 								</DropdownMenu.SubContent>
 							</DropdownMenu.Sub>
 							<DropdownMenu.Item>
-								<BookIcon /> Help Center
+								<BookIcon /> 도움말 센터
 							</DropdownMenu.Item>
 						</DropdownMenu.Group>
 						<DropdownMenu.Separator />
 						<DropdownMenu.Group>
 							<DropdownMenu.Item>
-								<PlusIcon /> Connect Apps
+								<PlusIcon /> 앱 연결
 							</DropdownMenu.Item>
 							<DropdownMenu.Label class="text-muted-foreground text-xs">
-								We'll only search in the sources selected here.
+								여기에서 선택한 소스에서만 검색합니다.
 							</DropdownMenu.Label>
 						</DropdownMenu.Group>
 					</DropdownMenu.Content>
 				</DropdownMenu.Root>
 				<InputGroup.Button
-					aria-label="Send"
+					aria-label="보내기"
 					class="ms-auto rounded-full"
 					variant="default"
 					size="icon-sm"
