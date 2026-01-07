@@ -138,8 +138,8 @@
 				)}
 				onclick={() => openCommandMenu()}
 			>
-				<span class="hidden lg:inline-flex">Search documentation...</span>
-				<span class="inline-flex lg:hidden">Search...</span>
+				<span class="hidden lg:inline-flex">문서 검색...</span>
+				<span class="inline-flex lg:hidden">검색...</span>
 				<div class="absolute end-1.5 top-1.5 hidden gap-1 sm:flex">
 					<Kbd.Group>
 						<Kbd.Root class="border">⌘</Kbd.Root>
@@ -154,16 +154,16 @@
 		class="rounded-xl border-none bg-clip-padding p-2 pb-11 shadow-2xl ring-4 ring-neutral-200/80 dark:bg-neutral-900 dark:ring-neutral-800"
 	>
 		<Dialog.Header class="sr-only">
-			<Dialog.Title>Search documentation...</Dialog.Title>
-			<Dialog.Description>Search for a command to run...</Dialog.Description>
+			<Dialog.Title>문서 검색...</Dialog.Title>
+			<Dialog.Description>실행할 명령어를 검색하세요...</Dialog.Description>
 		</Dialog.Header>
 		<Command.Root
 			class="**:data-[slot=command-input-wrapper]:bg-input/50 **:data-[slot=command-input-wrapper]:border-input rounded-none bg-transparent **:data-[slot=command-input]:!h-9 **:data-[slot=command-input]:py-0 **:data-[slot=command-input-wrapper]:mb-0 **:data-[slot=command-input-wrapper]:!h-9 **:data-[slot=command-input-wrapper]:rounded-md **:data-[slot=command-input-wrapper]:border"
 		>
-			<Command.Input placeholder="Search documentation..." />
+			<Command.Input placeholder="문서 검색..." />
 			<Command.List class="no-scrollbar min-h-80 scroll-pt-2 scroll-pb-1.5">
 				<Command.Empty class="text-muted-foreground py-12 text-center text-sm">
-					No results found.
+					검색 결과가 없습니다.
 				</Command.Empty>
 				{#each sidebarNavItems as group (group.title)}
 					<Command.Group
@@ -232,7 +232,7 @@
 				{/each}
 				{#if blocks?.length}
 					<Command.Group
-						heading="Blocks"
+						heading="블록"
 						class="!p-0 [&_[data-command-group-heading]]:!p-3"
 					>
 						{#each blocks as block (block.name)}
@@ -270,10 +270,10 @@
 			<div class="flex items-center gap-2">
 				<Kbd.Root class="bg-background border"><CornerDownLeftIcon /></Kbd.Root>
 				{#if selectedType === "page" || selectedType === "component"}
-					Go to Page
+					페이지로 이동
 				{/if}
 				{#if selectedType === "color"}
-					Copy OKLCH
+					OKLCH 복사
 				{/if}
 			</div>
 			{#if copyPayload}

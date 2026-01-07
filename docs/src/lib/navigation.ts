@@ -34,12 +34,12 @@ export type NavItemWithChildren = NavItem & {
 function generateSectionsNav(): SidebarNavItem[] {
 	const sectionsNavItems: SidebarNavItem[] = [
 		{
-			title: "Get Started",
+			title: "시작하기",
 			href: "/docs",
 			items: [],
 		},
 		{
-			title: "Components",
+			title: "컴포넌트",
 			href: "/docs/components",
 			items: [],
 		} /*
@@ -59,7 +59,7 @@ function generateSectionsNav(): SidebarNavItem[] {
 			items: [],
 			},*/,
 		{
-			title: "Changelog",
+			title: "변경 로그",
 			href: "/docs/changelog",
 			items: [],
 		},
@@ -71,7 +71,7 @@ function generateSectionsNav(): SidebarNavItem[] {
 function generateGetStartedNav(): SidebarNavItem[] {
 	const getStartedNavItems: SidebarNavItem[] = [
 		{
-			title: "Installation",
+			title: "설치",
 			href: "/docs/installation",
 			items: [],
 		},
@@ -81,12 +81,12 @@ function generateGetStartedNav(): SidebarNavItem[] {
 			items: [],
 		},
 		{
-			title: "Theming",
+			title: "테마 설정",
 			href: "/docs/theming",
 			items: [],
 		},
 		{
-			title: "Dark Mode",
+			title: "다크 모드",
 			href: "/docs/dark-mode",
 			items: [],
 		},
@@ -116,7 +116,7 @@ function generateGetStartedNav(): SidebarNavItem[] {
 			items: [],
 		},
 		{
-			title: "Legacy Docs",
+			title: "레거시 문서",
 			href: "/docs/legacy",
 			items: [],
 		},
@@ -198,12 +198,12 @@ function generateDarkModeNav(): SidebarNavItem[] {
 function generateRegistryNav(): SidebarNavItem[] {
 	const registryNavItems: SidebarNavItem[] = [
 		{
-			title: "Registry",
+			title: "레지스트리",
 			href: "/docs/registry",
 			items: [],
 		},
 		{
-			title: "Getting Started",
+			title: "시작하기",
 			href: "/docs/registry/getting-started",
 			items: [],
 		},
@@ -213,7 +213,7 @@ function generateRegistryNav(): SidebarNavItem[] {
 			items: [],
 		},
 		{
-			title: "Examples",
+			title: "예제",
 			href: "/docs/registry/examples",
 			items: [],
 		},
@@ -265,58 +265,58 @@ const registryNav = generateRegistryNav();
 
 export const sidebarNavItems: SidebarNavItem[] = [
 	{
-		title: "Sections",
+		title: "섹션",
 		items: sectionsNav,
 	},
 	{
-		title: "Get Started",
+		title: "시작하기",
 		items: getStartedNav,
 	},
 	{
-		title: "Migration",
+		title: "마이그레이션",
 		items: migrationNav.filter((item) => item.title !== "Migration"),
 	},
 	{
-		title: "Components",
+		title: "컴포넌트",
 		items: componentsNav.filter((item) => item.title !== "Components"),
 	},
 	{
-		title: "Installation",
+		title: "설치",
 		items: installationNav.filter((item) => item.title !== "Installation"),
 	},
 	{
-		title: "Dark Mode",
+		title: "다크 모드",
 		items: darkModeNav,
 	},
 	{
-		title: "Registry",
+		title: "레지스트리",
 		items: registryNav,
 	},
 ];
 
 export const mainNavItems: NavItem[] = [
 	{
-		title: "Docs",
+		title: "문서",
 		href: "/docs/installation",
 	},
 	{
-		title: "Components",
+		title: "컴포넌트",
 		href: "/docs/components",
 	},
 	{
-		title: "Blocks",
+		title: "블록",
 		href: "/blocks",
 	},
 	{
-		title: "Charts",
+		title: "차트",
 		href: "/charts/area",
 	},
 	{
-		title: "Themes",
+		title: "테마",
 		href: "/themes",
 	},
 	{
-		title: "Colors",
+		title: "색상",
 		href: "/colors",
 	},
 ];

@@ -33,7 +33,7 @@
 	>
 		{content}
 		{#if href && NEW_COMPONENTS.has(href.replace("/docs/components/", ""))}
-			<span class="bg-svelte-orange flex size-2 rounded-full" title="New"></span>
+			<span class="bg-svelte-orange flex size-2 rounded-full" title="신규"></span>
 		{/if}
 	</a>
 {/snippet}
@@ -65,9 +65,9 @@
 							)}
 						></span>
 					</div>
-					<span class="sr-only">Toggle Menu</span>
+					<span class="sr-only">메뉴 토글</span>
 				</div>
-				<span class="flex h-8 items-center text-lg leading-none font-medium"> Menu </span>
+				<span class="flex h-8 items-center text-lg leading-none font-medium"> 메뉴 </span>
 			</Button>
 		{/snippet}
 	</Popover.Trigger>
@@ -81,9 +81,9 @@
 	>
 		<div class="flex flex-col gap-12 overflow-auto px-6 py-6">
 			<div class="flex flex-col gap-4">
-				<div class="text-muted-foreground text-sm font-medium">Menu</div>
+				<div class="text-muted-foreground text-sm font-medium">메뉴</div>
 				<div class="flex flex-col gap-3">
-					{@render MobileLink({ href: "/", content: "Home" })}
+					{@render MobileLink({ href: "/", content: "홈" })}
 					{#each mainNavItems as item, i (i)}
 						{@render MobileLink({ href: item.href, content: item.title })}
 					{/each}

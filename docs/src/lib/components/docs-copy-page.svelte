@@ -64,7 +64,7 @@ Help me understand how to use it. Be ready to explain concepts, give examples, o
 				fill="currentColor"
 			/>
 		</svg>
-		View as Markdown
+		마크다운으로 보기
 	</a>
 {/snippet}
 
@@ -76,7 +76,7 @@ Help me understand how to use it. Be ready to explain concepts, give examples, o
 				fill="currentColor"
 			/>
 		</svg>
-		Open in v0
+		v0에서 열기
 	</a>
 {/snippet}
 
@@ -93,7 +93,7 @@ Help me understand how to use it. Be ready to explain concepts, give examples, o
 				fill="currentColor"
 			/>
 		</svg>
-		Open in ChatGPT
+		ChatGPT에서 열기
 	</a>
 {/snippet}
 
@@ -110,7 +110,7 @@ Help me understand how to use it. Be ready to explain concepts, give examples, o
 				fill="currentColor"
 			/>
 		</svg>
-		Open in Claude
+		Claude에서 열기
 	</a>
 {/snippet}
 
@@ -131,7 +131,7 @@ Help me understand how to use it. Be ready to explain concepts, give examples, o
 			{:else}
 				<CopyIcon />
 			{/if}
-			Copy Page
+			페이지 복사
 		</Button>
 		<DropdownMenu.Root>
 			<DropdownMenu.Trigger class="hidden sm:flex">

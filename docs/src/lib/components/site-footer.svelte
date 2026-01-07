@@ -4,7 +4,6 @@
 	<div class="container-wrapper px-4 xl:px-6">
 		<div class="flex h-(--footer-height) items-center justify-between">
 			<div class="text-muted-foreground w-full text-center text-xs leading-loose sm:text-sm">
-				Built by
 				<a
 					href="https://x.com/shadcn"
 					target="_blank"
@@ -12,7 +11,7 @@
 					class="font-medium underline underline-offset-4"
 				>
 					shadcn
-				</a>. Ported to Svelte by
+				</a>이 제작.
 				<a
 					href="https://x.com/huntabyte"
 					target="_blank"
@@ -27,7 +26,7 @@
 					class="font-medium underline underline-offset-4"
 				>
 					CokaKoala
-				</a>.
+				</a>가 Svelte로 포팅.
 			</div>
 		</div>
 	</div>

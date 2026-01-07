@@ -8,7 +8,7 @@
 	size="icon"
 	class="group/toggle extend-touch-target size-8"
 	onclick={toggleMode}
-	title="Toggle theme"
+	title="테마 전환"
 >
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
@@ -29,5 +29,5 @@
 		<path d="M12 14.3l7.37 -7.37" />
 		<path d="M12 19.6l8.85 -8.85" />
 	</svg>
-	<span class="sr-only">Toggle theme</span>
+	<span class="sr-only">테마 전환</span>
 </Button>

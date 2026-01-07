@@ -37,6 +37,6 @@
 	</LinkedCard>
 	<LinkedCard href="/docs/installation/manual">
 		<SvelteWhite />
-		<p class="mt-2 font-medium">Manual</p>
+		<p class="mt-2 font-medium">수동 설치</p>
 	</LinkedCard>
 </div>

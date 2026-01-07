@@ -97,7 +97,7 @@
 						size="sm"
 						class={cn("h-8 md:h-7", className)}
 					>
-						<Menu3Icon /> On This Page
+						<Menu3Icon /> 이 페이지에서
 					</Button>
 				{/snippet}
 			</DropdownMenu.Trigger>
@@ -117,7 +117,7 @@
 		</DropdownMenu.Root>
 	{:else}
 		<div class={cn("flex flex-col gap-2 p-4 pt-0 text-sm", className)}>
-			<p class="text-muted-foreground bg-background sticky top-0 h-6 text-xs">On This Page</p>
+			<p class="text-muted-foreground bg-background sticky top-0 h-6 text-xs">이 페이지에서</p>
 			{#each flattenedToc as item (item.url)}
 				<a
 					href={item.url}

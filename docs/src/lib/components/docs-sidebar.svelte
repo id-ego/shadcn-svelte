@@ -45,7 +45,7 @@
 													{#if subItem.indicator === "new"}
 														<span
 															class="bg-svelte-orange flex size-2 rounded-full"
-															title="New"
+															title="신규"
 														></span>
 													{/if}
 												</a>

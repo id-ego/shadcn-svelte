@@ -33,7 +33,7 @@
 	>
 		{#snippet child({ props })}
 			<Button {...props} data-slot="copy-button" size="icon" {variant}>
-				<span class="sr-only" data-llm-ignore>Copy</span>
+				<span class="sr-only" data-llm-ignore>복사</span>
 				{#if clipboard.copied}
 					<CheckIcon />
 				{:else}
@@ -43,6 +43,6 @@
 		{/snippet}
 	</Tooltip.Trigger>
 	<Tooltip.Content>
-		{clipboard.copied ? "Copied" : "Copy to Clipboard"}
+		{clipboard.copied ? "복사됨" : "클립보드에 복사"}
 	</Tooltip.Content>
 </Tooltip.Root>

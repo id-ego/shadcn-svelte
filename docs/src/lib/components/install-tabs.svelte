@@ -16,7 +16,7 @@
 	<CodeTabs>
 		<DocTabs.List>
 			<DocTabs.Trigger value="cli">CLI</DocTabs.Trigger>
-			<DocTabs.Trigger value="manual">Manual</DocTabs.Trigger>
+			<DocTabs.Trigger value="manual">수동</DocTabs.Trigger>
 		</DocTabs.List>
 		<DocTabs.Content value="cli" class="ms-2 md:ms-0">
 			{@render cli?.()}
