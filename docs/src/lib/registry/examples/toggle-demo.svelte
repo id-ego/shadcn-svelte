@@ -10,5 +10,5 @@
 	class="data-[state=on]:bg-transparent data-[state=on]:*:[svg]:fill-blue-500 data-[state=on]:*:[svg]:stroke-blue-500"
 >
 	<BookmarkIcon />
-	Bookmark
+	북마크
 </Toggle>

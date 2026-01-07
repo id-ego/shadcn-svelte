@@ -66,9 +66,9 @@ links:
 
 ```svelte showLineNumbers
 <HoverCard.Root>
-  <HoverCard.Trigger>Hover</HoverCard.Trigger>
+  <HoverCard.Trigger>호버</HoverCard.Trigger>
   <HoverCard.Content>
-    SvelteKit - Web development, streamlined
+    SvelteKit - 간소화된 웹 개발
   </HoverCard.Content>
 </HoverCard.Root>
 ```

@@ -5,5 +5,5 @@
 
 <Button size="sm" variant="outline" disabled>
 	<Spinner />
-	Submit
+	제출
 </Button>

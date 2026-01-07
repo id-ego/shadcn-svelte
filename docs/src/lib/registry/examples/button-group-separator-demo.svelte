@@ -4,7 +4,7 @@
 </script>
 
 <ButtonGroup.Root>
-	<Button variant="secondary" size="sm">Copy</Button>
+	<Button variant="secondary" size="sm">복사</Button>
 	<ButtonGroup.Separator />
-	<Button variant="secondary" size="sm">Paste</Button>
+	<Button variant="secondary" size="sm">붙여넣기</Button>
 </ButtonGroup.Root>

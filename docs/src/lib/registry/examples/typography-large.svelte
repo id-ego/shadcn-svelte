@@ -1,1 +1,1 @@
-<div class="text-lg font-semibold">Are you sure absolutely sure?</div>
+<div class="text-lg font-semibold">정말로 확실하십니까?</div>

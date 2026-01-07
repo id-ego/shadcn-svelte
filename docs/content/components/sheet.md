@@ -66,13 +66,13 @@ links:
 
 ```svelte showLineNumbers
 <Sheet.Root>
-  <Sheet.Trigger>Open</Sheet.Trigger>
+  <Sheet.Trigger>열기</Sheet.Trigger>
   <Sheet.Content>
     <Sheet.Header>
-      <Sheet.Title>Are you sure absolutely sure?</Sheet.Title>
+      <Sheet.Title>정말로 확실합니까?</Sheet.Title>
       <Sheet.Description>
-        This action cannot be undone. This will permanently delete your account
-        and remove your data from our servers.
+        이 작업은 취소할 수 없습니다. 계정이 영구적으로 삭제되고
+        서버에서 데이터가 제거됩니다.
       </Sheet.Description>
     </Sheet.Header>
   </Sheet.Content>
@@ -91,13 +91,13 @@ CSS 클래스를 사용하여 시트의 크기를 조정할 수 있습니다:
 
 ```svelte showLineNumbers {3}
 <Sheet.Root>
-  <Sheet.Trigger>Open</Sheet.Trigger>
+  <Sheet.Trigger>열기</Sheet.Trigger>
   <Sheet.Content class="w-[400px] sm:w-[540px]">
     <Sheet.Header>
-      <Sheet.Title>Are you absolutely sure?</Sheet.Title>
+      <Sheet.Title>정말로 확실합니까?</Sheet.Title>
       <Sheet.Description>
-        This action cannot be undone. This will permanently delete your account
-        and remove your data from our servers.
+        이 작업은 취소할 수 없습니다. 계정이 영구적으로 삭제되고
+        서버에서 데이터가 제거됩니다.
       </Sheet.Description>
     </Sheet.Header>
   </Sheet.Content>

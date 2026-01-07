@@ -66,7 +66,7 @@ Install `bits-ui`:
 
 ```svelte showLineNumbers
 <Popover.Root>
-  <Popover.Trigger>Open</Popover.Trigger>
-  <Popover.Content>Place content for the popover here.</Popover.Content>
+  <Popover.Trigger>열기</Popover.Trigger>
+  <Popover.Content>팝오버 콘텐츠를 여기에 넣으세요.</Popover.Content>
 </Popover.Root>
 ```

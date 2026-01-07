@@ -15,7 +15,7 @@
 	<InputGroup.Root>
 		<InputGroup.Input id="email-2" placeholder="shadcn@vercel.com" />
 		<InputGroup.Addon align="block-start">
-			<Label.Root for="email-2" class="text-foreground">Email</Label.Root>
+			<Label.Root for="email-2" class="text-foreground">이메일</Label.Root>
 			<Tooltip.Root>
 				<Tooltip.Trigger>
 					{#snippet child({ props })}
@@ -31,7 +31,7 @@
 					{/snippet}
 				</Tooltip.Trigger>
 				<Tooltip.Content>
-					<p>We'll use this to send you notifications</p>
+					<p>알림을 보내는 데 사용됩니다</p>
 				</Tooltip.Content>
 			</Tooltip.Root>
 		</InputGroup.Addon>

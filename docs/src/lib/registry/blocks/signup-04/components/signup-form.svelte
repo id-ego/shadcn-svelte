@@ -15,37 +15,36 @@
 			<form class="p-6 md:p-8">
 				<Field.Group>
 					<div class="flex flex-col items-center gap-2 text-center">
-						<h1 class="text-2xl font-bold">Create your account</h1>
+						<h1 class="text-2xl font-bold">계정 만들기</h1>
 						<p class="text-muted-foreground text-sm text-balance">
-							Enter your email below to create your account
+							아래에 이메일을 입력하여 계정을 생성하세요
 						</p>
 					</div>
 					<Field.Field>
-						<Field.Label for="email">Email</Field.Label>
+						<Field.Label for="email">이메일</Field.Label>
 						<Input id="email" type="email" placeholder="m@example.com" required />
 						<Field.Description>
-							We'll use this to contact you. We will not share your email with anyone
-							else.
+							연락처로 사용됩니다. 이메일은 다른 사람과 공유되지 않습니다.
 						</Field.Description>
 					</Field.Field>
 					<Field.Field>
 						<Field.Field class="grid grid-cols-2 gap-4">
 							<Field.Field>
-								<Field.Label for="password">Password</Field.Label>
+								<Field.Label for="password">비밀번호</Field.Label>
 								<Input id="password" type="password" required />
 							</Field.Field>
 							<Field.Field>
-								<Field.Label for="confirm-password">Confirm Password</Field.Label>
+								<Field.Label for="confirm-password">비밀번호 확인</Field.Label>
 								<Input id="confirm-password" type="password" required />
 							</Field.Field>
 						</Field.Field>
-						<Field.Description>Must be at least 8 characters long.</Field.Description>
+						<Field.Description>최소 8자 이상이어야 합니다.</Field.Description>
 					</Field.Field>
 					<Field.Field>
-						<Button type="submit">Create Account</Button>
+						<Button type="submit">계정 만들기</Button>
 					</Field.Field>
 					<Field.Separator class="*:data-[slot=field-separator-content]:bg-card">
-						Or continue with
+						또는 다음으로 계속
 					</Field.Separator>
 					<Field.Field class="grid grid-cols-3 gap-4">
 						<Button variant="outline" type="button">
@@ -55,7 +54,7 @@
 									fill="currentColor"
 								/>
 							</svg>
-							<span class="sr-only">Sign up with Apple</span>
+							<span class="sr-only">Apple로 가입</span>
 						</Button>
 						<Button variant="outline" type="button">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -64,7 +63,7 @@
 									fill="currentColor"
 								/>
 							</svg>
-							<span class="sr-only">Sign up with Google</span>
+							<span class="sr-only">Google로 가입</span>
 						</Button>
 						<Button variant="outline" type="button">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -73,11 +72,11 @@
 									fill="currentColor"
 								/>
 							</svg>
-							<span class="sr-only">Sign up with Meta</span>
+							<span class="sr-only">Meta로 가입</span>
 						</Button>
 					</Field.Field>
 					<Field.Description class="text-center">
-						Already have an account? <a href="#/">Sign in</a>
+						이미 계정이 있으신가요? <a href="#/">로그인</a>
 					</Field.Description>
 				</Field.Group>
 			</form>
@@ -91,7 +90,6 @@
 		</Card.Content>
 	</Card.Root>
 	<Field.Description class="px-6 text-center">
-		By clicking continue, you agree to our <a href="#/">Terms of Service</a>
-		and <a href="#/">Privacy Policy</a>.
+		계속 진행하면 <a href="#/">서비스 약관</a> 및 <a href="#/">개인정보 보호정책</a>에 동의하는 것으로 간주됩니다.
 	</Field.Description>
 </div>

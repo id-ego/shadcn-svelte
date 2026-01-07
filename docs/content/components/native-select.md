@@ -59,12 +59,12 @@ links:
 
 ```svelte showLineNumbers
 <NativeSelect.Root>
-  <NativeSelect.Option value="">Select a fruit</NativeSelect.Option>
-  <NativeSelect.Option value="apple">Apple</NativeSelect.Option>
-  <NativeSelect.Option value="banana">Banana</NativeSelect.Option>
-  <NativeSelect.Option value="blueberry">Blueberry</NativeSelect.Option>
-  <NativeSelect.Option value="grapes" disabled>Grapes</NativeSelect.Option>
-  <NativeSelect.Option value="pineapple">Pineapple</NativeSelect.Option>
+  <NativeSelect.Option value="">과일 선택</NativeSelect.Option>
+  <NativeSelect.Option value="apple">사과</NativeSelect.Option>
+  <NativeSelect.Option value="banana">바나나</NativeSelect.Option>
+  <NativeSelect.Option value="blueberry">블루베리</NativeSelect.Option>
+  <NativeSelect.Option value="grapes" disabled>포도</NativeSelect.Option>
+  <NativeSelect.Option value="pineapple">파인애플</NativeSelect.Option>
 </NativeSelect.Root>
 ```
 
@@ -82,16 +82,16 @@ links:
 
 ```svelte showLineNumbers
 <NativeSelect.Root>
-  <NativeSelect.Option value="">Select a food</NativeSelect.Option>
-  <NativeSelect.OptGroup label="Fruits">
-    <NativeSelect.Option value="apple">Apple</NativeSelect.Option>
-    <NativeSelect.Option value="banana">Banana</NativeSelect.Option>
-    <NativeSelect.Option value="blueberry">Blueberry</NativeSelect.Option>
+  <NativeSelect.Option value="">음식 선택</NativeSelect.Option>
+  <NativeSelect.OptGroup label="과일">
+    <NativeSelect.Option value="apple">사과</NativeSelect.Option>
+    <NativeSelect.Option value="banana">바나나</NativeSelect.Option>
+    <NativeSelect.Option value="blueberry">블루베리</NativeSelect.Option>
   </NativeSelect.OptGroup>
-  <NativeSelect.OptGroup label="Vegetables">
-    <NativeSelect.Option value="carrot">Carrot</NativeSelect.Option>
-    <NativeSelect.Option value="broccoli">Broccoli</NativeSelect.Option>
-    <NativeSelect.Option value="spinach">Spinach</NativeSelect.Option>
+  <NativeSelect.OptGroup label="채소">
+    <NativeSelect.Option value="carrot">당근</NativeSelect.Option>
+    <NativeSelect.Option value="broccoli">브로콜리</NativeSelect.Option>
+    <NativeSelect.Option value="spinach">시금치</NativeSelect.Option>
   </NativeSelect.OptGroup>
 </NativeSelect.Root>
 ```
@@ -118,10 +118,10 @@ links:
 
 ```svelte showLineNumbers
 <NativeSelect.Root aria-invalid="true">
-  <NativeSelect.Option value="">Select a country</NativeSelect.Option>
-  <NativeSelect.Option value="us">United States</NativeSelect.Option>
-  <NativeSelect.Option value="uk">United Kingdom</NativeSelect.Option>
-  <NativeSelect.Option value="ca">Canada</NativeSelect.Option>
+  <NativeSelect.Option value="">국가 선택</NativeSelect.Option>
+  <NativeSelect.Option value="us">미국</NativeSelect.Option>
+  <NativeSelect.Option value="uk">영국</NativeSelect.Option>
+  <NativeSelect.Option value="ca">캐나다</NativeSelect.Option>
 </NativeSelect.Root>
 ```
 
@@ -140,10 +140,10 @@ links:
 - 필요한 경우 추가 컨텍스트를 위해 `aria-label` 또는 `aria-labelledby`를 사용하세요.
 
 ```tsx showLineNumbers
-<NativeSelect.Root aria-label="Choose your preferred language">
-  <NativeSelect.Option value="en">English</NativeSelect.Option>
-  <NativeSelect.Option value="es">Spanish</NativeSelect.Option>
-  <NativeSelect.Option value="fr">French</NativeSelect.Option>
+<NativeSelect.Root aria-label="선호하는 언어 선택">
+  <NativeSelect.Option value="en">영어</NativeSelect.Option>
+  <NativeSelect.Option value="es">스페인어</NativeSelect.Option>
+  <NativeSelect.Option value="fr">프랑스어</NativeSelect.Option>
 </NativeSelect.Root>
 ```
 
@@ -161,8 +161,8 @@ links:
 
 ```svelte
 <NativeSelect.Root>
-  <NativeSelect.Option value="option1">Option 1</NativeSelect.Option>
-  <NativeSelect.Option value="option2">Option 2</NativeSelect.Option>
+  <NativeSelect.Option value="option1">옵션 1</NativeSelect.Option>
+  <NativeSelect.Option value="option2">옵션 2</NativeSelect.Option>
 </NativeSelect.Root>
 ```
 
@@ -179,8 +179,8 @@ links:
 다른 모든 props는 기본 `<option>` 요소로 전달됩니다.
 
 ```svelte
-<NativeSelect.Option value="apple">Apple</NativeSelect.Option>
-<NativeSelect.Option value="banana" disabled>Banana</NativeSelect.Option>
+<NativeSelect.Option value="apple">사과</NativeSelect.Option>
+<NativeSelect.Option value="banana" disabled>바나나</NativeSelect.Option>
 ```
 
 ### NativeSelect.OptGroup
@@ -196,8 +196,8 @@ links:
 다른 모든 props는 기본 `<optgroup>` 요소로 전달됩니다.
 
 ```svelte
-<NativeSelect.OptGroup label="Fruits">
-  <NativeSelect.Option value="apple">Apple</NativeSelect.Option>
-  <NativeSelect.Option value="banana">Banana</NativeSelect.Option>
+<NativeSelect.OptGroup label="과일">
+  <NativeSelect.Option value="apple">사과</NativeSelect.Option>
+  <NativeSelect.Option value="banana">바나나</NativeSelect.Option>
 </NativeSelect.OptGroup>
 ```

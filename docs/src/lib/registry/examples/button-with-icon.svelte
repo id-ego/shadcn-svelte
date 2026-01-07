@@ -4,5 +4,5 @@
 </script>
 
 <Button variant="outline" size="sm">
-	<IconGitBranch /> New Branch
+	<IconGitBranch /> 새 브랜치
 </Button>

@@ -7,13 +7,13 @@
 	<Field.Set>
 		<Field.Group>
 			<Field.Field>
-				<Field.Label for="username">Username</Field.Label>
-				<Input id="username" type="text" placeholder="Max Leiter" />
-				<Field.Description>Choose a unique username for your account.</Field.Description>
+				<Field.Label for="username">사용자명</Field.Label>
+				<Input id="username" type="text" placeholder="홍길동" />
+				<Field.Description>계정의 고유한 사용자명을 선택하세요.</Field.Description>
 			</Field.Field>
 			<Field.Field>
-				<Field.Label for="password">Password</Field.Label>
-				<Field.Description>Must be at least 8 characters long.</Field.Description>
+				<Field.Label for="password">비밀번호</Field.Label>
+				<Field.Description>최소 8자 이상이어야 합니다.</Field.Description>
 				<Input id="password" type="password" placeholder="********" />
 			</Field.Field>
 		</Field.Group>

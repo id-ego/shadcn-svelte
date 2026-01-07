@@ -31,19 +31,19 @@
 					</div>
 					<span class="sr-only">Acme Inc.</span>
 				</a>
-				<h1 class="text-xl font-bold">Welcome to Acme Inc.</h1>
+				<h1 class="text-xl font-bold">Acme Inc.에 오신 것을 환영합니다</h1>
 				<FieldDescription>
-					Don't have an account? <a href="##">Sign up</a>
+					계정이 없으신가요? <a href="##">가입하기</a>
 				</FieldDescription>
 			</div>
 			<Field>
-				<FieldLabel for="email-{id}">Email</FieldLabel>
+				<FieldLabel for="email-{id}">이메일</FieldLabel>
 				<Input id="email-{id}" type="email" placeholder="m@example.com" required />
 			</Field>
 			<Field>
-				<Button type="submit">Login</Button>
+				<Button type="submit">로그인</Button>
 			</Field>
-			<FieldSeparator>Or</FieldSeparator>
+			<FieldSeparator>또는</FieldSeparator>
 			<Field class="grid gap-4 sm:grid-cols-2">
 				<Button variant="outline" type="button">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -52,7 +52,7 @@
 							fill="currentColor"
 						/>
 					</svg>
-					Continue with Apple
+					Apple로 계속하기
 				</Button>
 				<Button variant="outline" type="button">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -61,13 +61,13 @@
 							fill="currentColor"
 						/>
 					</svg>
-					Continue with Google
+					Google로 계속하기
 				</Button>
 			</Field>
 		</FieldGroup>
 	</form>
 	<FieldDescription class="px-6 text-center">
-		By clicking continue, you agree to our <a href="##">Terms of Service</a> and
-		<a href="##">Privacy Policy</a>.
+		계속 진행하면 <a href="##">서비스 약관</a> 및
+		<a href="##">개인정보 처리방침</a>에 동의하는 것으로 간주됩니다.
 	</FieldDescription>
 </div>

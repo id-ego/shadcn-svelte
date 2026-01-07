@@ -5,7 +5,7 @@
 	import * as ButtonGroup from "$lib/registry/ui/button-group/index.js";
 </script>
 
-<ButtonGroup.Root orientation="vertical" aria-label="Media controls" class="h-fit">
+<ButtonGroup.Root orientation="vertical" aria-label="미디어 컨트롤" class="h-fit">
 	<Button variant="outline" size="icon">
 		<Plus />
 	</Button>

@@ -10,11 +10,11 @@
 			<ShieldAlertIcon />
 		</Item.Media>
 		<Item.Content>
-			<Item.Title>Security Alert</Item.Title>
-			<Item.Description>New login detected from unknown device.</Item.Description>
+			<Item.Title>보안 알림</Item.Title>
+			<Item.Description>알 수 없는 기기에서 새로운 로그인이 감지되었습니다.</Item.Description>
 		</Item.Content>
 		<Item.Actions>
-			<Button size="sm" variant="outline">Review</Button>
+			<Button size="sm" variant="outline">확인</Button>
 		</Item.Actions>
 	</Item.Root>
 </div>

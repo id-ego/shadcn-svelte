@@ -89,7 +89,7 @@
 		},
 		{
 			accessorKey: "status",
-			header: "Status",
+			header: "상태",
 			cell: ({ row }) => {
 				const statusSnippet = createRawSnippet<[{ status: string }]>((getStatus) => {
 					const { status } = getStatus();
@@ -126,7 +126,7 @@
 			header: () => {
 				const amountHeaderSnippet = createRawSnippet(() => {
 					return {
-						render: () => `<div class="text-end">Amount</div>`,
+						render: () => `<div class="text-end">금액</div>`,
 					};
 				});
 				return renderSnippet(amountHeaderSnippet);
@@ -229,7 +229,7 @@
 <div class="-mb-8 w-full">
 	<div class="flex items-center py-4">
 		<Input
-			placeholder="Filter emails..."
+			placeholder="이메일 필터링..."
 			value={(table.getColumn("email")?.getFilterValue() as string) ?? ""}
 			oninput={(e) => table.getColumn("email")?.setFilterValue(e.currentTarget.value)}
 			onchange={(e) => {
@@ -241,7 +241,7 @@
 			<DropdownMenu.Trigger>
 				{#snippet child({ props })}
 					<Button {...props} variant="outline" class="ms-auto">
-						Columns <ChevronDownIcon class="ms-2 size-4" />
+						열 <ChevronDownIcon class="ms-2 size-4" />
 					</Button>
 				{/snippet}
 			</DropdownMenu.Trigger>
@@ -292,7 +292,7 @@
 				{:else}
 					<Table.Row>
 						<Table.Cell colspan={columns.length} class="h-24 text-center">
-							No results.
+							결과가 없습니다.
 						</Table.Cell>
 					</Table.Row>
 				{/each}
@@ -301,8 +301,7 @@
 	</div>
 	<div class="flex items-center justify-end space-x-2 pt-4">
 		<div class="text-muted-foreground flex-1 text-sm">
-			{table.getFilteredSelectedRowModel().rows.length} of
-			{table.getFilteredRowModel().rows.length} row(s) selected.
+			전체 {table.getFilteredRowModel().rows.length}개 중 {table.getFilteredSelectedRowModel().rows.length}개 선택됨.
 		</div>
 		<div class="space-x-2">
 			<Button
@@ -311,7 +310,7 @@
 				onclick={() => table.previousPage()}
 				disabled={!table.getCanPreviousPage()}
 			>
-				Previous
+				이전
 			</Button>
 			<Button
 				variant="outline"
@@ -319,7 +318,7 @@
 				onclick={() => table.nextPage()}
 				disabled={!table.getCanNextPage()}
 			>
-				Next
+				다음
 			</Button>
 		</div>
 	</div>

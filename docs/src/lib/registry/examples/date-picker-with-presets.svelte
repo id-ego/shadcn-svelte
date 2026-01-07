@@ -20,10 +20,10 @@
 	const valueString = $derived(value ? df.format(value.toDate(getLocalTimeZone())) : "");
 
 	const items = [
-		{ value: 0, label: "Today" },
-		{ value: 1, label: "Tomorrow" },
-		{ value: 3, label: "In 3 days" },
-		{ value: 7, label: "In a week" },
+		{ value: 0, label: "오늘" },
+		{ value: 1, label: "내일" },
+		{ value: 3, label: "3일 후" },
+		{ value: 7, label: "일주일 후" },
 	];
 </script>
 
@@ -38,7 +38,7 @@
 		)}
 	>
 		<CalendarIcon class="me-2 size-4" />
-		{value ? df.format(value.toDate(getLocalTimeZone())) : "Pick a date"}
+		{value ? df.format(value.toDate(getLocalTimeZone())) : "날짜 선택"}
 	</Popover.Trigger>
 	<Popover.Content class="flex w-auto flex-col space-y-2 p-2">
 		<Select.Root

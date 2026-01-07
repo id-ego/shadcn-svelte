@@ -18,27 +18,27 @@
 		},
 		navMain: [
 			{
-				title: "Playground",
+				title: "플레이그라운드",
 				url: "#",
 				icon: SquareTerminalIcon,
 				isActive: true,
 				items: [
 					{
-						title: "History",
+						title: "기록",
 						url: "#",
 					},
 					{
-						title: "Starred",
+						title: "즐겨찾기",
 						url: "#",
 					},
 					{
-						title: "Settings",
+						title: "설정",
 						url: "#",
 					},
 				],
 			},
 			{
-				title: "Models",
+				title: "모델",
 				url: "#",
 				icon: BotIcon,
 				items: [
@@ -57,47 +57,47 @@
 				],
 			},
 			{
-				title: "Documentation",
+				title: "문서",
 				url: "#",
 				icon: BookOpenIcon,
 				items: [
 					{
-						title: "Introduction",
+						title: "소개",
 						url: "#",
 					},
 					{
-						title: "Get Started",
+						title: "시작하기",
 						url: "#",
 					},
 					{
-						title: "Tutorials",
+						title: "튜토리얼",
 						url: "#",
 					},
 					{
-						title: "Changelog",
+						title: "변경 로그",
 						url: "#",
 					},
 				],
 			},
 			{
-				title: "Settings",
+				title: "설정",
 				url: "#",
 				icon: Settings2Icon,
 				items: [
 					{
-						title: "General",
+						title: "일반",
 						url: "#",
 					},
 					{
-						title: "Team",
+						title: "팀",
 						url: "#",
 					},
 					{
-						title: "Billing",
+						title: "결제",
 						url: "#",
 					},
 					{
-						title: "Limits",
+						title: "한도",
 						url: "#",
 					},
 				],
@@ -105,29 +105,29 @@
 		],
 		navSecondary: [
 			{
-				title: "Support",
+				title: "지원",
 				url: "#",
 				icon: LifeBuoyIcon,
 			},
 			{
-				title: "Feedback",
+				title: "피드백",
 				url: "#",
 				icon: SendIcon,
 			},
 		],
 		projects: [
 			{
-				name: "Design Engineering",
+				name: "디자인 엔지니어링",
 				url: "#",
 				icon: FrameIcon,
 			},
 			{
-				name: "Sales & Marketing",
+				name: "영업 및 마케팅",
 				url: "#",
 				icon: PieChartIcon,
 			},
 			{
-				name: "Travel",
+				name: "여행",
 				url: "#",
 				icon: MapIcon,
 			},

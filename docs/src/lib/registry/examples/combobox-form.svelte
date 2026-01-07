@@ -37,9 +37,9 @@
 		SPA: true,
 		onUpdate: ({ form: f }) => {
 			if (f.valid) {
-				toast.success(`You submitted ${JSON.stringify(f.data, null, 2)}`);
+				toast.success(`제출되었습니다 ${JSON.stringify(f.data, null, 2)}`);
 			} else {
-				toast.error("Please fix the errors in the form.");
+				toast.error("폼의 오류를 수정해주세요.");
 			}
 		},
 	});
@@ -65,7 +65,7 @@
 		<Popover.Root bind:open>
 			<Form.Control id={triggerId}>
 				{#snippet children({ props })}
-					<Form.Label>Language</Form.Label>
+					<Form.Label>언어</Form.Label>
 					<Popover.Trigger
 						class={cn(
 							buttonVariants({ variant: "outline" }),
@@ -76,7 +76,7 @@
 						{...props}
 					>
 						{languages.find((f) => f.value === $formData.language)?.label ??
-							"Select language"}
+							"언어 선택"}
 						<ChevronsUpDownIcon class="opacity-50" />
 					</Popover.Trigger>
 					<input hidden value={$formData.language} name={props.name} />
@@ -84,8 +84,8 @@
 			</Form.Control>
 			<Popover.Content class="w-[200px] p-0">
 				<Command.Root>
-					<Command.Input autofocus placeholder="Search language..." class="h-9" />
-					<Command.Empty>No language found.</Command.Empty>
+					<Command.Input autofocus placeholder="언어 검색..." class="h-9" />
+					<Command.Empty>언어를 찾을 수 없습니다.</Command.Empty>
 					<Command.Group value="languages">
 						{#each languages as language (language.value)}
 							<Command.Item
@@ -109,9 +109,9 @@
 			</Popover.Content>
 		</Popover.Root>
 		<Form.Description>
-			This is the language that will be used in the dashboard.
+			대시보드에서 사용할 언어입니다.
 		</Form.Description>
 		<Form.FieldErrors />
 	</Form.Field>
-	<Form.Button>Submit</Form.Button>
+	<Form.Button>제출</Form.Button>
 </form>

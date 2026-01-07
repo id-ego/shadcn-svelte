@@ -63,7 +63,7 @@
 </script>
 
 <div class="flex items-center space-x-4">
-	<p class="text-muted-foreground text-sm">Status</p>
+	<p class="text-muted-foreground text-sm">상태</p>
 	<Popover.Root bind:open>
 		<Popover.Trigger
 			id={triggerId}
@@ -78,14 +78,14 @@
 				<Icon class="me-2 size-4 shrink-0" />
 				{selectedStatus.label}
 			{:else}
-				+ Set status
+				+ 상태 설정
 			{/if}
 		</Popover.Trigger>
 		<Popover.Content class="w-[200px] p-0" side="right" align="start">
 			<Command.Root>
-				<Command.Input placeholder="Change status..." />
+				<Command.Input placeholder="상태 변경..." />
 				<Command.List>
-					<Command.Empty>No results found.</Command.Empty>
+					<Command.Empty>결과를 찾을 수 없습니다.</Command.Empty>
 					<Command.Group>
 						{#each statuses as status (status.value)}
 							<Command.Item

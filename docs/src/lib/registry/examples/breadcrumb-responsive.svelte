@@ -6,11 +6,11 @@
 	import { buttonVariants } from "$lib/registry/ui/button/index.js";
 
 	const items = [
-		{ href: "#", label: "Home" },
-		{ href: "#", label: "Documentation" },
-		{ href: "#", label: "Building Your Application" },
-		{ href: "#", label: "Data Fetching" },
-		{ label: "Caching and Revalidating" },
+		{ href: "#", label: "홈" },
+		{ href: "#", label: "문서" },
+		{ href: "#", label: "애플리케이션 빌드" },
+		{ href: "#", label: "데이터 가져오기" },
+		{ label: "캐싱 및 재검증" },
 	];
 
 	const ITEMS_TO_DISPLAY = 3;
@@ -50,14 +50,14 @@
 					</DropdownMenu.Root>
 				{:else}
 					<Drawer.Root bind:open>
-						<Drawer.Trigger aria-label="Toggle Menu">
+						<Drawer.Trigger aria-label="메뉴 토글">
 							<Breadcrumb.Ellipsis class="size-4" />
 						</Drawer.Trigger>
 						<Drawer.Content>
 							<Drawer.Header class="text-start">
-								<Drawer.Title>Navigate to</Drawer.Title>
+								<Drawer.Title>이동</Drawer.Title>
 								<Drawer.Description>
-									Select a page to navigate to.
+									이동할 페이지를 선택하세요.
 								</Drawer.Description>
 							</Drawer.Header>
 							<div class="grid gap-1 px-4">
@@ -69,7 +69,7 @@
 							</div>
 							<Drawer.Footer class="pt-4">
 								<Drawer.Close class={buttonVariants({ variant: "outline" })}>
-									Close
+									닫기
 								</Drawer.Close>
 							</Drawer.Footer>
 						</Drawer.Content>

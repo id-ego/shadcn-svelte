@@ -6,7 +6,7 @@
 
 <div class="flex w-full max-w-xs flex-col gap-6">
 	<InputGroup.Root>
-		<InputGroup.Input placeholder="Search..." />
+		<InputGroup.Input placeholder="검색..." />
 		<InputGroup.Addon>
 			<SearchIcon />
 		</InputGroup.Addon>

@@ -12,13 +12,13 @@
 	<form>
 		<Field.Group>
 			<div class="flex flex-col items-center gap-1 text-center">
-				<h1 class="text-2xl font-bold">Enter verification code</h1>
+				<h1 class="text-2xl font-bold">인증 코드 입력</h1>
 				<p class="text-muted-foreground text-sm text-balance">
-					We sent a 6-digit code to your email.
+					이메일로 6자리 코드를 보냈습니다.
 				</p>
 			</div>
 			<Field.Field>
-				<Field.Label for="otp" class="sr-only">Verification code</Field.Label>
+				<Field.Label for="otp" class="sr-only">인증 코드</Field.Label>
 				<InputOTP.Root maxlength={6} id="otp" required>
 					{#snippet children({ cells })}
 						<InputOTP.Group
@@ -47,12 +47,12 @@
 					{/snippet}
 				</InputOTP.Root>
 				<Field.Description class="text-center">
-					Enter the 6-digit code sent to your email.
+					이메일로 전송된 6자리 코드를 입력하세요.
 				</Field.Description>
 			</Field.Field>
-			<Button type="submit">Verify</Button>
+			<Button type="submit">확인</Button>
 			<Field.Description class="text-center">
-				Didn't receive the code? <a href="#/">Resend</a>
+				코드를 받지 못하셨나요? <a href="#/">재전송</a>
 			</Field.Description>
 		</Field.Group>
 	</form>

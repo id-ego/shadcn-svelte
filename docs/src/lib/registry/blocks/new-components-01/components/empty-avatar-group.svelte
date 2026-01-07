@@ -23,13 +23,13 @@
 				</Avatar.Root>
 			</div>
 		</Empty.Media>
-		<Empty.Title>No Team Members</Empty.Title>
-		<Empty.Description>Invite your team to collaborate on this project.</Empty.Description>
+		<Empty.Title>팀 멤버가 없습니다</Empty.Title>
+		<Empty.Description>이 프로젝트에 함께 작업할 팀을 초대하세요.</Empty.Description>
 	</Empty.Header>
 	<Empty.Content>
 		<Button size="sm">
 			<PlusIcon />
-			Invite Members
+			멤버 초대
 		</Button>
 	</Empty.Content>
 </Empty.Root>

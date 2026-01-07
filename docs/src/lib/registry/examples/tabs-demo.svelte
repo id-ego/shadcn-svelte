@@ -9,52 +9,52 @@
 <div class="-mb-4 flex w-full max-w-sm flex-col gap-6">
 	<Tabs.Root value="account">
 		<Tabs.List>
-			<Tabs.Trigger value="account">Account</Tabs.Trigger>
-			<Tabs.Trigger value="password">Password</Tabs.Trigger>
+			<Tabs.Trigger value="account">계정</Tabs.Trigger>
+			<Tabs.Trigger value="password">비밀번호</Tabs.Trigger>
 		</Tabs.List>
 		<Tabs.Content value="account">
 			<Card.Root>
 				<Card.Header>
-					<Card.Title>Account</Card.Title>
+					<Card.Title>계정</Card.Title>
 					<Card.Description>
-						Make changes to your account here. Click save when you&apos;re done.
+						계정 정보를 여기에서 변경할 수 있습니다. 완료되면 저장을 클릭하세요.
 					</Card.Description>
 				</Card.Header>
 				<Card.Content class="grid gap-6">
 					<div class="grid gap-3">
-						<Label for="tabs-demo-name">Name</Label>
+						<Label for="tabs-demo-name">이름</Label>
 						<Input id="tabs-demo-name" value="Pedro Duarte" />
 					</div>
 					<div class="grid gap-3">
-						<Label for="tabs-demo-username">Username</Label>
+						<Label for="tabs-demo-username">사용자명</Label>
 						<Input id="tabs-demo-username" value="@peduarte" />
 					</div>
 				</Card.Content>
 				<Card.Footer>
-					<Button>Save changes</Button>
+					<Button>변경사항 저장</Button>
 				</Card.Footer>
 			</Card.Root>
 		</Tabs.Content>
 		<Tabs.Content value="password">
 			<Card.Root>
 				<Card.Header>
-					<Card.Title>Password</Card.Title>
+					<Card.Title>비밀번호</Card.Title>
 					<Card.Description>
-						Change your password here. After saving, you&apos;ll be logged out.
+						비밀번호를 여기에서 변경할 수 있습니다. 저장 후 로그아웃됩니다.
 					</Card.Description>
 				</Card.Header>
 				<Card.Content class="grid gap-6">
 					<div class="grid gap-3">
-						<Label for="tabs-demo-current">Current password</Label>
+						<Label for="tabs-demo-current">현재 비밀번호</Label>
 						<Input id="tabs-demo-current" type="password" />
 					</div>
 					<div class="grid gap-3">
-						<Label for="tabs-demo-new">New password</Label>
+						<Label for="tabs-demo-new">새 비밀번호</Label>
 						<Input id="tabs-demo-new" type="password" />
 					</div>
 				</Card.Content>
 				<Card.Footer>
-					<Button>Save password</Button>
+					<Button>비밀번호 저장</Button>
 				</Card.Footer>
 			</Card.Root>
 		</Tabs.Content>

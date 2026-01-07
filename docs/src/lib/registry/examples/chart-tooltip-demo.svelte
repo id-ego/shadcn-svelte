@@ -6,7 +6,7 @@
 	class="text-foreground grid aspect-video w-full max-w-md justify-center md:grid-cols-2 [&>div]:relative [&>div]:flex [&>div]:h-[137px] [&>div]:w-[224px] [&>div]:items-center [&>div]:justify-center [&>div]:p-4"
 >
 	<div>
-		<div class="absolute start-[-35px] top-[45px] z-10 text-sm font-medium">Label</div>
+		<div class="absolute start-[-35px] top-[45px] z-10 text-sm font-medium">라벨</div>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 193 40"
@@ -28,16 +28,16 @@
 			</defs>
 		</svg>
 		<TooltipDemo
-			label="Page Views"
+			label="페이지 조회수"
 			payload={[
-				{ name: "Desktop", value: 186, color: "var(--chart-1)" },
-				{ name: "Mobile", value: 80, color: "var(--chart-2)" },
+				{ name: "데스크톱", value: 186, color: "var(--chart-1)" },
+				{ name: "모바일", value: 80, color: "var(--chart-2)" },
 			]}
 			class="w-[8rem]"
 		/>
 	</div>
 	<div class="items-end">
-		<div class="absolute start-[122px] top-[0px] z-10 text-sm font-medium">Name</div>
+		<div class="absolute start-[122px] top-[0px] z-10 text-sm font-medium">이름</div>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			width="35"
@@ -59,7 +59,7 @@
 			</defs>
 		</svg>
 		<TooltipDemo
-			label="Browser"
+			label="브라우저"
 			hideLabel
 			payload={[
 				{ name: "Chrome", value: 1286, color: "var(--chart-3)" },
@@ -71,16 +71,16 @@
 	</div>
 	<div class="!hidden md:!flex">
 		<TooltipDemo
-			label="Page Views"
-			payload={[{ name: "Desktop", value: 12486, color: "var(--chart-3)" }]}
+			label="페이지 조회수"
+			payload={[{ name: "데스크톱", value: 12486, color: "var(--chart-3)" }]}
 			class="w-[9rem]"
 			indicator="line"
 		/>
 	</div>
 	<div class="!items-start !justify-start">
-		<div class="absolute start-[50px] top-[60px] z-10 text-sm font-medium">Indicator</div>
+		<div class="absolute start-[50px] top-[60px] z-10 text-sm font-medium">인디케이터</div>
 		<TooltipDemo
-			label="Browser"
+			label="브라우저"
 			hideLabel
 			payload={[{ name: "Chrome", value: 1286, color: "var(--chart-1)" }]}
 			indicator="dot"

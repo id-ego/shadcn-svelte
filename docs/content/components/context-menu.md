@@ -66,12 +66,12 @@ Install `bits-ui`:
 
 ```svelte showLineNumbers
 <ContextMenu.Root>
-  <ContextMenu.Trigger>Right click</ContextMenu.Trigger>
+  <ContextMenu.Trigger>우클릭</ContextMenu.Trigger>
   <ContextMenu.Content>
-    <ContextMenu.Item>Profile</ContextMenu.Item>
-    <ContextMenu.Item>Billing</ContextMenu.Item>
-    <ContextMenu.Item>Team</ContextMenu.Item>
-    <ContextMenu.Item>Subscription</ContextMenu.Item>
+    <ContextMenu.Item>프로필</ContextMenu.Item>
+    <ContextMenu.Item>결제</ContextMenu.Item>
+    <ContextMenu.Item>팀</ContextMenu.Item>
+    <ContextMenu.Item>구독</ContextMenu.Item>
   </ContextMenu.Content>
 </ContextMenu.Root>
 ```

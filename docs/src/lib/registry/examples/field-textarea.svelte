@@ -7,9 +7,9 @@
 	<Field.Set>
 		<Field.Group>
 			<Field.Field>
-				<Field.Label for="feedback">Feedback</Field.Label>
-				<Textarea id="feedback" placeholder="Your feedback helps us improve..." rows={4} />
-				<Field.Description>Share your thoughts about our service.</Field.Description>
+				<Field.Label for="feedback">피드백</Field.Label>
+				<Textarea id="feedback" placeholder="여러분의 피드백은 개선에 도움이 됩니다..." rows={4} />
+				<Field.Description>서비스에 대한 의견을 공유해 주세요.</Field.Description>
 			</Field.Field>
 		</Field.Group>
 	</Field.Set>

@@ -2,4 +2,4 @@
 	import { Button } from "$lib/registry/ui/button/index.js";
 </script>
 
-<Button>Button</Button>
+<Button>버튼</Button>

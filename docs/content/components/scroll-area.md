@@ -37,7 +37,7 @@ links:
 
 <Step>
 
-Install `bits-ui`:
+`bits-ui`를 설치합니다:
 
 </Step>
 
@@ -66,12 +66,11 @@ Install `bits-ui`:
 
 ```svelte showLineNumbers
 <ScrollArea class="h-[200px] w-[350px] rounded-md border p-4">
-  Jokester began sneaking into the castle in the middle of the night and
-  leaving jokes all over the place: under the king's pillow, in his soup, even
-  in the royal toilet. The king was furious, but he couldn't seem to stop
-  Jokester. And then, one day, the people of the kingdom discovered that the
-  jokes left by Jokester were so funny that they couldn't help but laugh. And
-  once they started laughing, they couldn't stop.
+  광대는 한밤중에 성으로 몰래 들어와서 왕의 베개 밑, 수프 안, 심지어 왕실 화장실에까지
+  농담을 남기기 시작했습니다. 왕은 분노했지만, 광대를 막을 수가 없었습니다.
+  그러던 어느 날, 왕국의 사람들은 광대가 남긴 농담이 너무 재미있어서
+  웃지 않을 수가 없다는 것을 발견했습니다. 그리고 일단 웃기 시작하자,
+  멈출 수가 없었습니다.
 </ScrollArea>
 ```
 

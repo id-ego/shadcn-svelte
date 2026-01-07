@@ -10,10 +10,10 @@
 			for="terms1"
 			class="text-sm leading-none font-medium peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
 		>
-			Accept terms and conditions
+			이용 약관에 동의합니다
 		</Label>
 		<p class="text-muted-foreground text-sm">
-			You agree to our Terms of Service and Privacy Policy.
+			서비스 이용약관 및 개인정보 처리방침에 동의하게 됩니다.
 		</p>
 	</div>
 </div>

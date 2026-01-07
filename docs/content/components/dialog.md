@@ -66,13 +66,13 @@ links:
 
 ```svelte showLineNumbers
 <Dialog.Root>
-  <Dialog.Trigger>Open</Dialog.Trigger>
+  <Dialog.Trigger>열기</Dialog.Trigger>
   <Dialog.Content>
     <Dialog.Header>
-      <Dialog.Title>Are you sure absolutely sure?</Dialog.Title>
+      <Dialog.Title>정말 확실하신가요?</Dialog.Title>
       <Dialog.Description>
-        This action cannot be undone. This will permanently delete your account
-        and remove your data from our servers.
+        이 작업은 취소할 수 없습니다. 계정이 영구적으로 삭제되고
+        서버에서 데이터가 제거됩니다.
       </Dialog.Description>
     </Dialog.Header>
   </Dialog.Content>

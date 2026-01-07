@@ -5,9 +5,9 @@
 
 <div class="flex flex-wrap items-center gap-4">
 	<Button variant="outline" size="sm" class="pe-2">
-		Accept <Kbd.Root>⏎</Kbd.Root>
+		수락 <Kbd.Root>⏎</Kbd.Root>
 	</Button>
 	<Button variant="outline" size="sm" class="pe-2">
-		Cancel <Kbd.Root>Esc</Kbd.Root>
+		취소 <Kbd.Root>Esc</Kbd.Root>
 	</Button>
 </div>

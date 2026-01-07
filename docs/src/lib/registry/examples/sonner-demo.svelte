@@ -6,13 +6,13 @@
 <Button
 	variant="outline"
 	onclick={() =>
-		toast("Event has been created", {
-			description: "Sunday, December 03, 2023 at 9:00 AM",
+		toast("이벤트가 생성되었습니다", {
+			description: "2023년 12월 3일 일요일 오전 9:00",
 			action: {
-				label: "Undo",
+				label: "취소",
 				onClick: () => console.info("Undo"),
 			},
 		})}
 >
-	Show Toast
+	토스트 표시
 </Button>

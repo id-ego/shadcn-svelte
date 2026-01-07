@@ -14,31 +14,31 @@
 		},
 		navMain: [
 			{
-				title: "Inbox",
+				title: "받은편지함",
 				url: "#",
 				icon: InboxIcon,
 				isActive: true,
 			},
 			{
-				title: "Drafts",
+				title: "임시보관함",
 				url: "#",
 				icon: FileIcon,
 				isActive: false,
 			},
 			{
-				title: "Sent",
+				title: "보낸편지함",
 				url: "#",
 				icon: SendIcon,
 				isActive: false,
 			},
 			{
-				title: "Junk",
+				title: "스팸메일",
 				url: "#",
 				icon: ArchiveXIcon,
 				isActive: false,
 			},
 			{
-				title: "Trash",
+				title: "휴지통",
 				url: "#",
 				icon: Trash2Icon,
 				isActive: false,
@@ -158,7 +158,7 @@
 								</div>
 								<div class="grid flex-1 text-start text-sm leading-tight">
 									<span class="truncate font-medium">Acme Inc</span>
-									<span class="truncate text-xs">Enterprise</span>
+									<span class="truncate text-xs">엔터프라이즈</span>
 								</div>
 							</a>
 						{/snippet}
@@ -214,11 +214,11 @@
 					{activeItem.title}
 				</div>
 				<Label class="flex items-center gap-2 text-sm">
-					<span>Unreads</span>
+					<span>읽지 않음</span>
 					<Switch class="shadow-none" />
 				</Label>
 			</div>
-			<Sidebar.Input placeholder="Type to search..." />
+			<Sidebar.Input placeholder="검색어를 입력하세요..." />
 		</Sidebar.Header>
 		<Sidebar.Content>
 			<Sidebar.Group class="px-0">

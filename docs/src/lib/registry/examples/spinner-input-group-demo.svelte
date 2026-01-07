@@ -6,18 +6,18 @@
 
 <div class="flex w-full max-w-md flex-col gap-4">
 	<InputGroup.Root>
-		<InputGroup.Input placeholder="Send a message..." disabled />
+		<InputGroup.Input placeholder="메시지를 입력하세요..." disabled />
 		<InputGroup.Addon align="inline-end">
 			<Spinner />
 		</InputGroup.Addon>
 	</InputGroup.Root>
 	<InputGroup.Root>
-		<InputGroup.Textarea placeholder="Send a message..." disabled />
+		<InputGroup.Textarea placeholder="메시지를 입력하세요..." disabled />
 		<InputGroup.Addon align="block-end">
-			<Spinner /> Validating...
+			<Spinner /> 검증 중...
 			<InputGroup.Button class="ms-auto" variant="default">
 				<ArrowUpIcon />
-				<span class="sr-only">Send</span>
+				<span class="sr-only">전송</span>
 			</InputGroup.Button>
 		</InputGroup.Addon>
 	</InputGroup.Root>

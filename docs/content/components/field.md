@@ -56,24 +56,24 @@ links:
 
 ```svelte showLineNumbers
 <Field.Set>
-  <Field.Legend>Profile</Field.Legend>
-  <Field.Description>This appears on invoices and emails.</Field.Description>
+  <Field.Legend>프로필</Field.Legend>
+  <Field.Description>인보이스 및 이메일에 표시됩니다.</Field.Description>
   <Field.Group>
     <Field.Field>
-      <Field.Label for="name">Full name</Field.Label>
-      <Input id="name" autoComplete="off" placeholder="Evil Rabbit" />
+      <Field.Label for="name">전체 이름</Field.Label>
+      <Input id="name" autoComplete="off" placeholder="홍길동" />
       <Field.Description
-        >This appears on invoices and emails.</Field.Description
+        >인보이스 및 이메일에 표시됩니다.</Field.Description
       >
     </Field.Field>
     <Field.Field>
-      <Field.Label for="username">Username</Field.Label>
+      <Field.Label for="username">사용자 이름</Field.Label>
       <Input id="username" autoComplete="off" aria-invalid />
-      <Field.Error>Choose another username.</Field.Error>
+      <Field.Error>다른 사용자 이름을 선택하세요.</Field.Error>
     </Field.Field>
     <Field.Field orientation="horizontal">
       <Switch id="newsletter" />
-      <Field.Label for="newsletter">Subscribe to the newsletter</Field.Label>
+      <Field.Label for="newsletter">뉴스레터 구독</Field.Label>
     </Field.Field>
   </Field.Group>
 </Field.Set>
@@ -85,10 +85,10 @@ links:
 
 ```svelte
 <Field.Field>
-  <Field.Label for="input-id">Label</Field.Label>
+  <Field.Label for="input-id">라벨</Field.Label>
   <!-- Input, Select, Switch, etc. -->
-  <Field.Description>Optional helper text.</Field.Description>
-  <Field.Error>Validation message.</Field.Error>
+  <Field.Description>선택적 도움말 텍스트.</Field.Description>
+  <Field.Error>유효성 검사 메시지.</Field.Error>
 </Field.Field>
 ```
 
@@ -202,9 +202,9 @@ links:
 
 ```svelte
 <Field.Field data-invalid>
-  <Field.Label for="email">Email</Field.Label>
+  <Field.Label for="email">이메일</Field.Label>
   <Input id="email" type="email" aria-invalid />
-  <Field.Error>Enter a valid email address.</Field.Error>
+  <Field.Error>유효한 이메일 주소를 입력하세요.</Field.Error>
 </Field.Field>
 ```
 

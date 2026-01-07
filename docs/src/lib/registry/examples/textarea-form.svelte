@@ -3,8 +3,8 @@
 	const formSchema = z.object({
 		bio: z
 			.string()
-			.min(10, "Bio must be at least 10 characters.")
-			.max(160, "Bio must be at most 160 characters."),
+			.min(10, "소개는 최소 10자 이상이어야 합니다.")
+			.max(160, "소개는 최대 160자까지 입력할 수 있습니다."),
 	});
 </script>
 
@@ -22,7 +22,7 @@
 			if (f.valid) {
 				toast.success(`You submitted ${JSON.stringify(f.data, null, 2)}`);
 			} else {
-				toast.error("Please fix the errors in the form.");
+				toast.error("양식의 오류를 수정해주세요.");
 			}
 		},
 	});
@@ -34,19 +34,19 @@
 	<Form.Field {form} name="bio">
 		<Form.Control>
 			{#snippet children({ props })}
-				<Form.Label>Bio</Form.Label>
+				<Form.Label>소개</Form.Label>
 				<Textarea
 					{...props}
-					placeholder="Tell us a little bit about yourself"
+					placeholder="자신에 대해 간단히 소개해주세요"
 					class="resize-none"
 					bind:value={$formData.bio}
 				/>
 				<Form.Description>
-					You can <span>@mention</span> other users and organizations.
+					<span>@멘션</span>으로 다른 사용자나 조직을 언급할 수 있습니다.
 				</Form.Description>
 			{/snippet}
 		</Form.Control>
 		<Form.FieldErrors />
 	</Form.Field>
-	<Form.Button>Submit</Form.Button>
+	<Form.Button>제출</Form.Button>
 </form>

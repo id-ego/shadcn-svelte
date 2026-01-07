@@ -14,27 +14,27 @@
 
 <Card.Root class="mx-auto w-full max-w-sm">
 	<Card.Header>
-		<Card.Title class="text-2xl">Login</Card.Title>
-		<Card.Description>Enter your email below to login to your account</Card.Description>
+		<Card.Title class="text-2xl">로그인</Card.Title>
+		<Card.Description>계정에 로그인하려면 이메일을 입력하세요</Card.Description>
 	</Card.Header>
 	<Card.Content>
 		<form>
 			<FieldGroup>
 				<Field>
-					<FieldLabel for="email-{id}">Email</FieldLabel>
+					<FieldLabel for="email-{id}">이메일</FieldLabel>
 					<Input id="email-{id}" type="email" placeholder="m@example.com" required />
 				</Field>
 				<Field>
 					<div class="flex items-center">
-						<FieldLabel for="password-{id}">Password</FieldLabel>
+						<FieldLabel for="password-{id}">비밀번호</FieldLabel>
 						<a href="##" class="ms-auto inline-block text-sm underline">
-							Forgot your password?
+							비밀번호를 잊으셨나요?
 						</a>
 					</div>
 					<Input id="password-{id}" type="password" required />
 				</Field>
 				<Field>
-					<Button type="submit" class="w-full">Login</Button>
+					<Button type="submit" class="w-full">로그인</Button>
 					<Button variant="outline" class="w-full">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 							<path
@@ -42,10 +42,10 @@
 								fill="currentColor"
 							/>
 						</svg>
-						Login with Google
+						Google로 로그인
 					</Button>
 					<FieldDescription class="text-center">
-						Don't have an account? <a href="##">Sign up</a>
+						계정이 없으신가요? <a href="##">가입하기</a>
 					</FieldDescription>
 				</Field>
 			</FieldGroup>

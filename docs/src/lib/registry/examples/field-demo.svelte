@@ -14,24 +14,24 @@
 	<form>
 		<Field.Group>
 			<Field.Set>
-				<Field.Legend>Payment Method</Field.Legend>
-				<Field.Description>All transactions are secure and encrypted</Field.Description>
+				<Field.Legend>결제 수단</Field.Legend>
+				<Field.Description>모든 거래는 안전하게 암호화됩니다</Field.Description>
 				<Field.Group>
 					<Field.Field>
-						<Field.Label for="checkout-7j9-card-name-43j">Name on Card</Field.Label>
-						<Input id="checkout-7j9-card-name-43j" placeholder="John Doe" required />
+						<Field.Label for="checkout-7j9-card-name-43j">카드 소유자 이름</Field.Label>
+						<Input id="checkout-7j9-card-name-43j" placeholder="홍길동" required />
 					</Field.Field>
 					<div class="grid grid-cols-3 gap-4">
 						<Field.Field class="col-span-2">
 							<Field.Label for="checkout-7j9-card-number-uw1">
-								Card Number
+								카드 번호
 							</Field.Label>
 							<Input
 								id="checkout-7j9-card-number-uw1"
 								placeholder="1234 5678 9012 3456"
 								required
 							/>
-							<Field.Description>Enter your 16-digit number.</Field.Description>
+							<Field.Description>16자리 번호를 입력하세요.</Field.Description>
 						</Field.Field>
 						<Field.Field class="col-span-1">
 							<Field.Label for="checkout-7j9-cvv">CVV</Field.Label>
@@ -40,7 +40,7 @@
 					</div>
 					<div class="grid grid-cols-2 gap-4">
 						<Field.Field>
-							<Field.Label for="checkout-7j9-exp-month-ts6">Month</Field.Label>
+							<Field.Label for="checkout-7j9-exp-month-ts6">월</Field.Label>
 							<Select.Root type="single" bind:value={month}>
 								<Select.Trigger id="checkout-7j9-exp-month-ts6">
 									<span>
@@ -64,7 +64,7 @@
 							</Select.Root>
 						</Field.Field>
 						<Field.Field>
-							<Field.Label for="checkout-7j9-exp-year-f59">Year</Field.Label>
+							<Field.Label for="checkout-7j9-exp-year-f59">연도</Field.Label>
 							<Select.Root type="single" bind:value={year}>
 								<Select.Trigger id="checkout-7j9-exp-year-f59">
 									<span>
@@ -86,15 +86,15 @@
 			</Field.Set>
 			<Field.Separator />
 			<Field.Set>
-				<Field.Legend>Billing Address</Field.Legend>
+				<Field.Legend>청구 주소</Field.Legend>
 				<Field.Description>
-					The billing address associated with your payment method
+					결제 수단과 연결된 청구 주소
 				</Field.Description>
 				<Field.Group>
 					<Field.Field orientation="horizontal">
 						<Checkbox id="checkout-7j9-same-as-shipping-wgm" checked={true} />
 						<Field.Label for="checkout-7j9-same-as-shipping-wgm" class="font-normal">
-							Same as shipping address
+							배송 주소와 동일
 						</Field.Label>
 					</Field.Field>
 				</Field.Group>
@@ -103,18 +103,18 @@
 			<Field.Set>
 				<Field.Group>
 					<Field.Field>
-						<Field.Label for="checkout-7j9-optional-comments">Comments</Field.Label>
+						<Field.Label for="checkout-7j9-optional-comments">코멘트</Field.Label>
 						<Textarea
 							id="checkout-7j9-optional-comments"
-							placeholder="Add any additional comments"
+							placeholder="추가 코멘트를 입력하세요"
 							class="resize-none"
 						/>
 					</Field.Field>
 				</Field.Group>
 			</Field.Set>
 			<Field.Field orientation="horizontal">
-				<Button type="submit">Submit</Button>
-				<Button variant="outline" type="button">Cancel</Button>
+				<Button type="submit">제출</Button>
+				<Button variant="outline" type="button">취소</Button>
 			</Field.Field>
 		</Field.Group>
 	</form>

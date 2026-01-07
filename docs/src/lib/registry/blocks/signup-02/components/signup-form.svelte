@@ -11,36 +11,36 @@
 <form class={cn("flex flex-col gap-6", className)} {...restProps}>
 	<Field.Group>
 		<div class="flex flex-col items-center gap-1 text-center">
-			<h1 class="text-2xl font-bold">Create your account</h1>
+			<h1 class="text-2xl font-bold">계정 만들기</h1>
 			<p class="text-muted-foreground text-sm text-balance">
-				Fill in the form below to create your account
+				아래 양식을 작성하여 계정을 생성하세요
 			</p>
 		</div>
 		<Field.Field>
-			<Field.Label for="name">Full Name</Field.Label>
-			<Input id="name" type="text" placeholder="John Doe" required />
+			<Field.Label for="name">이름</Field.Label>
+			<Input id="name" type="text" placeholder="홍길동" required />
 		</Field.Field>
 		<Field.Field>
-			<Field.Label for="email">Email</Field.Label>
+			<Field.Label for="email">이메일</Field.Label>
 			<Input id="email" type="email" placeholder="m@example.com" required />
 			<Field.Description>
-				We'll use this to contact you. We will not share your email with anyone else.
+				연락처로 사용됩니다. 이메일은 다른 사람과 공유되지 않습니다.
 			</Field.Description>
 		</Field.Field>
 		<Field.Field>
-			<Field.Label for="password">Password</Field.Label>
+			<Field.Label for="password">비밀번호</Field.Label>
 			<Input id="password" type="password" required />
-			<Field.Description>Must be at least 8 characters long.</Field.Description>
+			<Field.Description>최소 8자 이상이어야 합니다.</Field.Description>
 		</Field.Field>
 		<Field.Field>
-			<Field.Label for="confirm-password">Confirm Password</Field.Label>
+			<Field.Label for="confirm-password">비밀번호 확인</Field.Label>
 			<Input id="confirm-password" type="password" required />
-			<Field.Description>Please confirm your password.</Field.Description>
+			<Field.Description>비밀번호를 다시 입력하세요.</Field.Description>
 		</Field.Field>
 		<Field.Field>
-			<Button type="submit">Create Account</Button>
+			<Button type="submit">계정 만들기</Button>
 		</Field.Field>
-		<Field.Separator>Or continue with</Field.Separator>
+		<Field.Separator>또는 다음으로 계속</Field.Separator>
 		<Field.Field>
 			<Button variant="outline" type="button">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -49,10 +49,10 @@
 						fill="currentColor"
 					/>
 				</svg>
-				Sign up with GitHub
+				GitHub으로 가입
 			</Button>
 			<Field.Description class="px-6 text-center">
-				Already have an account? <a href="#/">Sign in</a>
+				이미 계정이 있으신가요? <a href="#/">로그인</a>
 			</Field.Description>
 		</Field.Field>
 	</Field.Group>

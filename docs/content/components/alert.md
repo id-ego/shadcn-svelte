@@ -56,9 +56,9 @@ links:
 
 ```svelte showLineNumbers
 <Alert.Root>
-  <Alert.Title>Heads up!</Alert.Title>
+  <Alert.Title>주목하세요!</Alert.Title>
   <Alert.Description>
-    You can add components to your app using the cli.
+    CLI를 사용하여 앱에 컴포넌트를 추가할 수 있습니다.
   </Alert.Description>
 </Alert.Root>
 ```

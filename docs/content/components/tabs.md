@@ -37,7 +37,7 @@ links:
 
 <Step>
 
-Install `bits-ui`:
+`bits-ui`를 설치합니다:
 
 </Step>
 
@@ -67,12 +67,12 @@ Install `bits-ui`:
 ```svelte showLineNumbers
 <Tabs.Root value="account" class="w-[400px]">
   <Tabs.List>
-    <Tabs.Trigger value="account">Account</Tabs.Trigger>
-    <Tabs.Trigger value="password">Password</Tabs.Trigger>
+    <Tabs.Trigger value="account">계정</Tabs.Trigger>
+    <Tabs.Trigger value="password">비밀번호</Tabs.Trigger>
   </Tabs.List>
   <Tabs.Content value="account">
-    Make changes to your account here.
+    여기에서 계정을 변경하세요.
   </Tabs.Content>
-  <Tabs.Content value="password">Change your password here.</Tabs.Content>
+  <Tabs.Content value="password">여기에서 비밀번호를 변경하세요.</Tabs.Content>
 </Tabs.Root>
 ```

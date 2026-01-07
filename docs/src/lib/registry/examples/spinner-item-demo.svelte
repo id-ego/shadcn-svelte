@@ -11,11 +11,11 @@
 			<Spinner />
 		</Item.Media>
 		<Item.Content>
-			<Item.Title>Downloading...</Item.Title>
+			<Item.Title>다운로드 중...</Item.Title>
 			<Item.Description>129 MB / 1000 MB</Item.Description>
 		</Item.Content>
 		<Item.Actions class="hidden sm:flex">
-			<Button variant="outline" size="sm">Cancel</Button>
+			<Button variant="outline" size="sm">취소</Button>
 		</Item.Actions>
 		<Item.Footer>
 			<Progress value={75} />

@@ -8,22 +8,22 @@
 <div class="grid w-full max-w-xl items-start gap-4">
 	<Alert.Root>
 		<CheckCircle2Icon />
-		<Alert.Title>Success! Your changes have been saved</Alert.Title>
-		<Alert.Description>This is an alert with icon, title and description.</Alert.Description>
+		<Alert.Title>성공! 변경 사항이 저장되었습니다</Alert.Title>
+		<Alert.Description>아이콘, 제목, 설명이 있는 알림입니다.</Alert.Description>
 	</Alert.Root>
 	<Alert.Root>
 		<PopcornIcon />
-		<Alert.Title>This Alert has a title and an icon. No description.</Alert.Title>
+		<Alert.Title>이 알림에는 제목과 아이콘이 있습니다. 설명은 없습니다.</Alert.Title>
 	</Alert.Root>
 	<Alert.Root variant="destructive">
 		<AlertCircleIcon />
-		<Alert.Title>Unable to process your payment.</Alert.Title>
+		<Alert.Title>결제를 처리할 수 없습니다.</Alert.Title>
 		<Alert.Description>
-			<p>Please verify your billing information and try again.</p>
+			<p>청구 정보를 확인하고 다시 시도해 주세요.</p>
 			<ul class="list-inside list-disc text-sm">
-				<li>Check your card details</li>
-				<li>Ensure sufficient funds</li>
-				<li>Verify billing address</li>
+				<li>카드 정보 확인</li>
+				<li>잔액 충분 여부 확인</li>
+				<li>청구지 주소 확인</li>
 			</ul>
 		</Alert.Description>
 	</Alert.Root>

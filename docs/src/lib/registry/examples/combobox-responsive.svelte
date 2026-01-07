@@ -60,14 +60,14 @@
 	<Popover.Root bind:open>
 		<Popover.Trigger>
 			<Button variant="outline" class="w-[150px] justify-start">
-				{selectedStatus ? selectedStatus.label : "+ Set status"}
+				{selectedStatus ? selectedStatus.label : "+ 상태 설정"}
 			</Button>
 		</Popover.Trigger>
 		<Popover.Content class="w-[200px] p-0" align="start">
 			<Command.Root>
-				<Command.Input placeholder="Filter status..." />
+				<Command.Input placeholder="상태 필터링..." />
 				<Command.List>
-					<Command.Empty>No results found.</Command.Empty>
+					<Command.Empty>결과를 찾을 수 없습니다.</Command.Empty>
 					<Command.Group>
 						{#each statuses as status (status.value)}
 							<Command.Item
@@ -86,15 +86,15 @@
 	<Drawer.Root bind:open>
 		<Drawer.Trigger>
 			<Button variant="outline" class="w-[150px] justify-start">
-				{selectedStatus ? selectedStatus.label : "+ Set status"}
+				{selectedStatus ? selectedStatus.label : "+ 상태 설정"}
 			</Button>
 		</Drawer.Trigger>
 		<Drawer.Content>
 			<div class="mt-4 border-t">
 				<Command.Root>
-					<Command.Input placeholder="Filter status..." />
+					<Command.Input placeholder="상태 필터링..." />
 					<Command.List>
-						<Command.Empty>No results found.</Command.Empty>
+						<Command.Empty>결과를 찾을 수 없습니다.</Command.Empty>
 						<Command.Group>
 							{#each statuses as status (status.value)}
 								<Command.Item

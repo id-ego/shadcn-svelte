@@ -54,7 +54,7 @@ links:
 ```
 
 ```svelte
-<Badge variant="outline">Badge</Badge>
+<Badge variant="outline">배지</Badge>
 ```
 
 ### 링크
@@ -66,5 +66,5 @@ links:
   import { badgeVariants } from "$lib/components/ui/badge/index.js";
 </script>
 
-<a href="/dashboard" class={badgeVariants({ variant: "outline" })}>Badge</a>
+<a href="/dashboard" class={badgeVariants({ variant: "outline" })}>배지</a>
 ```

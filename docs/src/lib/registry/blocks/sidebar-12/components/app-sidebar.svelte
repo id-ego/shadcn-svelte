@@ -8,16 +8,16 @@
 		},
 		calendars: [
 			{
-				name: "My Calendars",
-				items: ["Personal", "Work", "Family"],
+				name: "내 캘린더",
+				items: ["개인", "업무", "가족"],
 			},
 			{
-				name: "Favorites",
-				items: ["Holidays", "Birthdays"],
+				name: "즐겨찾기",
+				items: ["휴일", "생일"],
 			},
 			{
-				name: "Other",
-				items: ["Travel", "Reminders", "Deadlines"],
+				name: "기타",
+				items: ["여행", "알림", "마감일"],
 			},
 		],
 	};
@@ -48,7 +48,7 @@
 			<Sidebar.MenuItem>
 				<Sidebar.MenuButton>
 					<PlusIcon />
-					<span>New Calendar</span>
+					<span>새 캘린더</span>
 				</Sidebar.MenuButton>
 			</Sidebar.MenuItem>
 		</Sidebar.Menu>

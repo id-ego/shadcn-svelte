@@ -4,19 +4,19 @@
 	const models = [
 		{
 			name: "v0-1.5-sm",
-			description: "Everyday tasks and UI generation.",
+			description: "일상적인 작업 및 UI 생성.",
 			image: "https://images.unsplash.com/photo-1650804068570-7fb2e3dbf888?q=80&w=640&auto=format&fit=crop",
 			credit: "Valeria Reverdo on Unsplash",
 		},
 		{
 			name: "v0-1.5-lg",
-			description: "Advanced thinking or reasoning.",
+			description: "고급 사고 또는 추론.",
 			image: "https://images.unsplash.com/photo-1610280777472-54133d004c8c?q=80&w=640&auto=format&fit=crop",
 			credit: "Michael Oeser on Unsplash",
 		},
 		{
 			name: "v0-2.0-mini",
-			description: "Open Source model for everyone.",
+			description: "모두를 위한 오픈 소스 모델.",
 			image: "https://images.unsplash.com/photo-1602146057681-08560aee8cde?q=80&w=640&auto=format&fit=crop",
 			credit: "Cherry Laithang on Unsplash",
 		},

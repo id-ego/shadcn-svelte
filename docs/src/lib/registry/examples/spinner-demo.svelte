@@ -9,7 +9,7 @@
 			<Spinner />
 		</Item.Media>
 		<Item.Content>
-			<Item.Title class="line-clamp-1">Processing payment...</Item.Title>
+			<Item.Title class="line-clamp-1">결제 처리 중...</Item.Title>
 		</Item.Content>
 		<Item.Content class="flex-none justify-end">
 			<span class="text-sm tabular-nums">$100.00</span>

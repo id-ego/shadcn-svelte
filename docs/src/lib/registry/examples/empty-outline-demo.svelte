@@ -9,12 +9,12 @@
 		<Empty.Media variant="icon">
 			<CloudIcon />
 		</Empty.Media>
-		<Empty.Title>Cloud Storage Empty</Empty.Title>
+		<Empty.Title>클라우드 저장소가 비어 있습니다</Empty.Title>
 		<Empty.Description>
-			Upload files to your cloud storage to access them anywhere.
+			클라우드 저장소에 파일을 업로드하여 어디서나 액세스하세요.
 		</Empty.Description>
 	</Empty.Header>
 	<Empty.Content>
-		<Button variant="outline" size="sm">Upload Files</Button>
+		<Button variant="outline" size="sm">파일 업로드</Button>
 	</Empty.Content>
 </Empty.Root>

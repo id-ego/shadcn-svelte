@@ -65,5 +65,5 @@ Install `bits-ui`:
 ```
 
 ```svelte
-<Label for="email">Your email address</Label>
+<Label for="email">이메일 주소</Label>
 ```

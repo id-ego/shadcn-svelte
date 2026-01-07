@@ -36,7 +36,7 @@
 					/>
 				</div>
 				<figcaption class="text-muted-foreground pt-2 text-xs">
-					Photo by
+					사진 제공:
 					<span class="text-foreground font-semibold">
 						{artwork.artist}
 					</span>

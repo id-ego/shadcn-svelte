@@ -7,27 +7,27 @@
 
 <Card.Root class="-my-4 w-full max-w-sm">
 	<Card.Header>
-		<Card.Title>Login to your account</Card.Title>
-		<Card.Description>Enter your email below to login to your account</Card.Description>
+		<Card.Title>계정에 로그인</Card.Title>
+		<Card.Description>계정에 로그인하려면 아래에 이메일을 입력하세요</Card.Description>
 		<Card.Action>
-			<Button variant="link">Sign Up</Button>
+			<Button variant="link">회원가입</Button>
 		</Card.Action>
 	</Card.Header>
 	<Card.Content>
 		<form>
 			<div class="flex flex-col gap-6">
 				<div class="grid gap-2">
-					<Label for="email">Email</Label>
+					<Label for="email">이메일</Label>
 					<Input id="email" type="email" placeholder="m@example.com" required />
 				</div>
 				<div class="grid gap-2">
 					<div class="flex items-center">
-						<Label for="password">Password</Label>
+						<Label for="password">비밀번호</Label>
 						<a
 							href="##"
 							class="ms-auto inline-block text-sm underline-offset-4 hover:underline"
 						>
-							Forgot your password?
+							비밀번호를 잊으셨나요?
 						</a>
 					</div>
 					<Input id="password" type="password" required />
@@ -36,7 +36,7 @@
 		</form>
 	</Card.Content>
 	<Card.Footer class="flex-col gap-2">
-		<Button type="submit" class="w-full">Login</Button>
-		<Button variant="outline" class="w-full">Login with Google</Button>
+		<Button type="submit" class="w-full">로그인</Button>
+		<Button variant="outline" class="w-full">Google로 로그인</Button>
 	</Card.Footer>
 </Card.Root>

@@ -6,92 +6,92 @@
 	const data = {
 		navMain: [
 			{
-				title: "Getting Started",
+				title: "시작하기",
 				url: "#",
 				items: [
 					{
-						title: "Installation",
+						title: "설치",
 						url: "#",
 					},
 					{
-						title: "Project Structure",
+						title: "프로젝트 구조",
 						url: "#",
 					},
 				],
 			},
 			{
-				title: "Building Your Application",
+				title: "애플리케이션 구축",
 				url: "#",
 				items: [
 					{
-						title: "Routing",
+						title: "라우팅",
 						url: "#",
 					},
 					{
-						title: "Data Fetching",
+						title: "데이터 페칭",
 						url: "#",
 						isActive: true,
 					},
 					{
-						title: "Rendering",
+						title: "렌더링",
 						url: "#",
 					},
 					{
-						title: "Caching",
+						title: "캐싱",
 						url: "#",
 					},
 					{
-						title: "Styling",
+						title: "스타일링",
 						url: "#",
 					},
 					{
-						title: "Optimizing",
+						title: "최적화",
 						url: "#",
 					},
 					{
-						title: "Configuring",
+						title: "설정",
 						url: "#",
 					},
 					{
-						title: "Testing",
+						title: "테스트",
 						url: "#",
 					},
 					{
-						title: "Authentication",
+						title: "인증",
 						url: "#",
 					},
 					{
-						title: "Deploying",
+						title: "배포",
 						url: "#",
 					},
 					{
-						title: "Upgrading",
+						title: "업그레이드",
 						url: "#",
 					},
 					{
-						title: "Examples",
+						title: "예제",
 						url: "#",
 					},
 				],
 			},
 			{
-				title: "API Reference",
+				title: "API 레퍼런스",
 				url: "#",
 				items: [
 					{
-						title: "Components",
+						title: "컴포넌트",
 						url: "#",
 					},
 					{
-						title: "File Conventions",
+						title: "파일 규칙",
 						url: "#",
 					},
 					{
-						title: "Functions",
+						title: "함수",
 						url: "#",
 					},
 					{
-						title: "next.config.js Options",
+						title: "next.config.js 옵션",
 						url: "#",
 					},
 					{
@@ -99,29 +99,29 @@
 						url: "#",
 					},
 					{
-						title: "Edge Runtime",
+						title: "엣지 런타임",
 						url: "#",
 					},
 				],
 			},
 			{
-				title: "Architecture",
+				title: "아키텍처",
 				url: "#",
 				items: [
 					{
-						title: "Accessibility",
+						title: "접근성",
 						url: "#",
 					},
 					{
-						title: "Fast Refresh",
+						title: "빠른 새로고침",
 						url: "#",
 					},
 					{
-						title: "Next.js Compiler",
+						title: "Next.js 컴파일러",
 						url: "#",
 					},
 					{
-						title: "Supported Browsers",
+						title: "지원되는 브라우저",
 						url: "#",
 					},
 					{
@@ -131,11 +131,11 @@
 				],
 			},
 			{
-				title: "Community",
+				title: "커뮤니티",
 				url: "#",
 				items: [
 					{
-						title: "Contribution Guide",
+						title: "기여 가이드",
 						url: "#",
 					},
 				],
@@ -149,7 +149,7 @@
 <Sidebar.Root bind:ref {...restProps}>
 	<Sidebar.Content>
 		<Sidebar.Group>
-			<Sidebar.GroupLabel>Table of Contents</Sidebar.GroupLabel>
+			<Sidebar.GroupLabel>목차</Sidebar.GroupLabel>
 			<Sidebar.GroupContent>
 				<Sidebar.Menu>
 					{#each data.navMain as item (item.title)}

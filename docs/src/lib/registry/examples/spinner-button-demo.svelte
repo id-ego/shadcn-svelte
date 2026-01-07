@@ -6,14 +6,14 @@
 <div class="flex flex-col items-center gap-4">
 	<Button disabled size="sm">
 		<Spinner />
-		Loading...
+		로딩 중...
 	</Button>
 	<Button variant="outline" disabled size="sm">
 		<Spinner />
-		Please wait
+		잠시만 기다려주세요
 	</Button>
 	<Button variant="secondary" disabled size="sm">
 		<Spinner />
-		Processing
+		처리 중
 	</Button>
 </div>

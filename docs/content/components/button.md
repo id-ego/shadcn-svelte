@@ -36,8 +36,8 @@ links:
 </ComponentPreview>
 
 ```svelte showLineNumbers
-<Button variant="outline">Button</Button>
-<Button variant="outline" size="icon" aria-label="Submit">
+<Button variant="outline">버튼</Button>
+<Button variant="outline" size="icon" aria-label="제출">
   <ArrowUpIcon />
 </Button>
 ```
@@ -71,7 +71,7 @@ links:
   import { Button } from "$lib/components/ui/button/index.js";
 </script>
 
-<Button variant="outline">Button</Button>
+<Button variant="outline">버튼</Button>
 ```
 
 ## 예제
@@ -86,20 +86,20 @@ links:
 
 ```svelte
 <!-- Small -->
-<Button size="sm" variant="outline">Small</Button>
-<Button size="icon-sm" aria-label="Submit" variant="outline">
+<Button size="sm" variant="outline">작게</Button>
+<Button size="icon-sm" aria-label="제출" variant="outline">
   <ArrowUpRightIcon />
 </Button>
 
 <!-- Medium -->
-<Button variant="outline">Default</Button>
-<Button size="icon" aria-label="Submit" variant="outline">
+<Button variant="outline">기본</Button>
+<Button size="icon" aria-label="제출" variant="outline">
   <ArrowUpRightIcon />
 </Button>
 
 <!-- Large -->
-<Button size="lg" variant="outline">Large</Button>
-<Button size="icon-lg" aria-label="Submit" variant="outline">
+<Button size="lg" variant="outline">크게</Button>
+<Button size="icon-lg" aria-label="제출" variant="outline">
   <ArrowUpRightIcon />
 </Button>
 ```
@@ -113,7 +113,7 @@ links:
 </ComponentPreview>
 
 ```svelte
-<Button>Button</Button>
+<Button>버튼</Button>
 ```
 
 ### Outline
@@ -125,7 +125,7 @@ links:
 </ComponentPreview>
 
 ```svelte
-<Button variant="outline">Outline</Button>
+<Button variant="outline">아웃라인</Button>
 ```
 
 ### Secondary
@@ -137,7 +137,7 @@ links:
 </ComponentPreview>
 
 ```svelte
-<Button variant="secondary">Secondary</Button>
+<Button variant="secondary">보조</Button>
 ```
 
 ### Ghost
@@ -149,7 +149,7 @@ links:
 </ComponentPreview>
 
 ```svelte
-<Button variant="ghost">Ghost</Button>
+<Button variant="ghost">고스트</Button>
 ```
 
 ### Destructive
@@ -161,7 +161,7 @@ links:
 </ComponentPreview>
 
 ```svelte
-<Button variant="destructive">Destructive</Button>
+<Button variant="destructive">파괴적</Button>
 ```
 
 ### Link
@@ -173,7 +173,7 @@ links:
 </ComponentPreview>
 
 ```svelte
-<Button variant="link">Link</Button>
+<Button variant="link">링크</Button>
 ```
 
 ### Icon
@@ -185,7 +185,7 @@ links:
 </ComponentPreview>
 
 ```svelte
-<Button variant="outline" size="icon" aria-label="Submit">
+<Button variant="outline" size="icon" aria-label="제출">
   <CircleFadingArrowUpIcon />
 </Button>
 ```
@@ -202,7 +202,7 @@ links:
 
 ```svelte
 <Button variant="outline" size="sm">
-  <IconGitBranch /> New Branch
+  <IconGitBranch /> 새 브랜치
 </Button>
 ```
 
@@ -233,7 +233,7 @@ links:
 ```svelte showLineNumbers
 <Button size="sm" variant="outline" disabled>
   <Spinner />
-  Submit
+  제출
 </Button>
 ```
 
@@ -250,16 +250,16 @@ links:
 ```svelte showLineNumbers
 <ButtonGroup.Root>
   <ButtonGroup.Root class="hidden sm:flex">
-    <Button variant="outline" size="icon" aria-label="Go Back">
+    <Button variant="outline" size="icon" aria-label="뒤로 가기">
       <ArrowLeft />
     </Button>
   </ButtonGroup.Root>
   <ButtonGroup.Root>
-    <Button variant="outline">Archive</Button>
-    <Button variant="outline">Report</Button>
+    <Button variant="outline">보관</Button>
+    <Button variant="outline">신고</Button>
   </ButtonGroup.Root>
   <ButtonGroup.Root>
-    <Button variant="outline">Snooze</Button>
+    <Button variant="outline">일시 중지</Button>
     <DropdownMenu.Root>
       <DropdownMenu.Trigger>
         {#snippet child({ props })}
@@ -267,7 +267,7 @@ links:
             {...props}
             variant="outline"
             size="icon"
-            aria-label="More Options"
+            aria-label="더 많은 옵션"
           >
             <MoreHorizontal />
           </Button>
@@ -277,42 +277,42 @@ links:
         <DropdownMenu.Group>
           <DropdownMenu.Item>
             <MailCheck />
-            Mark as Read
+            읽음으로 표시
           </DropdownMenu.Item>
           <DropdownMenu.Item>
             <Archive />
-            Archive
+            보관
           </DropdownMenu.Item>
         </DropdownMenu.Group>
         <DropdownMenu.Separator />
         <DropdownMenu.Group>
           <DropdownMenu.Item>
             <Clock />
-            Snooze
+            일시 중지
           </DropdownMenu.Item>
           <DropdownMenu.Item>
             <CalendarPlus />
-            Add to Calendar
+            캘린더에 추가
           </DropdownMenu.Item>
           <DropdownMenu.Item>
             <ListFilter />
-            Add to List
+            목록에 추가
           </DropdownMenu.Item>
           <DropdownMenu.Sub>
             <DropdownMenu.SubTrigger>
               <Tag />
-              Label As...
+              라벨 지정...
             </DropdownMenu.SubTrigger>
             <DropdownMenu.SubContent>
               <DropdownMenu.RadioGroup bind:value={label}>
                 <DropdownMenu.RadioItem value="personal">
-                  Personal
+                  개인
                 </DropdownMenu.RadioItem>
                 <DropdownMenu.RadioItem value="work"
-                  >Work</DropdownMenu.RadioItem
+                  >업무</DropdownMenu.RadioItem
                 >
                 <DropdownMenu.RadioItem value="other"
-                  >Other</DropdownMenu.RadioItem
+                  >기타</DropdownMenu.RadioItem
                 >
               </DropdownMenu.RadioGroup>
             </DropdownMenu.SubContent>
@@ -322,7 +322,7 @@ links:
         <DropdownMenu.Group>
           <DropdownMenu.Item class="text-destructive focus:text-destructive">
             <Trash2 />
-            Trash
+            휴지통
           </DropdownMenu.Item>
         </DropdownMenu.Group>
       </DropdownMenu.Content>
@@ -340,7 +340,7 @@ links:
   import { Button } from "$lib/components/ui/button/index.js";
 </script>
 
-<Button href="/dashboard">Dashboard</Button>
+<Button href="/dashboard">대시보드</Button>
 ```
 
 또는 `buttonVariants` 헬퍼를 사용하여 버튼처럼 보이는 링크를 만들 수 있습니다.
@@ -351,7 +351,7 @@ links:
 </script>
 
 <a href="/dashboard" class={buttonVariants({ variant: "outline" })}>
-  Dashboard
+  대시보드
 </a>
 ```
 

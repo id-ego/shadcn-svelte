@@ -7,11 +7,11 @@
 		<textarea
 			data-slot="input-group-control"
 			class="flex field-sizing-content min-h-16 w-full resize-none rounded-md bg-transparent px-3 py-2.5 text-base transition-[color,box-shadow] outline-none md:text-sm"
-			placeholder="Autoresize textarea..."
+			placeholder="자동 크기 조정 텍스트 영역..."
 		></textarea>
 		<InputGroup.Addon align="block-end">
 			<InputGroup.Button class="ms-auto" size="sm" variant="default">
-				Submit
+				제출
 			</InputGroup.Button>
 		</InputGroup.Addon>
 	</InputGroup.Root>

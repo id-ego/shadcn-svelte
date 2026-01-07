@@ -9,6 +9,6 @@
 		for="terms2"
 		class="text-sm leading-none font-medium peer-disabled:cursor-not-allowed peer-disabled:opacity-70 peer-data-[disabled=true]:cursor-not-allowed peer-data-[disabled=true]:opacity-70"
 	>
-		Accept terms and conditions
+		이용 약관에 동의합니다
 	</Label>
 </div>

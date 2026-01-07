@@ -41,7 +41,7 @@
 		<span class="bg-primary text-primary-foreground me-2 rounded-lg px-2 py-1 text-xs">
 			{selectedLabel}
 		</span>
-		<span class="text-muted-foreground">Create a new project</span>
+		<span class="text-muted-foreground">새 프로젝트 만들기</span>
 	</p>
 	<DropdownMenu.Root bind:open>
 		<DropdownMenu.Trigger bind:ref={triggerRef}>
@@ -53,26 +53,26 @@
 		</DropdownMenu.Trigger>
 		<DropdownMenu.Content class="w-[200px]" align="end">
 			<DropdownMenu.Group>
-				<DropdownMenu.Label>Actions</DropdownMenu.Label>
+				<DropdownMenu.Label>작업</DropdownMenu.Label>
 				<DropdownMenu.Item>
 					<UserIcon class="me-2 size-4" />
-					Assign to...
+					담당자 지정...
 				</DropdownMenu.Item>
 				<DropdownMenu.Item>
 					<CalendarIcon class="me-2 size-4" />
-					Set due date...
+					마감일 설정...
 				</DropdownMenu.Item>
 				<DropdownMenu.Separator />
 				<DropdownMenu.Sub>
 					<DropdownMenu.SubTrigger>
 						<TagsIcon class="me-2 size-4" />
-						Apply label
+						라벨 적용
 					</DropdownMenu.SubTrigger>
 					<DropdownMenu.SubContent class="p-0">
 						<Command.Root value={selectedLabel}>
-							<Command.Input autofocus placeholder="Filter label..." />
+							<Command.Input autofocus placeholder="라벨 필터링..." />
 							<Command.List>
-								<Command.Empty>No label found.</Command.Empty>
+								<Command.Empty>라벨을 찾을 수 없습니다.</Command.Empty>
 								<Command.Group>
 									{#each labels as label (label)}
 										<Command.Item
@@ -93,7 +93,7 @@
 				<DropdownMenu.Separator />
 				<DropdownMenu.Item class="text-red-600">
 					<TrashIcon class="me-2 size-4" />
-					Delete
+					삭제
 					<DropdownMenu.Shortcut>⌘⌫</DropdownMenu.Shortcut>
 				</DropdownMenu.Item>
 			</DropdownMenu.Group>

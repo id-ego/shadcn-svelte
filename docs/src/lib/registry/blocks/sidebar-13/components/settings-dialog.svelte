@@ -18,18 +18,18 @@
 
 	const data = {
 		nav: [
-			{ name: "Notifications", icon: BellIcon },
-			{ name: "Navigation", icon: MenuIcon },
-			{ name: "Home", icon: HouseIcon },
-			{ name: "Appearance", icon: PaintbrushIcon },
-			{ name: "Messages & media", icon: MessageCircleIcon },
-			{ name: "Language & region", icon: GlobeIcon },
-			{ name: "Accessibility", icon: KeyboardIcon },
-			{ name: "Mark as read", icon: CheckIcon },
-			{ name: "Audio & video", icon: VideoIcon },
-			{ name: "Connected accounts", icon: LinkIcon },
-			{ name: "Privacy & visibility", icon: LockIcon },
-			{ name: "Advanced", icon: SettingsIcon },
+			{ name: "알림", icon: BellIcon },
+			{ name: "네비게이션", icon: MenuIcon },
+			{ name: "홈", icon: HouseIcon },
+			{ name: "모양", icon: PaintbrushIcon },
+			{ name: "메시지 및 미디어", icon: MessageCircleIcon },
+			{ name: "언어 및 지역", icon: GlobeIcon },
+			{ name: "접근성", icon: KeyboardIcon },
+			{ name: "읽은 것으로 표시", icon: CheckIcon },
+			{ name: "오디오 및 비디오", icon: VideoIcon },
+			{ name: "연결된 계정", icon: LinkIcon },
+			{ name: "개인정보 및 표시", icon: LockIcon },
+			{ name: "고급", icon: SettingsIcon },
 		],
 	};
 
@@ -39,15 +39,15 @@
 <Dialog.Root bind:open>
 	<Dialog.Trigger>
 		{#snippet child({ props })}
-			<Button size="sm" {...props}>Open Dialog</Button>
+			<Button size="sm" {...props}>다이얼로그 열기</Button>
 		{/snippet}
 	</Dialog.Trigger>
 	<Dialog.Content
 		class="overflow-hidden p-0 md:max-h-[500px] md:max-w-[700px] lg:max-w-[800px]"
 		trapFocus={false}
 	>
-		<Dialog.Title class="sr-only">Settings</Dialog.Title>
-		<Dialog.Description class="sr-only">Customize your settings here.</Dialog.Description>
+		<Dialog.Title class="sr-only">설정</Dialog.Title>
+		<Dialog.Description class="sr-only">여기에서 설정을 사용자 지정하세요.</Dialog.Description>
 		<Sidebar.Provider class="items-start">
 			<Sidebar.Root collapsible="none" class="hidden md:flex">
 				<Sidebar.Content>
@@ -57,7 +57,7 @@
 								{#each data.nav as item (item.name)}
 									<Sidebar.MenuItem>
 										<Sidebar.MenuButton
-											isActive={item.name === "Messages & media"}
+											isActive={item.name === "메시지 및 미디어"}
 										>
 											{#snippet child({ props })}
 												<a href="##" {...props}>
@@ -81,11 +81,11 @@
 						<Breadcrumb.Root>
 							<Breadcrumb.List>
 								<Breadcrumb.Item class="hidden md:block">
-									<Breadcrumb.Link href="##">Settings</Breadcrumb.Link>
+									<Breadcrumb.Link href="##">설정</Breadcrumb.Link>
 								</Breadcrumb.Item>
 								<Breadcrumb.Separator class="hidden md:block" />
 								<Breadcrumb.Item>
-									<Breadcrumb.Page>Messages & media</Breadcrumb.Page>
+									<Breadcrumb.Page>메시지 및 미디어</Breadcrumb.Page>
 								</Breadcrumb.Item>
 							</Breadcrumb.List>
 						</Breadcrumb.Root>

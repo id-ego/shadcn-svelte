@@ -2,4 +2,4 @@
 	import { Input } from "$lib/registry/ui/input/index.js";
 </script>
 
-<Input disabled type="email" placeholder="Email" class="max-w-sm" />
+<Input disabled type="email" placeholder="이메일" class="max-w-sm" />

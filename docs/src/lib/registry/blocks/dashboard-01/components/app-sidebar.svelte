@@ -29,74 +29,74 @@
 		},
 		navMain: [
 			{
-				title: "Dashboard",
+				title: "대시보드",
 				url: "#",
 				icon: DashboardIcon,
 			},
 			{
-				title: "Lifecycle",
+				title: "라이프사이클",
 				url: "#",
 				icon: ListDetailsIcon,
 			},
 			{
-				title: "Analytics",
+				title: "분석",
 				url: "#",
 				icon: ChartBarIcon,
 			},
 			{
-				title: "Projects",
+				title: "프로젝트",
 				url: "#",
 				icon: FolderIcon,
 			},
 			{
-				title: "Team",
+				title: "팀",
 				url: "#",
 				icon: UsersIcon,
 			},
 		],
 		navClouds: [
 			{
-				title: "Capture",
+				title: "캡처",
 				icon: CameraIcon,
 				isActive: true,
 				url: "#",
 				items: [
 					{
-						title: "Active Proposals",
+						title: "활성 제안서",
 						url: "#",
 					},
 					{
-						title: "Archived",
+						title: "보관됨",
 						url: "#",
 					},
 				],
 			},
 			{
-				title: "Proposal",
+				title: "제안서",
 				icon: FileDescriptionIcon,
 				url: "#",
 				items: [
 					{
-						title: "Active Proposals",
+						title: "활성 제안서",
 						url: "#",
 					},
 					{
-						title: "Archived",
+						title: "보관됨",
 						url: "#",
 					},
 				],
 			},
 			{
-				title: "Prompts",
+				title: "프롬프트",
 				icon: FileAiIcon,
 				url: "#",
 				items: [
 					{
-						title: "Active Proposals",
+						title: "활성 제안서",
 						url: "#",
 					},
 					{
-						title: "Archived",
+						title: "보관됨",
 						url: "#",
 					},
 				],
@@ -104,34 +104,34 @@
 		],
 		navSecondary: [
 			{
-				title: "Settings",
+				title: "설정",
 				url: "#",
 				icon: SettingsIcon,
 			},
 			{
-				title: "Get Help",
+				title: "도움말",
 				url: "#",
 				icon: HelpIcon,
 			},
 			{
-				title: "Search",
+				title: "검색",
 				url: "#",
 				icon: SearchIcon,
 			},
 		],
 		documents: [
 			{
-				name: "Data Library",
+				name: "데이터 라이브러리",
 				url: "#",
 				icon: DatabaseIcon,
 			},
 			{
-				name: "Reports",
+				name: "보고서",
 				url: "#",
 				icon: ReportIcon,
 			},
 			{
-				name: "Word Assistant",
+				name: "문서 어시스턴트",
 				url: "#",
 				icon: FileWordIcon,
 			},

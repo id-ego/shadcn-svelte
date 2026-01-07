@@ -16,13 +16,13 @@
 	];
 
 	const departmentLabel = $derived(
-		departments.find((d) => d.value === department)?.label ?? "Choose department"
+		departments.find((d) => d.value === department)?.label ?? "부서 선택"
 	);
 </script>
 
 <div class="w-full max-w-md">
 	<Field.Field>
-		<Field.Label for="department">Department</Field.Label>
+		<Field.Label for="department">부서</Field.Label>
 		<Select.Root type="single" bind:value={department}>
 			<Select.Trigger id="department">
 				{departmentLabel}
@@ -33,6 +33,6 @@
 				{/each}
 			</Select.Content>
 		</Select.Root>
-		<Field.Description>Select your department or area of work.</Field.Description>
+		<Field.Description>부서 또는 업무 영역을 선택하세요.</Field.Description>
 	</Field.Field>
 </div>

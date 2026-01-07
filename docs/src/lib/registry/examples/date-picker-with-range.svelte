@@ -41,7 +41,7 @@
 			{:else if startValue}
 				{df.format(startValue.toDate(getLocalTimeZone()))}
 			{:else}
-				Pick a date
+				날짜 선택
 			{/if}
 		</Popover.Trigger>
 		<Popover.Content class="w-auto p-0" align="start">

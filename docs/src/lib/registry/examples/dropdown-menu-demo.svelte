@@ -6,53 +6,53 @@
 <DropdownMenu.Root>
 	<DropdownMenu.Trigger>
 		{#snippet child({ props })}
-			<Button {...props} variant="outline">Open</Button>
+			<Button {...props} variant="outline">열기</Button>
 		{/snippet}
 	</DropdownMenu.Trigger>
 	<DropdownMenu.Content class="w-56" align="start">
-		<DropdownMenu.Label>My Account</DropdownMenu.Label>
+		<DropdownMenu.Label>내 계정</DropdownMenu.Label>
 		<DropdownMenu.Group>
 			<DropdownMenu.Item>
-				Profile
+				프로필
 				<DropdownMenu.Shortcut>⇧⌘P</DropdownMenu.Shortcut>
 			</DropdownMenu.Item>
 			<DropdownMenu.Item>
-				Billing
+				결제
 				<DropdownMenu.Shortcut>⌘B</DropdownMenu.Shortcut>
 			</DropdownMenu.Item>
 			<DropdownMenu.Item>
-				Settings
+				설정
 				<DropdownMenu.Shortcut>⌘S</DropdownMenu.Shortcut>
 			</DropdownMenu.Item>
 			<DropdownMenu.Item>
-				Keyboard shortcuts
+				키보드 단축키
 				<DropdownMenu.Shortcut>⌘K</DropdownMenu.Shortcut>
 			</DropdownMenu.Item>
 		</DropdownMenu.Group>
 		<DropdownMenu.Separator />
 		<DropdownMenu.Group>
-			<DropdownMenu.Item>Team</DropdownMenu.Item>
+			<DropdownMenu.Item>팀</DropdownMenu.Item>
 			<DropdownMenu.Sub>
-				<DropdownMenu.SubTrigger>Invite users</DropdownMenu.SubTrigger>
+				<DropdownMenu.SubTrigger>사용자 초대</DropdownMenu.SubTrigger>
 				<DropdownMenu.SubContent>
-					<DropdownMenu.Item>Email</DropdownMenu.Item>
-					<DropdownMenu.Item>Message</DropdownMenu.Item>
+					<DropdownMenu.Item>이메일</DropdownMenu.Item>
+					<DropdownMenu.Item>메시지</DropdownMenu.Item>
 					<DropdownMenu.Separator />
-					<DropdownMenu.Item>More...</DropdownMenu.Item>
+					<DropdownMenu.Item>더보기...</DropdownMenu.Item>
 				</DropdownMenu.SubContent>
 			</DropdownMenu.Sub>
 			<DropdownMenu.Item>
-				New Team
+				새 팀
 				<DropdownMenu.Shortcut>⌘+T</DropdownMenu.Shortcut>
 			</DropdownMenu.Item>
 		</DropdownMenu.Group>
 		<DropdownMenu.Separator />
 		<DropdownMenu.Item>GitHub</DropdownMenu.Item>
-		<DropdownMenu.Item>Support</DropdownMenu.Item>
+		<DropdownMenu.Item>지원</DropdownMenu.Item>
 		<DropdownMenu.Item disabled>API</DropdownMenu.Item>
 		<DropdownMenu.Separator />
 		<DropdownMenu.Item>
-			Log out
+			로그아웃
 			<DropdownMenu.Shortcut>⇧⌘Q</DropdownMenu.Shortcut>
 		</DropdownMenu.Item>
 	</DropdownMenu.Content>

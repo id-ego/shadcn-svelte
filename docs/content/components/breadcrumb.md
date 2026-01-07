@@ -58,15 +58,15 @@ links:
 <Breadcrumb.Root>
   <Breadcrumb.List>
     <Breadcrumb.Item>
-      <Breadcrumb.Link href="/">Home</Breadcrumb.Link>
+      <Breadcrumb.Link href="/">홈</Breadcrumb.Link>
     </Breadcrumb.Item>
     <Breadcrumb.Separator />
     <Breadcrumb.Item>
-      <Breadcrumb.Link href="/components">Components</Breadcrumb.Link>
+      <Breadcrumb.Link href="/components">컴포넌트</Breadcrumb.Link>
     </Breadcrumb.Item>
     <Breadcrumb.Separator />
     <Breadcrumb.Item>
-      <Breadcrumb.Page>Breadcrumb</Breadcrumb.Page>
+      <Breadcrumb.Page>브레드크럼</Breadcrumb.Page>
     </Breadcrumb.Item>
   </Breadcrumb.List>
 </Breadcrumb.Root>
@@ -93,13 +93,13 @@ links:
 <Breadcrumb.Root>
   <Breadcrumb.List>
     <Breadcrumb.Item>
-      <Breadcrumb.Link href="/">Home</Breadcrumb.Link>
+      <Breadcrumb.Link href="/">홈</Breadcrumb.Link>
     </Breadcrumb.Item>
     <Breadcrumb.Separator>
       <SlashIcon />
     </Breadcrumb.Separator>
     <Breadcrumb.Item>
-      <Breadcrumb.Link href="/components">Components</Breadcrumb.Link>
+      <Breadcrumb.Link href="/components">컴포넌트</Breadcrumb.Link>
     </Breadcrumb.Item>
   </Breadcrumb.List>
 </Breadcrumb.Root>
@@ -130,12 +130,12 @@ links:
 <Breadcrumb.Item>
   <DropdownMenu.Root>
     <DropdownMenu.Trigger class="flex items-center gap-1">
-      Components
+      컴포넌트
       <ChevronDownIcon class="size-4" />
     </DropdownMenu.Trigger>
     <DropdownMenu.Content align="start">
-      <DropdownMenu.Item>Documentation</DropdownMenu.Item>
-      <DropdownMenu.Item>Themes</DropdownMenu.Item>
+      <DropdownMenu.Item>문서</DropdownMenu.Item>
+      <DropdownMenu.Item>테마</DropdownMenu.Item>
       <DropdownMenu.Item>GitHub</DropdownMenu.Item>
     </DropdownMenu.Content>
   </DropdownMenu.Root>
@@ -190,7 +190,7 @@ links:
 <Breadcrumb.Root>
  <Breadcrumb.List>
   <Breadcrumb.Item>
-   <Breadcrumb.Link href="/">Home</Breadcrumb.Link>
+   <Breadcrumb.Link href="/">홈</Breadcrumb.Link>
   </Breadcrumb.Item>
     {/* ... */}
  </Breadcrumb.List>

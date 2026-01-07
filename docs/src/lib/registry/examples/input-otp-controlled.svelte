@@ -15,6 +15,6 @@
 		{/snippet}
 	</InputOTP.Root>
 	<div class="text-center text-sm">
-		{value === "" ? "Enter your one-time password." : `You entered: ${value}`}
+		{value === "" ? "일회용 비밀번호를 입력하세요." : `입력한 값: ${value}`}
 	</div>
 </div>

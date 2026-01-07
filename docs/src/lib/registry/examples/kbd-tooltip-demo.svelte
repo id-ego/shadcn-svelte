@@ -10,24 +10,24 @@
 		<Tooltip.Root>
 			<Tooltip.Trigger>
 				{#snippet child({ props })}
-					<Button size="sm" variant="outline" {...props}>Save</Button>
+					<Button size="sm" variant="outline" {...props}>저장</Button>
 				{/snippet}
 			</Tooltip.Trigger>
 			<Tooltip.Content>
 				<div class="flex items-center gap-2">
-					Save Changes <Kbd.Root>S</Kbd.Root>
+					변경사항 저장 <Kbd.Root>S</Kbd.Root>
 				</div>
 			</Tooltip.Content>
 		</Tooltip.Root>
 		<Tooltip.Root>
 			<Tooltip.Trigger>
 				{#snippet child({ props })}
-					<Button size="sm" variant="outline" {...props}>Print</Button>
+					<Button size="sm" variant="outline" {...props}>인쇄</Button>
 				{/snippet}
 			</Tooltip.Trigger>
 			<Tooltip.Content>
 				<div class="flex items-center gap-2">
-					Print Document
+					문서 인쇄
 					<Kbd.Group>
 						<Kbd.Root>Ctrl</Kbd.Root>
 						<Kbd.Root>P</Kbd.Root>

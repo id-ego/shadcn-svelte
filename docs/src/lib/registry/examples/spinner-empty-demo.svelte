@@ -9,12 +9,12 @@
 		<Empty.Media variant="icon">
 			<Spinner />
 		</Empty.Media>
-		<Empty.Title>Processing your request</Empty.Title>
+		<Empty.Title>요청 처리 중</Empty.Title>
 		<Empty.Description>
-			Please wait while we process your request. Do not refresh the page.
+			요청을 처리하는 동안 잠시 기다려주세요. 페이지를 새로고침하지 마세요.
 		</Empty.Description>
 	</Empty.Header>
 	<Empty.Content>
-		<Button variant="outline" size="sm">Cancel</Button>
+		<Button variant="outline" size="sm">취소</Button>
 	</Empty.Content>
 </Empty.Root>

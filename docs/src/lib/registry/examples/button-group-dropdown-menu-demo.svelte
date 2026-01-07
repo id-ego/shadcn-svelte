@@ -13,7 +13,7 @@
 </script>
 
 <ButtonGroup.Root>
-	<Button variant="outline">Follow</Button>
+	<Button variant="outline">팔로우</Button>
 	<DropdownMenu.Root>
 		<DropdownMenu.Trigger>
 			{#snippet child({ props })}
@@ -26,34 +26,34 @@
 			<DropdownMenu.Group>
 				<DropdownMenu.Item>
 					<VolumeOff />
-					Mute Conversation
+					대화 음소거
 				</DropdownMenu.Item>
 				<DropdownMenu.Item>
 					<CheckIcon />
-					Mark as Read
+					읽음으로 표시
 				</DropdownMenu.Item>
 				<DropdownMenu.Item>
 					<AlertTriangle />
-					Report Conversation
+					대화 신고
 				</DropdownMenu.Item>
 				<DropdownMenu.Item>
 					<UserRoundX />
-					Block User
+					사용자 차단
 				</DropdownMenu.Item>
 				<DropdownMenu.Item>
 					<Share />
-					Share Conversation
+					대화 공유
 				</DropdownMenu.Item>
 				<DropdownMenu.Item>
 					<CopyIcon />
-					Copy Conversation
+					대화 복사
 				</DropdownMenu.Item>
 			</DropdownMenu.Group>
 			<DropdownMenu.Separator />
 			<DropdownMenu.Group>
 				<DropdownMenu.Item variant="destructive">
 					<Trash />
-					Delete Conversation
+					대화 삭제
 				</DropdownMenu.Item>
 			</DropdownMenu.Group>
 		</DropdownMenu.Content>

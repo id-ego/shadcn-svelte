@@ -5,7 +5,7 @@
 <Breadcrumb.Root>
 	<Breadcrumb.List>
 		<Breadcrumb.Item>
-			<Breadcrumb.Link href="/">Home</Breadcrumb.Link>
+			<Breadcrumb.Link href="/">홈</Breadcrumb.Link>
 		</Breadcrumb.Item>
 		<Breadcrumb.Separator />
 		<Breadcrumb.Item>
@@ -13,7 +13,7 @@
 		</Breadcrumb.Item>
 		<Breadcrumb.Separator />
 		<Breadcrumb.Item>
-			<Breadcrumb.Link href="/docs/components">Components</Breadcrumb.Link>
+			<Breadcrumb.Link href="/docs/components">컴포넌트</Breadcrumb.Link>
 		</Breadcrumb.Item>
 		<Breadcrumb.Separator />
 		<Breadcrumb.Item>

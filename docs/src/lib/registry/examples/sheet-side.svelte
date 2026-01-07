@@ -18,9 +18,9 @@
 			</Sheet.Trigger>
 			<Sheet.Content {side}>
 				<Sheet.Header>
-					<Sheet.Title>Edit profile</Sheet.Title>
+					<Sheet.Title>프로필 수정</Sheet.Title>
 					<Sheet.Description>
-						Make changes to your profile here. Click save when you're done.
+						여기서 프로필을 변경하세요. 완료되면 저장을 클릭하세요.
 					</Sheet.Description>
 				</Sheet.Header>
 				<div class="overflow-y-auto px-4 text-sm">
@@ -39,7 +39,7 @@
 				</div>
 				<Sheet.Footer>
 					<Sheet.Close class={buttonVariants({ variant: "outline" })}>
-						Save changes
+						변경사항 저장
 					</Sheet.Close>
 				</Sheet.Footer>
 			</Sheet.Content>

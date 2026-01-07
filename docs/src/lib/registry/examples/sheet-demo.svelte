@@ -7,27 +7,27 @@
 </script>
 
 <Sheet.Root>
-	<Sheet.Trigger class={buttonVariants({ variant: "outline" })}>Open</Sheet.Trigger>
+	<Sheet.Trigger class={buttonVariants({ variant: "outline" })}>열기</Sheet.Trigger>
 	<Sheet.Content side="right">
 		<Sheet.Header>
-			<Sheet.Title>Edit profile</Sheet.Title>
+			<Sheet.Title>프로필 수정</Sheet.Title>
 			<Sheet.Description>
-				Make changes to your profile here. Click save when you're done.
+				여기서 프로필을 변경하세요. 완료되면 저장을 클릭하세요.
 			</Sheet.Description>
 		</Sheet.Header>
 		<div class="grid flex-1 auto-rows-min gap-6 px-4">
 			<div class="grid gap-3">
-				<Label for="name" class="text-end">Name</Label>
+				<Label for="name" class="text-end">이름</Label>
 				<Input id="name" value="Pedro Duarte" />
 			</div>
 			<div class="grid gap-3">
-				<Label for="username" class="text-end">Username</Label>
+				<Label for="username" class="text-end">사용자명</Label>
 				<Input id="username" value="@peduarte" />
 			</div>
 		</div>
 		<Sheet.Footer>
-			<Button type="submit">Save changes</Button>
-			<Sheet.Close class={buttonVariants({ variant: "outline" })}>Close</Sheet.Close>
+			<Button type="submit">변경사항 저장</Button>
+			<Sheet.Close class={buttonVariants({ variant: "outline" })}>닫기</Sheet.Close>
 		</Sheet.Footer>
 	</Sheet.Content>
 </Sheet.Root>

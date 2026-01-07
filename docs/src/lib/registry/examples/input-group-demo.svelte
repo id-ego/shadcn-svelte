@@ -13,11 +13,11 @@
 
 <div class="grid w-full max-w-sm gap-6">
 	<InputGroup.Root>
-		<InputGroup.Input placeholder="Search..." />
+		<InputGroup.Input placeholder="검색..." />
 		<InputGroup.Addon>
 			<SearchIcon />
 		</InputGroup.Addon>
-		<InputGroup.Addon align="inline-end">12 results</InputGroup.Addon>
+		<InputGroup.Addon align="inline-end">12개 결과</InputGroup.Addon>
 	</InputGroup.Root>
 	<InputGroup.Root>
 		<InputGroup.Input placeholder="example.com" class="!ps-1" />
@@ -33,12 +33,12 @@
 						</InputGroup.Button>
 					{/snippet}
 				</Tooltip.Trigger>
-				<Tooltip.Content>This is content in a tooltip.</Tooltip.Content>
+				<Tooltip.Content>툴팁 내용입니다.</Tooltip.Content>
 			</Tooltip.Root>
 		</InputGroup.Addon>
 	</InputGroup.Root>
 	<InputGroup.Root>
-		<InputGroup.Textarea placeholder="Ask, Search or Chat..." />
+		<InputGroup.Textarea placeholder="질문, 검색 또는 채팅..." />
 		<InputGroup.Addon align="block-end">
 			<InputGroup.Button variant="outline" class="rounded-full" size="icon-xs">
 				<IconPlus />
@@ -46,20 +46,20 @@
 			<DropdownMenu.Root>
 				<DropdownMenu.Trigger>
 					{#snippet child({ props })}
-						<InputGroup.Button {...props} variant="ghost">Auto</InputGroup.Button>
+						<InputGroup.Button {...props} variant="ghost">자동</InputGroup.Button>
 					{/snippet}
 				</DropdownMenu.Trigger>
 				<DropdownMenu.Content side="top" align="start" class="[--radius:0.95rem]">
-					<DropdownMenu.Item>Auto</DropdownMenu.Item>
-					<DropdownMenu.Item>Agent</DropdownMenu.Item>
-					<DropdownMenu.Item>Manual</DropdownMenu.Item>
+					<DropdownMenu.Item>자동</DropdownMenu.Item>
+					<DropdownMenu.Item>에이전트</DropdownMenu.Item>
+					<DropdownMenu.Item>수동</DropdownMenu.Item>
 				</DropdownMenu.Content>
 			</DropdownMenu.Root>
-			<InputGroup.Text class="ms-auto">52% used</InputGroup.Text>
+			<InputGroup.Text class="ms-auto">52% 사용됨</InputGroup.Text>
 			<Separator orientation="vertical" class="!h-4" />
 			<InputGroup.Button variant="default" class="rounded-full" size="icon-xs" disabled>
 				<ArrowUpIcon />
-				<span class="sr-only">Send</span>
+				<span class="sr-only">전송</span>
 			</InputGroup.Button>
 		</InputGroup.Addon>
 	</InputGroup.Root>

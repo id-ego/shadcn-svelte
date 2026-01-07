@@ -69,15 +69,15 @@ Drawer는 [Emil Kowalski](https://twitter.com/emilkowalski_)의 [Vaul](https://v
 
 ```svelte showLineNumbers
 <Drawer.Root>
-  <Drawer.Trigger>Open</Drawer.Trigger>
+  <Drawer.Trigger>열기</Drawer.Trigger>
   <Drawer.Content>
     <Drawer.Header>
-      <Drawer.Title>Are you sure absolutely sure?</Drawer.Title>
-      <Drawer.Description>This action cannot be undone.</Drawer.Description>
+      <Drawer.Title>정말 확실하신가요?</Drawer.Title>
+      <Drawer.Description>이 작업은 취소할 수 없습니다.</Drawer.Description>
     </Drawer.Header>
     <Drawer.Footer>
-      <Button>Submit</Button>
-      <Drawer.Close>Cancel</Drawer.Close>
+      <Button>제출</Button>
+      <Drawer.Close>취소</Drawer.Close>
     </Drawer.Footer>
   </Drawer.Content>
 </Drawer.Root>

@@ -18,9 +18,9 @@
 		SPA: true,
 		onUpdate: ({ form: f }) => {
 			if (f.valid) {
-				toast.success(`You submitted ${JSON.stringify(f.data, null, 2)}`);
+				toast.success(`제출된 데이터: ${JSON.stringify(f.data, null, 2)}`);
 			} else {
-				toast.error("Please fix the errors in the form.");
+				toast.error("양식의 오류를 수정해주세요.");
 			}
 		},
 	});
@@ -30,7 +30,7 @@
 
 <form method="POST" class="w-full space-y-6" use:enhance>
 	<fieldset>
-		<legend class="mb-4 text-lg font-medium"> Email Notifications </legend>
+		<legend class="mb-4 text-lg font-medium"> 이메일 알림 </legend>
 		<div class="space-y-4">
 			<Form.Field
 				{form}
@@ -40,9 +40,9 @@
 				<Form.Control>
 					{#snippet children({ props })}
 						<div class="space-y-0.5">
-							<Form.Label>Marketing emails</Form.Label>
+							<Form.Label>마케팅 이메일</Form.Label>
 							<Form.Description>
-								Receive emails about new products, features, and more.
+								신제품, 기능 등에 대한 이메일을 받습니다.
 							</Form.Description>
 						</div>
 						<Switch {...props} bind:checked={$formData.marketing_emails} />
@@ -57,9 +57,9 @@
 				<Form.Control>
 					{#snippet children({ props })}
 						<div class="space-y-0.5">
-							<Form.Label>Security emails</Form.Label>
+							<Form.Label>보안 이메일</Form.Label>
 							<Form.Description>
-								Receive emails about your account security.
+								계정 보안에 대한 이메일을 받습니다.
 							</Form.Description>
 						</div>
 						<Switch
@@ -73,5 +73,5 @@
 			</Form.Field>
 		</div>
 	</fieldset>
-	<Form.Button>Submit</Form.Button>
+	<Form.Button>제출</Form.Button>
 </form>

@@ -61,11 +61,11 @@ links:
     <Empty.Media variant="icon">
       <FolderCodeIcon />
     </Empty.Media>
-    <Empty.Title>No data</Empty.Title>
-    <Empty.Description>No data found</Empty.Description>
+    <Empty.Title>데이터 없음</Empty.Title>
+    <Empty.Description>데이터를 찾을 수 없습니다</Empty.Description>
   </Empty.Header>
   <Empty.Content>
-    <Button>Add data</Button>
+    <Button>데이터 추가</Button>
   </Empty.Content>
 </Empty.Root>
 ```

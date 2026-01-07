@@ -69,11 +69,11 @@ Install `bits-ui`:
 <RadioGroup.Root value="option-one">
   <div class="flex items-center space-x-2">
     <RadioGroup.Item value="option-one" id="option-one" />
-    <Label for="option-one">Option One</Label>
+    <Label for="option-one">옵션 1</Label>
   </div>
   <div class="flex items-center space-x-2">
     <RadioGroup.Item value="option-two" id="option-two" />
-    <Label for="option-two">Option Two</Label>
+    <Label for="option-two">옵션 2</Label>
   </div>
 </RadioGroup.Root>
 ```

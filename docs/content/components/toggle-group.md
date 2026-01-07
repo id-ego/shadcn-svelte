@@ -37,7 +37,7 @@ links:
 
 <Step>
 
-Install `bits-ui`:
+`bits-ui`를 설치합니다:
 
 </Step>
 

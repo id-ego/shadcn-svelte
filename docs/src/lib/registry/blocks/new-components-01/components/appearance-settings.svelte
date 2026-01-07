@@ -34,15 +34,15 @@
 <Field.Set>
 	<Field.Group>
 		<Field.Set>
-			<Field.Legend>Compute Environment</Field.Legend>
-			<Field.Description>Select the compute environment for your cluster.</Field.Description>
+			<Field.Legend>컴퓨팅 환경</Field.Legend>
+			<Field.Description>클러스터의 컴퓨팅 환경을 선택하세요.</Field.Description>
 			<RadioGroup.Root value="kubernetes">
 				<Field.Label for="kubernetes-r2h">
 					<Field.Field orientation="horizontal">
 						<Field.Content>
 							<Field.Title>Kubernetes</Field.Title>
 							<Field.Description>
-								Run GPU workloads on a K8s configured cluster. This is the default.
+								K8s 구성 클러스터에서 GPU 워크로드를 실행합니다. 기본값입니다.
 							</Field.Description>
 						</Field.Content>
 						<RadioGroup.Item value="kubernetes" id="kubernetes-r2h" />
@@ -53,7 +53,7 @@
 						<Field.Content>
 							<Field.Title>Virtual Machine</Field.Title>
 							<Field.Description>
-								Access a VM configured cluster to run workloads. (Coming soon)
+								워크로드를 실행하기 위해 VM 구성 클러스터에 액세스합니다. (출시 예정)
 							</Field.Description>
 						</Field.Content>
 						<RadioGroup.Item value="vm" id="vm-z4k" />
@@ -64,8 +64,8 @@
 		<Field.Separator />
 		<Field.Field orientation="horizontal">
 			<Field.Content>
-				<Field.Title>Accent</Field.Title>
-				<Field.Description>Select the accent color to use.</Field.Description>
+				<Field.Title>강조 색상</Field.Title>
+				<Field.Description>사용할 강조 색상을 선택하세요.</Field.Description>
 			</Field.Content>
 			<Field.Set aria-label="Accent">
 				<RadioGroup.Root class="flex flex-wrap gap-2" value="blue">
@@ -92,8 +92,8 @@
 		<Field.Separator />
 		<Field.Field orientation="horizontal">
 			<Field.Content>
-				<Field.Label for="number-of-gpus-f6l">Number of GPUs</Field.Label>
-				<Field.Description>You can add more later.</Field.Description>
+				<Field.Label for="number-of-gpus-f6l">GPU 개수</Field.Label>
+				<Field.Description>나중에 더 추가할 수 있습니다.</Field.Description>
 			</Field.Content>
 			<ButtonGroup.Root>
 				<Input
@@ -114,8 +114,8 @@
 		<Field.Separator />
 		<Field.Field orientation="horizontal">
 			<Field.Content>
-				<Field.Label for="tinting">Wallpaper Tinting</Field.Label>
-				<Field.Description>Allow the wallpaper to be tinted.</Field.Description>
+				<Field.Label for="tinting">배경화면 색조</Field.Label>
+				<Field.Description>배경화면 색조 조정을 허용합니다.</Field.Description>
 			</Field.Content>
 			<Switch id="tinting" checked />
 		</Field.Field>

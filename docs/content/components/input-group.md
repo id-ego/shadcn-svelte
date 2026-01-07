@@ -65,12 +65,12 @@ links:
 
 ```svelte showLineNumbers
 <InputGroup.Root>
-  <InputGroup.Input placeholder="Search..." />
+  <InputGroup.Input placeholder="검색..." />
   <InputGroup.Addon>
     <SearchIcon />
   </InputGroup.Addon>
   <InputGroup.Addon align="inline-end">
-    <InputGroup.Button>Search</InputGroup.Button>
+    <InputGroup.Button>검색</InputGroup.Button>
   </InputGroup.Addon>
 </InputGroup.Root>
 ```

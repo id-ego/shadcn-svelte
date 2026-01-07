@@ -3,21 +3,21 @@
 
 	const music = [
 		{
-			title: "Midnight City Lights",
-			artist: "Neon Dreams",
-			album: "Electric Nights",
+			title: "한밤의 도시 불빛",
+			artist: "네온 드림스",
+			album: "일렉트릭 나이츠",
 			duration: "3:45",
 		},
 		{
-			title: "Coffee Shop Conversations",
-			artist: "The Morning Brew",
-			album: "Urban Stories",
+			title: "커피숍 대화",
+			artist: "더 모닝 브루",
+			album: "도시 이야기",
 			duration: "4:05",
 		},
 		{
-			title: "Digital Rain",
-			artist: "Cyber Symphony",
-			album: "Binary Beats",
+			title: "디지털 레인",
+			artist: "사이버 심포니",
+			album: "바이너리 비트",
 			duration: "3:30",
 		},
 	];

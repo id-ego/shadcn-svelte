@@ -67,19 +67,19 @@ Install `bits-ui`:
 
 ```svelte showLineNumbers
 <Command.Root>
-  <Command.Input placeholder="Type a command or search..." />
+  <Command.Input placeholder="명령어를 입력하거나 검색하세요..." />
   <Command.List>
-    <Command.Empty>No results found.</Command.Empty>
-    <Command.Group heading="Suggestions">
-      <Command.Item>Calendar</Command.Item>
-      <Command.Item>Search Emoji</Command.Item>
-      <Command.Item>Calculator</Command.Item>
+    <Command.Empty>결과를 찾을 수 없습니다.</Command.Empty>
+    <Command.Group heading="제안">
+      <Command.Item>캘린더</Command.Item>
+      <Command.Item>이모지 검색</Command.Item>
+      <Command.Item>계산기</Command.Item>
     </Command.Group>
     <Command.Separator />
-    <Command.Group heading="Settings">
-      <Command.Item>Profile</Command.Item>
-      <Command.Item>Billing</Command.Item>
-      <Command.Item>Settings</Command.Item>
+    <Command.Group heading="설정">
+      <Command.Item>프로필</Command.Item>
+      <Command.Item>결제</Command.Item>
+      <Command.Item>설정</Command.Item>
     </Command.Group>
   </Command.List>
 </Command.Root>
@@ -115,13 +115,13 @@ Install `bits-ui`:
 <svelte:document onkeydown={handleKeydown} />
 
 <Command.Dialog bind:open>
-  <Command.Input placeholder="Type a command or search..." />
+  <Command.Input placeholder="명령어를 입력하거나 검색하세요..." />
   <Command.List>
-    <Command.Empty>No results found.</Command.Empty>
-    <Command.Group heading="Suggestions">
-      <Command.Item>Calendar</Command.Item>
-      <Command.Item>Search Emoji</Command.Item>
-      <Command.Item>Calculator</Command.Item>
+    <Command.Empty>결과를 찾을 수 없습니다.</Command.Empty>
+    <Command.Group heading="제안">
+      <Command.Item>캘린더</Command.Item>
+      <Command.Item>이모지 검색</Command.Item>
+      <Command.Item>계산기</Command.Item>
     </Command.Group>
   </Command.List>
 </Command.Dialog>

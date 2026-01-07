@@ -27,24 +27,24 @@
 	let framework = $state("");
 
 	const selectedFramework = $derived(
-		frameworks.find((f) => f.value === framework)?.label ?? "Select a framework"
+		frameworks.find((f) => f.value === framework)?.label ?? "프레임워크 선택"
 	);
 </script>
 
 <Card.Root class="w-[350px]">
 	<Card.Header>
-		<Card.Title>Create project</Card.Title>
-		<Card.Description>Deploy your new project in one-click.</Card.Description>
+		<Card.Title>프로젝트 생성</Card.Title>
+		<Card.Description>원클릭으로 새 프로젝트를 배포하세요.</Card.Description>
 	</Card.Header>
 	<Card.Content>
 		<form>
 			<div class="grid w-full items-center gap-4">
 				<div class="flex flex-col space-y-1.5">
-					<Label for="name">Name</Label>
-					<Input id="name" placeholder="Name of your project" />
+					<Label for="name">이름</Label>
+					<Input id="name" placeholder="프로젝트 이름" />
 				</div>
 				<div class="flex flex-col space-y-1.5">
-					<Label for="framework">Framework</Label>
+					<Label for="framework">프레임워크</Label>
 					<Select.Root type="single" bind:value={framework}>
 						<Select.Trigger id="framework">
 							{selectedFramework}
@@ -60,7 +60,7 @@
 		</form>
 	</Card.Content>
 	<Card.Footer class="flex justify-between">
-		<Button variant="outline">Cancel</Button>
-		<Button>Deploy</Button>
+		<Button variant="outline">취소</Button>
+		<Button>배포</Button>
 	</Card.Footer>
 </Card.Root>

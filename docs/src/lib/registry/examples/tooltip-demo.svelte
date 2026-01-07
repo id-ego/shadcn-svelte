@@ -5,9 +5,9 @@
 
 <Tooltip.Provider>
 	<Tooltip.Root>
-		<Tooltip.Trigger class={buttonVariants({ variant: "outline" })}>Hover</Tooltip.Trigger>
+		<Tooltip.Trigger class={buttonVariants({ variant: "outline" })}>호버</Tooltip.Trigger>
 		<Tooltip.Content>
-			<p>Add to library</p>
+			<p>라이브러리에 추가</p>
 		</Tooltip.Content>
 	</Tooltip.Root>
 </Tooltip.Provider>

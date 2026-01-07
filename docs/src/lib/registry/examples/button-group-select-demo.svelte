@@ -8,15 +8,15 @@
 	const CURRENCIES = [
 		{
 			value: "$",
-			label: "US Dollar",
+			label: "미국 달러",
 		},
 		{
 			value: "€",
-			label: "Euro",
+			label: "유로",
 		},
 		{
 			value: "£",
-			label: "British Pound",
+			label: "영국 파운드",
 		},
 	];
 
@@ -41,7 +41,7 @@
 		<Input placeholder="10.00" pattern="[0-9]*" />
 	</ButtonGroup.Root>
 	<ButtonGroup.Root>
-		<Button aria-label="Send" size="icon" variant="outline">
+		<Button aria-label="보내기" size="icon" variant="outline">
 			<ArrowRight />
 		</Button>
 	</ButtonGroup.Root>

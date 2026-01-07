@@ -6,12 +6,12 @@
 
 <Collapsible.Root class="w-[350px] space-y-2">
 	<div class="flex items-center justify-between space-x-4 px-4">
-		<h4 class="text-sm font-semibold">@huntabyte starred 3 repositories</h4>
+		<h4 class="text-sm font-semibold">@huntabyte가 스타를 누른 저장소 3개</h4>
 		<Collapsible.Trigger
 			class={buttonVariants({ variant: "ghost", size: "sm", class: "w-9 p-0" })}
 		>
 			<ChevronsUpDownIcon />
-			<span class="sr-only">Toggle</span>
+			<span class="sr-only">토글</span>
 		</Collapsible.Trigger>
 	</div>
 	<div class="rounded-md border px-4 py-3 font-mono text-sm">@huntabyte/bits-ui</div>

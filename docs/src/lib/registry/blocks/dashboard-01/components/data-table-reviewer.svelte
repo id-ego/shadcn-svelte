@@ -6,14 +6,14 @@
 
 	let { row }: { row: Row<Schema> } = $props();
 
-	const isAssigned = $derived(row.original.reviewer !== "Assign reviewer");
+	const isAssigned = $derived(row.original.reviewer !== "검토자 지정");
 	let reviewer = $state("");
 </script>
 
 {#if isAssigned}
 	{row.original.reviewer}
 {:else}
-	<Label for="{row.original.id}-reviewer" class="sr-only">Reviewer</Label>
+	<Label for="{row.original.id}-reviewer" class="sr-only">검토자</Label>
 	<Select.Root type="single" bind:value={reviewer}>
 		<Select.Trigger
 			class="w-38 **:data-[slot=select-value]:block **:data-[slot=select-value]:truncate"
@@ -21,7 +21,7 @@
 			id="{row.original.id}-reviewer"
 		>
 			<span data-slot="select-value">
-				{reviewer ?? "Assign reviewer"}
+				{reviewer ?? "검토자 지정"}
 			</span>
 		</Select.Trigger>
 		<Select.Content align="end">

@@ -3,9 +3,9 @@
 </script>
 
 <NativeSelect.Root>
-	<NativeSelect.Option value="">Select status</NativeSelect.Option>
-	<NativeSelect.Option value="todo">Todo</NativeSelect.Option>
-	<NativeSelect.Option value="in-progress">In Progress</NativeSelect.Option>
-	<NativeSelect.Option value="done">Done</NativeSelect.Option>
-	<NativeSelect.Option value="cancelled">Cancelled</NativeSelect.Option>
+	<NativeSelect.Option value="">상태 선택</NativeSelect.Option>
+	<NativeSelect.Option value="todo">할 일</NativeSelect.Option>
+	<NativeSelect.Option value="in-progress">진행 중</NativeSelect.Option>
+	<NativeSelect.Option value="done">완료</NativeSelect.Option>
+	<NativeSelect.Option value="cancelled">취소됨</NativeSelect.Option>
 </NativeSelect.Root>

@@ -21,10 +21,10 @@
 			</Avatar.Root>
 			<div class="space-y-1">
 				<h4 class="text-sm font-semibold">@sveltejs</h4>
-				<p class="text-sm">Cybernetically enhanced web apps.</p>
+				<p class="text-sm">사이버네틱하게 강화된 웹 앱.</p>
 				<div class="flex items-center pt-2">
 					<CalendarDaysIcon class="me-2 size-4 opacity-70" />
-					<span class="text-muted-foreground text-xs"> Joined September 2022 </span>
+					<span class="text-muted-foreground text-xs"> 2022년 9월 가입 </span>
 				</div>
 			</div>
 		</div>

@@ -56,7 +56,7 @@ links:
         {...props}
       >
         <CalendarIcon class="me-2 size-4" />
-        {value ? df.format(value.toDate(getLocalTimeZone())) : "Select a date"}
+        {value ? df.format(value.toDate(getLocalTimeZone())) : "날짜 선택"}
       </Button>
     {/snippet}
   </Popover.Trigger>

@@ -2,4 +2,4 @@
 	import { Button } from "$lib/registry/ui/button/index.js";
 </script>
 
-<Button variant="ghost">Ghost</Button>
+<Button variant="ghost">고스트</Button>

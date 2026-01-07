@@ -23,7 +23,7 @@
 </script>
 
 <Sidebar.Group class="group-data-[collapsible=icon]:hidden">
-	<Sidebar.GroupLabel>Projects</Sidebar.GroupLabel>
+	<Sidebar.GroupLabel>프로젝트</Sidebar.GroupLabel>
 	<Sidebar.Menu>
 		{#each projects as item (item.name)}
 			<Sidebar.MenuItem>
@@ -40,7 +40,7 @@
 						{#snippet child({ props })}
 							<Sidebar.MenuAction showOnHover {...props}>
 								<EllipsisIcon />
-								<span class="sr-only">More</span>
+								<span class="sr-only">더보기</span>
 							</Sidebar.MenuAction>
 						{/snippet}
 					</DropdownMenu.Trigger>
@@ -51,16 +51,16 @@
 					>
 						<DropdownMenu.Item>
 							<FolderIcon class="text-muted-foreground" />
-							<span>View Project</span>
+							<span>프로젝트 보기</span>
 						</DropdownMenu.Item>
 						<DropdownMenu.Item>
 							<ShareIcon class="text-muted-foreground" />
-							<span>Share Project</span>
+							<span>프로젝트 공유</span>
 						</DropdownMenu.Item>
 						<DropdownMenu.Separator />
 						<DropdownMenu.Item>
 							<Trash2Icon class="text-muted-foreground" />
-							<span>Delete Project</span>
+							<span>프로젝트 삭제</span>
 						</DropdownMenu.Item>
 					</DropdownMenu.Content>
 				</DropdownMenu.Root>
@@ -69,7 +69,7 @@
 		<Sidebar.MenuItem>
 			<Sidebar.MenuButton>
 				<EllipsisIcon />
-				<span>More</span>
+				<span>더보기</span>
 			</Sidebar.MenuButton>
 		</Sidebar.MenuItem>
 	</Sidebar.Menu>

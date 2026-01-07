@@ -87,16 +87,16 @@ component: true
         role="combobox"
         aria-expanded={open}
       >
-        {selectedValue || "Select a framework..."}
+        {selectedValue || "프레임워크 선택..."}
         <ChevronsUpDownIcon class="ms-2 size-4 shrink-0 opacity-50" />
       </Button>
     {/snippet}
   </Popover.Trigger>
   <Popover.Content class="w-[200px] p-0">
     <Command.Root>
-      <Command.Input placeholder="Search framework..." />
+      <Command.Input placeholder="프레임워크 검색..." />
       <Command.List>
-        <Command.Empty>No framework found.</Command.Empty>
+        <Command.Empty>프레임워크를 찾을 수 없습니다.</Command.Empty>
         <Command.Group>
           {#each frameworks as framework}
             <Command.Item

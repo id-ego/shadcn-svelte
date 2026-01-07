@@ -23,28 +23,28 @@
 <form class={cn("flex flex-col gap-6", className)} bind:this={ref} {...restProps}>
 	<FieldGroup>
 		<div class="flex flex-col items-center gap-1 text-center">
-			<h1 class="text-2xl font-bold">Login to your account</h1>
+			<h1 class="text-2xl font-bold">계정에 로그인</h1>
 			<p class="text-muted-foreground text-sm text-balance">
-				Enter your email below to login to your account
+				계정에 로그인하려면 이메일을 입력하세요
 			</p>
 		</div>
 		<Field>
-			<FieldLabel for="email-{id}">Email</FieldLabel>
+			<FieldLabel for="email-{id}">이메일</FieldLabel>
 			<Input id="email-{id}" type="email" placeholder="m@example.com" required />
 		</Field>
 		<Field>
 			<div class="flex items-center">
-				<FieldLabel for="password-{id}">Password</FieldLabel>
+				<FieldLabel for="password-{id}">비밀번호</FieldLabel>
 				<a href="##" class="ms-auto text-sm underline-offset-4 hover:underline">
-					Forgot your password?
+					비밀번호를 잊으셨나요?
 				</a>
 			</div>
 			<Input id="password-{id}" type="password" required />
 		</Field>
 		<Field>
-			<Button type="submit">Login</Button>
+			<Button type="submit">로그인</Button>
 		</Field>
-		<FieldSeparator>Or continue with</FieldSeparator>
+		<FieldSeparator>또는 다음으로 계속</FieldSeparator>
 		<Field>
 			<Button variant="outline" type="button">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -53,11 +53,11 @@
 						fill="currentColor"
 					/>
 				</svg>
-				Login with GitHub
+				GitHub로 로그인
 			</Button>
 			<FieldDescription class="text-center">
-				Don't have an account?
-				<a href="##" class="underline underline-offset-4">Sign up</a>
+				계정이 없으신가요?
+				<a href="##" class="underline underline-offset-4">가입하기</a>
 			</FieldDescription>
 		</Field>
 	</FieldGroup>

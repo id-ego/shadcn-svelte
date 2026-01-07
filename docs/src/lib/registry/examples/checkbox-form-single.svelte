@@ -17,9 +17,9 @@
 		SPA: true,
 		onUpdate: ({ form: f }) => {
 			if (f.valid) {
-				toast.success(`You submitted ${JSON.stringify(f.data, null, 2)}`);
+				toast.success(`제출되었습니다 ${JSON.stringify(f.data, null, 2)}`);
 			} else {
-				toast.error("Please fix the errors in the form.");
+				toast.error("폼의 오류를 수정해주세요.");
 			}
 		},
 	});
@@ -37,15 +37,13 @@
 			{#snippet children({ props })}
 				<Checkbox {...props} bind:checked={$formData.mobile} />
 				<div class="space-y-1 leading-none">
-					<Form.Label>Use different settings for my mobile devices</Form.Label>
+					<Form.Label>모바일 기기에 다른 설정 사용</Form.Label>
 					<Form.Description>
-						You can manage your mobile notifications in the <a href="/examples/forms"
-							>mobile settings</a
-						> page.
+						<a href="/examples/forms">모바일 설정</a> 페이지에서 모바일 알림을 관리할 수 있습니다.
 					</Form.Description>
 				</div>
 			{/snippet}
 		</Form.Control>
 	</Form.Field>
-	<Form.Button>Submit</Form.Button>
+	<Form.Button>제출</Form.Button>
 </form>

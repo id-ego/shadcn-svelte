@@ -16,61 +16,61 @@
 	const data = [
 		[
 			{
-				label: "Customize Page",
+				label: "페이지 사용자 지정",
 				icon: Settings2Icon,
 			},
 			{
-				label: "Turn into wiki",
+				label: "위키로 전환",
 				icon: FileTextIcon,
 			},
 		],
 		[
 			{
-				label: "Copy Link",
+				label: "링크 복사",
 				icon: LinkIcon,
 			},
 			{
-				label: "Duplicate",
+				label: "복제",
 				icon: CopyIcon,
 			},
 			{
-				label: "Move to",
+				label: "이동",
 				icon: CornerUpRightIcon,
 			},
 			{
-				label: "Move to Trash",
+				label: "휴지통으로 이동",
 				icon: Trash2Icon,
 			},
 		],
 		[
 			{
-				label: "Undo",
+				label: "실행 취소",
 				icon: CornerUpLeftIcon,
 			},
 			{
-				label: "View analytics",
+				label: "분석 보기",
 				icon: ChartLineIcon,
 			},
 			{
-				label: "Version History",
+				label: "버전 기록",
 				icon: GalleryVerticalEndIcon,
 			},
 			{
-				label: "Show delete pages",
+				label: "삭제된 페이지 표시",
 				icon: TrashIcon,
 			},
 			{
-				label: "Notifications",
+				label: "알림",
 				icon: BellIcon,
 			},
 		],
 		[
 			{
-				label: "Import",
+				label: "가져오기",
 				icon: ArrowUpIcon,
 			},
 			{
-				label: "Export",
+				label: "내보내기",
 				icon: ArrowDownIcon,
 			},
 		],
@@ -95,7 +95,7 @@
 </script>
 
 <div class="flex items-center gap-2 text-sm">
-	<div class="text-muted-foreground hidden font-medium md:inline-block">Edit Oct 08</div>
+	<div class="text-muted-foreground hidden font-medium md:inline-block">10월 08일 편집</div>
 	<Button variant="ghost" size="icon" class="size-7">
 		<StarIcon />
 	</Button>

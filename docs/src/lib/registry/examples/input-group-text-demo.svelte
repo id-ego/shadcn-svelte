@@ -22,16 +22,16 @@
 		</InputGroup.Addon>
 	</InputGroup.Root>
 	<InputGroup.Root>
-		<InputGroup.Input placeholder="Enter your username" />
+		<InputGroup.Input placeholder="사용자명 입력" />
 		<InputGroup.Addon align="inline-end">
 			<InputGroup.Text>@company.com</InputGroup.Text>
 		</InputGroup.Addon>
 	</InputGroup.Root>
 	<InputGroup.Root>
-		<InputGroup.Textarea placeholder="Enter your message" />
+		<InputGroup.Textarea placeholder="메시지 입력" />
 		<InputGroup.Addon align="block-end">
 			<InputGroup.Text class="text-muted-foreground text-xs">
-				120 characters left
+				120자 남음
 			</InputGroup.Text>
 		</InputGroup.Addon>
 	</InputGroup.Root>

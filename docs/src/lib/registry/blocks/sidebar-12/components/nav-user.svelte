@@ -59,28 +59,28 @@
 				<DropdownMenu.Group>
 					<DropdownMenu.Item>
 						<SparklesIcon />
-						Upgrade to Pro
+						Pro로 업그레이드
 					</DropdownMenu.Item>
 				</DropdownMenu.Group>
 				<DropdownMenu.Separator />
 				<DropdownMenu.Group>
 					<DropdownMenu.Item>
 						<BadgeCheckIcon />
-						Account
+						계정
 					</DropdownMenu.Item>
 					<DropdownMenu.Item>
 						<CreditCardIcon />
-						Billing
+						결제
 					</DropdownMenu.Item>
 					<DropdownMenu.Item>
 						<BellIcon />
-						Notifications
+						알림
 					</DropdownMenu.Item>
 				</DropdownMenu.Group>
 				<DropdownMenu.Separator />
 				<DropdownMenu.Item>
 					<LogOutIcon />
-					Log out
+					로그아웃
 				</DropdownMenu.Item>
 			</DropdownMenu.Content>
 		</DropdownMenu.Root>

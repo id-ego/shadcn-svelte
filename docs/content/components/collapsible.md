@@ -66,10 +66,9 @@ Install `bits-ui`:
 
 ```svelte showLineNumbers
 <Collapsible.Root>
-  <Collapsible.Trigger>Can I use this in my project?</Collapsible.Trigger>
+  <Collapsible.Trigger>내 프로젝트에서 사용할 수 있나요?</Collapsible.Trigger>
   <Collapsible.Content>
-    Yes. Free to use for personal and commercial projects. No attribution
-    required.
+    네. 개인 및 상업용 프로젝트에 무료로 사용할 수 있습니다. 출처 표시가 필요하지 않습니다.
   </Collapsible.Content>
 </Collapsible.Root>
 ```

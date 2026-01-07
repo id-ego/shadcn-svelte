@@ -4,33 +4,33 @@
 	const items = [
 		{
 			id: "recents",
-			label: "Recents",
+			label: "최근 항목",
 		},
 		{
 			id: "home",
-			label: "Home",
+			label: "홈",
 		},
 		{
 			id: "applications",
-			label: "Applications",
+			label: "애플리케이션",
 		},
 		{
 			id: "desktop",
-			label: "Desktop",
+			label: "데스크톱",
 		},
 		{
 			id: "downloads",
-			label: "Downloads",
+			label: "다운로드",
 		},
 		{
 			id: "documents",
-			label: "Documents",
+			label: "문서",
 		},
 	] as const;
 
 	const formSchema = z.object({
 		items: z.array(z.string()).refine((value) => value.some((item) => item), {
-			message: "You have to select at least one item.",
+			message: "최소 하나의 항목을 선택해야 합니다.",
 		}),
 	});
 </script>
@@ -47,9 +47,9 @@
 		validators: zod4(formSchema),
 		onUpdate: ({ form: f }) => {
 			if (f.valid) {
-				toast.success(`You submitted ${JSON.stringify(f.data, null, 2)}`);
+				toast.success(`제출되었습니다 ${JSON.stringify(f.data, null, 2)}`);
 			} else {
-				toast.error("Please fix the errors in the form.");
+				toast.error("폼의 오류를 수정해주세요.");
 			}
 		},
 	});
@@ -68,9 +68,9 @@
 <form method="POST" class="space-y-8" use:enhance>
 	<Form.Fieldset {form} name="items" class="space-y-0">
 		<div class="mb-4">
-			<Form.Legend class="text-base">Sidebar</Form.Legend>
+			<Form.Legend class="text-base">사이드바</Form.Legend>
 			<Form.Description>
-				Select the items you want to display in the sidebar.
+				사이드바에 표시할 항목을 선택하세요.
 			</Form.Description>
 		</div>
 		<div class="space-y-2">
@@ -101,5 +101,5 @@
 			<Form.FieldErrors />
 		</div>
 	</Form.Fieldset>
-	<Form.Button>Update display</Form.Button>
+	<Form.Button>디스플레이 업데이트</Form.Button>
 </form>

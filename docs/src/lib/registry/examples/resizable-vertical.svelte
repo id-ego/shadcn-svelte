@@ -5,13 +5,13 @@
 <Resizable.PaneGroup direction="vertical" class="min-h-[200px] max-w-md rounded-lg border">
 	<Resizable.Pane defaultSize={25}>
 		<div class="flex h-full items-center justify-center p-6">
-			<span class="font-semibold">Header</span>
+			<span class="font-semibold">헤더</span>
 		</div>
 	</Resizable.Pane>
 	<Resizable.Handle />
 	<Resizable.Pane defaultSize={75}>
 		<div class="flex h-full items-center justify-center p-6">
-			<span class="font-semibold">Content</span>
+			<span class="font-semibold">컨텐츠</span>
 		</div>
 	</Resizable.Pane>
 </Resizable.PaneGroup>

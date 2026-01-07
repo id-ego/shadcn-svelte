@@ -5,6 +5,6 @@
 
 <Alert.Root variant="destructive">
 	<CircleAlertIcon class="size-4" />
-	<Alert.Title>Error</Alert.Title>
-	<Alert.Description>Your session has expired. Please login again.</Alert.Description>
+	<Alert.Title>오류</Alert.Title>
+	<Alert.Description>세션이 만료되었습니다. 다시 로그인해 주세요.</Alert.Description>
 </Alert.Root>

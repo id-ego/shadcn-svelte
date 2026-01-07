@@ -15,10 +15,10 @@
 		</Item.Media>
 		<Item.Content>
 			<Item.Title>Evil Rabbit</Item.Title>
-			<Item.Description>Last seen 5 months ago</Item.Description>
+			<Item.Description>5개월 전에 마지막으로 접속</Item.Description>
 		</Item.Content>
 		<Item.Actions>
-			<Button size="icon" variant="outline" class="rounded-full" aria-label="Invite">
+			<Button size="icon" variant="outline" class="rounded-full" aria-label="초대">
 				<Plus />
 			</Button>
 		</Item.Actions>
@@ -43,11 +43,11 @@
 			</div>
 		</Item.Media>
 		<Item.Content>
-			<Item.Title>No Team Members</Item.Title>
-			<Item.Description>Invite your team to collaborate on this project.</Item.Description>
+			<Item.Title>팀 멤버가 없습니다</Item.Title>
+			<Item.Description>이 프로젝트에 함께 작업할 팀을 초대하세요.</Item.Description>
 		</Item.Content>
 		<Item.Actions>
-			<Button size="sm" variant="outline">Invite</Button>
+			<Button size="sm" variant="outline">초대</Button>
 		</Item.Actions>
 	</Item.Root>
 </div>

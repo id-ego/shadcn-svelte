@@ -37,7 +37,7 @@ links:
 
 <Step>
 
-Install `bits-ui`:
+`bits-ui`를 설치합니다:
 
 </Step>
 
@@ -82,9 +82,9 @@ Install `bits-ui`:
 </script>
 
 <Tooltip.Root>
-  <Tooltip.Trigger>Hover</Tooltip.Trigger>
+  <Tooltip.Trigger>마우스를 올리세요</Tooltip.Trigger>
   <Tooltip.Content>
-    <p>Add to library</p>
+    <p>라이브러리에 추가</p>
   </Tooltip.Content>
 </Tooltip.Root>
 ```
@@ -95,7 +95,7 @@ Install `bits-ui`:
 
 ```svelte
 <Tooltip.Provider delayDuration={0}>
-  <!-- Tooltips here will open instantly -->
+  <!-- 여기의 툴팁은 즉시 열립니다 -->
 </Tooltip.Provider>
 ```
 

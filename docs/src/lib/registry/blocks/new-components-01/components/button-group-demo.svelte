@@ -17,19 +17,19 @@
 
 <ButtonGroup.Root>
 	<ButtonGroup.Root class="hidden sm:flex">
-		<Button variant="outline" size="icon" aria-label="Go Back">
+		<Button variant="outline" size="icon" aria-label="뒤로 가기">
 			<ArrowLeftIcon />
 		</Button>
 	</ButtonGroup.Root>
 	<ButtonGroup.Root>
-		<Button variant="outline">Archive</Button>
+		<Button variant="outline">보관</Button>
 	</ButtonGroup.Root>
 	<ButtonGroup.Root>
-		<Button variant="outline">Snooze</Button>
+		<Button variant="outline">다시 알림</Button>
 		<DropdownMenu.Root>
 			<DropdownMenu.Trigger>
 				{#snippet child({ props })}
-					<Button variant="outline" size="icon" aria-label="More Options" {...props}>
+					<Button variant="outline" size="icon" aria-label="더 많은 옵션" {...props}>
 						<MoreHorizontalIcon />
 					</Button>
 				{/snippet}
@@ -38,39 +38,39 @@
 				<DropdownMenu.Group>
 					<DropdownMenu.Item>
 						<MailCheckIcon />
-						Mark as Read
+						읽음으로 표시
 					</DropdownMenu.Item>
 					<DropdownMenu.Item>
 						<ArchiveIcon />
-						Archive
+						보관
 					</DropdownMenu.Item>
 				</DropdownMenu.Group>
 				<DropdownMenu.Separator />
 				<DropdownMenu.Group>
 					<DropdownMenu.Item>
 						<ClockIcon />
-						Snooze
+						다시 알림
 					</DropdownMenu.Item>
 					<DropdownMenu.Item>
 						<CalendarPlusIcon />
-						Add to Calendar
+						캘린더에 추가
 					</DropdownMenu.Item>
 					<DropdownMenu.Item>
 						<ListFilterIcon />
-						Add to List
+						목록에 추가
 					</DropdownMenu.Item>
 					<DropdownMenu.Sub>
 						<DropdownMenu.SubTrigger>
 							<TagIcon />
-							Label As...
+							라벨 지정...
 						</DropdownMenu.SubTrigger>
 						<DropdownMenu.SubContent>
 							<DropdownMenu.RadioGroup bind:value={label}>
 								<DropdownMenu.RadioItem value="personal">
-									Personal
+									개인
 								</DropdownMenu.RadioItem>
-								<DropdownMenu.RadioItem value="work">Work</DropdownMenu.RadioItem>
-								<DropdownMenu.RadioItem value="other">Other</DropdownMenu.RadioItem>
+								<DropdownMenu.RadioItem value="work">업무</DropdownMenu.RadioItem>
+								<DropdownMenu.RadioItem value="other">기타</DropdownMenu.RadioItem>
 							</DropdownMenu.RadioGroup>
 						</DropdownMenu.SubContent>
 					</DropdownMenu.Sub>
@@ -79,7 +79,7 @@
 				<DropdownMenu.Group>
 					<DropdownMenu.Item variant="destructive">
 						<Trash2Icon />
-						Trash
+						휴지통
 					</DropdownMenu.Item>
 				</DropdownMenu.Group>
 			</DropdownMenu.Content>

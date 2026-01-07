@@ -48,13 +48,13 @@
 </script>
 
 <Table.Root>
-	<Table.Caption>A list of your recent invoices.</Table.Caption>
+	<Table.Caption>최근 청구서 목록입니다.</Table.Caption>
 	<Table.Header>
 		<Table.Row>
-			<Table.Head class="w-[100px]">Invoice</Table.Head>
-			<Table.Head>Status</Table.Head>
-			<Table.Head>Method</Table.Head>
-			<Table.Head class="text-end">Amount</Table.Head>
+			<Table.Head class="w-[100px]">청구서</Table.Head>
+			<Table.Head>상태</Table.Head>
+			<Table.Head>결제 방법</Table.Head>
+			<Table.Head class="text-end">금액</Table.Head>
 		</Table.Row>
 	</Table.Header>
 	<Table.Body>
@@ -69,7 +69,7 @@
 	</Table.Body>
 	<Table.Footer>
 		<Table.Row>
-			<Table.Cell colspan={3}>Total</Table.Cell>
+			<Table.Cell colspan={3}>합계</Table.Cell>
 			<Table.Cell class="text-end">$2,500.00</Table.Cell>
 		</Table.Row>
 	</Table.Footer>

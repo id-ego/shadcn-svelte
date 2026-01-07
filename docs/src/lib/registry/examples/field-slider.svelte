@@ -7,9 +7,9 @@
 
 <div class="w-full max-w-md">
 	<Field.Field>
-		<Field.Label>Price Range</Field.Label>
+		<Field.Label>가격 범위</Field.Label>
 		<Field.Description>
-			Set your budget range ($<span class="font-medium tabular-nums">{value[0]}</span> -
+			예산 범위를 설정하세요 ($<span class="font-medium tabular-nums">{value[0]}</span> -
 			<span class="font-medium tabular-nums">{value[1]}</span>).
 		</Field.Description>
 		<Slider

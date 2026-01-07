@@ -10,20 +10,20 @@
 		<Empty.Media variant="icon">
 			<FolderCodeIcon />
 		</Empty.Media>
-		<Empty.Title>No Projects Yet</Empty.Title>
+		<Empty.Title>프로젝트가 없습니다</Empty.Title>
 		<Empty.Description>
-			You haven't created any projects yet. Get started by creating your first project.
+			아직 프로젝트를 만들지 않았습니다. 첫 번째 프로젝트를 만들어 시작하세요.
 		</Empty.Description>
 	</Empty.Header>
 	<Empty.Content>
 		<div class="flex gap-2">
-			<Button>Create Project</Button>
-			<Button variant="outline">Import Project</Button>
+			<Button>프로젝트 만들기</Button>
+			<Button variant="outline">프로젝트 가져오기</Button>
 		</div>
 	</Empty.Content>
 	<Button variant="link" class="text-muted-foreground" size="sm">
 		<a href="#/">
-			Learn More <ArrowUpRightIcon class="inline" />
+			더 알아보기 <ArrowUpRightIcon class="inline" />
 		</a>
 	</Button>
 </Empty.Root>

@@ -29,7 +29,7 @@
 		<DropdownMenu.Trigger>
 			{#snippet child({ props })}
 				<Button {...props} variant="outline" size="sm" class="w-fit">
-					Select <ChevronDown />
+					선택 <ChevronDown />
 				</Button>
 			{/snippet}
 		</DropdownMenu.Trigger>

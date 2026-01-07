@@ -18,7 +18,7 @@
 	<ButtonGroup.Root>
 		<InputGroup.Root>
 			<InputGroup.Input
-				placeholder={voiceEnabled ? "Record and send audio..." : "Send a message..."}
+				placeholder={voiceEnabled ? "오디오 녹음 및 전송..." : "메시지 보내기..."}
 				disabled={voiceEnabled}
 			/>
 			<InputGroup.Addon align="inline-end">
@@ -37,7 +37,7 @@
 							</InputGroup.Button>
 						{/snippet}
 					</Tooltip.Trigger>
-					<Tooltip.Content>Voice Mode</Tooltip.Content>
+					<Tooltip.Content>음성 모드</Tooltip.Content>
 				</Tooltip.Root>
 			</InputGroup.Addon>
 		</InputGroup.Root>

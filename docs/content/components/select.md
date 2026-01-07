@@ -68,9 +68,9 @@ links:
 <Select.Root type="single">
   <Select.Trigger class="w-[180px]"></Select.Trigger>
   <Select.Content>
-    <Select.Item value="light">Light</Select.Item>
-    <Select.Item value="dark">Dark</Select.Item>
-    <Select.Item value="system">System</Select.Item>
+    <Select.Item value="light">라이트</Select.Item>
+    <Select.Item value="dark">다크</Select.Item>
+    <Select.Item value="system">시스템</Select.Item>
   </Select.Content>
 </Select.Root>
 ```

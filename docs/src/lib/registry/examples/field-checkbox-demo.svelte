@@ -6,31 +6,31 @@
 <div class="w-full max-w-md">
 	<Field.Group>
 		<Field.Set>
-			<Field.Legend variant="label">Show these items on the desktop</Field.Legend>
-			<Field.Description>Select the items you want to show on the desktop.</Field.Description>
+			<Field.Legend variant="label">데스크톱에 표시할 항목</Field.Legend>
+			<Field.Description>데스크톱에 표시할 항목을 선택하세요.</Field.Description>
 			<Field.Group class="gap-3">
 				<Field.Field orientation="horizontal">
 					<Checkbox id="finder-pref-9k2-hard-disks-ljj" checked />
 					<Field.Label for="finder-pref-9k2-hard-disks-ljj" class="font-normal">
-						Hard disks
+						하드 디스크
 					</Field.Label>
 				</Field.Field>
 				<Field.Field orientation="horizontal">
 					<Checkbox id="finder-pref-9k2-external-disks-1yg" />
 					<Field.Label for="finder-pref-9k2-external-disks-1yg" class="font-normal">
-						External disks
+						외장 디스크
 					</Field.Label>
 				</Field.Field>
 				<Field.Field orientation="horizontal">
 					<Checkbox id="finder-pref-9k2-cds-dvds-fzt" />
 					<Field.Label for="finder-pref-9k2-cds-dvds-fzt" class="font-normal">
-						CDs, DVDs, and iPods
+						CD, DVD 및 iPod
 					</Field.Label>
 				</Field.Field>
 				<Field.Field orientation="horizontal">
 					<Checkbox id="finder-pref-9k2-connected-servers-6l2" />
 					<Field.Label for="finder-pref-9k2-connected-servers-6l2" class="font-normal">
-						Connected servers
+						연결된 서버
 					</Field.Label>
 				</Field.Field>
 			</Field.Group>
@@ -40,11 +40,10 @@
 			<Checkbox id="finder-pref-9k2-sync-folders-nep" checked />
 			<Field.Content>
 				<Field.Label for="finder-pref-9k2-sync-folders-nep">
-					Sync Desktop & Documents folders
+					데스크톱 및 문서 폴더 동기화
 				</Field.Label>
 				<Field.Description>
-					Your Desktop & Documents folders are being synced with iCloud Drive. You can
-					access them from other devices.
+					데스크톱 및 문서 폴더가 iCloud Drive와 동기화됩니다. 다른 기기에서 액세스할 수 있습니다.
 				</Field.Description>
 			</Field.Content>
 		</Field.Field>

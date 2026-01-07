@@ -2,7 +2,7 @@
 	import { z } from "zod/v4";
 	const formSchema = z.object({
 		pin: z.string().min(6, {
-			message: "Your one-time password must be at least 6 characters.",
+			message: "일회용 비밀번호는 최소 6자 이상이어야 합니다.",
 		}),
 	});
 </script>
@@ -19,9 +19,9 @@
 		SPA: true,
 		onUpdate: ({ form: f }) => {
 			if (f.valid) {
-				toast.success(`You submitted ${JSON.stringify(f.data, null, 2)}`);
+				toast.success(`제출 완료: ${JSON.stringify(f.data, null, 2)}`);
 			} else {
-				toast.error("Please fix the errors in the form.");
+				toast.error("양식의 오류를 수정해 주세요.");
 			}
 		},
 	});
@@ -33,7 +33,7 @@
 	<Form.Field {form} name="pin">
 		<Form.Control>
 			{#snippet children({ props })}
-				<Form.Label>One-Time Password</Form.Label>
+				<Form.Label>일회용 비밀번호</Form.Label>
 				<InputOTP.Root maxlength={6} {...props} bind:value={$formData.pin}>
 					{#snippet children({ cells })}
 						<InputOTP.Group>
@@ -45,8 +45,8 @@
 				</InputOTP.Root>
 			{/snippet}
 		</Form.Control>
-		<Form.Description>Please enter the one-time password sent to your phone.</Form.Description>
+		<Form.Description>휴대폰으로 전송된 일회용 비밀번호를 입력하세요.</Form.Description>
 		<Form.FieldErrors />
 	</Form.Field>
-	<Form.Button>Submit</Form.Button>
+	<Form.Button>제출</Form.Button>
 </form>

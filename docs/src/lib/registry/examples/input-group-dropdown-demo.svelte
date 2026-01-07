@@ -7,7 +7,7 @@
 
 <div class="grid w-full max-w-sm gap-4">
 	<InputGroup.Root>
-		<InputGroup.Input placeholder="Enter file name" />
+		<InputGroup.Input placeholder="파일명 입력" />
 		<InputGroup.Addon align="inline-end">
 			<DropdownMenu.Root>
 				<DropdownMenu.Trigger>
@@ -23,28 +23,28 @@
 					{/snippet}
 				</DropdownMenu.Trigger>
 				<DropdownMenu.Content align="end">
-					<DropdownMenu.Item>Settings</DropdownMenu.Item>
-					<DropdownMenu.Item>Copy path</DropdownMenu.Item>
-					<DropdownMenu.Item>Open location</DropdownMenu.Item>
+					<DropdownMenu.Item>설정</DropdownMenu.Item>
+					<DropdownMenu.Item>경로 복사</DropdownMenu.Item>
+					<DropdownMenu.Item>위치 열기</DropdownMenu.Item>
 				</DropdownMenu.Content>
 			</DropdownMenu.Root>
 		</InputGroup.Addon>
 	</InputGroup.Root>
 	<InputGroup.Root class="[--radius:1rem]">
-		<InputGroup.Input placeholder="Enter search query" />
+		<InputGroup.Input placeholder="검색어 입력" />
 		<InputGroup.Addon align="inline-end">
 			<DropdownMenu.Root>
 				<DropdownMenu.Trigger>
 					{#snippet child({ props })}
 						<InputGroup.Button {...props} variant="ghost" class="!pe-1.5 text-xs">
-							Search In... <ChevronDownIcon class="size-3" />
+							검색 위치... <ChevronDownIcon class="size-3" />
 						</InputGroup.Button>
 					{/snippet}
 				</DropdownMenu.Trigger>
 				<DropdownMenu.Content align="end" class="[--radius:0.95rem]">
-					<DropdownMenu.Item>Documentation</DropdownMenu.Item>
-					<DropdownMenu.Item>Blog Posts</DropdownMenu.Item>
-					<DropdownMenu.Item>Changelog</DropdownMenu.Item>
+					<DropdownMenu.Item>문서</DropdownMenu.Item>
+					<DropdownMenu.Item>블로그 포스트</DropdownMenu.Item>
+					<DropdownMenu.Item>변경 로그</DropdownMenu.Item>
 				</DropdownMenu.Content>
 			</DropdownMenu.Root>
 		</InputGroup.Addon>

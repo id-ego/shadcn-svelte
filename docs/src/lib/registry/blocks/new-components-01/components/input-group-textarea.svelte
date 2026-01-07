@@ -39,9 +39,9 @@
 		</InputGroup.Addon>
 		<InputGroup.Textarea placeholder="console.log('Hello, world!');" class="min-h-[200px]" />
 		<InputGroup.Addon align="block-end" class="border-t">
-			<InputGroup.Text>Line 1, Column 1</InputGroup.Text>
+			<InputGroup.Text>1줄, 1열</InputGroup.Text>
 			<InputGroup.Button size="sm" class="ms-auto" variant="default">
-				Run <CornerDownLeftIcon />
+				실행 <CornerDownLeftIcon />
 			</InputGroup.Button>
 		</InputGroup.Addon>
 	</InputGroup.Root>

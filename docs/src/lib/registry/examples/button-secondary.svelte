@@ -2,4 +2,4 @@
 	import { Button } from "$lib/registry/ui/button/index.js";
 </script>
 
-<Button variant="secondary">Secondary</Button>
+<Button variant="secondary">보조</Button>

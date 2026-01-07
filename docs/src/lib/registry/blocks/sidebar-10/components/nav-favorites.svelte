@@ -22,7 +22,7 @@
 </script>
 
 <Sidebar.Group class="group-data-[collapsible=icon]:hidden">
-	<Sidebar.GroupLabel>Favorites</Sidebar.GroupLabel>
+	<Sidebar.GroupLabel>즐겨찾기</Sidebar.GroupLabel>
 	<Sidebar.Menu>
 		{#each favorites as item (item.name)}
 			<Sidebar.MenuItem>
@@ -39,7 +39,7 @@
 						{#snippet child({ props })}
 							<Sidebar.MenuAction showOnHover {...props}>
 								<EllipsisIcon />
-								<span class="sr-only">More</span>
+								<span class="sr-only">더보기</span>
 							</Sidebar.MenuAction>
 						{/snippet}
 					</DropdownMenu.Trigger>
@@ -50,21 +50,21 @@
 					>
 						<DropdownMenu.Item>
 							<StarOffIcon class="text-muted-foreground" />
-							<span>Remove from Favorites</span>
+							<span>즐겨찾기에서 제거</span>
 						</DropdownMenu.Item>
 						<DropdownMenu.Separator />
 						<DropdownMenu.Item>
 							<LinkIcon class="text-muted-foreground" />
-							<span>Copy Link</span>
+							<span>링크 복사</span>
 						</DropdownMenu.Item>
 						<DropdownMenu.Item>
 							<ArrowUpRightIcon class="text-muted-foreground" />
-							<span>Open in New Tab</span>
+							<span>새 탭에서 열기</span>
 						</DropdownMenu.Item>
 						<DropdownMenu.Separator />
 						<DropdownMenu.Item>
 							<Trash2Icon class="text-muted-foreground" />
-							<span>Delete</span>
+							<span>삭제</span>
 						</DropdownMenu.Item>
 					</DropdownMenu.Content>
 				</DropdownMenu.Root>
@@ -73,7 +73,7 @@
 		<Sidebar.MenuItem>
 			<Sidebar.MenuButton class="text-sidebar-foreground/70">
 				<EllipsisIcon />
-				<span>More</span>
+				<span>더보기</span>
 			</Sidebar.MenuButton>
 		</Sidebar.MenuItem>
 	</Sidebar.Menu>

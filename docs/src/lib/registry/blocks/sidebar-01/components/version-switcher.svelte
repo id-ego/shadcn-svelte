@@ -26,7 +26,7 @@
 							<GalleryVerticalEndIcon class="size-4" />
 						</div>
 						<div class="flex flex-col gap-0.5 leading-none">
-							<span class="font-semibold">Documentation</span>
+							<span class="font-semibold">문서</span>
 							<span class="">v{selectedVersion}</span>
 						</div>
 						<ChevronsUpDownIcon class="ms-auto" />

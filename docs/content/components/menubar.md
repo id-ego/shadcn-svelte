@@ -65,17 +65,17 @@ Copy and paste the following code into your project.
 ```svelte showLineNumbers
 <Menubar.Root>
   <Menubar.Menu>
-    <Menubar.Trigger>File</Menubar.Trigger>
+    <Menubar.Trigger>파일</Menubar.Trigger>
     <Menubar.Content>
       <Menubar.Item>
-        New Tab
+        새 탭
         <Menubar.Shortcut>⌘T</Menubar.Shortcut>
       </Menubar.Item>
-      <Menubar.Item>New Window</Menubar.Item>
+      <Menubar.Item>새 창</Menubar.Item>
       <Menubar.Separator />
-      <Menubar.Item>Share</Menubar.Item>
+      <Menubar.Item>공유</Menubar.Item>
       <Menubar.Separator />
-      <Menubar.Item>Print</Menubar.Item>
+      <Menubar.Item>인쇄</Menubar.Item>
     </Menubar.Content>
   </Menubar.Menu>
 </Menubar.Root>

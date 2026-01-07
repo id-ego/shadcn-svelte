@@ -6,8 +6,8 @@
 </script>
 
 <ButtonGroup.Root>
-	<Input placeholder="Search..." />
-	<Button variant="outline" size="icon" aria-label="Search">
+	<Input placeholder="검색..." />
+	<Button variant="outline" size="icon" aria-label="검색">
 		<Search />
 	</Button>
 </ButtonGroup.Root>

@@ -11,8 +11,8 @@
 <form bind:this={ref} {...restProps}>
 	<Sidebar.Group class="py-0">
 		<Sidebar.GroupContent class="relative">
-			<Label for="search" class="sr-only">Search</Label>
-			<Sidebar.Input id="search" placeholder="Search the docs..." class="ps-8" />
+			<Label for="search" class="sr-only">검색</Label>
+			<Sidebar.Input id="search" placeholder="문서 검색..." class="ps-8" />
 			<SearchIcon
 				class="pointer-events-none absolute start-2 top-1/2 size-4 -translate-y-1/2 opacity-50 select-none"
 			/>

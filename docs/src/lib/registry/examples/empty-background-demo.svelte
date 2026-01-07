@@ -10,15 +10,15 @@
 		<Empty.Media variant="icon">
 			<BellIcon />
 		</Empty.Media>
-		<Empty.Title>No Notifications</Empty.Title>
+		<Empty.Title>알림이 없습니다</Empty.Title>
 		<Empty.Description>
-			You're all caught up. New notifications will appear here.
+			모두 확인했습니다. 새 알림이 여기에 표시됩니다.
 		</Empty.Description>
 	</Empty.Header>
 	<Empty.Content>
 		<Button variant="outline" size="sm">
 			<RefreshCcwIcon />
-			Refresh
+			새로고침
 		</Button>
 	</Empty.Content>
 </Empty.Root>

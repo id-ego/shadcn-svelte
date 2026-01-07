@@ -8,7 +8,7 @@
 <Breadcrumb.Root>
 	<Breadcrumb.List>
 		<Breadcrumb.Item>
-			<Breadcrumb.Link href="/">Home</Breadcrumb.Link>
+			<Breadcrumb.Link href="/">홈</Breadcrumb.Link>
 		</Breadcrumb.Item>
 		<Breadcrumb.Separator>
 			<SlashIcon />
@@ -16,12 +16,12 @@
 		<Breadcrumb.Item>
 			<DropdownMenu.Root>
 				<DropdownMenu.Trigger class="flex items-center gap-1">
-					Components
+					컴포넌트
 					<ChevronDownIcon class="size-4" />
 				</DropdownMenu.Trigger>
 				<DropdownMenu.Content align="start">
-					<DropdownMenu.Item>Documentation</DropdownMenu.Item>
-					<DropdownMenu.Item>Themes</DropdownMenu.Item>
+					<DropdownMenu.Item>문서</DropdownMenu.Item>
+					<DropdownMenu.Item>테마</DropdownMenu.Item>
 					<DropdownMenu.Item>GitHub</DropdownMenu.Item>
 				</DropdownMenu.Content>
 			</DropdownMenu.Root>

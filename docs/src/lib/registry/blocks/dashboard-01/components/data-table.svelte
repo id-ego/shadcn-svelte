@@ -26,18 +26,18 @@
 		},
 		{
 			accessorKey: "header",
-			header: "Header",
+			header: "헤더",
 			cell: ({ row }) => renderComponent(DataTableCellViewer, { item: row.original }),
 			enableHiding: false,
 		},
 		{
 			accessorKey: "type",
-			header: "Section Type",
+			header: "섹션 유형",
 			cell: ({ row }) => renderSnippet(DataTableType, { row }),
 		},
 		{
 			accessorKey: "status",
-			header: "Status",
+			header: "상태",
 			cell: ({ row }) => renderSnippet(DataTableStatus, { row }),
 		},
 		{
@@ -45,7 +45,7 @@
 			header: () =>
 				renderSnippet(
 					createRawSnippet(() => ({
-						render: () => '<div class="w-full text-end">Target</div>',
+						render: () => '<div class="w-full text-end">목표</div>',
 					}))
 				),
 			cell: ({ row }) => renderSnippet(DataTableTarget, { row }),
@@ -55,14 +55,14 @@
 			header: () =>
 				renderSnippet(
 					createRawSnippet(() => ({
-						render: () => '<div class="w-full text-end">Limit</div>',
+						render: () => '<div class="w-full text-end">한계</div>',
 					}))
 				),
 			cell: ({ row }) => renderSnippet(DataTableLimit, { row }),
 		},
 		{
 			accessorKey: "reviewer",
-			header: "Reviewer",
+			header: "검토자",
 			cell: ({ row }) => renderComponent(DataTableReviewer, { row }),
 		},
 		{
@@ -202,33 +202,33 @@
 	let views = [
 		{
 			id: "outline",
-			label: "Outline",
+			label: "개요",
 			badge: 0,
 		},
 		{
 			id: "past-performance",
-			label: "Past Performance",
+			label: "과거 성과",
 			badge: 3,
 		},
 		{
 			id: "key-personnel",
-			label: "Key Personnel",
+			label: "핵심 인력",
 			badge: 2,
 		},
 		{
 			id: "focus-documents",
-			label: "Focus Documents",
+			label: "중점 문서",
 			badge: 0,
 		},
 	];
 
 	let view = $state("outline");
-	let viewLabel = $derived(views.find((v) => view === v.id)?.label ?? "Select a view");
+	let viewLabel = $derived(views.find((v) => view === v.id)?.label ?? "뷰 선택");
 </script>
 
 <Tabs.Root value="outline" class="w-full flex-col justify-start gap-6">
 	<div class="flex items-center justify-between px-4 lg:px-6">
-		<Label for="view-selector" class="sr-only">View</Label>
+		<Label for="view-selector" class="sr-only">뷰</Label>
 		<Select.Root type="single" bind:value={view}>
 			<Select.Trigger class="flex w-fit @4xl/main:hidden" size="sm" id="view-selector">
 				{viewLabel}
@@ -257,8 +257,8 @@
 					{#snippet child({ props })}
 						<Button variant="outline" size="sm" {...props}>
 							<LayoutColumnsIcon />
-							<span class="hidden lg:inline">Customize Columns</span>
-							<span class="lg:hidden">Columns</span>
+							<span class="hidden lg:inline">열 사용자 지정</span>
+							<span class="lg:hidden">열</span>
 							<ChevronDownIcon />
 						</Button>
 					{/snippet}
@@ -279,7 +279,7 @@
 			</DropdownMenu.Root>
 			<Button variant="outline" size="sm">
 				<PlusIcon />
-				<span class="hidden lg:inline">Add Section</span>
+				<span class="hidden lg:inline">섹션 추가</span>
 			</Button>
 		</div>
 	</div>
@@ -317,7 +317,7 @@
 						{:else}
 							<Table.Row>
 								<Table.Cell colspan={columns.length} class="h-24 text-center">
-									No results.
+									결과 없음.
 								</Table.Cell>
 							</Table.Row>
 						{/if}
@@ -327,12 +327,12 @@
 		</div>
 		<div class="flex items-center justify-between px-4">
 			<div class="text-muted-foreground hidden flex-1 text-sm lg:flex">
-				{table.getFilteredSelectedRowModel().rows.length} of
-				{table.getFilteredRowModel().rows.length} row(s) selected.
+				{table.getFilteredRowModel().rows.length}개 중
+				{table.getFilteredSelectedRowModel().rows.length}개 선택됨.
 			</div>
 			<div class="flex w-full items-center gap-8 lg:w-fit">
 				<div class="hidden items-center gap-2 lg:flex">
-					<Label for="rows-per-page" class="text-sm font-medium">Rows per page</Label>
+					<Label for="rows-per-page" class="text-sm font-medium">페이지당 행 수</Label>
 					<Select.Root
 						type="single"
 						bind:value={
@@ -353,8 +353,8 @@
 					</Select.Root>
 				</div>
 				<div class="flex w-fit items-center justify-center text-sm font-medium">
-					Page {table.getState().pagination.pageIndex + 1} of
-					{table.getPageCount()}
+					{table.getPageCount()}페이지 중
+					{table.getState().pagination.pageIndex + 1}페이지
 				</div>
 				<div class="ms-auto flex items-center gap-2 lg:ms-0">
 					<Button
@@ -363,7 +363,7 @@
 						onclick={() => table.setPageIndex(0)}
 						disabled={!table.getCanPreviousPage()}
 					>
-						<span class="sr-only">Go to first page</span>
+						<span class="sr-only">첫 페이지로 이동</span>
 						<ChevronsLeftIcon />
 					</Button>
 					<Button
@@ -373,7 +373,7 @@
 						onclick={() => table.previousPage()}
 						disabled={!table.getCanPreviousPage()}
 					>
-						<span class="sr-only">Go to previous page</span>
+						<span class="sr-only">이전 페이지로 이동</span>
 						<ChevronLeftIcon />
 					</Button>
 					<Button
@@ -383,7 +383,7 @@
 						onclick={() => table.nextPage()}
 						disabled={!table.getCanNextPage()}
 					>
-						<span class="sr-only">Go to next page</span>
+						<span class="sr-only">다음 페이지로 이동</span>
 						<ChevronRightIcon />
 					</Button>
 					<Button
@@ -393,7 +393,7 @@
 						onclick={() => table.setPageIndex(table.getPageCount() - 1)}
 						disabled={!table.getCanNextPage()}
 					>
-						<span class="sr-only">Go to last page</span>
+						<span class="sr-only">마지막 페이지로 이동</span>
 						<ChevronsRightIcon />
 					</Button>
 				</div>
@@ -416,13 +416,13 @@
 		onsubmit={(e) => {
 			e.preventDefault();
 			toast.promise(new Promise((resolve) => setTimeout(resolve, 1000)), {
-				loading: `Saving ${row.original.header}`,
-				success: "Done",
-				error: "Error",
+				loading: `${row.original.header} 저장 중`,
+				success: "완료",
+				error: "오류",
 			});
 		}}
 	>
-		<Label for="{row.original.id}-limit" class="sr-only">Limit</Label>
+		<Label for="{row.original.id}-limit" class="sr-only">한계</Label>
 		<Input
 			class="hover:bg-input/30 focus-visible:bg-background dark:hover:bg-input/30 dark:focus-visible:bg-input/30 h-8 w-16 border-transparent bg-transparent text-end shadow-none focus-visible:border dark:bg-transparent"
 			value={row.original.limit}
@@ -436,13 +436,13 @@
 		onsubmit={(e) => {
 			e.preventDefault();
 			toast.promise(new Promise((resolve) => setTimeout(resolve, 1000)), {
-				loading: `Saving ${row.original.header}`,
-				success: "Done",
-				error: "Error",
+				loading: `${row.original.header} 저장 중`,
+				success: "완료",
+				error: "오류",
 			});
 		}}
 	>
-		<Label for="{row.original.id}-target" class="sr-only">Target</Label>
+		<Label for="{row.original.id}-target" class="sr-only">목표</Label>
 		<Input
 			class="hover:bg-input/30 focus-visible:bg-background dark:hover:bg-input/30 dark:focus-visible:bg-input/30 h-8 w-16 border-transparent bg-transparent text-end shadow-none focus-visible:border dark:bg-transparent"
 			value={row.original.target}
@@ -461,7 +461,7 @@
 
 {#snippet DataTableStatus({ row }: { row: Row<Schema> })}
 	<Badge variant="outline" class="text-muted-foreground px-1.5">
-		{#if row.original.status === "Done"}
+		{#if row.original.status === "완료"}
 			<CircleCheckFilledIcon class="fill-green-500 dark:fill-green-400" />
 		{:else}
 			<LoaderIcon />
@@ -476,16 +476,16 @@
 			{#snippet child({ props })}
 				<Button variant="ghost" size="icon" {...props}>
 					<DotsVerticalIcon />
-					<span class="sr-only">Open menu</span>
+					<span class="sr-only">메뉴 열기</span>
 				</Button>
 			{/snippet}
 		</DropdownMenu.Trigger>
 		<DropdownMenu.Content align="end" class="w-32">
-			<DropdownMenu.Item>Edit</DropdownMenu.Item>
-			<DropdownMenu.Item>Make a copy</DropdownMenu.Item>
-			<DropdownMenu.Item>Favorite</DropdownMenu.Item>
+			<DropdownMenu.Item>편집</DropdownMenu.Item>
+			<DropdownMenu.Item>복사본 만들기</DropdownMenu.Item>
+			<DropdownMenu.Item>즐겨찾기</DropdownMenu.Item>
 			<DropdownMenu.Separator />
-			<DropdownMenu.Item variant="destructive">Delete</DropdownMenu.Item>
+			<DropdownMenu.Item variant="destructive">삭제</DropdownMenu.Item>
 		</DropdownMenu.Content>
 	</DropdownMenu.Root>
 {/snippet}
@@ -522,6 +522,6 @@
 		class="text-muted-foreground size-7 hover:bg-transparent"
 	>
 		<GripVerticalIcon class="text-muted-foreground size-3" />
-		<span class="sr-only">Drag to reorder</span>
+		<span class="sr-only">드래그하여 순서 변경</span>
 	</Button>
 {/snippet}

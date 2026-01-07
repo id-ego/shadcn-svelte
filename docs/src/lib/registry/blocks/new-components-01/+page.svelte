@@ -36,7 +36,7 @@
 			</div>
 			<div class="flex flex-col gap-6 *:[div]:w-full *:[div]:max-w-full">
 				<ItemDemo />
-				<Field.Separator>Appearance Settings</Field.Separator>
+				<Field.Separator>외형 설정</Field.Separator>
 				<AppearanceSettings />
 			</div>
 			<div
@@ -53,7 +53,7 @@
 						<Field.Field orientation="horizontal">
 							<Checkbox id="checkbox-demo" checked />
 							<Field.Label for="checkbox-demo" class="line-clamp-1">
-								I agree to the terms and conditions
+								약관에 동의합니다
 							</Field.Label>
 						</Field.Field>
 					</Field.Label>

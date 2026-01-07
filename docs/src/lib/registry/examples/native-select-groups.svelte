@@ -3,20 +3,20 @@
 </script>
 
 <NativeSelect.Root>
-	<NativeSelect.Option value="">Select department</NativeSelect.Option>
-	<NativeSelect.OptGroup label="Engineering">
-		<NativeSelect.Option value="frontend">Frontend</NativeSelect.Option>
-		<NativeSelect.Option value="backend">Backend</NativeSelect.Option>
-		<NativeSelect.Option value="devops">DevOps</NativeSelect.Option>
+	<NativeSelect.Option value="">부서 선택</NativeSelect.Option>
+	<NativeSelect.OptGroup label="엔지니어링">
+		<NativeSelect.Option value="frontend">프론트엔드</NativeSelect.Option>
+		<NativeSelect.Option value="backend">백엔드</NativeSelect.Option>
+		<NativeSelect.Option value="devops">데브옵스</NativeSelect.Option>
 	</NativeSelect.OptGroup>
-	<NativeSelect.OptGroup label="Sales">
-		<NativeSelect.Option value="sales-rep">Sales Rep</NativeSelect.Option>
-		<NativeSelect.Option value="account-manager">Account Manager</NativeSelect.Option>
-		<NativeSelect.Option value="sales-director">Sales Director</NativeSelect.Option>
+	<NativeSelect.OptGroup label="영업">
+		<NativeSelect.Option value="sales-rep">영업 담당자</NativeSelect.Option>
+		<NativeSelect.Option value="account-manager">계정 관리자</NativeSelect.Option>
+		<NativeSelect.Option value="sales-director">영업 이사</NativeSelect.Option>
 	</NativeSelect.OptGroup>
-	<NativeSelect.OptGroup label="Operations">
-		<NativeSelect.Option value="support">Customer Support</NativeSelect.Option>
-		<NativeSelect.Option value="product-manager">Product Manager</NativeSelect.Option>
-		<NativeSelect.Option value="ops-manager">Operations Manager</NativeSelect.Option>
+	<NativeSelect.OptGroup label="운영">
+		<NativeSelect.Option value="support">고객 지원</NativeSelect.Option>
+		<NativeSelect.Option value="product-manager">제품 관리자</NativeSelect.Option>
+		<NativeSelect.Option value="ops-manager">운영 관리자</NativeSelect.Option>
 	</NativeSelect.OptGroup>
 </NativeSelect.Root>

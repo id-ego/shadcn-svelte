@@ -59,12 +59,12 @@
 </script>
 
 <Drawer.Root>
-	<Drawer.Trigger class={buttonVariants({ variant: "outline" })}>Open Drawer</Drawer.Trigger>
+	<Drawer.Trigger class={buttonVariants({ variant: "outline" })}>드로어 열기</Drawer.Trigger>
 	<Drawer.Content>
 		<div class="mx-auto w-full max-w-sm">
 			<Drawer.Header>
-				<Drawer.Title>Move Goal</Drawer.Title>
-				<Drawer.Description>Set your daily activity goal.</Drawer.Description>
+				<Drawer.Title>목표 이동</Drawer.Title>
+				<Drawer.Description>일일 활동 목표를 설정하세요.</Drawer.Description>
 			</Drawer.Header>
 			<div class="p-4 pb-0">
 				<div class="flex items-center justify-center space-x-2">
@@ -76,14 +76,14 @@
 						disabled={goal <= 200}
 					>
 						<MinusIcon />
-						<span class="sr-only">Decrease</span>
+						<span class="sr-only">감소</span>
 					</Button>
 					<div class="flex-1 text-center">
 						<div class="text-7xl font-bold tracking-tighter">
 							{goal}
 						</div>
 						<div class="text-muted-foreground text-[0.70rem] uppercase">
-							Calories/day
+							칼로리/일
 						</div>
 					</div>
 					<Button
@@ -94,7 +94,7 @@
 						disabled={goal >= 400}
 					>
 						<PlusIcon />
-						<span class="sr-only">Increase</span>
+						<span class="sr-only">증가</span>
 					</Button>
 				</div>
 				<div class="mt-3 h-[120px]">
@@ -135,8 +135,8 @@
 				</div>
 			</div>
 			<Drawer.Footer>
-				<Button>Submit</Button>
-				<Drawer.Close class={buttonVariants({ variant: "outline" })}>Cancel</Drawer.Close>
+				<Button>제출</Button>
+				<Drawer.Close class={buttonVariants({ variant: "outline" })}>취소</Drawer.Close>
 			</Drawer.Footer>
 		</div>
 	</Drawer.Content>

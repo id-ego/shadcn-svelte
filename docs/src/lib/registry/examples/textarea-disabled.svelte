@@ -2,4 +2,4 @@
 	import { Textarea } from "$lib/registry/ui/textarea/index.js";
 </script>
 
-<Textarea disabled placeholder="Type your message here." />
+<Textarea disabled placeholder="메시지를 입력하세요." />

@@ -49,7 +49,7 @@
 <Sidebar.Root bind:ref {...restProps}>
 	<Sidebar.Content>
 		<Sidebar.Group>
-			<Sidebar.GroupLabel>Changes</Sidebar.GroupLabel>
+			<Sidebar.GroupLabel>변경사항</Sidebar.GroupLabel>
 			<Sidebar.GroupContent>
 				<Sidebar.Menu>
 					{#each data.changes as item, index (index)}
@@ -65,7 +65,7 @@
 			</Sidebar.GroupContent>
 		</Sidebar.Group>
 		<Sidebar.Group>
-			<Sidebar.GroupLabel>Files</Sidebar.GroupLabel>
+			<Sidebar.GroupLabel>파일</Sidebar.GroupLabel>
 			<Sidebar.GroupContent>
 				<Sidebar.Menu>
 					{#each data.tree as item, index (index)}

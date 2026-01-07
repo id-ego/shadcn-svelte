@@ -4,6 +4,6 @@
 </script>
 
 <div class="grid w-full gap-1.5">
-	<Label for="message">Your message</Label>
-	<Textarea placeholder="Type your message here." id="message" />
+	<Label for="message">메시지</Label>
+	<Textarea placeholder="메시지를 입력하세요." id="message" />
 </div>

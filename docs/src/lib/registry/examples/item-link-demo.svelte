@@ -9,9 +9,9 @@
 		{#snippet child({ props })}
 			<a href="#/" {...props}>
 				<Item.Content>
-					<Item.Title>Visit our documentation</Item.Title>
+					<Item.Title>문서 방문하기</Item.Title>
 					<Item.Description>
-						Learn how to get started with our components.
+						컴포넌트 시작 방법을 알아보세요.
 					</Item.Description>
 				</Item.Content>
 				<Item.Actions>
@@ -24,9 +24,9 @@
 		{#snippet child({ props })}
 			<a href="#/" target="_blank" rel="noopener noreferrer" {...props}>
 				<Item.Content>
-					<Item.Title>External resource</Item.Title>
+					<Item.Title>외부 리소스</Item.Title>
 					<Item.Description>
-						Opens in a new tab with security attributes.
+						보안 속성과 함께 새 탭에서 열립니다.
 					</Item.Description>
 				</Item.Content>
 				<Item.Actions>

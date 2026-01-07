@@ -44,7 +44,7 @@
 				side={sidebar.isMobile ? "bottom" : "right"}
 				sideOffset={4}
 			>
-				<DropdownMenu.Label class="text-muted-foreground text-xs">Teams</DropdownMenu.Label>
+				<DropdownMenu.Label class="text-muted-foreground text-xs">팀</DropdownMenu.Label>
 				{#each teams as team, index (team.name)}
 					<DropdownMenu.Item onSelect={() => (activeTeam = team)} class="gap-2 p-2">
 						<div class="flex size-6 items-center justify-center rounded-md border">
@@ -61,7 +61,7 @@
 					>
 						<PlusIcon class="size-4" />
 					</div>
-					<div class="text-muted-foreground font-medium">Add team</div>
+					<div class="text-muted-foreground font-medium">팀 추가</div>
 				</DropdownMenu.Item>
 			</DropdownMenu.Content>
 		</DropdownMenu.Root>

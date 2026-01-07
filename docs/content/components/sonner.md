@@ -108,7 +108,7 @@ Sonner 컴포넌트는 [svelte-sonner](https://svelte-sonner.vercel.app/)에서 
 ```
 
 ```svelte
-<Button onclick={() => toast("Hello world")}>Show toast</Button>
+<Button onclick={() => toast("안녕하세요")}>토스트 표시</Button>
 ```
 
 ## 예제

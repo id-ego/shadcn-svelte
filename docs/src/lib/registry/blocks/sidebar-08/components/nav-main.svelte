@@ -22,7 +22,7 @@
 </script>
 
 <Sidebar.Group>
-	<Sidebar.GroupLabel>Platform</Sidebar.GroupLabel>
+	<Sidebar.GroupLabel>플랫폼</Sidebar.GroupLabel>
 	<Sidebar.Menu>
 		{#each items as mainItem (mainItem.title)}
 			<Collapsible.Root open={mainItem.isActive}>
@@ -44,7 +44,7 @@
 										class="data-[state=open]:rotate-90"
 									>
 										<ChevronRightIcon />
-										<span class="sr-only">Toggle</span>
+										<span class="sr-only">토글</span>
 									</Sidebar.MenuAction>
 								{/snippet}
 							</Collapsible.Trigger>

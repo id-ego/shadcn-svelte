@@ -23,29 +23,29 @@
 			<form class="p-6 md:p-8">
 				<FieldGroup>
 					<div class="flex flex-col items-center gap-2 text-center">
-						<h1 class="text-2xl font-bold">Welcome back</h1>
+						<h1 class="text-2xl font-bold">다시 오신 것을 환영합니다</h1>
 						<p class="text-muted-foreground text-balance">
-							Login to your Acme Inc account
+							Acme Inc 계정으로 로그인하세요
 						</p>
 					</div>
 					<Field>
-						<FieldLabel for="email-{id}">Email</FieldLabel>
+						<FieldLabel for="email-{id}">이메일</FieldLabel>
 						<Input id="email-{id}" type="email" placeholder="m@example.com" required />
 					</Field>
 					<Field>
 						<div class="flex items-center">
-							<FieldLabel for="password-{id}">Password</FieldLabel>
+							<FieldLabel for="password-{id}">비밀번호</FieldLabel>
 							<a href="##" class="ms-auto text-sm underline-offset-2 hover:underline">
-								Forgot your password?
+								비밀번호를 잊으셨나요?
 							</a>
 						</div>
 						<Input id="password-{id}" type="password" required />
 					</Field>
 					<Field>
-						<Button type="submit">Login</Button>
+						<Button type="submit">로그인</Button>
 					</Field>
 					<FieldSeparator class="*:data-[slot=field-separator-content]:bg-card">
-						Or continue with
+						또는 다음으로 계속
 					</FieldSeparator>
 					<Field class="grid grid-cols-3 gap-4">
 						<Button variant="outline" type="button">
@@ -55,7 +55,7 @@
 									fill="currentColor"
 								/>
 							</svg>
-							<span class="sr-only">Login with Apple</span>
+							<span class="sr-only">Apple로 로그인</span>
 						</Button>
 						<Button variant="outline" type="button">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -64,7 +64,7 @@
 									fill="currentColor"
 								/>
 							</svg>
-							<span class="sr-only">Login with Google</span>
+							<span class="sr-only">Google로 로그인</span>
 						</Button>
 						<Button variant="outline" type="button">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -73,11 +73,11 @@
 									fill="currentColor"
 								/>
 							</svg>
-							<span class="sr-only">Login with Meta</span>
+							<span class="sr-only">Meta로 로그인</span>
 						</Button>
 					</Field>
 					<FieldDescription class="text-center">
-						Don't have an account? <a href="##">Sign up</a>
+						계정이 없으신가요? <a href="##">가입하기</a>
 					</FieldDescription>
 				</FieldGroup>
 			</form>
@@ -91,7 +91,7 @@
 		</Card.Content>
 	</Card.Root>
 	<FieldDescription class="px-6 text-center">
-		By clicking continue, you agree to our <a href="##">Terms of Service</a> and
-		<a href="##">Privacy Policy</a>.
+		계속 진행하면 <a href="##">서비스 약관</a> 및
+		<a href="##">개인정보 처리방침</a>에 동의하는 것으로 간주됩니다.
 	</FieldDescription>
 </div>

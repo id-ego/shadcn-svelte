@@ -14,10 +14,10 @@
 			<Sidebar.MenuItem class="flex items-center gap-2">
 				<Sidebar.MenuButton
 					class="bg-primary text-primary-foreground hover:bg-primary/90 hover:text-primary-foreground active:bg-primary/90 active:text-primary-foreground min-w-8 duration-200 ease-linear"
-					tooltipContent="Quick create"
+					tooltipContent="빠른 생성"
 				>
 					<CirclePlusFilledIcon />
-					<span>Quick Create</span>
+					<span>빠른 생성</span>
 				</Sidebar.MenuButton>
 				<Button
 					size="icon"
@@ -25,7 +25,7 @@
 					variant="outline"
 				>
 					<MailIcon />
-					<span class="sr-only">Inbox</span>
+					<span class="sr-only">받은편지함</span>
 				</Button>
 			</Sidebar.MenuItem>
 		</Sidebar.Menu>

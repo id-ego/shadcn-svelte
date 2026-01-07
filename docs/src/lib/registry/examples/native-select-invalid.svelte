@@ -3,9 +3,9 @@
 </script>
 
 <NativeSelect.Root aria-invalid="true">
-	<NativeSelect.Option value="">Select role</NativeSelect.Option>
-	<NativeSelect.Option value="admin">Admin</NativeSelect.Option>
-	<NativeSelect.Option value="editor">Editor</NativeSelect.Option>
-	<NativeSelect.Option value="viewer">Viewer</NativeSelect.Option>
-	<NativeSelect.Option value="guest">Guest</NativeSelect.Option>
+	<NativeSelect.Option value="">역할 선택</NativeSelect.Option>
+	<NativeSelect.Option value="admin">관리자</NativeSelect.Option>
+	<NativeSelect.Option value="editor">편집자</NativeSelect.Option>
+	<NativeSelect.Option value="viewer">뷰어</NativeSelect.Option>
+	<NativeSelect.Option value="guest">게스트</NativeSelect.Option>
 </NativeSelect.Root>

@@ -32,8 +32,8 @@
 				alignOffset={10}
 				class="flex flex-col gap-1 rounded-xl text-sm"
 			>
-				<p class="font-medium">Your connection is not secure.</p>
-				<p>You should not enter any sensitive information on this site.</p>
+				<p class="font-medium">연결이 안전하지 않습니다.</p>
+				<p>이 사이트에 민감한 정보를 입력하지 마세요.</p>
 			</Popover.Content>
 		</Popover.Root>
 		<InputGroup.Addon class="text-muted-foreground !ps-1">https://</InputGroup.Addon>

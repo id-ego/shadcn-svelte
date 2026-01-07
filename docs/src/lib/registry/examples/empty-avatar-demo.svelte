@@ -12,13 +12,12 @@
 				<Avatar.Fallback>LR</Avatar.Fallback>
 			</Avatar.Root>
 		</Empty.Media>
-		<Empty.Title>User Offline</Empty.Title>
+		<Empty.Title>사용자가 오프라인입니다</Empty.Title>
 		<Empty.Description>
-			This user is currently offline. You can leave a message to notify them or try again
-			later.
+			이 사용자는 현재 오프라인 상태입니다. 메시지를 남겨 알리거나 나중에 다시 시도하세요.
 		</Empty.Description>
 	</Empty.Header>
 	<Empty.Content>
-		<Button size="sm">Leave Message</Button>
+		<Button size="sm">메시지 남기기</Button>
 	</Empty.Content>
 </Empty.Root>

@@ -4,6 +4,6 @@
 </script>
 
 <div class="flex w-full max-w-sm items-center gap-2">
-	<Input type="email" placeholder="Email" />
-	<Button type="submit" variant="outline">Subscribe</Button>
+	<Input type="email" placeholder="이메일" />
+	<Button type="submit" variant="outline">구독</Button>
 </div>

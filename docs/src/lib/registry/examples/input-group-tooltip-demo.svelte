@@ -7,7 +7,7 @@
 
 <div class="grid w-full max-w-sm gap-4">
 	<InputGroup.Root>
-		<InputGroup.Input placeholder="Enter password" type="password" />
+		<InputGroup.Input placeholder="비밀번호 입력" type="password" />
 		<InputGroup.Addon align="inline-end">
 			<Tooltip.Root>
 				<Tooltip.Trigger>
@@ -23,13 +23,13 @@
 					{/snippet}
 				</Tooltip.Trigger>
 				<Tooltip.Content>
-					<p>Password must be at least 8 characters</p>
+					<p>비밀번호는 최소 8자 이상이어야 합니다</p>
 				</Tooltip.Content>
 			</Tooltip.Root>
 		</InputGroup.Addon>
 	</InputGroup.Root>
 	<InputGroup.Root>
-		<InputGroup.Input placeholder="Your email address" />
+		<InputGroup.Input placeholder="이메일 주소" />
 		<InputGroup.Addon align="inline-end">
 			<Tooltip.Root>
 				<Tooltip.Trigger>
@@ -45,13 +45,13 @@
 					{/snippet}
 				</Tooltip.Trigger>
 				<Tooltip.Content>
-					<p>We'll use this to send you notifications</p>
+					<p>알림을 보내는 데 사용됩니다</p>
 				</Tooltip.Content>
 			</Tooltip.Root>
 		</InputGroup.Addon>
 	</InputGroup.Root>
 	<InputGroup.Root>
-		<InputGroup.Input placeholder="Enter API key" />
+		<InputGroup.Input placeholder="API 키 입력" />
 		<Tooltip.Root>
 			<Tooltip.Trigger>
 				{#snippet child({ props })}
@@ -68,7 +68,7 @@
 				{/snippet}
 			</Tooltip.Trigger>
 			<Tooltip.Content side="left">
-				<p>Click for help with API keys</p>
+				<p>API 키 관련 도움말 보기</p>
 			</Tooltip.Content>
 		</Tooltip.Root>
 	</InputGroup.Root>

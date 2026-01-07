@@ -18,9 +18,9 @@
 		SPA: true,
 		onUpdate: ({ form: f }) => {
 			if (f.valid) {
-				toast.success(`You submitted ${JSON.stringify(f.data, null, 2)}`);
+				toast.success(`제출하신 내용: ${JSON.stringify(f.data, null, 2)}`);
 			} else {
-				toast.error("Please fix the errors in the form.");
+				toast.error("양식의 오류를 수정해 주세요.");
 			}
 		},
 	});
@@ -32,12 +32,12 @@
 	<Form.Field {form} name="username">
 		<Form.Control>
 			{#snippet children({ props })}
-				<Form.Label>Username</Form.Label>
+				<Form.Label>사용자명</Form.Label>
 				<Input {...props} bind:value={$formData.username} />
 			{/snippet}
 		</Form.Control>
-		<Form.Description>This is your public display name.</Form.Description>
+		<Form.Description>공개 표시 이름입니다.</Form.Description>
 		<Form.FieldErrors />
 	</Form.Field>
-	<Form.Button>Submit</Form.Button>
+	<Form.Button>제출</Form.Button>
 </form>

@@ -10,14 +10,14 @@
 
 <Card.Root {...props}>
 	<Card.Header>
-		<Card.Title>Enter verification code</Card.Title>
-		<Card.Description>We sent a 6-digit code to your email.</Card.Description>
+		<Card.Title>인증 코드 입력</Card.Title>
+		<Card.Description>이메일로 6자리 코드를 보냈습니다.</Card.Description>
 	</Card.Header>
 	<Card.Content>
 		<form>
 			<Field.Group>
 				<Field.Field>
-					<Field.Label for="otp">Verification code</Field.Label>
+					<Field.Label for="otp">인증 코드</Field.Label>
 					<InputOTP.Root maxlength={6} id="otp" required>
 						{#snippet children({ cells })}
 							<InputOTP.Group
@@ -30,13 +30,13 @@
 						{/snippet}
 					</InputOTP.Root>
 					<Field.Description>
-						Enter the 6-digit code sent to your email.
+						이메일로 전송된 6자리 코드를 입력하세요.
 					</Field.Description>
 				</Field.Field>
 				<Field.Group>
-					<Button type="submit">Verify</Button>
+					<Button type="submit">확인</Button>
 					<Field.Description class="text-center">
-						Didn't receive the code? <a href="#/">Resend</a>
+						코드를 받지 못하셨나요? <a href="#/">재전송</a>
 					</Field.Description>
 				</Field.Group>
 			</Field.Group>

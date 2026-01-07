@@ -63,9 +63,9 @@ links:
 <NavigationMenu.Root>
   <NavigationMenu.List>
     <NavigationMenu.Item>
-      <NavigationMenu.Trigger>Item One</NavigationMenu.Trigger>
+      <NavigationMenu.Trigger>항목 1</NavigationMenu.Trigger>
       <NavigationMenu.Content>
-        <NavigationMenu.Link>Link</NavigationMenu.Link>
+        <NavigationMenu.Link>링크</NavigationMenu.Link>
       </NavigationMenu.Content>
     </NavigationMenu.Item>
   </NavigationMenu.List>

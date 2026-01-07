@@ -46,7 +46,7 @@
 	);
 
 	const monthLabel = $derived(
-		monthOptions.find((m) => m.value === defaultMonth?.value)?.label ?? "Select a month"
+		monthOptions.find((m) => m.value === defaultMonth?.value)?.label ?? "월 선택"
 	);
 </script>
 
@@ -87,7 +87,7 @@
 				}}
 			>
 				<Select.Trigger aria-label="Select year" class="w-[40%]">
-					{defaultYear?.label ?? "Select year"}
+					{defaultYear?.label ?? "년도 선택"}
 				</Select.Trigger>
 				<Select.Content class="max-h-[200px] overflow-y-auto">
 					{#each yearOptions as { value, label } (value)}

@@ -35,6 +35,6 @@
 		<Carousel.Next />
 	</Carousel.Root>
 	<div class="text-muted-foreground py-2 text-center text-sm">
-		Slide {current} of {count}
+		슬라이드 {current} / {count}
 	</div>
 </div>

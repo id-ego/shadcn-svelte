@@ -76,9 +76,9 @@ links:
 ```svelte showLineNumbers
 <Accordion.Root type="single">
   <Accordion.Item value="item-1">
-    <Accordion.Trigger>Is it accessible?</Accordion.Trigger>
+    <Accordion.Trigger>접근성이 있나요?</Accordion.Trigger>
     <Accordion.Content>
-      Yes. It adheres to the WAI-ARIA design pattern.
+      네. WAI-ARIA 디자인 패턴을 준수합니다.
     </Accordion.Content>
   </Accordion.Item>
 </Accordion.Root>

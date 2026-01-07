@@ -5,5 +5,5 @@
 
 <Toggle aria-label="Toggle italic">
 	<ItalicIcon class="me-2 size-4" />
-	Italic
+	기울임꼴
 </Toggle>

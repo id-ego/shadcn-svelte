@@ -16,35 +16,35 @@
 			title: "Alert Dialog",
 			href: "/docs/components/alert-dialog",
 			description:
-				"A modal dialog that interrupts the user with important content and expects a response.",
+				"중요한 콘텐츠로 사용자를 중단시키고 응답을 기대하는 모달 다이얼로그입니다.",
 		},
 		{
 			title: "Hover Card",
 			href: "/docs/components/hover-card",
-			description: "For sighted users to preview content available behind a link.",
+			description: "링크 뒤의 콘텐츠를 미리보기 위한 컴포넌트입니다.",
 		},
 		{
 			title: "Progress",
 			href: "/docs/components/progress",
 			description:
-				"Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+				"작업의 완료 진행 상황을 나타내는 표시기로, 일반적으로 진행률 표시줄로 표시됩니다.",
 		},
 		{
 			title: "Scroll-area",
 			href: "/docs/components/scroll-area",
-			description: "Visually or semantically separates content.",
+			description: "콘텐츠를 시각적 또는 의미론적으로 구분합니다.",
 		},
 		{
 			title: "Tabs",
 			href: "/docs/components/tabs",
 			description:
-				"A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+				"탭 패널로 알려진 계층화된 콘텐츠 섹션의 집합으로, 한 번에 하나씩 표시됩니다.",
 		},
 		{
 			title: "Tooltip",
 			href: "/docs/components/tooltip",
 			description:
-				"A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+				"요소가 키보드 포커스를 받거나 마우스가 요소 위로 올라갈 때 관련 정보를 표시하는 팝업입니다.",
 		},
 	];
 
@@ -80,7 +80,7 @@
 <NavigationMenu.Root viewport={isMobile.current}>
 	<NavigationMenu.List class="flex-wrap">
 		<NavigationMenu.Item>
-			<NavigationMenu.Trigger>Home</NavigationMenu.Trigger>
+			<NavigationMenu.Trigger>홈</NavigationMenu.Trigger>
 			<NavigationMenu.Content>
 				<ul class="grid gap-2 p-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
 					<li class="row-span-3">
@@ -91,7 +91,7 @@
 								<a {...props} href="/">
 									<div class="mt-4 mb-2 text-lg font-medium">shadcn-svelte</div>
 									<p class="text-muted-foreground text-sm leading-tight">
-										Beautifully designed components built with Tailwind CSS.
+										Tailwind CSS로 구축된 아름답게 디자인된 컴포넌트.
 									</p>
 								</a>
 							{/snippet}
@@ -99,24 +99,24 @@
 					</li>
 					{@render ListItem({
 						href: "/docs",
-						title: "Introduction",
-						content: "Re-usable components built using Bits UI and Tailwind CSS.",
+						title: "소개",
+						content: "Bits UI와 Tailwind CSS를 사용하여 구축된 재사용 가능한 컴포넌트.",
 					})}
 					{@render ListItem({
 						href: "/docs/installation",
-						title: "Installation",
-						content: "How to install dependencies and structure your app.",
+						title: "설치",
+						content: "의존성을 설치하고 앱을 구조화하는 방법.",
 					})}
 					{@render ListItem({
 						href: "/docs/components/typography",
-						title: "Typography",
-						content: "Styles for headings, paragraphs, lists...etc",
+						title: "타이포그래피",
+						content: "제목, 단락, 목록 등을 위한 스타일",
 					})}
 				</ul>
 			</NavigationMenu.Content>
 		</NavigationMenu.Item>
 		<NavigationMenu.Item>
-			<NavigationMenu.Trigger>Components</NavigationMenu.Trigger>
+			<NavigationMenu.Trigger>컴포넌트</NavigationMenu.Trigger>
 			<NavigationMenu.Content>
 				<ul
 					class="grid w-[300px] gap-2 p-2 sm:w-[400px] md:w-[500px] md:grid-cols-2 lg:w-[600px]"
@@ -135,64 +135,64 @@
 		<NavigationMenu.Item>
 			<NavigationMenu.Link>
 				{#snippet child()}
-					<a href="/docs" class={navigationMenuTriggerStyle()}>Docs</a>
+					<a href="/docs" class={navigationMenuTriggerStyle()}>문서</a>
 				{/snippet}
 			</NavigationMenu.Link>
 		</NavigationMenu.Item>
 		<NavigationMenu.Item class="hidden md:block">
-			<NavigationMenu.Trigger>List</NavigationMenu.Trigger>
+			<NavigationMenu.Trigger>목록</NavigationMenu.Trigger>
 			<NavigationMenu.Content>
 				<ul class="grid w-[300px] gap-4 p-2">
 					<li>
 						<NavigationMenu.Link href="##">
-							<div class="font-medium">Components</div>
+							<div class="font-medium">컴포넌트</div>
 							<div class="text-muted-foreground">
-								Browse all components in the library.
+								라이브러리의 모든 컴포넌트를 둘러보세요.
 							</div>
 						</NavigationMenu.Link>
 						<NavigationMenu.Link href="##">
-							<div class="font-medium">Documentation</div>
-							<div class="text-muted-foreground">Learn how to use the library.</div>
+							<div class="font-medium">문서</div>
+							<div class="text-muted-foreground">라이브러리 사용 방법을 배워보세요.</div>
 						</NavigationMenu.Link>
 						<NavigationMenu.Link href="##">
-							<div class="font-medium">Blog</div>
-							<div class="text-muted-foreground">Read our latest blog posts.</div>
+							<div class="font-medium">블로그</div>
+							<div class="text-muted-foreground">최신 블로그 포스트를 읽어보세요.</div>
 						</NavigationMenu.Link>
 					</li>
 				</ul>
 			</NavigationMenu.Content>
 		</NavigationMenu.Item>
 		<NavigationMenu.Item class="hidden md:block">
-			<NavigationMenu.Trigger>Simple</NavigationMenu.Trigger>
+			<NavigationMenu.Trigger>간단한 예제</NavigationMenu.Trigger>
 			<NavigationMenu.Content>
 				<ul class="grid w-[200px] gap-4 p-2">
 					<li>
-						<NavigationMenu.Link href="##">Components</NavigationMenu.Link>
-						<NavigationMenu.Link href="##">Documentation</NavigationMenu.Link>
-						<NavigationMenu.Link href="##">Blocks</NavigationMenu.Link>
+						<NavigationMenu.Link href="##">컴포넌트</NavigationMenu.Link>
+						<NavigationMenu.Link href="##">문서</NavigationMenu.Link>
+						<NavigationMenu.Link href="##">블록</NavigationMenu.Link>
 					</li>
 				</ul>
 			</NavigationMenu.Content>
 		</NavigationMenu.Item>
 		<NavigationMenu.Item class="hidden md:block">
-			<NavigationMenu.Trigger>With Icon</NavigationMenu.Trigger>
+			<NavigationMenu.Trigger>아이콘 예제</NavigationMenu.Trigger>
 
 			<NavigationMenu.Content>
 				<ul class="grid w-[200px] gap-4 p-2">
 					<li>
 						<NavigationMenu.Link href="##" class="flex-row items-center gap-2">
 							<CircleHelpIcon />
-							Backlog
+							백로그
 						</NavigationMenu.Link>
 
 						<NavigationMenu.Link href="##" class="flex-row items-center gap-2">
 							<CircleIcon />
-							To Do
+							할 일
 						</NavigationMenu.Link>
 
 						<NavigationMenu.Link href="##" class="flex-row items-center gap-2">
 							<CircleCheckIcon />
-							Done
+							완료
 						</NavigationMenu.Link>
 					</li>
 				</ul>

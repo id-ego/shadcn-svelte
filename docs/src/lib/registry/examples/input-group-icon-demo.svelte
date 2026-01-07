@@ -10,19 +10,19 @@
 
 <div class="grid w-full max-w-sm gap-6">
 	<InputGroup.Root>
-		<InputGroup.Input placeholder="Search..." />
+		<InputGroup.Input placeholder="검색..." />
 		<InputGroup.Addon>
 			<SearchIcon />
 		</InputGroup.Addon>
 	</InputGroup.Root>
 	<InputGroup.Root>
-		<InputGroup.Input type="email" placeholder="Enter your email" />
+		<InputGroup.Input type="email" placeholder="이메일 입력" />
 		<InputGroup.Addon>
 			<MailIcon />
 		</InputGroup.Addon>
 	</InputGroup.Root>
 	<InputGroup.Root>
-		<InputGroup.Input placeholder="Card number" />
+		<InputGroup.Input placeholder="카드 번호" />
 		<InputGroup.Addon>
 			<CreditCardIcon />
 		</InputGroup.Addon>
@@ -31,7 +31,7 @@
 		</InputGroup.Addon>
 	</InputGroup.Root>
 	<InputGroup.Root>
-		<InputGroup.Input placeholder="Card number" />
+		<InputGroup.Input placeholder="카드 번호" />
 		<InputGroup.Addon align="inline-end">
 			<StarIcon />
 			<InfoIcon />

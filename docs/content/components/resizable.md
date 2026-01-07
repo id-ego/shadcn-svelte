@@ -70,9 +70,9 @@ links:
 
 ```svelte showLineNumbers
 <Resizable.PaneGroup direction="horizontal">
-  <Resizable.Pane>One</Resizable.Pane>
+  <Resizable.Pane>하나</Resizable.Pane>
   <Resizable.Handle />
-  <Resizable.Pane>Two</Resizable.Pane>
+  <Resizable.Pane>둘</Resizable.Pane>
 </Resizable.PaneGroup>
 ```
 
@@ -94,9 +94,9 @@ links:
 </script>
 
 <Resizable.PaneGroup direction="vertical">
-  <Resizable.Pane>One</Resizable.Pane>
+  <Resizable.Pane>하나</Resizable.Pane>
   <Resizable.Handle />
-  <Resizable.Pane>Two</Resizable.Pane>
+  <Resizable.Pane>둘</Resizable.Pane>
 </Resizable.PaneGroup>
 ```
 
@@ -116,8 +116,8 @@ links:
 </script>
 
 <Resizable.PaneGroup direction="vertical">
-  <Resizable.Pane>One</Resizable.Pane>
+  <Resizable.Pane>하나</Resizable.Pane>
   <Resizable.Handle withHandle />
-  <Resizable.Pane>Two</Resizable.Pane>
+  <Resizable.Pane>둘</Resizable.Pane>
 </Resizable.PaneGroup>
 ```

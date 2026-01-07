@@ -8,17 +8,17 @@
 <DropdownMenu.Root>
 	<DropdownMenu.Trigger>
 		{#snippet child({ props })}
-			<Button {...props} variant="outline">Open</Button>
+			<Button {...props} variant="outline">열기</Button>
 		{/snippet}
 	</DropdownMenu.Trigger>
 	<DropdownMenu.Content class="w-56">
 		<DropdownMenu.Group>
-			<DropdownMenu.Label>Panel Position</DropdownMenu.Label>
+			<DropdownMenu.Label>패널 위치</DropdownMenu.Label>
 			<DropdownMenu.Separator />
 			<DropdownMenu.RadioGroup bind:value={position}>
-				<DropdownMenu.RadioItem value="top">Top</DropdownMenu.RadioItem>
-				<DropdownMenu.RadioItem value="bottom">Bottom</DropdownMenu.RadioItem>
-				<DropdownMenu.RadioItem value="right">Right</DropdownMenu.RadioItem>
+				<DropdownMenu.RadioItem value="top">상단</DropdownMenu.RadioItem>
+				<DropdownMenu.RadioItem value="bottom">하단</DropdownMenu.RadioItem>
+				<DropdownMenu.RadioItem value="right">오른쪽</DropdownMenu.RadioItem>
 			</DropdownMenu.RadioGroup>
 		</DropdownMenu.Group>
 	</DropdownMenu.Content>

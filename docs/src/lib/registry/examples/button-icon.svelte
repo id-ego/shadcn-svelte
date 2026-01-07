@@ -3,6 +3,6 @@
 	import { Button } from "$lib/registry/ui/button/index.js";
 </script>
 
-<Button variant="outline" size="icon" aria-label="Submit">
+<Button variant="outline" size="icon" aria-label="제출">
 	<CircleFadingArrowUpIcon />
 </Button>

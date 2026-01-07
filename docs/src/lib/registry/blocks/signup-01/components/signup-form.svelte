@@ -10,40 +10,39 @@
 
 <Card.Root {...restProps}>
 	<Card.Header>
-		<Card.Title>Create an account</Card.Title>
-		<Card.Description>Enter your information below to create your account</Card.Description>
+		<Card.Title>계정 만들기</Card.Title>
+		<Card.Description>아래 정보를 입력하여 계정을 생성하세요</Card.Description>
 	</Card.Header>
 	<Card.Content>
 		<form>
 			<Field.Group>
 				<Field.Field>
-					<Field.Label for="name">Full Name</Field.Label>
-					<Input id="name" type="text" placeholder="John Doe" required />
+					<Field.Label for="name">이름</Field.Label>
+					<Input id="name" type="text" placeholder="홍길동" required />
 				</Field.Field>
 				<Field.Field>
-					<Field.Label for="email">Email</Field.Label>
+					<Field.Label for="email">이메일</Field.Label>
 					<Input id="email" type="email" placeholder="m@example.com" required />
 					<Field.Description>
-						We'll use this to contact you. We will not share your email with anyone
-						else.
+						연락처로 사용됩니다. 이메일은 다른 사람과 공유되지 않습니다.
 					</Field.Description>
 				</Field.Field>
 				<Field.Field>
-					<Field.Label for="password">Password</Field.Label>
+					<Field.Label for="password">비밀번호</Field.Label>
 					<Input id="password" type="password" required />
-					<Field.Description>Must be at least 8 characters long.</Field.Description>
+					<Field.Description>최소 8자 이상이어야 합니다.</Field.Description>
 				</Field.Field>
 				<Field.Field>
-					<Field.Label for="confirm-password">Confirm Password</Field.Label>
+					<Field.Label for="confirm-password">비밀번호 확인</Field.Label>
 					<Input id="confirm-password" type="password" required />
-					<Field.Description>Please confirm your password.</Field.Description>
+					<Field.Description>비밀번호를 다시 입력하세요.</Field.Description>
 				</Field.Field>
 				<Field.Group>
 					<Field.Field>
-						<Button type="submit">Create Account</Button>
-						<Button variant="outline" type="button">Sign up with Google</Button>
+						<Button type="submit">계정 만들기</Button>
+						<Button variant="outline" type="button">Google로 가입</Button>
 						<Field.Description class="px-6 text-center">
-							Already have an account? <a href="#/">Sign in</a>
+							이미 계정이 있으신가요? <a href="#/">로그인</a>
 						</Field.Description>
 					</Field.Field>
 				</Field.Group>

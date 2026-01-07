@@ -19,11 +19,11 @@
 					</div>
 					<span class="sr-only">Acme Inc.</span>
 				</a>
-				<h1 class="text-xl font-bold">Enter verification code</h1>
-				<Field.Description>We sent a 6-digit code to your email address</Field.Description>
+				<h1 class="text-xl font-bold">인증 코드 입력</h1>
+				<Field.Description>이메일 주소로 6자리 코드를 보냈습니다</Field.Description>
 			</div>
 			<Field.Field>
-				<Field.Label for="otp" class="sr-only">Verification code</Field.Label>
+				<Field.Label for="otp" class="sr-only">인증 코드</Field.Label>
 				<InputOTP.Root maxlength={6} id="otp" required class="gap-4">
 					{#snippet children({ cells })}
 						<InputOTP.Group
@@ -44,16 +44,15 @@
 					{/snippet}
 				</InputOTP.Root>
 				<Field.Description class="text-center">
-					Didn't receive the code? <a href="#/">Resend</a>
+					코드를 받지 못하셨나요? <a href="#/">재전송</a>
 				</Field.Description>
 			</Field.Field>
 			<Field.Field>
-				<Button type="submit">Verify</Button>
+				<Button type="submit">확인</Button>
 			</Field.Field>
 		</Field.Group>
 	</form>
 	<Field.Description class="px-6 text-center">
-		By clicking continue, you agree to our <a href="#/">Terms of Service</a>
-		and <a href="#/">Privacy Policy</a>.
+		계속하기를 클릭하면 <a href="#/">서비스 약관</a> 및 <a href="#/">개인정보 보호정책</a>에 동의하는 것으로 간주됩니다.
 	</Field.Description>
 </div>

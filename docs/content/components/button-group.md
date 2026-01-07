@@ -56,8 +56,8 @@ links:
 
 ```svelte
 <ButtonGroup.Root>
-  <Button>Button 1</Button>
-  <Button>Button 2</Button>
+  <Button>버튼 1</Button>
+  <Button>버튼 2</Button>
 </ButtonGroup.Root>
 ```
 
@@ -68,9 +68,9 @@ links:
 - `aria-label` 또는 `aria-labelledby`를 사용하여 버튼 그룹에 레이블을 지정하세요.
 
 ```svelte showLineNumbers
-<ButtonGroup aria-label="Button group">
-  <Button>Button 1</Button>
-  <Button>Button 2</Button>
+<ButtonGroup aria-label="버튼 그룹">
+  <Button>버튼 1</Button>
+  <Button>버튼 2</Button>
 </ButtonGroup>
 ```
 

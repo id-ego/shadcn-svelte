@@ -19,19 +19,19 @@
 					</div>
 					<span class="sr-only">Acme Inc.</span>
 				</a>
-				<h1 class="text-xl font-bold">Welcome to Acme Inc.</h1>
+				<h1 class="text-xl font-bold">Acme Inc.에 오신 것을 환영합니다</h1>
 				<Field.Description>
-					Already have an account? <a href="#/">Sign in</a>
+					이미 계정이 있으신가요? <a href="#/">로그인</a>
 				</Field.Description>
 			</div>
 			<Field.Field>
-				<Field.Label for="email">Email</Field.Label>
+				<Field.Label for="email">이메일</Field.Label>
 				<Input id="email" type="email" placeholder="m@example.com" required />
 			</Field.Field>
 			<Field.Field>
-				<Button type="submit">Create Account</Button>
+				<Button type="submit">계정 만들기</Button>
 			</Field.Field>
-			<Field.Separator>Or</Field.Separator>
+			<Field.Separator>또는</Field.Separator>
 			<Field.Field class="grid gap-4 sm:grid-cols-2">
 				<Button variant="outline" type="button">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -40,7 +40,7 @@
 							fill="currentColor"
 						/>
 					</svg>
-					Continue with Apple
+					Apple로 계속
 				</Button>
 				<Button variant="outline" type="button">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -49,13 +49,12 @@
 							fill="currentColor"
 						/>
 					</svg>
-					Continue with Google
+					Google로 계속
 				</Button>
 			</Field.Field>
 		</Field.Group>
 	</form>
 	<Field.Description class="px-6 text-center">
-		By clicking continue, you agree to our <a href="#/">Terms of Service</a>
-		and <a href="#/">Privacy Policy</a>.
+		계속 진행하면 <a href="#/">서비스 약관</a> 및 <a href="#/">개인정보 보호정책</a>에 동의하는 것으로 간주됩니다.
 	</Field.Description>
 </div>

@@ -14,11 +14,11 @@
 			<Breadcrumb.Root>
 				<Breadcrumb.List>
 					<Breadcrumb.Item class="hidden md:block">
-						<Breadcrumb.Link href="##">All Inboxes</Breadcrumb.Link>
+						<Breadcrumb.Link href="##">모든 받은편지함</Breadcrumb.Link>
 					</Breadcrumb.Item>
 					<Breadcrumb.Separator class="hidden md:block" />
 					<Breadcrumb.Item>
-						<Breadcrumb.Page>Inbox</Breadcrumb.Page>
+						<Breadcrumb.Page>받은편지함</Breadcrumb.Page>
 					</Breadcrumb.Item>
 				</Breadcrumb.List>
 			</Breadcrumb.Root>

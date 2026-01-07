@@ -5,7 +5,7 @@
 </script>
 
 <ButtonGroup.Root>
-	<Button variant="secondary">Button</Button>
+	<Button variant="secondary">버튼</Button>
 	<ButtonGroup.Separator />
 	<Button variant="secondary" size="icon">
 		<Plus />

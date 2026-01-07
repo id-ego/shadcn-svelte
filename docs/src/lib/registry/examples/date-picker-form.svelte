@@ -52,7 +52,7 @@
 	<Form.Field {form} name="dob" class="flex flex-col">
 		<Form.Control>
 			{#snippet children({ props })}
-				<Form.Label>Date of birth</Form.Label>
+				<Form.Label>생년월일</Form.Label>
 				<Popover.Root>
 					<Popover.Trigger
 						{...props}
@@ -62,7 +62,7 @@
 							!value && "text-muted-foreground"
 						)}
 					>
-						{value ? df.format(value.toDate(getLocalTimeZone())) : "Pick a date"}
+						{value ? df.format(value.toDate(getLocalTimeZone())) : "날짜 선택"}
 						<CalendarIcon class="ms-auto size-4 opacity-50" />
 					</Popover.Trigger>
 					<Popover.Content class="w-auto p-0" side="top">
@@ -73,7 +73,7 @@
 							captionLayout="dropdown"
 							minValue={new CalendarDate(1900, 1, 1)}
 							maxValue={today(getLocalTimeZone())}
-							calendarLabel="Date of birth"
+							calendarLabel="생년월일"
 							onValueChange={(v) => {
 								if (v) {
 									$formData.dob = v.toString();
@@ -84,12 +84,12 @@
 						/>
 					</Popover.Content>
 				</Popover.Root>
-				<Form.Description>Your date of birth is used to calculate your age</Form.Description
+				<Form.Description>생년월일은 나이를 계산하는 데 사용됩니다</Form.Description
 				>
 				<Form.FieldErrors />
 				<input hidden value={$formData.dob} name={props.name} />
 			{/snippet}
 		</Form.Control>
 	</Form.Field>
-	<Button type="submit">Submit</Button>
+	<Button type="submit">제출</Button>
 </form>

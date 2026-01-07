@@ -216,7 +216,7 @@ export const columns: ColumnDef<Payment>[] = [
       {:else}
         <Table.Row>
           <Table.Cell colspan={columns.length} class="h-24 text-center">
-            No results.
+            결과가 없습니다.
           </Table.Cell>
         </Table.Row>
       {/each}
@@ -345,21 +345,21 @@ export const columns: ColumnDef<Payment>[] = [
         size="icon"
         class="relative size-8 p-0"
       >
-        <span class="sr-only">Open menu</span>
+        <span class="sr-only">메뉴 열기</span>
         <EllipsisIcon />
       </Button>
     {/snippet}
   </DropdownMenu.Trigger>
   <DropdownMenu.Content>
     <DropdownMenu.Group>
-      <DropdownMenu.Label>Actions</DropdownMenu.Label>
+      <DropdownMenu.Label>액션</DropdownMenu.Label>
       <DropdownMenu.Item onclick={() => navigator.clipboard.writeText(id)}>
-        Copy payment ID
+        결제 ID 복사
       </DropdownMenu.Item>
     </DropdownMenu.Group>
     <DropdownMenu.Separator />
-    <DropdownMenu.Item>View customer</DropdownMenu.Item>
-    <DropdownMenu.Item>View payment details</DropdownMenu.Item>
+    <DropdownMenu.Item>고객 보기</DropdownMenu.Item>
+    <DropdownMenu.Item>결제 세부정보 보기</DropdownMenu.Item>
   </DropdownMenu.Content>
 </DropdownMenu.Root>
 ```
@@ -487,7 +487,7 @@ export const columns: ColumnDef<Payment>[] = [
       onclick={() => table.previousPage()}
       disabled={!table.getCanPreviousPage()}
     >
-      Previous
+      이전
     </Button>
     <Button
       variant="outline"
@@ -495,7 +495,7 @@ export const columns: ColumnDef<Payment>[] = [
       onclick={() => table.nextPage()}
       disabled={!table.getCanNextPage()}
     >
-      Next
+      다음
     </Button>
   </div>
 </div>
@@ -526,7 +526,7 @@ export const columns: ColumnDef<Payment>[] = [
 </script>
 
 <Button {variant} {...restProps}>
-  Email
+  이메일
   <ArrowUpDownIcon class="ms-2" />
 </Button>
 ```
@@ -683,7 +683,7 @@ export const columns: ColumnDef<Payment>[] = [
 <div>
   <div class="flex items-center py-4">
     <Input
-      placeholder="Filter emails..."
+      placeholder="이메일 필터링..."
       value={(table.getColumn("email")?.getFilterValue() as string) ?? ""}
       onchange={(e) => {
         table.getColumn("email")?.setFilterValue(e.currentTarget.value);
@@ -791,7 +791,7 @@ export const columns: ColumnDef<Payment>[] = [
 <div>
   <div class="flex items-center py-4">
     <Input
-      placeholder="Filter emails..."
+      placeholder="이메일 필터링..."
       value={table.getColumn("email")?.getFilterValue() as string}
       onchange={(e) =>
         table.getColumn("email")?.setFilterValue(e.currentTarget.value)}
@@ -802,7 +802,7 @@ export const columns: ColumnDef<Payment>[] = [
     <DropdownMenu.Root>
       <DropdownMenu.Trigger>
         {#snippet child({ props })}
-          <Button {...props} variant="outline" class="ms-auto">Columns</Button>
+          <Button {...props} variant="outline" class="ms-auto">컬럼</Button>
         {/snippet}
       </DropdownMenu.Trigger>
       <DropdownMenu.Content align="end">
@@ -989,8 +989,8 @@ export const columns: ColumnDef<Payment>[] = [
 
 ```svelte
 <div class="text-muted-foreground flex-1 text-sm">
-  {table.getFilteredSelectedRowModel().rows.length} of{" "}
-  {table.getFilteredRowModel().rows.length} row(s) selected.
+  {table.getFilteredRowModel().rows.length}개 중{" "}
+  {table.getFilteredSelectedRowModel().rows.length}개 선택됨
 </div>
 ```
 

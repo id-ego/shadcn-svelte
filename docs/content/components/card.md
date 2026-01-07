@@ -57,14 +57,14 @@ links:
 ```svelte showLineNumbers
 <Card.Root>
   <Card.Header>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Description>Card Description</Card.Description>
+    <Card.Title>카드 제목</Card.Title>
+    <Card.Description>카드 설명</Card.Description>
   </Card.Header>
   <Card.Content>
-    <p>Card Content</p>
+    <p>카드 내용</p>
   </Card.Content>
   <Card.Footer>
-    <p>Card Footer</p>
+    <p>카드 푸터</p>
   </Card.Footer>
 </Card.Root>
 ```

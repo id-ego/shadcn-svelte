@@ -20,7 +20,7 @@
 </script>
 
 <Sidebar.Group>
-	<Sidebar.GroupLabel>Workspaces</Sidebar.GroupLabel>
+	<Sidebar.GroupLabel>워크스페이스</Sidebar.GroupLabel>
 	<Sidebar.GroupContent>
 		<Sidebar.Menu>
 			{#each workspaces as workspace (workspace.name)}
@@ -70,7 +70,7 @@
 			<Sidebar.MenuItem>
 				<Sidebar.MenuButton class="text-sidebar-foreground/70">
 					<EllipsisIcon />
-					<span>More</span>
+					<span>더보기</span>
 				</Sidebar.MenuButton>
 			</Sidebar.MenuItem>
 		</Sidebar.Menu>

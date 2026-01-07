@@ -35,7 +35,7 @@ links:
 
 <Step>
 
-Install `@lucide/svelte`:
+`@lucide/svelte`를 설치합니다:
 
 </Step>
 
@@ -43,7 +43,7 @@ Install `@lucide/svelte`:
 
 <Step>
 
-Copy and paste the following code into your project.
+다음 코드를 프로젝트에 복사하여 붙여넣으세요.
 
 </Step>
 {#if viewerData}

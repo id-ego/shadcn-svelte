@@ -237,27 +237,27 @@ Shad는 사이드바 구축을 좋아하지 않기 때문에, 다양한 구성�
   // Menu items.
   const items = [
     {
-      title: "Home",
+      title: "홈",
       url: "#",
       icon: HouseIcon,
     },
     {
-      title: "Inbox",
+      title: "받은편지함",
       url: "#",
       icon: InboxIcon,
     },
     {
-      title: "Calendar",
+      title: "캘린더",
       url: "#",
       icon: CalendarIcon,
     },
     {
-      title: "Search",
+      title: "검색",
       url: "#",
       icon: SearchIcon,
     },
     {
-      title: "Settings",
+      title: "설정",
       url: "#",
       icon: SettingsIcon,
     },
@@ -267,7 +267,7 @@ Shad는 사이드바 구축을 좋아하지 않기 때문에, 다양한 구성�
 <Sidebar.Root>
   <Sidebar.Content>
     <Sidebar.Group>
-      <Sidebar.GroupLabel>Application</Sidebar.GroupLabel>
+      <Sidebar.GroupLabel>애플리케이션</Sidebar.GroupLabel>
       <Sidebar.GroupContent>
         <Sidebar.Menu>
           {#each items as item (item.title)}
@@ -476,17 +476,17 @@ export const SIDEBAR_KEYBOARD_SHORTCUT = "b";
           <DropdownMenu.Trigger>
             {#snippet child({ props })}
               <Sidebar.MenuButton {...props}>
-                Select Workspace
+                워크스페이스 선택
                 <ChevronDown class="ms-auto" />
               </Sidebar.MenuButton>
             {/snippet}
           </DropdownMenu.Trigger>
           <DropdownMenu.Content class="w-(--bits-dropdown-menu-anchor-width)">
             <DropdownMenu.Item>
-              <span>Acme Inc</span>
+              <span>Acme 주식회사</span>
             </DropdownMenu.Item>
             <DropdownMenu.Item>
-              <span>Acme Corp.</span>
+              <span>Acme 코퍼레이션</span>
             </DropdownMenu.Item>
           </DropdownMenu.Content>
         </DropdownMenu.Root>
@@ -525,7 +525,7 @@ export const SIDEBAR_KEYBOARD_SHORTCUT = "b";
                   {...props}
                   class="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
                 >
-                  Username
+                  사용자 이름
                   <ChevronUp class="ms-auto" />
                 </Sidebar.MenuButton>
               {/snippet}
@@ -535,13 +535,13 @@ export const SIDEBAR_KEYBOARD_SHORTCUT = "b";
               class="w-(--bits-dropdown-menu-anchor-width)"
             >
               <DropdownMenu.Item>
-                <span>Account</span>
+                <span>계정</span>
               </DropdownMenu.Item>
               <DropdownMenu.Item>
-                <span>Billing</span>
+                <span>결제</span>
               </DropdownMenu.Item>
               <DropdownMenu.Item>
-                <span>Sign out</span>
+                <span>로그아웃</span>
               </DropdownMenu.Item>
             </DropdownMenu.Content>
           </DropdownMenu.Root>
@@ -588,9 +588,9 @@ export const SIDEBAR_KEYBOARD_SHORTCUT = "b";
 <Sidebar.Root>
   <Sidebar.Content>
     <Sidebar.Group>
-      <Sidebar.GroupLabel>Application</Sidebar.GroupLabel>
+      <Sidebar.GroupLabel>애플리케이션</Sidebar.GroupLabel>
       <Sidebar.GroupAction>
-        <Plus /> <span class="sr-only">Add Project</span>
+        <Plus /> <span class="sr-only">프로젝트 추가</span>
       </Sidebar.GroupAction>
       <Sidebar.GroupContent></Sidebar.GroupContent>
     </Sidebar.Group>
@@ -616,7 +616,7 @@ export const SIDEBAR_KEYBOARD_SHORTCUT = "b";
     <Sidebar.GroupLabel>
       {#snippet child({ props })}
         <Collapsible.Trigger {...props}>
-          Help
+          도움말
           <ChevronDown
             class="ms-auto transition-transform group-data-[state=open]/collapsible:rotate-180"
           />
@@ -642,9 +642,9 @@ export const SIDEBAR_KEYBOARD_SHORTCUT = "b";
 
 ```svelte showLineNumbers {3-5}
 <Sidebar.Group>
-  <Sidebar.GroupLabel>Projects</Sidebar.GroupLabel>
-  <Sidebar.GroupAction title="Add Project">
-    <Plus /> <span class="sr-only">Add Project</span>
+  <Sidebar.GroupLabel>프로젝트</Sidebar.GroupLabel>
+  <Sidebar.GroupAction title="프로젝트 추가">
+    <Plus /> <span class="sr-only">프로젝트 추가</span>
   </Sidebar.GroupAction>
   <Sidebar.GroupContent />
 </Sidebar.Group>
@@ -682,7 +682,7 @@ export const SIDEBAR_KEYBOARD_SHORTCUT = "b";
 <Sidebar.Root>
   <Sidebar.Content>
     <Sidebar.Group>
-      <Sidebar.GroupLabel>Projects</Sidebar.GroupLabel>
+      <Sidebar.GroupLabel>프로젝트</Sidebar.GroupLabel>
       <Sidebar.GroupContent>
         <Sidebar.Menu>
           {#each projects as project}
@@ -715,7 +715,7 @@ export const SIDEBAR_KEYBOARD_SHORTCUT = "b";
 ```svelte showLineNumbers
 <Sidebar.MenuButton>
   {#snippet child({ props })}
-    <a href="/home" {...props}> Home </a>
+    <a href="/home" {...props}> 홈 </a>
   {/snippet}
 </Sidebar.MenuButton>
 ```
@@ -729,7 +729,7 @@ export const SIDEBAR_KEYBOARD_SHORTCUT = "b";
   {#snippet child({ props })}
     <a href="/home" {...props}>
       <House />
-      <span>Home</span>
+      <span>홈</span>
     </a>
   {/snippet}
 </Sidebar.MenuButton>
@@ -744,7 +744,7 @@ export const SIDEBAR_KEYBOARD_SHORTCUT = "b";
   {#snippet child({ props })}
     <a href="/home" {...props}>
       <House />
-      <span>Home</span>
+      <span>홈</span>
     </a>
   {/snippet}
 </Sidebar.MenuButton>
@@ -762,12 +762,12 @@ export const SIDEBAR_KEYBOARD_SHORTCUT = "b";
     {#snippet child({ props })}
       <a href="/home" {...props}>
         <House />
-        <span>Home</span>
+        <span>홈</span>
       </a>
     {/snippet}
   </Sidebar.MenuButton>
   <Sidebar.MenuAction>
-    <Plus /> <span class="sr-only">Add Project</span>
+    <Plus /> <span class="sr-only">프로젝트 추가</span>
   </Sidebar.MenuAction>
 </Sidebar.MenuItem>
 ```
@@ -790,7 +790,7 @@ export const SIDEBAR_KEYBOARD_SHORTCUT = "b";
     {#snippet child({ props })}
       <a href="##" {...props}>
         <House />
-        <span>Home</span>
+        <span>홈</span>
       </a>
     {/snippet}
   </Sidebar.MenuButton>
@@ -804,10 +804,10 @@ export const SIDEBAR_KEYBOARD_SHORTCUT = "b";
     </DropdownMenu.Trigger>
     <DropdownMenu.Content side="right" align="start">
       <DropdownMenu.Item>
-        <span>Edit Project</span>
+        <span>프로젝트 편집</span>
       </DropdownMenu.Item>
       <DropdownMenu.Item>
-        <span>Delete Project</span>
+        <span>프로젝트 삭제</span>
       </DropdownMenu.Item>
     </DropdownMenu.Content>
   </DropdownMenu.Root>
@@ -947,7 +947,7 @@ export const SIDEBAR_KEYBOARD_SHORTCUT = "b";
   const sidebar = useSidebar();
 </script>
 
-<button onclick={() => sidebar.toggle()}>Toggle Sidebar</button>
+<button onclick={() => sidebar.toggle()}>사이드바 토글</button>
 ```
 
 ## Sidebar.Rail

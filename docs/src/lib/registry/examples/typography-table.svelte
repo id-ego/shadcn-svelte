@@ -5,12 +5,12 @@
 				<th
 					class="border px-4 py-2 text-start font-bold [&[align=center]]:text-center [&[align=right]]:text-end"
 				>
-					King's Treasury
+					왕실 재정
 				</th>
 				<th
 					class="border px-4 py-2 text-start font-bold [&[align=center]]:text-center [&[align=right]]:text-end"
 				>
-					People's happiness
+					백성의 행복
 				</th>
 			</tr>
 		</thead>
@@ -19,36 +19,36 @@
 				<td
 					class="border px-4 py-2 text-start [&[align=center]]:text-center [&[align=right]]:text-end"
 				>
-					Empty
+					비어있음
 				</td>
 				<td
 					class="border px-4 py-2 text-start [&[align=center]]:text-center [&[align=right]]:text-end"
 				>
-					Overflowing
-				</td>
-			</tr>
-			<tr class="even:bg-muted m-0 border-t p-0">
-				<td
-					class="border px-4 py-2 text-start [&[align=center]]:text-center [&[align=right]]:text-end"
-				>
-					Modest
-				</td>
-				<td
-					class="border px-4 py-2 text-start [&[align=center]]:text-center [&[align=right]]:text-end"
-				>
-					Satisfied
+					넘쳐흐름
 				</td>
 			</tr>
 			<tr class="even:bg-muted m-0 border-t p-0">
 				<td
 					class="border px-4 py-2 text-start [&[align=center]]:text-center [&[align=right]]:text-end"
 				>
-					Full
+					보통
 				</td>
 				<td
 					class="border px-4 py-2 text-start [&[align=center]]:text-center [&[align=right]]:text-end"
 				>
-					Ecstatic
+					만족
+				</td>
+			</tr>
+			<tr class="even:bg-muted m-0 border-t p-0">
+				<td
+					class="border px-4 py-2 text-start [&[align=center]]:text-center [&[align=right]]:text-end"
+				>
+					가득참
+				</td>
+				<td
+					class="border px-4 py-2 text-start [&[align=center]]:text-center [&[align=right]]:text-end"
+				>
+					황홀함
 				</td>
 			</tr>
 		</tbody>

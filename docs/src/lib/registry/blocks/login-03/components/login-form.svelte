@@ -20,8 +20,8 @@
 <div class={cn("flex flex-col gap-6", className)} {...restProps}>
 	<Card.Root>
 		<Card.Header class="text-center">
-			<Card.Title class="text-xl">Welcome back</Card.Title>
-			<Card.Description>Login with your Apple or Google account</Card.Description>
+			<Card.Title class="text-xl">다시 오신 것을 환영합니다</Card.Title>
+			<Card.Description>Apple 또는 Google 계정으로 로그인하세요</Card.Description>
 		</Card.Header>
 		<Card.Content>
 			<form>
@@ -34,7 +34,7 @@
 									fill="currentColor"
 								/>
 							</svg>
-							Login with Apple
+							Apple로 로그인
 						</Button>
 						<Button variant="outline" type="button">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -43,29 +43,29 @@
 									fill="currentColor"
 								/>
 							</svg>
-							Login with Google
+							Google로 로그인
 						</Button>
 					</Field>
 					<FieldSeparator class="*:data-[slot=field-separator-content]:bg-card">
-						Or continue with
+						또는 다음으로 계속
 					</FieldSeparator>
 					<Field>
-						<FieldLabel for="email-{id}">Email</FieldLabel>
+						<FieldLabel for="email-{id}">이메일</FieldLabel>
 						<Input id="email-{id}" type="email" placeholder="m@example.com" required />
 					</Field>
 					<Field>
 						<div class="flex items-center">
-							<FieldLabel for="password-{id}">Password</FieldLabel>
+							<FieldLabel for="password-{id}">비밀번호</FieldLabel>
 							<a href="##" class="ms-auto text-sm underline-offset-4 hover:underline">
-								Forgot your password?
+								비밀번호를 잊으셨나요?
 							</a>
 						</div>
 						<Input id="password-{id}" type="password" required />
 					</Field>
 					<Field>
-						<Button type="submit">Login</Button>
+						<Button type="submit">로그인</Button>
 						<FieldDescription class="text-center">
-							Don't have an account? <a href="##">Sign up</a>
+							계정이 없으신가요? <a href="##">가입하기</a>
 						</FieldDescription>
 					</Field>
 				</FieldGroup>
@@ -73,7 +73,7 @@
 		</Card.Content>
 	</Card.Root>
 	<FieldDescription class="px-6 text-center">
-		By clicking continue, you agree to our <a href="##">Terms of Service</a>
-		and <a href="##">Privacy Policy</a>.
+		계속 진행하면 <a href="##">서비스 약관</a> 및 <a href="##">개인정보 처리방침</a>에
+		동의하는 것으로 간주됩니다.
 	</FieldDescription>
 </div>

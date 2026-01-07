@@ -66,15 +66,15 @@ Copy and paste the following code into your project.
 
 ```svelte showLineNumbers
 <DropdownMenu.Root>
-  <DropdownMenu.Trigger>Open</DropdownMenu.Trigger>
+  <DropdownMenu.Trigger>열기</DropdownMenu.Trigger>
   <DropdownMenu.Content>
     <DropdownMenu.Group>
-      <DropdownMenu.Label>My Account</DropdownMenu.Label>
+      <DropdownMenu.Label>내 계정</DropdownMenu.Label>
       <DropdownMenu.Separator />
-      <DropdownMenu.Item>Profile</DropdownMenu.Item>
-      <DropdownMenu.Item>Billing</DropdownMenu.Item>
-      <DropdownMenu.Item>Team</DropdownMenu.Item>
-      <DropdownMenu.Item>Subscription</DropdownMenu.Item>
+      <DropdownMenu.Item>프로필</DropdownMenu.Item>
+      <DropdownMenu.Item>결제</DropdownMenu.Item>
+      <DropdownMenu.Item>팀</DropdownMenu.Item>
+      <DropdownMenu.Item>구독</DropdownMenu.Item>
     </DropdownMenu.Group>
   </DropdownMenu.Content>
 </DropdownMenu.Root>
@@ -105,7 +105,7 @@ Copy and paste the following code into your project.
 ```svelte showLineNumbers
 <DropdownMenu.Root>
   <DropdownMenu.Trigger class={buttonVariants({ variant: "outline" })}>
-    Actions
+    액션
   </DropdownMenu.Trigger>
 </DropdownMenu.Root>
 ```
