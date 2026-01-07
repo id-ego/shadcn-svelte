@@ -1,5 +1,5 @@
 ---
-title: 알림 대화상자 (Alert Dialog)
+title: Alert Dialog
 description: 중요한 내용으로 사용자를 중단시키고 응답을 기대하는 모달 대화상자입니다.
 component: true
 links:

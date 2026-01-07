@@ -12,9 +12,9 @@
 
 	let { children } = $props();
 
-	const title = "Building Blocks for the Web";
+	const title = "웹을 위한 빌딩 블록";
 	const description =
-		"Clean, modern building blocks. Works with all Svelte projects. Copy and paste into your apps. Open Source. Free forever.";
+		"깔끔하고 현대적인 빌딩 블록. 모든 Svelte 프로젝트에서 사용 가능. 복사해서 앱에 붙여넣기만 하면 됩니다. 오픈 소스. 영원히 무료.";
 </script>
 
 <Metadata
@@ -30,7 +30,7 @@
 	<PageHeaderHeading>{title}</PageHeaderHeading>
 	<PageHeaderDescription>{description}</PageHeaderDescription>
 	<PageActions>
-		<Button href="#blocks" size="sm">Browse Blocks</Button>
+		<Button href="#blocks" size="sm">블록 둘러보기</Button>
 		<!-- <Button href="/docs/blocks" variant="ghost" size="sm">Add a block</Button> -->
 	</PageActions>
 </PageHeader>
@@ -42,7 +42,7 @@
 		href="/blocks/sidebar"
 		class="me-7 hidden shadow-none lg:flex"
 	>
-		Browse all blocks
+		모든 블록 보기
 	</Button>
 </PageNav>
 <div class="container-wrapper section-soft flex-1 md:py-12">

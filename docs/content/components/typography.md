@@ -1,5 +1,5 @@
 ---
-title: 타이포그래피
+title: Typography
 description: 제목, 단락, 목록 등을 위한 스타일
 component: true
 ---

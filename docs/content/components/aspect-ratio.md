@@ -1,5 +1,5 @@
 ---
-title: 종횡비
+title: Aspect Ratio
 description: 원하는 비율로 콘텐츠를 표시합니다.
 component: true
 links:

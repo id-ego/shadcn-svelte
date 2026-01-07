@@ -1,5 +1,5 @@
 ---
-title: 스피너
+title: Spinner
 description: 로딩 상태를 표시하는 데 사용할 수 있는 인디케이터입니다.
 component: true
 links:

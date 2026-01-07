@@ -1,5 +1,5 @@
 ---
-title: 브레드크럼
+title: Breadcrumb
 description: 링크의 계층 구조를 사용하여 현재 리소스로의 경로를 표시합니다.
 component: true
 links:

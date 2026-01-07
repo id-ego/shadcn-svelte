@@ -1,5 +1,5 @@
 ---
-title: 드롭다운 메뉴
+title: Dropdown Menu
 description: 버튼을 통해 트리거되는 액션 또는 기능 집합과 같은 메뉴를 사용자에게 표시합니다.
 component: true
 links:

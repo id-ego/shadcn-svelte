@@ -1,5 +1,5 @@
 ---
-title: 스크롤 영역
+title: Scroll Area
 description: 커스텀 크로스 브라우저 스타일링을 위해 기본 스크롤 기능을 강화합니다.
 component: true
 links:

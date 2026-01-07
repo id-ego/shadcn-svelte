@@ -1,5 +1,5 @@
 ---
-title: 사이드바
+title: Sidebar
 description: 조합 가능하고 테마를 적용할 수 있으며 커스터마이징 가능한 사이드바 컴포넌트입니다.
 component: true
 links:

@@ -1,5 +1,5 @@
 ---
-title: 아이템
+title: Item
 description: 모든 콘텐츠를 표시하는 데 사용할 수 있는 다용도 컴포넌트입니다.
 component: true
 links:

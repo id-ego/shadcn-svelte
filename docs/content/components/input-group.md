@@ -1,5 +1,5 @@
 ---
-title: 입력 그룹
+title: Input Group
 description: 입력 또는 텍스트영역에 추가 정보나 액션을 표시합니다.
 component: true
 links:

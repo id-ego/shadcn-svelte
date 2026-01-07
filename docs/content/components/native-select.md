@@ -1,5 +1,5 @@
 ---
-title: 네이티브 셀렉트
+title: Native Select
 description: 일관된 디자인 시스템과 통합된 스타일이 적용된 네이티브 HTML select 요소입니다.
 component: true
 links:

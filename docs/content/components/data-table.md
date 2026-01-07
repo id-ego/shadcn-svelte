@@ -1,5 +1,5 @@
 ---
-title: 데이터 테이블
+title: Data Table
 description: TanStack Table을 사용하여 구축된 강력한 테이블 및 데이터그리드입니다.
 component: true
 links:

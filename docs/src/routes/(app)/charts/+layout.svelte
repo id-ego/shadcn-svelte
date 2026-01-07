@@ -11,9 +11,9 @@
 	import Metadata from "$lib/components/metadata.svelte";
 
 	let { children } = $props();
-	const title = "Beautiful Charts & Graphs";
+	const title = "아름다운 차트와 그래프";
 	const description =
-		"A collection of ready-to-use chart components built with LayerChart. From basic charts to rich data displays, copy and paste into your apps.";
+		"LayerChart로 구축된 바로 사용 가능한 차트 컴포넌트 모음. 기본 차트부터 풍부한 데이터 시각화까지, 복사해서 앱에 붙여넣기만 하면 됩니다.";
 </script>
 
 <Metadata
@@ -29,8 +29,8 @@
 	<PageHeaderHeading>{title}</PageHeaderHeading>
 	<PageHeaderDescription>{description}</PageHeaderDescription>
 	<PageActions>
-		<Button href="#charts" size="sm">Browse Charts</Button>
-		<Button href="/docs/components/chart" variant="ghost" size="sm">Documentation</Button>
+		<Button href="#charts" size="sm">차트 둘러보기</Button>
+		<Button href="/docs/components/chart" variant="ghost" size="sm">문서</Button>
 	</PageActions>
 </PageHeader>
 <PageNav id="charts">

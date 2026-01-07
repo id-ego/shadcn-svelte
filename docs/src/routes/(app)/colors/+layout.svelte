@@ -8,9 +8,9 @@
 	import PageHeader from "$lib/components/page-header/page-header.svelte";
 	import Button from "$lib/registry/ui/button/button.svelte";
 
-	const title = "Tailwind Colors in Every Format";
+	const title = "모든 형식의 Tailwind 색상";
 	const description =
-		"The complete Tailwind color palette in HEX, RGB, HSL, CSS variables, and classes. Ready to copy and paste into your project.";
+		"HEX, RGB, HSL, CSS 변수, 클래스 형식의 완전한 Tailwind 색상 팔레트. 복사해서 프로젝트에 붙여넣기만 하면 됩니다.";
 
 	let { children } = $props();
 </script>
@@ -29,8 +29,8 @@
 		<PageHeaderHeading>{title}</PageHeaderHeading>
 		<PageHeaderDescription>{description}</PageHeaderDescription>
 		<PageActions>
-			<Button href="#colors" size="sm">Browse Colors</Button>
-			<Button href="/docs/theming" variant="ghost" size="sm">Documentation</Button>
+			<Button href="#colors" size="sm">색상 둘러보기</Button>
+			<Button href="/docs/theming" variant="ghost" size="sm">문서</Button>
 		</PageActions>
 	</PageHeader>
 	<div class="hidden">

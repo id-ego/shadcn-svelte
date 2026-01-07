@@ -1,5 +1,5 @@
 ---
-title: 버튼 그룹
+title: Button Group
 description: 일관된 스타일로 관련 버튼들을 그룹화하는 컨테이너입니다.
 component: true
 links:

@@ -125,12 +125,12 @@ function generateGetStartedNav(): SidebarNavItem[] {
 	return getStartedNavItems;
 }
 
-const INSTALL_ORDER = ["SvelteKit", "Vite", "Astro", "Manual Installation"];
+const INSTALL_ORDER = ["SvelteKit", "Vite", "Astro", "수동 설치"];
 
 function generateInstallationNav(): SidebarNavItem[] {
 	const installationNavItems: SidebarNavItem[] = [];
 
-	const index = installation.find((doc) => doc.title === "Installation");
+	const index = installation.find((doc) => doc.title === "설치");
 	if (index) {
 		installationNavItems.push({
 			title: index.title,
@@ -235,7 +235,7 @@ function generateRegistryNav(): SidebarNavItem[] {
 function generateMigrationNav(): SidebarNavItem[] {
 	const migrationNavItems: SidebarNavItem[] = [];
 
-	const index = migration.find((doc) => doc.title === "Migration");
+	const index = migration.find((doc) => doc.title === "마이그레이션");
 	if (index) {
 		migrationNavItems.push({
 			title: index.title,
@@ -245,7 +245,7 @@ function generateMigrationNav(): SidebarNavItem[] {
 	}
 
 	for (const doc of migration) {
-		if (doc.title === "Migration") continue;
+		if (doc.title === "마이그레이션") continue;
 		migrationNavItems.push({
 			title: doc.title,
 			href: `/docs/migration/${doc.slug}`,
@@ -274,7 +274,7 @@ export const sidebarNavItems: SidebarNavItem[] = [
 	},
 	{
 		title: "마이그레이션",
-		items: migrationNav.filter((item) => item.title !== "Migration"),
+		items: migrationNav.filter((item) => item.title !== "마이그레이션"),
 	},
 	{
 		title: "컴포넌트",
@@ -282,7 +282,7 @@ export const sidebarNavItems: SidebarNavItem[] = [
 	},
 	{
 		title: "설치",
-		items: installationNav.filter((item) => item.title !== "Installation"),
+		items: installationNav.filter((item) => item.title !== "설치"),
 	},
 	{
 		title: "다크 모드",

@@ -9,9 +9,9 @@
 
 	let { children } = $props();
 
-	const title = "Pick a Color. Make it yours.";
+	const title = "색상을 선택하세요. 나만의 것으로 만드세요.";
 	const description =
-		"Try our hand-picked themes. Copy and paste them into your project. New theme editor coming soon.";
+		"엄선된 테마를 사용해 보세요. 복사해서 프로젝트에 붙여넣기만 하면 됩니다. 새로운 테마 에디터가 곧 출시됩니다.";
 </script>
 
 <Metadata
@@ -28,8 +28,8 @@
 		<PageHeaderHeading>{title}</PageHeaderHeading>
 		<PageHeaderDescription>{description}</PageHeaderDescription>
 		<PageActions>
-			<Button href="#themes" size="sm">Browse Themes</Button>
-			<Button href="/docs/theming" variant="ghost" size="sm">Documentation</Button>
+			<Button href="#themes" size="sm">테마 둘러보기</Button>
+			<Button href="/docs/theming" variant="ghost" size="sm">문서</Button>
 		</PageActions>
 	</PageHeader>
 	{@render children()}

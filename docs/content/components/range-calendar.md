@@ -1,5 +1,5 @@
 ---
-title: 범위 캘린더
+title: Range Calendar
 description: 사용자가 날짜 범위를 선택할 수 있는 캘린더 컴포넌트입니다.
 component: true
 links:

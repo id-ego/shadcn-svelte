@@ -1,5 +1,5 @@
 ---
-title: 호버 카드
+title: Hover Card
 description: 링크 뒤에 있는 콘텐츠를 미리 볼 수 있도록 합니다.
 component: true
 links:

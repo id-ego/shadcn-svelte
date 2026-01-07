@@ -1,5 +1,5 @@
 ---
-title: 날짜 선택기
+title: Date Picker
 description: 범위와 프리셋이 있는 날짜 선택기 컴포넌트입니다.
 component: true
 links:

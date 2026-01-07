@@ -1,5 +1,5 @@
 ---
-title: 콤보박스
+title: Combobox
 description: 자동 완성 입력과 제안 목록이 있는 커맨드 팔레트입니다.
 component: true
 ---
