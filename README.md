@@ -1,50 +1,48 @@
 <p align="center">
  <img align="center" src="https://raw.githubusercontent.com/huntabyte/shadcn-svelte/main/docs/static/android-chrome-192x192.png" height="96" />
  <h1 align="center">
-  shadcn-svelte
+  shadcn-svelte 한글 문서
  </h1>
 </p>
 
-[![](https://dcbadge.vercel.app/api/server/fdXy3Sk8Gq?style=flat)](https://discord.gg/fdXy3Sk8Gq)
+[shadcn-svelte](https://www.shadcn-svelte.com/)의 한글 문서 프로젝트입니다.
 
-[shadcn-svelte](https://www.shadcn-svelte.com/) is an unofficial community-led [Svelte](https://svelte.dev) port of [shadcn/ui](https://ui.shadcn.com/).
+## 원본 프로젝트
 
-> **Note** <br> **We are not affiliated with shadcn, but we did get his blessing prior to creating this project** <br> This is a project born out of the need for a similar project for the Svelte ecosystem.
+이 저장소는 [huntabyte/shadcn-svelte](https://github.com/huntabyte/shadcn-svelte)를 Fork하여 한글화한 프로젝트입니다.
 
-Accessible and customizable components that you can copy and paste into your apps. Free. Open Source. **Use this to build your own component library**.
+- 원본 문서: https://shadcn-svelte.com
+- 한글 문서: (배포 예정)
 
-![hero](docs/static/opengraph-image.png)
+## 문서
 
-## Documentation
+한글 문서 사이트를 방문하세요. (배포 후 URL 업데이트 예정)
 
-Visit https://shadcn-svelte.com/docs to view the documentation.
+## 기여
 
-## Sponsors
+번역 기여를 환영합니다!
 
-This project is supported by the following beautiful people/organizations:
+1. 이 저장소를 Fork
+2. 번역 작업
+3. Pull Request 생성
 
-<p align="center">
-  <a href="https://github.com/sponsors/huntabyte">
-    <img src='https://github.com/huntabyte/static/blob/main/sponsors.svg?raw=true' alt="Logos from Sponsors" />
-  </a>
-</p>
+## 라이선스
 
-## License
+[MIT](https://github.com/id-ego/shadcn-svelte/blob/main/LICENSE.md) 라이선스
 
-<!-- automd:contributors license=MIT author="huntabyte" -->
+### 원저작자
 
-Published under the [MIT](https://github.com/huntabyte/shadcn-svelte/blob/main/LICENSE.md) license.
-Built by [@huntabyte](https://github.com/huntabyte), [CokaKoala](https://github.com/adriangonz97),and [community](https://github.com/huntabyte/shadcn-svelte/graphs/contributors) 💛
-<br><br>
-<a href="https://github.com/huntabyte/shadcn-svelte/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=huntabyte/shadcn-svelte" />
-</a>
+- [@huntabyte](https://github.com/huntabyte)
+- [CokaKoala](https://github.com/adriangonz97)
+- [shadcn](https://github.com/shadcn)
 
-<!-- /automd -->
+### 한글화
 
-## Community
+- [@id-ego](https://github.com/id-ego)
 
-Join the Discord server to ask questions, find collaborators, or just say hi!
+## 원본 프로젝트 커뮤니티
+
+원본 프로젝트 관련 질문은 Discord에서:
 
 <a href="https://discord.gg/fdXy3Sk8Gq" alt="Svecosystem Discord community">
 <picture>

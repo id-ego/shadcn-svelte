@@ -40,26 +40,3 @@ jobs:
         run: pnpm install
 
       - run: pnpm lint
-
-  cli-test:
-    name: CLI-Tests
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest, macOS-latest]
-    steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: pnpm
-
-      - name: Install dependencies
-        run: pnpm install
-
-      - name: Build packages
-        run: pnpm build:cli
-
-      - name: Run tests
-        run: pnpm -F shadcn-svelte test

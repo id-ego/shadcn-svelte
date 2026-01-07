@@ -1,0 +1,105 @@
+name: Sync Upstream
+
+on:
+  schedule:
+    - cron: "0 9 * * 1" # 매주 월요일 오전 9시 (UTC)
+  workflow_dispatch: # 수동 실행
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Add upstream
+        run: git remote add upstream https://github.com/huntabyte/shadcn-svelte.git
+
+      - name: Fetch upstream
+        run: git fetch upstream
+
+      - name: Check for updates
+        id: check
+        run: |
+          COMMITS=$(git rev-list main..upstream/main --count)
+          echo "commits_behind=$COMMITS" >> $GITHUB_OUTPUT
+          if [ "$COMMITS" -gt 0 ]; then
+            echo "### Upstream 변경사항 발견" >> $GITHUB_STEP_SUMMARY
+            echo "새 커밋 수: $COMMITS" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "#### 커밋 목록" >> $GITHUB_STEP_SUMMARY
+            git log main..upstream/main --oneline >> $GITHUB_STEP_SUMMARY
+          else
+            echo "### 동기화 필요 없음" >> $GITHUB_STEP_SUMMARY
+            echo "이미 최신 상태입니다." >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Try merge
+        if: steps.check.outputs.commits_behind != '0'
+        id: merge
+        run: |
+          git merge upstream/main --no-edit && echo "merge_success=true" >> $GITHUB_OUTPUT || echo "merge_success=false" >> $GITHUB_OUTPUT
+
+      - name: Create PR (충돌 없음)
+        if: steps.check.outputs.commits_behind != '0' && steps.merge.outputs.merge_success == 'true'
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: sync-upstream
+          delete-branch: true
+          title: "chore: upstream 동기화"
+          body: |
+            ## 원본 저장소 동기화
+
+            원본 저장소의 최신 변경사항을 반영합니다.
+
+            - 새 커밋 수: ${{ steps.check.outputs.commits_behind }}개
+            - 충돌: 없음 ✅
+
+            ### 변경된 커밋
+            ```
+            ${{ steps.check.outputs.commits_behind }}개의 새 커밋
+            ```
+
+            ---
+            이 PR은 자동으로 생성되었습니다.
+
+      - name: Create Issue (충돌 있음)
+        if: steps.check.outputs.commits_behind != '0' && steps.merge.outputs.merge_success == 'false'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const commits = '${{ steps.check.outputs.commits_behind }}';
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: '⚠️ Upstream 동기화 충돌 발생',
+              body: `## 원본 저장소 동기화 충돌
+
+            원본 저장소와 동기화 중 충돌이 발생했습니다.
+
+            - 새 커밋 수: ${commits}개
+            - 상태: 충돌 발생 ❌
+
+            ### 수동 해결 방법
+
+            \`\`\`bash
+            git fetch upstream
+            git merge upstream/main
+            # 충돌 파일 수정
+            git add .
+            git commit -m "merge: upstream 동기화, 충돌 해결"
+            git push origin main
+            \`\`\`
+
+            ---
+            이 이슈는 자동으로 생성되었습니다.`,
+              labels: ['sync', 'conflict']
+            });
