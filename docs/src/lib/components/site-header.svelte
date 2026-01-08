@@ -33,14 +33,7 @@
 				<Logo class="size-5" />
 				<span class="sr-only">shadcn-svelte</span>
 			</Button>
-			<a
-				href="https://shadcn-svelte.com"
-				target="_blank"
-				rel="noreferrer"
-				class="hidden lg:block"
-			>
-				<Badge variant="secondary" class="text-xs font-normal">한국어</Badge>
-			</a>
+			<Badge variant="secondary" class="hidden text-xs font-normal lg:block">한국어</Badge>
 			<MainNav items={mainNavItems} class="hidden lg:flex" />
 			<div class="ms-auto flex items-center gap-2 md:flex-1 md:justify-end">
 				<div class="hidden w-full flex-1 md:flex md:w-auto md:flex-none">
