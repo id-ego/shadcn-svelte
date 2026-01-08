@@ -2,6 +2,7 @@
 	import { watch } from "runed";
 	import SiteFooter from "$lib/components/site-footer.svelte";
 	import SiteHeader from "$lib/components/site-header.svelte";
+	import TranslationBanner from "$lib/components/translation-banner.svelte";
 	import { UserConfig, UserConfigContext } from "$lib/user-config.svelte.js";
 	import { ModeWatcher, setTheme } from "mode-watcher";
 	import { Toaster } from "$lib/registry/ui/sonner/index.js";
@@ -36,6 +37,7 @@
 <Toaster position="top-center" />
 
 <div class="bg-background relative flex min-h-svh flex-col">
+	<TranslationBanner />
 	<SiteHeader />
 	<main class="flex flex-1 flex-col">
 		<Tooltip.Provider>

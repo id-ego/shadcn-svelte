@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Logo from "./logo.svelte";
 	import { Button } from "$lib/registry/ui/button/index.js";
+	import { Badge } from "$lib/registry/ui/badge/index.js";
 	import MainNav from "./main-nav.svelte";
 	import Separator from "$lib/registry/ui/separator/separator.svelte";
 	import GithubLink from "./github-link.svelte";
@@ -32,6 +33,14 @@
 				<Logo class="size-5" />
 				<span class="sr-only">shadcn-svelte</span>
 			</Button>
+			<a
+				href="https://shadcn-svelte.com"
+				target="_blank"
+				rel="noreferrer"
+				class="hidden lg:block"
+			>
+				<Badge variant="secondary" class="text-xs font-normal">한국어</Badge>
+			</a>
 			<MainNav items={mainNavItems} class="hidden lg:flex" />
 			<div class="ms-auto flex items-center gap-2 md:flex-1 md:justify-end">
 				<div class="hidden w-full flex-1 md:flex md:w-auto md:flex-none">
