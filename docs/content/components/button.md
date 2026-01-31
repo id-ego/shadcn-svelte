@@ -359,7 +359,7 @@ links:
 
 ### 2025-09-24 새로운 크기
 
-버튼 컴포넌트에 `icon-sm`과 `icon-lg` 두 가지 새로운 크기를 추가했습니다. 이 크기들은 아이콘 버튼을 만들 때 사용됩니다. 추가하려면 `button.tsx`를 편집하고 `buttonVariants`의 `size` 아래에 다음 코드를 추가하세요:
+버튼 컴포넌트에 `icon-sm`과 `icon-lg` 두 가지 새로운 크기를 추가했습니다. 이 크기들은 아이콘 버튼을 만들 때 사용됩니다. 추가하려면 `button.svelte`를 편집하고 `buttonVariants`의 `size` 아래에 다음 코드를 추가하세요:
 
 ```ts showLineNumbers title="components/ui/button.svelte"
 export const buttonVariants = tv({
