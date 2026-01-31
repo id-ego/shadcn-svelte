@@ -5,6 +5,26 @@ type Options = {
 	reset: boolean;
 };
 
+/**
+ * Copies the given text to the users clipboard.
+ *
+ * @param text
+ */
+export async function copyText(text: string): Promise<void> {
+	if (navigator.clipboard && window.isSecureContext) {
+		await navigator.clipboard.writeText(text);
+	} else {
+		const textArea = document.createElement("textarea");
+		textArea.value = text;
+		textArea.style.position = "absolute";
+		textArea.style.left = "-999999px";
+		document.body.prepend(textArea);
+		textArea.select();
+		document.execCommand("copy");
+		textArea.remove();
+	}
+}
+
 /** Use this hook to copy text to the clipboard and show a copied state.
  *
  * ## Usage

@@ -7,19 +7,11 @@ links:
 ---
 
 <script>
-  import Callout from '$lib/components/callout.svelte'
 	import ComponentPreview from "$lib/components/component-preview.svelte";
 	import PMAddComp from "$lib/components/pm-add-comp.svelte";
 	import PMInstall from "$lib/components/pm-install.svelte";
 	import Steps from "$lib/components/steps.svelte";
-	import InfoIcon from "@lucide/svelte/icons/info"
 </script>
-
-<Callout title="이 컴포넌트는 더 이상 적극적으로 개발하지 않습니다." icon={InfoIcon}>
-
-Form 컴포넌트는 `formsnap`과 `sveltekit-superforms` 라이브러리의 추상화입니다. 앞으로는 폼을 구축하기 위해 [`<Field />`](/docs/components/field) 컴포넌트를 사용하는 것을 권장합니다.
-
-</Callout>
 
 폼은 까다롭습니다. 웹 애플리케이션에서 가장 흔하게 만들게 되는 것이지만, 동시에 가장 복잡한 것 중 하나입니다.
 
