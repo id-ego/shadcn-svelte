@@ -65,37 +65,37 @@
 
 코드 예제 내 **화면에 표시되는 텍스트**는 한글로 번역한다.
 
-| 구분 | 번역 | 예시 |
-| ---- | ---- | ---- |
-| 태그 내 UI 텍스트 | ✅ 번역 | `<Trigger>Is it accessible?</Trigger>` → `<Trigger>접근성이 있나요?</Trigger>` |
+| 구분                | 번역    | 예시                                                                                     |
+| ------------------- | ------- | ---------------------------------------------------------------------------------------- |
+| 태그 내 UI 텍스트   | ✅ 번역 | `<Trigger>Is it accessible?</Trigger>` → `<Trigger>접근성이 있나요?</Trigger>`           |
 | 태그 내 설명 텍스트 | ✅ 번역 | `<Content>Yes. It adheres to...</Content>` → `<Content>네. WAI-ARIA 디자인...</Content>` |
-| import 문 | ❌ 유지 | `import * as Accordion from "..."` |
-| 변수명, props | ❌ 유지 | `value="item-1"`, `type="single"` |
-| 주석 | ❌ 유지 | `// comment` |
+| import 문           | ❌ 유지 | `import * as Accordion from "..."`                                                       |
+| 변수명, props       | ❌ 유지 | `value="item-1"`, `type="single"`                                                        |
+| 주석                | ❌ 유지 | `// comment`                                                                             |
 
 ### Mock 데이터 번역 규칙
 
 `data.ts` 등 Mock 데이터 파일의 **화면에 표시되는 값**은 한글로 번역한다.
 
-| 구분 | 번역 | 예시 |
-| ---- | ---- | ---- |
-| 제목/헤더 텍스트 | ✅ 번역 | `header: "Cover page"` → `header: "표지"` |
-| 상태 텍스트 | ✅ 번역 | `status: "In Process"` → `status: "진행 중"` |
-| 설명 텍스트 | ✅ 번역 | `type: "Narrative"` → `type: "서술형"` |
-| 액션 텍스트 | ✅ 번역 | `reviewer: "Assign reviewer"` → `reviewer: "리뷰어 지정"` |
-| 사람 이름 | ❌ 유지 | `reviewer: "Eddie Lake"` |
-| 숫자, ID | ❌ 유지 | `id: 1`, `target: "18"` |
-| 키(key) 이름 | ❌ 유지 | `header`, `status`, `type` |
+| 구분             | 번역    | 예시                                                      |
+| ---------------- | ------- | --------------------------------------------------------- |
+| 제목/헤더 텍스트 | ✅ 번역 | `header: "Cover page"` → `header: "표지"`                 |
+| 상태 텍스트      | ✅ 번역 | `status: "In Process"` → `status: "진행 중"`              |
+| 설명 텍스트      | ✅ 번역 | `type: "Narrative"` → `type: "서술형"`                    |
+| 액션 텍스트      | ✅ 번역 | `reviewer: "Assign reviewer"` → `reviewer: "리뷰어 지정"` |
+| 사람 이름        | ❌ 유지 | `reviewer: "Eddie Lake"`                                  |
+| 숫자, ID         | ❌ 유지 | `id: 1`, `target: "18"`                                   |
+| 키(key) 이름     | ❌ 유지 | `header`, `status`, `type`                                |
 
 ### 컴포넌트 이름 규칙
 
 **모든 컴포넌트 이름은 영어로 유지한다.**
 
-| 유형 | 규칙 | 예시 |
-| ---- | ---- | ---- |
-| 단일 컴포넌트 | 영어 유지 | Button, Card, Input, Table |
+| 유형          | 규칙      | 예시                                    |
+| ------------- | --------- | --------------------------------------- |
+| 단일 컴포넌트 | 영어 유지 | Button, Card, Input, Table              |
 | 복합 컴포넌트 | 영어 유지 | Alert Dialog, Data Table, Dropdown Menu |
-| 설명적 이름 | 영어 유지 | Date Picker, Scroll Area, Hover Card |
+| 설명적 이름   | 영어 유지 | Date Picker, Scroll Area, Hover Card    |
 
 **이유:**
 

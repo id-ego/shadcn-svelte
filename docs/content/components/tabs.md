@@ -70,9 +70,7 @@ links:
     <Tabs.Trigger value="account">계정</Tabs.Trigger>
     <Tabs.Trigger value="password">비밀번호</Tabs.Trigger>
   </Tabs.List>
-  <Tabs.Content value="account">
-    여기에서 계정을 변경하세요.
-  </Tabs.Content>
+  <Tabs.Content value="account">여기에서 계정을 변경하세요.</Tabs.Content>
   <Tabs.Content value="password">여기에서 비밀번호를 변경하세요.</Tabs.Content>
 </Tabs.Root>
 ```

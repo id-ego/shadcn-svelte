@@ -5,7 +5,7 @@ description: shadcn-svelte를 JavaScript와 함께 사용하는 방법입니다.
 
 이 프로젝트와 컴포넌트들은 TypeScript로 작성되었습니다. 프로젝트에도 TypeScript를 사용하는 것을 권장합니다.
 
-하지만 컴포넌트의 JavaScript 버전도 제공하고 있습니다. JavaScript 버전은 [CLI](/docs/cli)를 통해서_만_ 사용할 수 있습니다.
+하지만 컴포넌트의 JavaScript 버전도 제공하고 있습니다. JavaScript 버전은 [CLI](/docs/cli)를 통해서*만* 사용할 수 있습니다.
 
 TypeScript를 사용하지 않으려면 `components.json` 파일의 `typescript` 플래그를 사용할 수 있습니다.
 

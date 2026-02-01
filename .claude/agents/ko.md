@@ -28,47 +28,47 @@ color: green
 
 코드 예제 내 **화면에 표시되는 텍스트**는 한글로 번역한다.
 
-| 구분 | 번역 | 예시 |
-| ---- | ---- | ---- |
-| 태그 내 UI 텍스트 | O | `<Trigger>Is it accessible?</Trigger>` → `<Trigger>접근성이 있나요?</Trigger>` |
-| 태그 내 설명 텍스트 | O | `<Content>Yes. It adheres to...</Content>` → `<Content>네. WAI-ARIA...</Content>` |
-| import 문 | X | `import * as Accordion from "..."` |
-| 변수명, props | X | `value="item-1"`, `type="single"` |
-| 주석 | X | `// comment` |
+| 구분                | 번역 | 예시                                                                              |
+| ------------------- | ---- | --------------------------------------------------------------------------------- |
+| 태그 내 UI 텍스트   | O    | `<Trigger>Is it accessible?</Trigger>` → `<Trigger>접근성이 있나요?</Trigger>`    |
+| 태그 내 설명 텍스트 | O    | `<Content>Yes. It adheres to...</Content>` → `<Content>네. WAI-ARIA...</Content>` |
+| import 문           | X    | `import * as Accordion from "..."`                                                |
+| 변수명, props       | X    | `value="item-1"`, `type="single"`                                                 |
+| 주석                | X    | `// comment`                                                                      |
 
 ## Mock 데이터 번역 규칙
 
 `data.ts` 등 Mock 데이터 파일의 **화면에 표시되는 값**은 한글로 번역한다.
 
-| 구분 | 번역 | 예시 |
-| ---- | ---- | ---- |
-| 제목/헤더 텍스트 | O | `header: "Cover page"` → `header: "표지"` |
-| 상태 텍스트 | O | `status: "In Process"` → `status: "진행 중"` |
-| 설명 텍스트 | O | `type: "Narrative"` → `type: "서술형"` |
-| 액션 텍스트 | O | `reviewer: "Assign reviewer"` → `reviewer: "리뷰어 지정"` |
-| 사람 이름 | X | `reviewer: "Eddie Lake"` |
-| 숫자, ID | X | `id: 1`, `target: "18"` |
-| 키(key) 이름 | X | `header`, `status`, `type` |
+| 구분             | 번역 | 예시                                                      |
+| ---------------- | ---- | --------------------------------------------------------- |
+| 제목/헤더 텍스트 | O    | `header: "Cover page"` → `header: "표지"`                 |
+| 상태 텍스트      | O    | `status: "In Process"` → `status: "진행 중"`              |
+| 설명 텍스트      | O    | `type: "Narrative"` → `type: "서술형"`                    |
+| 액션 텍스트      | O    | `reviewer: "Assign reviewer"` → `reviewer: "리뷰어 지정"` |
+| 사람 이름        | X    | `reviewer: "Eddie Lake"`                                  |
+| 숫자, ID         | X    | `id: 1`, `target: "18"`                                   |
+| 키(key) 이름     | X    | `header`, `status`, `type`                                |
 
 ## 번역 용어
 
-| 영어 | 한글 |
-| ---- | ---- |
-| Component | 컴포넌트 |
-| Installation | 설치 |
-| Getting Started | 시작하기 |
-| Documentation | 문서 |
-| Dark Mode | 다크 모드 |
-| Theming | 테마 설정 |
-| Usage | 사용법 |
-| Example | 예제 |
-| API Reference | API 레퍼런스 |
-| Note | 참고 |
-| Warning | 주의 |
-| Tip | 팁 |
-| Preview | 미리보기 |
-| Copy | 복사 |
-| Search | 검색 |
+| 영어            | 한글         |
+| --------------- | ------------ |
+| Component       | 컴포넌트     |
+| Installation    | 설치         |
+| Getting Started | 시작하기     |
+| Documentation   | 문서         |
+| Dark Mode       | 다크 모드    |
+| Theming         | 테마 설정    |
+| Usage           | 사용법       |
+| Example         | 예제         |
+| API Reference   | API 레퍼런스 |
+| Note            | 참고         |
+| Warning         | 주의         |
+| Tip             | 팁           |
+| Preview         | 미리보기     |
+| Copy            | 복사         |
+| Search          | 검색         |
 
 ## 작업 순서
 

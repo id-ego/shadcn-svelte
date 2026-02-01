@@ -83,9 +83,7 @@
 			<Field.Separator />
 			<Field.Set>
 				<Field.Legend>청구 주소</Field.Legend>
-				<Field.Description>
-					결제 수단과 연결된 청구 주소
-				</Field.Description>
+				<Field.Description>결제 수단과 연결된 청구 주소</Field.Description>
 				<Field.Group>
 					<Field.Field orientation="horizontal">
 						<Checkbox id="checkout-7j9-same-as-shipping-wgm" checked={true} />

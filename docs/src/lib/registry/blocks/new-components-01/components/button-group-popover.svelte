@@ -27,14 +27,11 @@
 			</div>
 			<Separator />
 			<div class="p-4 text-sm *:[p:not(:last-child)]:mb-2">
-				<Textarea
-					placeholder="자연어로 작업을 설명하세요."
-					class="mb-4 resize-none"
-				/>
+				<Textarea placeholder="자연어로 작업을 설명하세요." class="mb-4 resize-none" />
 				<p class="font-medium">Copilot으로 새 작업 시작</p>
 				<p class="text-muted-foreground">
-					작업을 자연어로 설명하세요. Copilot이 백그라운드에서 작업하고
-					검토를 위한 풀 리퀘스트를 엽니다.
+					작업을 자연어로 설명하세요. Copilot이 백그라운드에서 작업하고 검토를 위한 풀
+					리퀘스트를 엽니다.
 				</p>
 			</div>
 		</Popover.Content>

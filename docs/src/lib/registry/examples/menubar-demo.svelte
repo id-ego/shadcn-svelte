@@ -64,9 +64,7 @@
 			<Menubar.CheckboxItem bind:checked={bookmarks}
 				>항상 북마크 표시줄 표시</Menubar.CheckboxItem
 			>
-			<Menubar.CheckboxItem bind:checked={fullUrls}>
-				항상 전체 URL 표시
-			</Menubar.CheckboxItem>
+			<Menubar.CheckboxItem bind:checked={fullUrls}>항상 전체 URL 표시</Menubar.CheckboxItem>
 			<Menubar.Separator />
 			<Menubar.Item inset>
 				새로고침 <Menubar.Shortcut>⌘R</Menubar.Shortcut>

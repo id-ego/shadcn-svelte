@@ -58,9 +58,7 @@
 					{#snippet children({ props })}
 						<div class="space-y-0.5">
 							<Form.Label>보안 이메일</Form.Label>
-							<Form.Description>
-								계정 보안에 대한 이메일을 받습니다.
-							</Form.Description>
+							<Form.Description>계정 보안에 대한 이메일을 받습니다.</Form.Description>
 						</div>
 						<Switch
 							{...props}

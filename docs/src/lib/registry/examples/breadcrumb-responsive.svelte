@@ -56,9 +56,7 @@
 						<Drawer.Content>
 							<Drawer.Header class="text-start">
 								<Drawer.Title>이동</Drawer.Title>
-								<Drawer.Description>
-									이동할 페이지를 선택하세요.
-								</Drawer.Description>
+								<Drawer.Description>이동할 페이지를 선택하세요.</Drawer.Description>
 							</Drawer.Header>
 							<div class="grid gap-1 px-4">
 								{#each items.slice(1, -2) as item, i (i)}

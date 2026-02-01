@@ -69,9 +69,7 @@
 	<Form.Fieldset {form} name="items" class="space-y-0">
 		<div class="mb-4">
 			<Form.Legend class="text-base">사이드바</Form.Legend>
-			<Form.Description>
-				사이드바에 표시할 항목을 선택하세요.
-			</Form.Description>
+			<Form.Description>사이드바에 표시할 항목을 선택하세요.</Form.Description>
 		</div>
 		<div class="space-y-2">
 			{#each items as item (item.id)}

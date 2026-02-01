@@ -68,7 +68,8 @@ Install `bits-ui`:
 <Collapsible.Root>
   <Collapsible.Trigger>내 프로젝트에서 사용할 수 있나요?</Collapsible.Trigger>
   <Collapsible.Content>
-    네. 개인 및 상업용 프로젝트에 무료로 사용할 수 있습니다. 출처 표시가 필요하지 않습니다.
+    네. 개인 및 상업용 프로젝트에 무료로 사용할 수 있습니다. 출처 표시가
+    필요하지 않습니다.
   </Collapsible.Content>
 </Collapsible.Root>
 ```

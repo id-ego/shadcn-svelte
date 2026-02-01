@@ -5,13 +5,8 @@
 
 <div class="flex flex-wrap gap-2">
 	<Button variant="outline" onclick={() => toast("이벤트가 생성되었습니다")}>기본</Button>
-	<Button variant="outline" onclick={() => toast.success("이벤트가 생성되었습니다")}>
-		성공
-	</Button>
-	<Button
-		variant="outline"
-		onclick={() => toast.info("이벤트 시간 10분 전에 도착해주세요")}
-	>
+	<Button variant="outline" onclick={() => toast.success("이벤트가 생성되었습니다")}>성공</Button>
+	<Button variant="outline" onclick={() => toast.info("이벤트 시간 10분 전에 도착해주세요")}>
 		정보
 	</Button>
 	<Button

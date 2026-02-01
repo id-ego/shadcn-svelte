@@ -71,8 +71,8 @@ links:
     <Sheet.Header>
       <Sheet.Title>정말로 확실합니까?</Sheet.Title>
       <Sheet.Description>
-        이 작업은 취소할 수 없습니다. 계정이 영구적으로 삭제되고
-        서버에서 데이터가 제거됩니다.
+        이 작업은 취소할 수 없습니다. 계정이 영구적으로 삭제되고 서버에서
+        데이터가 제거됩니다.
       </Sheet.Description>
     </Sheet.Header>
   </Sheet.Content>
@@ -96,8 +96,8 @@ CSS 클래스를 사용하여 시트의 크기를 조정할 수 있습니다:
     <Sheet.Header>
       <Sheet.Title>정말로 확실합니까?</Sheet.Title>
       <Sheet.Description>
-        이 작업은 취소할 수 없습니다. 계정이 영구적으로 삭제되고
-        서버에서 데이터가 제거됩니다.
+        이 작업은 취소할 수 없습니다. 계정이 영구적으로 삭제되고 서버에서
+        데이터가 제거됩니다.
       </Sheet.Description>
     </Sheet.Header>
   </Sheet.Content>

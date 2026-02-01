@@ -98,17 +98,17 @@ description: 레지스트리 아이템 명세
 
 다음 타입이 지원됩니다:
 
-| 타입                 | 설명                                      |
+| 타입                 | 설명                                             |
 | -------------------- | ------------------------------------------------ |
-| `registry:block`     | 여러 파일이 있는 복잡한 컴포넌트에 사용합니다.  |
-| `registry:component` | 단순한 컴포넌트에 사용합니다.                       |
-| `registry:lib`       | 라이브러리와 유틸리티에 사용합니다.                           |
-| `registry:hook`      | 훅에 사용합니다.                                   |
+| `registry:block`     | 여러 파일이 있는 복잡한 컴포넌트에 사용합니다.   |
+| `registry:component` | 단순한 컴포넌트에 사용합니다.                    |
+| `registry:lib`       | 라이브러리와 유틸리티에 사용합니다.              |
+| `registry:hook`      | 훅에 사용합니다.                                 |
 | `registry:ui`        | UI 컴포넌트와 단일 파일 프리미티브에 사용합니다. |
-| `registry:page`      | 페이지 또는 파일 기반 라우트에 사용합니다.               |
-| `registry:file`      | 기타 파일에 사용합니다.                     |
-| `registry:style`     | 레지스트리 스타일에 사용합니다. 예: `new-york`          |
-| `registry:theme`     | 테마에 사용합니다.                                  |
+| `registry:page`      | 페이지 또는 파일 기반 라우트에 사용합니다.       |
+| `registry:file`      | 기타 파일에 사용합니다.                          |
+| `registry:style`     | 레지스트리 스타일에 사용합니다. 예: `new-york`   |
+| `registry:theme`     | 테마에 사용합니다.                               |
 
 ### author
 

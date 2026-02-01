@@ -491,15 +491,15 @@ const chartData = [
 
 다음 props를 사용하여 툴팁을 커스터마이징하세요.
 
-| Prop             | Type                     | Description                                     |
-| :--------------- | :----------------------- | :---------------------------------------------- |
-| `labelKey`       | string                   | 라벨에 사용할 설정 또는 데이터 키.              |
-| `nameKey`        | string                   | 이름에 사용할 설정 또는 데이터 키.              |
-| `indicator`      | `dot` `line` or `dashed` | 툴팁의 인디케이터 스타일.                       |
-| `hideLabel`      | boolean                  | 라벨을 숨길지 여부.                             |
-| `hideIndicator`  | boolean                  | 인디케이터를 숨길지 여부.                       |
-| `label`          | string                   | 툴팁의 커스텀 라벨                              |
-| `labelFormatter` | function                 | 라벨을 포맷하는 함수.                           |
+| Prop             | Type                     | Description                              |
+| :--------------- | :----------------------- | :--------------------------------------- |
+| `labelKey`       | string                   | 라벨에 사용할 설정 또는 데이터 키.       |
+| `nameKey`        | string                   | 이름에 사용할 설정 또는 데이터 키.       |
+| `indicator`      | `dot` `line` or `dashed` | 툴팁의 인디케이터 스타일.                |
+| `hideLabel`      | boolean                  | 라벨을 숨길지 여부.                      |
+| `hideIndicator`  | boolean                  | 인디케이터를 숨길지 여부.                |
+| `label`          | string                   | 툴팁의 커스텀 라벨                       |
+| `labelFormatter` | function                 | 라벨을 포맷하는 함수.                    |
 | `formatter`      | Snippet                  | 툴팁의 유연한 렌더링을 제공하는 snippet. |
 
 ### 색상

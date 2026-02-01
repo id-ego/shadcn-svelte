@@ -11,9 +11,7 @@
 			<BellIcon />
 		</Empty.Media>
 		<Empty.Title>알림이 없습니다</Empty.Title>
-		<Empty.Description>
-			모두 확인했습니다. 새 알림이 여기에 표시됩니다.
-		</Empty.Description>
+		<Empty.Description>모두 확인했습니다. 새 알림이 여기에 표시됩니다.</Empty.Description>
 	</Empty.Header>
 	<Empty.Content>
 		<Button variant="outline" size="sm">

@@ -301,7 +301,8 @@
 	</div>
 	<div class="flex items-center justify-end space-x-2 pt-4">
 		<div class="text-muted-foreground flex-1 text-sm">
-			전체 {table.getFilteredRowModel().rows.length}개 중 {table.getFilteredSelectedRowModel().rows.length}개 선택됨.
+			전체 {table.getFilteredRowModel().rows.length}개 중 {table.getFilteredSelectedRowModel()
+				.rows.length}개 선택됨.
 		</div>
 		<div class="space-x-2">
 			<Button

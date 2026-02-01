@@ -84,8 +84,7 @@
 						/>
 					</Popover.Content>
 				</Popover.Root>
-				<Form.Description>생년월일은 나이를 계산하는 데 사용됩니다</Form.Description
-				>
+				<Form.Description>생년월일은 나이를 계산하는 데 사용됩니다</Form.Description>
 				<Form.FieldErrors />
 				<input hidden value={$formData.dob} name={props.name} />
 			{/snippet}

@@ -146,10 +146,7 @@
 	<Field.Group>
 		<Field.Label for="notion-prompt" class="sr-only">프롬프트</Field.Label>
 		<InputGroup.Root>
-			<InputGroup.Textarea
-				id="notion-prompt"
-				placeholder="질문, 검색 또는 생성..."
-			/>
+			<InputGroup.Textarea id="notion-prompt" placeholder="질문, 검색 또는 생성..." />
 			<InputGroup.Addon align="block-start">
 				<Popover.Root bind:open={mentionPopoverOpen}>
 					<Tooltip.Root>

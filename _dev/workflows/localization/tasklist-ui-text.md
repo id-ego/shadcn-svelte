@@ -2,11 +2,11 @@
 
 ## 개요
 
-| 카테고리 | 파일 수 | 상태 |
-| -------- | ------- | ---- |
-| examples (컴포넌트 데모) | 228 | 대기 |
-| blocks (블록 데모) | 33 | 대기 |
-| 마크다운 코드 예제 | 54 | 대기 |
+| 카테고리                 | 파일 수 | 상태 |
+| ------------------------ | ------- | ---- |
+| examples (컴포넌트 데모) | 228     | 대기 |
+| blocks (블록 데모)       | 33      | 대기 |
+| 마크다운 코드 예제       | 54      | 대기 |
 
 ---
 
@@ -79,64 +79,64 @@
 
 ### 컴포넌트별 목록
 
-- [ ] accordion-* (accordion-demo 등)
-- [ ] alert-* (alert-demo 등)
-- [ ] alert-dialog-*
-- [ ] aspect-ratio-*
-- [ ] avatar-*
-- [ ] badge-*
-- [ ] breadcrumb-*
-- [ ] button-*
-- [ ] calendar-*
-- [ ] card-*
-- [ ] carousel-*
-- [ ] chart-*
-- [ ] checkbox-*
-- [ ] collapsible-*
-- [ ] combobox-*
-- [ ] command-*
-- [ ] context-menu-*
-- [ ] data-table-*
-- [ ] date-picker-*
-- [ ] dialog-*
-- [ ] drawer-*
-- [ ] dropdown-menu-*
-- [ ] empty-*
-- [ ] field-*
-- [ ] form-*
-- [ ] hover-card-*
-- [ ] input-*
-- [ ] input-group-*
-- [ ] input-otp-*
-- [ ] item-*
-- [ ] kbd-*
-- [ ] label-*
-- [ ] menubar-*
-- [ ] native-select-*
-- [ ] navigation-menu-*
-- [ ] pagination-*
-- [ ] popover-*
-- [ ] progress-*
-- [ ] radio-group-*
-- [ ] range-calendar-*
-- [ ] resizable-*
-- [ ] scroll-area-*
-- [ ] select-*
-- [ ] separator-*
-- [ ] sheet-*
-- [ ] sidebar-*
-- [ ] skeleton-*
-- [ ] slider-*
-- [ ] sonner-*
-- [ ] spinner-*
-- [ ] switch-*
-- [ ] table-*
-- [ ] tabs-*
-- [ ] textarea-*
-- [ ] toggle-*
-- [ ] toggle-group-*
-- [ ] tooltip-*
-- [ ] typography-*
+- [ ] accordion-\* (accordion-demo 등)
+- [ ] alert-\* (alert-demo 등)
+- [ ] alert-dialog-\*
+- [ ] aspect-ratio-\*
+- [ ] avatar-\*
+- [ ] badge-\*
+- [ ] breadcrumb-\*
+- [ ] button-\*
+- [ ] calendar-\*
+- [ ] card-\*
+- [ ] carousel-\*
+- [ ] chart-\*
+- [ ] checkbox-\*
+- [ ] collapsible-\*
+- [ ] combobox-\*
+- [ ] command-\*
+- [ ] context-menu-\*
+- [ ] data-table-\*
+- [ ] date-picker-\*
+- [ ] dialog-\*
+- [ ] drawer-\*
+- [ ] dropdown-menu-\*
+- [ ] empty-\*
+- [ ] field-\*
+- [ ] form-\*
+- [ ] hover-card-\*
+- [ ] input-\*
+- [ ] input-group-\*
+- [ ] input-otp-\*
+- [ ] item-\*
+- [ ] kbd-\*
+- [ ] label-\*
+- [ ] menubar-\*
+- [ ] native-select-\*
+- [ ] navigation-menu-\*
+- [ ] pagination-\*
+- [ ] popover-\*
+- [ ] progress-\*
+- [ ] radio-group-\*
+- [ ] range-calendar-\*
+- [ ] resizable-\*
+- [ ] scroll-area-\*
+- [ ] select-\*
+- [ ] separator-\*
+- [ ] sheet-\*
+- [ ] sidebar-\*
+- [ ] skeleton-\*
+- [ ] slider-\*
+- [ ] sonner-\*
+- [ ] spinner-\*
+- [ ] switch-\*
+- [ ] table-\*
+- [ ] tabs-\*
+- [ ] textarea-\*
+- [ ] toggle-\*
+- [ ] toggle-group-\*
+- [ ] tooltip-\*
+- [ ] typography-\*
 
 ---
 

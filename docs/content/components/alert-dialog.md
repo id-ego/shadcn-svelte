@@ -71,7 +71,8 @@ links:
     <AlertDialog.Header>
       <AlertDialog.Title>정말 확실하신가요?</AlertDialog.Title>
       <AlertDialog.Description>
-        이 작업은 되돌릴 수 없습니다. 계정이 영구적으로 삭제되고 서버에서 데이터가 제거됩니다.
+        이 작업은 되돌릴 수 없습니다. 계정이 영구적으로 삭제되고 서버에서
+        데이터가 제거됩니다.
       </AlertDialog.Description>
     </AlertDialog.Header>
     <AlertDialog.Footer>

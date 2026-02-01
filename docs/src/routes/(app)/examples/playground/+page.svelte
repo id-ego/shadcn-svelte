@@ -70,7 +70,9 @@
 								{/snippet}
 							</HoverCard.Trigger>
 							<HoverCard.Content class="w-[320px] text-sm" side="left">
-								작업에 가장 적합한 인터페이스를 선택하세요. 완성할 간단한 프롬프트, 완성을 삽입할 시작 및 종료 텍스트, 또는 편집할 지시사항이 포함된 텍스트를 제공할 수 있습니다.
+								작업에 가장 적합한 인터페이스를 선택하세요. 완성할 간단한 프롬프트,
+								완성을 삽입할 시작 및 종료 텍스트, 또는 편집할 지시사항이 포함된
+								텍스트를 제공할 수 있습니다.
 							</HoverCard.Content>
 						</HoverCard.Root>
 						<Tabs.List class="grid grid-cols-3">

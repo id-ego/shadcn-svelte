@@ -206,9 +206,7 @@
 			{:else}
 				<p class="text-muted-foreground text-sm">이 스레드에 추가할 사용자를 선택하세요.</p>
 			{/if}
-			<Button disabled={selectedUsers.length < 2} onclick={() => (open = false)}>
-				계속
-			</Button>
+			<Button disabled={selectedUsers.length < 2} onclick={() => (open = false)}>계속</Button>
 		</Dialog.Footer>
 	</Dialog.Content>
 </Dialog.Root>

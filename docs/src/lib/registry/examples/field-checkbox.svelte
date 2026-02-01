@@ -43,7 +43,8 @@
 					데스크톱 및 문서 폴더 동기화
 				</Field.Label>
 				<Field.Description>
-					데스크톱 및 문서 폴더가 iCloud Drive와 동기화됩니다. 다른 기기에서 액세스할 수 있습니다.
+					데스크톱 및 문서 폴더가 iCloud Drive와 동기화됩니다. 다른 기기에서 액세스할 수
+					있습니다.
 				</Field.Description>
 			</Field.Content>
 		</Field.Field>

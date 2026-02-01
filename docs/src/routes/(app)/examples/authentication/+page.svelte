@@ -58,7 +58,8 @@
 		<div class="relative z-20 mt-auto">
 			<blockquote class="space-y-2">
 				<p class="text-lg">
-					&ldquo;이 라이브러리는 수많은 작업 시간을 절약해 주었고, 그 어느 때보다 빠르게 고객에게 멋진 디자인을 제공할 수 있도록 도와주었습니다.&rdquo;
+					&ldquo;이 라이브러리는 수많은 작업 시간을 절약해 주었고, 그 어느 때보다 빠르게
+					고객에게 멋진 디자인을 제공할 수 있도록 도와주었습니다.&rdquo;
 				</p>
 				<footer class="text-sm">Sofia Davis</footer>
 			</blockquote>

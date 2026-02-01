@@ -82,9 +82,7 @@
 						<div class="text-7xl font-bold tracking-tighter">
 							{goal}
 						</div>
-						<div class="text-muted-foreground text-[0.70rem] uppercase">
-							칼로리/일
-						</div>
+						<div class="text-muted-foreground text-[0.70rem] uppercase">칼로리/일</div>
 					</div>
 					<Button
 						variant="outline"
