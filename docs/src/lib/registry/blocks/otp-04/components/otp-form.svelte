@@ -59,6 +59,7 @@
 		</Card.Content>
 	</Card.Root>
 	<Field.Description class="text-center">
-		계속하기를 클릭하면 <a href="#/">서비스 약관</a> 및 <a href="#/">개인정보 보호정책</a>에 동의하는 것으로 간주됩니다.
+		계속하기를 클릭하면 <a href="#/">서비스 약관</a> 및 <a href="#/">개인정보 보호정책</a>에
+		동의하는 것으로 간주됩니다.
 	</Field.Description>
 </div>

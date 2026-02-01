@@ -12,21 +12,15 @@
 		<RadioGroup.Root bind:value={plan}>
 			<Field.Field orientation="horizontal">
 				<RadioGroup.Item value="monthly" id="plan-monthly" />
-				<Field.Label for="plan-monthly" class="font-normal">
-					월간 ($9.99/월)
-				</Field.Label>
+				<Field.Label for="plan-monthly" class="font-normal">월간 ($9.99/월)</Field.Label>
 			</Field.Field>
 			<Field.Field orientation="horizontal">
 				<RadioGroup.Item value="yearly" id="plan-yearly" />
-				<Field.Label for="plan-yearly" class="font-normal">
-					연간 ($99.99/년)
-				</Field.Label>
+				<Field.Label for="plan-yearly" class="font-normal">연간 ($99.99/년)</Field.Label>
 			</Field.Field>
 			<Field.Field orientation="horizontal">
 				<RadioGroup.Item value="lifetime" id="plan-lifetime" />
-				<Field.Label for="plan-lifetime" class="font-normal">
-					평생 ($299.99)
-				</Field.Label>
+				<Field.Label for="plan-lifetime" class="font-normal">평생 ($299.99)</Field.Label>
 			</Field.Field>
 		</RadioGroup.Root>
 	</Field.Set>

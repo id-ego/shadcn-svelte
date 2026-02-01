@@ -1,9 +1,11 @@
 # 컴포넌트 문서 체크리스트
 
 ## 컴포넌트 개요
+
 - [x] `docs/content/components/index.md` - 컴포넌트 목록
 
 ## 입력 컴포넌트
+
 - [x] `button.md` - 버튼
 - [x] `button-group.md` - 버튼 그룹
 - [x] `checkbox.md` - 체크박스
@@ -21,6 +23,7 @@
 - [x] `toggle-group.md` - 토글 그룹
 
 ## 레이아웃 컴포넌트
+
 - [x] `accordion.md` - 아코디언
 - [x] `aspect-ratio.md` - 종횡비
 - [x] `card.md` - 카드
@@ -32,6 +35,7 @@
 - [x] `tabs.md` - 탭
 
 ## 표시 컴포넌트
+
 - [x] `alert.md` - 알림
 - [x] `avatar.md` - 아바타
 - [x] `badge.md` - 배지
@@ -48,6 +52,7 @@
 - [x] `typography.md` - 타이포그래피
 
 ## 오버레이 컴포넌트
+
 - [x] `alert-dialog.md` - 알림 대화상자
 - [x] `dialog.md` - 대화상자
 - [x] `drawer.md` - 드로어
@@ -57,6 +62,7 @@
 - [x] `tooltip.md` - 툴팁
 
 ## 네비게이션 컴포넌트
+
 - [x] `breadcrumb.md` - 브레드크럼
 - [x] `command.md` - 커맨드
 - [x] `context-menu.md` - 컨텍스트 메뉴
@@ -66,14 +72,17 @@
 - [x] `pagination.md` - 페이지네이션
 
 ## 날짜/시간 컴포넌트
+
 - [x] `date-picker.md` - 날짜 선택기
 - [x] `range-calendar.md` - 범위 캘린더
 
 ## 폼 컴포넌트
+
 - [x] `combobox.md` - 콤보박스
 - [x] `field.md` - 필드
 - [x] `form.md` - 폼
 - [x] `item.md` - 아이템
 
 ## 피드백 컴포넌트
+
 - [x] `sonner.md` - 소너 (토스트)

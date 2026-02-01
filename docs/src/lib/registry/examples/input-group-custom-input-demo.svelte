@@ -10,9 +10,7 @@
 			placeholder="자동 크기 조정 텍스트 영역..."
 		></textarea>
 		<InputGroup.Addon align="block-end">
-			<InputGroup.Button class="ms-auto" size="sm" variant="default">
-				제출
-			</InputGroup.Button>
+			<InputGroup.Button class="ms-auto" size="sm" variant="default">제출</InputGroup.Button>
 		</InputGroup.Addon>
 	</InputGroup.Root>
 </div>

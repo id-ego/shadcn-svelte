@@ -23,9 +23,7 @@
 			<DropdownMenu.Item onSelect={() => (showNewDialog = true)}>
 				새 파일...
 			</DropdownMenu.Item>
-			<DropdownMenu.Item onSelect={() => (showShareDialog = true)}>
-				공유...
-			</DropdownMenu.Item>
+			<DropdownMenu.Item onSelect={() => (showShareDialog = true)}>공유...</DropdownMenu.Item>
 			<DropdownMenu.Item disabled>다운로드</DropdownMenu.Item>
 		</DropdownMenu.Group>
 	</DropdownMenu.Content>

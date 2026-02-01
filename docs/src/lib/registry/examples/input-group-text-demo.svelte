@@ -30,9 +30,7 @@
 	<InputGroup.Root>
 		<InputGroup.Textarea placeholder="메시지 입력" />
 		<InputGroup.Addon align="block-end">
-			<InputGroup.Text class="text-muted-foreground text-xs">
-				120자 남음
-			</InputGroup.Text>
+			<InputGroup.Text class="text-muted-foreground text-xs">120자 남음</InputGroup.Text>
 		</InputGroup.Addon>
 	</InputGroup.Root>
 </div>

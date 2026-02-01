@@ -10,9 +10,7 @@
 	<Dialog.Content class="sm:max-w-md">
 		<Dialog.Header>
 			<Dialog.Title>링크 공유</Dialog.Title>
-			<Dialog.Description>
-				이 링크를 가진 사람은 누구나 볼 수 있습니다.
-			</Dialog.Description>
+			<Dialog.Description>이 링크를 가진 사람은 누구나 볼 수 있습니다.</Dialog.Description>
 		</Dialog.Header>
 		<div class="flex items-center gap-2">
 			<div class="grid flex-1 gap-2">

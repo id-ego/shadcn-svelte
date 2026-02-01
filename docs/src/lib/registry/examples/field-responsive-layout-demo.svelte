@@ -26,7 +26,8 @@
 					<Field.Content>
 						<Field.Label for="message">메시지</Field.Label>
 						<Field.Description>
-							여기에 메시지를 작성할 수 있습니다. 짧게 작성하는 것이 좋으며, 100자 이내로 작성하세요.
+							여기에 메시지를 작성할 수 있습니다. 짧게 작성하는 것이 좋으며, 100자
+							이내로 작성하세요.
 						</Field.Description>
 					</Field.Content>
 					<Textarea

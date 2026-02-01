@@ -315,10 +315,10 @@ Shad는 사이드바 구축을 좋아하지 않기 때문에, 다양한 구성�
 
 ### Props
 
-| Name           | Type                      | Description                                                                                              |
-| -------------- | ------------------------- | -------------------------------------------------------------------------------------------------------- |
-| `open`         | `boolean`                 | 사이드바의 열림 상태입니다 (바인딩 가능).                                                                |
-| `onOpenChange` | `(open: boolean) => void` | 비제어 상태일 때 사이드바의 열림 상태가 변경된 _후_에, 제어 상태일 때 사이드바가 열리거나 닫히기 _전_에 실행되는 콜백입니다. |
+| Name           | Type                      | Description                                                                                                                  |
+| -------------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| `open`         | `boolean`                 | 사이드바의 열림 상태입니다 (바인딩 가능).                                                                                    |
+| `onOpenChange` | `(open: boolean) => void` | 비제어 상태일 때 사이드바의 열림 상태가 변경된 *후*에, 제어 상태일 때 사이드바가 열리거나 닫히기 *전*에 실행되는 콜백입니다. |
 
 ### 너비
 
@@ -369,11 +369,11 @@ export const SIDEBAR_KEYBOARD_SHORTCUT = "b";
 
 ### Props
 
-| Property      | Type                              | Description                  |
-| ------------- | --------------------------------- | ---------------------------- |
-| `side`        | `left` or `right`                 | 사이드바의 위치입니다.       |
-| `variant`     | `sidebar`, `floating`, or `inset` | 사이드바의 변형입니다.       |
-| `collapsible` | `offcanvas`, `icon`, or `none`    | 사이드바의 접기 상태입니다.  |
+| Property      | Type                              | Description                 |
+| ------------- | --------------------------------- | --------------------------- |
+| `side`        | `left` or `right`                 | 사이드바의 위치입니다.      |
+| `variant`     | `sidebar`, `floating`, or `inset` | 사이드바의 변형입니다.      |
+| `collapsible` | `offcanvas`, `icon`, or `none`    | 사이드바의 접기 상태입니다. |
 
 ### side
 
@@ -423,11 +423,11 @@ export const SIDEBAR_KEYBOARD_SHORTCUT = "b";
 <Sidebar.Root collapsible="offcanvas | icon | none" />
 ```
 
-| Prop        | Description                                    |
-| ----------- | ---------------------------------------------- |
+| Prop        | Description                                                    |
+| ----------- | -------------------------------------------------------------- |
 | `offcanvas` | 왼쪽 또는 오른쪽에서 슬라이드되는 접을 수 있는 사이드바입니다. |
-| `icon`      | 아이콘으로 축소되는 사이드바입니다.             |
-| `none`      | 접을 수 없는 사이드바입니다.                   |
+| `icon`      | 아이콘으로 축소되는 사이드바입니다.                            |
+| `none`      | 접을 수 없는 사이드바입니다.                                   |
 
 ## useSidebar
 
@@ -443,15 +443,15 @@ export const SIDEBAR_KEYBOARD_SHORTCUT = "b";
 </script>
 ```
 
-| Property        | Type                      | Description                                |
-| --------------- | ------------------------- | ------------------------------------------ |
-| `state`         | `expanded` or `collapsed` | 사이드바의 현재 상태입니다.                |
-| `open`          | `boolean`                 | 사이드바가 열려 있는지 여부입니다.         |
-| `setOpen`       | `(open: boolean) => void` | 사이드바의 열림 상태를 설정합니다.         |
+| Property        | Type                      | Description                                   |
+| --------------- | ------------------------- | --------------------------------------------- |
+| `state`         | `expanded` or `collapsed` | 사이드바의 현재 상태입니다.                   |
+| `open`          | `boolean`                 | 사이드바가 열려 있는지 여부입니다.            |
+| `setOpen`       | `(open: boolean) => void` | 사이드바의 열림 상태를 설정합니다.            |
 | `openMobile`    | `boolean`                 | 모바일에서 사이드바가 열려 있는지 여부입니다. |
 | `setOpenMobile` | `(open: boolean) => void` | 모바일에서 사이드바의 열림 상태를 설정합니다. |
-| `isMobile`      | `boolean`                 | 사이드바가 모바일에 있는지 여부입니다.     |
-| `toggle`        | `() => void`              | 사이드바를 토글합니다. 데스크톱과 모바일.  |
+| `isMobile`      | `boolean`                 | 사이드바가 모바일에 있는지 여부입니다.        |
+| `toggle`        | `() => void`              | 사이드바를 토글합니다. 데스크톱과 모바일.     |
 
 ## Sidebar.Header
 

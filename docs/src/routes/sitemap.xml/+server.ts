@@ -37,7 +37,13 @@ export const GET: RequestHandler = async () => {
 
 	// Doc pages from navigation (already has correct /docs/... URLs)
 	const docPages = getFullNavItems()
-		.filter((item) => item.href && !item.href.endsWith(".txt") && !item.href.endsWith("/") && !item.external)
+		.filter(
+			(item) =>
+				item.href &&
+				!item.href.endsWith(".txt") &&
+				!item.href.endsWith("/") &&
+				!item.external
+		)
 		.map((item) => ({
 			url: item.href!,
 			priority: 0.8,

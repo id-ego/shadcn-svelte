@@ -53,7 +53,8 @@
 						<Field.Content>
 							<Field.Title>Virtual Machine</Field.Title>
 							<Field.Description>
-								워크로드를 실행하기 위해 VM 구성 클러스터에 액세스합니다. (출시 예정)
+								워크로드를 실행하기 위해 VM 구성 클러스터에 액세스합니다. (출시
+								예정)
 							</Field.Description>
 						</Field.Content>
 						<RadioGroup.Item value="vm" id="vm-z4k" />

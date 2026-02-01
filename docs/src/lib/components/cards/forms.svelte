@@ -65,8 +65,7 @@
 				</Field.Group>
 				<Field.Set>
 					<Field.Legend>플랜</Field.Legend>
-					<Field.Description>필요에 가장 적합한 플랜을 선택하세요.</Field.Description
-					>
+					<Field.Description>필요에 가장 적합한 플랜을 선택하세요.</Field.Description>
 					<RadioGroup.Root value="starter" class="grid grid-cols-2 gap-2">
 						{#each plans as plan (plan.id)}
 							<Field.Label>

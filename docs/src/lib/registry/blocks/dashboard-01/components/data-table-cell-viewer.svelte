@@ -128,15 +128,9 @@
 								{type ?? "유형 선택"}
 							</Select.Trigger>
 							<Select.Content>
-								<Select.Item value="목차"
-									>목차</Select.Item
-								>
-								<Select.Item value="요약"
-									>요약</Select.Item
-								>
-								<Select.Item value="기술 접근법">
-									기술 접근법
-								</Select.Item>
+								<Select.Item value="목차">목차</Select.Item>
+								<Select.Item value="요약">요약</Select.Item>
+								<Select.Item value="기술 접근법">기술 접근법</Select.Item>
 								<Select.Item value="디자인">디자인</Select.Item>
 								<Select.Item value="기능">기능</Select.Item>
 								<Select.Item value="중점 문서">중점 문서</Select.Item>

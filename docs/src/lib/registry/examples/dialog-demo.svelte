@@ -7,7 +7,9 @@
 
 <Dialog.Root>
 	<form>
-		<Dialog.Trigger class={buttonVariants({ variant: "outline" })}>다이얼로그 열기</Dialog.Trigger>
+		<Dialog.Trigger class={buttonVariants({ variant: "outline" })}
+			>다이얼로그 열기</Dialog.Trigger
+		>
 		<Dialog.Content class="sm:max-w-[425px]">
 			<Dialog.Header>
 				<Dialog.Title>프로필 수정</Dialog.Title>

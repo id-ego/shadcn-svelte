@@ -327,7 +327,8 @@
 		</div>
 		<div class="flex items-center justify-between px-4">
 			<div class="text-muted-foreground hidden flex-1 text-sm lg:flex">
-				{table.getFilteredRowModel().rows.length}개 중 {table.getFilteredSelectedRowModel().rows.length}개 선택됨.
+				{table.getFilteredRowModel().rows.length}개 중 {table.getFilteredSelectedRowModel()
+					.rows.length}개 선택됨.
 			</div>
 			<div class="flex w-full items-center gap-8 lg:w-fit">
 				<div class="hidden items-center gap-2 lg:flex">
@@ -352,7 +353,8 @@
 					</Select.Root>
 				</div>
 				<div class="flex w-fit items-center justify-center text-sm font-medium">
-					{table.getPageCount()}페이지 중 {table.getState().pagination.pageIndex + 1}페이지
+					{table.getPageCount()}페이지 중 {table.getState().pagination.pageIndex +
+						1}페이지
 				</div>
 				<div class="ms-auto flex items-center gap-2 lg:ms-0">
 					<Button

@@ -108,9 +108,7 @@
 				</Command.Root>
 			</Popover.Content>
 		</Popover.Root>
-		<Form.Description>
-			대시보드에서 사용할 언어입니다.
-		</Form.Description>
+		<Form.Description>대시보드에서 사용할 언어입니다.</Form.Description>
 		<Form.FieldErrors />
 	</Form.Field>
 	<Form.Button>제출</Form.Button>

@@ -57,9 +57,7 @@
 <Card.Root>
 	<Card.Header>
 		<Card.Title>운동 시간</Card.Title>
-		<Card.Description>
-			운동 시간이 평소보다 앞서고 있습니다.
-		</Card.Description>
+		<Card.Description>운동 시간이 평소보다 앞서고 있습니다.</Card.Description>
 	</Card.Header>
 	<Card.Content class="pb-4">
 		<Chart.Container

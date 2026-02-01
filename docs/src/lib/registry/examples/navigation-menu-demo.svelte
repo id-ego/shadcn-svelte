@@ -152,11 +152,15 @@
 						</NavigationMenu.Link>
 						<NavigationMenu.Link href="##">
 							<div class="font-medium">문서</div>
-							<div class="text-muted-foreground">라이브러리 사용 방법을 배워보세요.</div>
+							<div class="text-muted-foreground">
+								라이브러리 사용 방법을 배워보세요.
+							</div>
 						</NavigationMenu.Link>
 						<NavigationMenu.Link href="##">
 							<div class="font-medium">블로그</div>
-							<div class="text-muted-foreground">최신 블로그 포스트를 읽어보세요.</div>
+							<div class="text-muted-foreground">
+								최신 블로그 포스트를 읽어보세요.
+							</div>
 						</NavigationMenu.Link>
 					</li>
 				</ul>

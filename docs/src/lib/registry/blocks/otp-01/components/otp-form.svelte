@@ -29,9 +29,7 @@
 							</InputOTP.Group>
 						{/snippet}
 					</InputOTP.Root>
-					<Field.Description>
-						이메일로 전송된 6자리 코드를 입력하세요.
-					</Field.Description>
+					<Field.Description>이메일로 전송된 6자리 코드를 입력하세요.</Field.Description>
 				</Field.Field>
 				<Field.Group>
 					<Button type="submit">확인</Button>

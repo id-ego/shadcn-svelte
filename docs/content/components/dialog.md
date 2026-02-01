@@ -71,8 +71,8 @@ links:
     <Dialog.Header>
       <Dialog.Title>정말 확실하신가요?</Dialog.Title>
       <Dialog.Description>
-        이 작업은 취소할 수 없습니다. 계정이 영구적으로 삭제되고
-        서버에서 데이터가 제거됩니다.
+        이 작업은 취소할 수 없습니다. 계정이 영구적으로 삭제되고 서버에서
+        데이터가 제거됩니다.
       </Dialog.Description>
     </Dialog.Header>
   </Dialog.Content>

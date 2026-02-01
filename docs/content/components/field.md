@@ -62,9 +62,7 @@ links:
     <Field.Field>
       <Field.Label for="name">전체 이름</Field.Label>
       <Input id="name" autoComplete="off" placeholder="홍길동" />
-      <Field.Description
-        >인보이스 및 이메일에 표시됩니다.</Field.Description
-      >
+      <Field.Description>인보이스 및 이메일에 표시됩니다.</Field.Description>
     </Field.Field>
     <Field.Field>
       <Field.Label for="username">사용자 이름</Field.Label>

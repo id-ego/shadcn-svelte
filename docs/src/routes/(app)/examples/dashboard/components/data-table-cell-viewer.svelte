@@ -109,8 +109,8 @@
 						<TrendingUpIcon class="size-4" />
 					</div>
 					<div class="text-muted-foreground">
-						최근 6개월간 총 방문자 수를 표시합니다. 이것은 레이아웃 테스트를 위한 임의의 텍스트입니다.
-						여러 줄에 걸쳐 표시되며 자동으로 줄바꿈됩니다.
+						최근 6개월간 총 방문자 수를 표시합니다. 이것은 레이아웃 테스트를 위한 임의의
+						텍스트입니다. 여러 줄에 걸쳐 표시되며 자동으로 줄바꿈됩니다.
 					</div>
 				</div>
 				<Separator />
@@ -128,15 +128,9 @@
 								{type ?? "유형 선택"}
 							</Select.Trigger>
 							<Select.Content>
-								<Select.Item value="목차"
-									>목차</Select.Item
-								>
-								<Select.Item value="요약"
-									>요약</Select.Item
-								>
-								<Select.Item value="기술적 접근">
-									기술적 접근
-								</Select.Item>
+								<Select.Item value="목차">목차</Select.Item>
+								<Select.Item value="요약">요약</Select.Item>
+								<Select.Item value="기술적 접근">기술적 접근</Select.Item>
 								<Select.Item value="디자인">디자인</Select.Item>
 								<Select.Item value="기능">기능</Select.Item>
 								<Select.Item value="집중 문서">집중 문서</Select.Item>
